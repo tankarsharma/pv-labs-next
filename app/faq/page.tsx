@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import FAQ from "@/pages-old/FAQ";
+import Faq from "@/pages-old/FAQPage";
 
 export const metadata: Metadata = {
   title: "FAQ",
@@ -10,5 +10,5 @@ export const metadata: Metadata = {
 };
 
 export default function Page() {
-  return <FAQ />;
+  return <Faq />;
 }
