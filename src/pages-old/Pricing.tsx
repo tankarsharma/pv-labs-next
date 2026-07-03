@@ -83,12 +83,12 @@ const Pricing = () => {
                     <h3 className="text-2xl font-bold text-slate-900 mb-2">Listing Image Upgrade</h3>
                     <p className="text-slate-500 text-sm mb-8 font-medium">Fix what the customer sees at first glance</p>
                     <div className="mb-8 p-4 bg-purple-50 rounded-2xl border border-purple-100">
-                      <span className="text-5xl font-extrabold text-[#7B2FD9]">â‚¹699</span>
+                      <span className="text-5xl font-extrabold text-[#7B2FD9]">₹699</span>
                       <span className="text-sm text-slate-500 font-bold ml-2">/ starting</span>
-                      <p className="text-slate-400 text-xs mt-1 font-semibold uppercase">Up to â‚¹1499 Â· Category dependent</p>
+                      <p className="text-slate-400 text-xs mt-1 font-semibold uppercase">Up to ₹1499 · Category dependent</p>
                     </div>
                     <ul className="space-y-4 mb-8 flex-1">
-                      {["5 listing images per SKU", "White + styled backgrounds", "Marketplace compliant sizing", "Platform-ready file formats", "3â€“5 day delivery"].map((f, i) => (
+                      {["5 listing images per SKU", "White + styled backgrounds", "Marketplace compliant sizing", "Platform-ready file formats", "3–5 day delivery"].map((f, i) => (
                         <li key={i} className="flex items-center gap-3 text-sm text-slate-700 font-medium">
                           <div className="w-6 h-6 rounded-full bg-purple-100 flex items-center justify-center flex-shrink-0">
                             <Check size={12} className="text-[#7B2FD9]" />
@@ -113,12 +113,12 @@ const Pricing = () => {
                     <h3 className="text-2xl font-bold text-slate-900 mb-2">Full Listing Upgrade</h3>
                     <p className="text-slate-500 text-sm mb-8 font-medium">Make the entire listing work as one system</p>
                     <div className="mb-8 p-4 bg-gradient-to-br from-purple-50 to-blue-50 rounded-2xl border border-purple-100">
-                      <span className="text-5xl font-extrabold bg-gradient-to-r from-[#7B2FD9] to-[#60B8F0] bg-clip-text text-transparent">â‚¹1,499</span>
+                      <span className="text-5xl font-extrabold bg-gradient-to-r from-[#7B2FD9] to-[#60B8F0] bg-clip-text text-transparent">₹1,499</span>
                       <span className="text-sm text-slate-500 font-bold ml-2">/ starting</span>
-                      <p className="text-slate-400 text-xs mt-1 font-semibold uppercase">Up to â‚¹1,999 Â· Category dependent</p>
+                      <p className="text-slate-400 text-xs mt-1 font-semibold uppercase">Up to ₹1,999 · Category dependent</p>
                     </div>
                     <ul className="space-y-4 mb-8 flex-1">
-                      {["5 listing images", "RPD or A+ content", "Infographic-style benefit highlights", "Mobile-first optimized creatives", "Platform-ready files", "3â€“5 day delivery"].map((f, i) => (
+                      {["5 listing images", "RPD or A+ content", "Infographic-style benefit highlights", "Mobile-first optimized creatives", "Platform-ready files", "3–5 day delivery"].map((f, i) => (
                         <li key={i} className="flex items-center gap-3 text-sm text-slate-700 font-bold">
                           <div className="w-6 h-6 rounded-full bg-gradient-to-r from-[#7B2FD9] to-[#60B8F0] flex items-center justify-center flex-shrink-0 shadow-sm">
                             <Check size={12} className="text-white" />
@@ -161,30 +161,30 @@ const Pricing = () => {
                     <tbody>
                       <tr className="border-b border-slate-100 hover:bg-slate-50 transition-colors">
                         <td className="p-6 text-slate-900 font-bold text-sm">Listing Image Upgrade<br /><span className="text-slate-400 font-medium text-xs">(5 images per SKU)</span></td>
-                        <td className="p-6 text-center text-slate-600 font-medium text-sm">â‚¹699/SKU</td>
-                        <td className="p-6 text-center text-slate-600 font-medium text-sm">â‚¹499/SKU</td>
-                        <td className="p-6 text-center text-slate-900 font-bold text-lg bg-purple-50/30">â‚¹299<span className="text-xs font-normal text-slate-500">/SKU</span></td>
+                        <td className="p-6 text-center text-slate-600 font-medium text-sm">₹699/SKU</td>
+                        <td className="p-6 text-center text-slate-600 font-medium text-sm">₹499/SKU</td>
+                        <td className="p-6 text-center text-slate-900 font-bold text-lg bg-purple-50/30">₹299<span className="text-xs font-normal text-slate-500">/SKU</span></td>
                       </tr>
                       <tr className="border-b border-slate-100 hover:bg-slate-50 transition-colors">
                         <td className="p-6 text-slate-900 font-bold text-sm">RPD / A+ Content Only<br /><span className="text-slate-400 font-medium text-xs">(5 images per SKU)</span></td>
-                        <td className="p-6 text-center text-slate-600 font-medium text-sm">â‚¹1299/SKU</td>
-                        <td className="p-6 text-center text-slate-600 font-medium text-sm">â‚¹999/SKU</td>
-                        <td className="p-6 text-center text-slate-900 font-bold text-lg bg-purple-50/30">â‚¹699<span className="text-xs font-normal text-slate-500">/SKU</span></td>
+                        <td className="p-6 text-center text-slate-600 font-medium text-sm">₹1299/SKU</td>
+                        <td className="p-6 text-center text-slate-600 font-medium text-sm">₹999/SKU</td>
+                        <td className="p-6 text-center text-slate-900 font-bold text-lg bg-purple-50/30">₹699<span className="text-xs font-normal text-slate-500">/SKU</span></td>
                       </tr>
                       <tr className="bg-gradient-to-r from-white to-purple-50 border-l-[6px] border-[#7B2FD9]">
                         <td className="p-6 text-slate-900 font-bold text-sm flex items-center gap-3">
                           Listing Images + RPD/A+ Combined
                           <span className="text-[10px] bg-[#7B2FD9] text-white px-2 py-0.5 rounded-full font-bold shadow-sm">RECOMMENDED</span>
                         </td>
-                        <td className="p-6 text-center text-[#7B2FD9] font-bold text-sm">â‚¹1499/SKU</td>
-                        <td className="p-7 text-center text-[#7B2FD9] font-bold text-sm">â‚¹1299/SKU</td>
-                        <td className="p-6 text-center text-[#7B2FD9] font-extrabold text-xl bg-purple-100/50">â‚¹999<span className="text-xs font-normal text-slate-500">/SKU</span></td>
+                        <td className="p-6 text-center text-[#7B2FD9] font-bold text-sm">₹1499/SKU</td>
+                        <td className="p-7 text-center text-[#7B2FD9] font-bold text-sm">₹1299/SKU</td>
+                        <td className="p-6 text-center text-[#7B2FD9] font-extrabold text-xl bg-purple-100/50">₹999<span className="text-xs font-normal text-slate-500">/SKU</span></td>
                       </tr>
                     </tbody>
                   </table>
                 </div>
                 <p className="mt-6 text-center text-sm font-medium text-slate-500 bg-white inline-block px-6 py-2 rounded-full border border-slate-100 shadow-sm mx-auto  w-fit">
-                  ðŸŽ‰ 50+ SKUs save you up to <span className="text-[#7B2FD9] font-bold">â‚¹600 per SKU</span> compared to 10 SKU pricing
+                  ðŸŽ‰ 50+ SKUs save you up to <span className="text-[#7B2FD9] font-bold">₹600 per SKU</span> compared to 10 SKU pricing
                 </p>
               </section>
 
@@ -272,7 +272,7 @@ const Pricing = () => {
                 <h2 className="text-2xl md:text-3xl font-bold text-slate-900 mb-4">Not sure what your project needs?</h2>
                 <p className="text-slate-600 mb-8 max-w-xl mx-auto">Tell us about your brand. We'll scope it out and send you a clear quote - free, within 24 hours.</p>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                  <Link href="/contact" className="gradient-btn px-10 py-4 font-bold text-white shadow-lg hover:shadow-purple-500/20 transition-all">â†’ Book Free Consultation</Link>
+                  <Link href="/contact" className="gradient-btn px-10 py-4 font-bold text-white shadow-lg hover:shadow-purple-500/20 transition-all">→ Book Free Consultation</Link>
                   <a href="https://wa.me/917417791003" className="px-10 py-4 rounded-full border-2 border-slate-200 text-slate-700 font-bold hover:border-[#7B2FD9] hover:text-[#7B2FD9] transition-all">ðŸ’¬ WhatsApp Us</a>
                 </div>
               </div>
@@ -323,7 +323,7 @@ const Pricing = () => {
               Book Free Consultation 
             </Link>
             <div className="mt-8 space-y-2 text-slate-500 text-xs font-medium">
-              <p>ðŸ“ž We respond within 2 hours Â· Monâ€“Sat 10amâ€“7pm IST</p>
+              <p>ðŸ“ž We respond within 2 hours · Mon–Sat 10am–7pm IST</p>
               <p>ðŸ’¬ Or WhatsApp us directly: +91 74177 91003</p>
             </div>
           </div>

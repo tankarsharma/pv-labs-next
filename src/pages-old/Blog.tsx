@@ -14,7 +14,7 @@ const categories = ["All", "Guide", "Education"];
 const posts = [
   {
     slug: "amazon-listing-guide-2026",
-    title: "Amazon Listing Images â€” Complete Guide for Indian Sellers 2026",
+    title: "Amazon Listing Images — Complete Guide for Indian Sellers 2026",
     excerpt: "Everything you need to know about creating high-converting Amazon listing images. CTR optimization, technical specs, and the 9-image strategy.",
     image: serviceBranding,
     cat: "Guide",
@@ -36,7 +36,7 @@ const posts = [
   },
   {
     slug: "flipkart-listing-requirements-2026",
-    title: "Flipkart Listing Image Requirements â€” Full Size & Format Guide 2026",
+    title: "Flipkart Listing Image Requirements — Full Size & Format Guide 2026",
     excerpt: "Complete guide to Flipkart's image requirements, rejection reasons, and how to create 100% compliant listing images.",
     image: serviceAppdesign,
     cat: "Guide",
@@ -101,7 +101,7 @@ const Blog = () => {
                       <h3 className="font-heading text-xl font-bold text-foreground mb-2 group-hover:text-primary transition-colors">{p.title}</h3>
                       <p className="text-sm text-muted-foreground mb-4">{p.excerpt}</p>
                       <div className="flex items-center gap-2 text-xs text-muted-foreground">
-                        <User size={12} /> {p.author} â€¢ {p.date}
+                        <User size={12} /> {p.author} • {p.date}
                       </div>
                     </div>
                   </Link>
@@ -143,7 +143,7 @@ const Blog = () => {
                   </div>
                   <h3 className="font-heading font-bold text-foreground mb-2 group-hover:text-primary transition-colors">{p.title}</h3>
                   <p className="text-sm text-muted-foreground mb-3 line-clamp-2">{p.excerpt}</p>
-                  <div className="text-xs text-muted-foreground">{p.author} â€¢ {p.date}</div>
+                  <div className="text-xs text-muted-foreground">{p.author} • {p.date}</div>
                 </div>
               </Link>
             </motion.div>
