@@ -23,16 +23,19 @@ import { FaWhatsapp } from "react-icons/fa6";
 const Services = () => {
   const [activeCategory, setActiveCategory] = useState<"ecommerce" | "brand">("ecommerce");
 useEffect(() => {
-    if (location.hash) {
-      const id = location.hash.replace('#', '');
-      const element = document.getElementById(id);
-      if (element) {
-        setTimeout(() => {
-          element.scrollIntoView({ behavior: "smooth", block: "start" });
-        }, 100);
-      }
+  const hash = window.location.hash;
+
+  if (hash) {
+    const id = hash.replace("#", "");
+    const element = document.getElementById(id);
+
+    if (element) {
+      setTimeout(() => {
+        element.scrollIntoView({ behavior: "smooth", block: "start" });
+      }, 100);
     }
-  }, [location.hash]);
+  }
+}, []);
 
   const scrollToCategory = (category: "ecommerce" | "brand") => {
     setActiveCategory(category);
