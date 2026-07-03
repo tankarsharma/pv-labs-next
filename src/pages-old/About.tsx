@@ -1,8 +1,8 @@
+﻿"use client";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import { motion } from "framer-motion";
 import { Target, Eye, Linkedin, Globe, UploadCloud, Monitor, Download, ShieldCheck } from "lucide-react"; // Added new icons
-import { useLocation } from "react-router-dom";
 import { useEffect } from "react";
 import { socialLinks } from "@/lib/social-links";
 
@@ -10,19 +10,20 @@ import { socialLinks } from "@/lib/social-links";
 const heroImage = "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&q=80&w=2070";
 
 const About = () => {
-  const location = useLocation();
+useEffect(() => {
+  const hash = window.location.hash;
 
-  useEffect(() => {
-    if (location.hash) {
-      const id = location.hash.replace('#', '');
-      const element = document.getElementById(id);
-      if (element) {
-        setTimeout(() => {
-          element.scrollIntoView({ behavior: "smooth", block: "start" });
-        }, 100);
-      }
+  if (hash) {
+    const id = hash.replace("#", "");
+    const element = document.getElementById(id);
+
+    if (element) {
+      setTimeout(() => {
+        element.scrollIntoView({ behavior: "smooth", block: "start" });
+      }, 100);
     }
-  }, [location.hash]);
+  }
+}, []);
 
   return (
     <div className="min-h-screen bg-background">
@@ -73,7 +74,7 @@ const About = () => {
             <p className="text-muted-foreground text-lg leading-relaxed">
               To make premium product visuals accessible to every Indian e-commerce
               seller - not just big brands. We believe great design shouldn't require
-              a ₹50,000 studio shoot.
+              a â‚¹50,000 studio shoot.
             </p>
           </motion.div>
 
@@ -293,3 +294,7 @@ const About = () => {
 }
 
 export default About;
+
+
+
+

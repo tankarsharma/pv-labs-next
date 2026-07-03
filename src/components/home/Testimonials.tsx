@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { Star, Quote, CheckCircle } from "lucide-react";
-import { Link } from "react-router-dom";
+import Link from "next/link";
 
 const testimonials = [
   { name: "Rahul M.", role: "Amazon Seller, Electronics Category", text: "Our Amazon listing CTR doubled within the first week of uploading the new visuals. Worth every rupee.", rating: 5, metric: "2x CTR Increase" },
@@ -83,7 +83,7 @@ const Testimonials = () => (
       >
          <h3 className="font-heading text-2xl md:text-3xl font-bold mb-3 text-foreground">Ready to Transform Your Listings?</h3>
          <p className="text-muted-foreground mb-8">Join sellers and brands already winning on Amazon & Flipkart.</p>
-         <Link to="/contact" className="gradient-btn px-8 py-3 text-sm inline-flex items-center gap-2 font-semibold">
+         <Link href="/contact" className="gradient-btn px-8 py-3 text-sm inline-flex items-center gap-2 font-semibold">
            Get Your Free 1-SKU Makeover →
          </Link>
       </motion.div>

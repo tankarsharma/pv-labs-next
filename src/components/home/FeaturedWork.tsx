@@ -167,7 +167,7 @@ const FeaturedWork = () => (
                 >
                   {p.images.map((img, idx) => (
                     <SwiperSlide key={idx}>
-                      <img src={img} alt={`${p.title} - ${idx + 1}`} className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
+                      <img src={img.src} alt={`${p.title} - ${idx + 1}`} className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
                     </SwiperSlide>
                   ))}
                 </Swiper>

@@ -57,7 +57,7 @@ const ClientLogos = () => {
           {[...logos, ...logos].map((l, i) => (
             <img
               key={i}
-              src={l}
+              src={l.src}
               alt="Client Logo"
               className="h-12 w-auto   transition-all duration-300 select-none object-contain"
             />

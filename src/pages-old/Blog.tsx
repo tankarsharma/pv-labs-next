@@ -1,7 +1,8 @@
+﻿"use client";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import { motion } from "framer-motion";
-import { Link } from "react-router-dom";
+import Link from "next/link";
 import { useState } from "react";
 import { Clock, User, ArrowRight, Search } from "lucide-react";
 import serviceBranding from "@/assets/service-branding.jpg";
@@ -88,9 +89,9 @@ const Blog = () => {
             <div className="grid md:grid-cols-2 gap-6">
               {featured.map((p, i) => (
                 <motion.div key={i} initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: i * 0.1 }}>
-                  <Link to={`/blog/${p.slug}`} className="glass-card overflow-hidden group block hover:shadow-xl transition-shadow">
+                  <Link href={`/blog/${p.slug}`} className="glass-card overflow-hidden group block hover:shadow-xl transition-shadow">
                     <div className="aspect-[16/9] overflow-hidden">
-                      <img src={p.image} alt={p.title} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+                      <img src={typeof p.image === "string" ? p.image : p.image.src} alt={p.title} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
                     </div>
                     <div className="p-6">
                       <div className="flex items-center gap-3 mb-3">
@@ -131,9 +132,9 @@ const Blog = () => {
         <div className="max-w-7xl mx-auto grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {filtered.map((p, i) => (
             <motion.div key={p.slug} initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: i * 0.05 }}>
-              <Link to={`/blog/${p.slug}`} className="glass-card overflow-hidden group block hover:shadow-xl transition-shadow h-full">
+              <Link href={`/blog/${p.slug}`} className="glass-card overflow-hidden group block hover:shadow-xl transition-shadow h-full">
                 <div className="aspect-[16/9] overflow-hidden">
-                  <img src={p.image} alt={p.title} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+                  <img src={typeof p.image === "string" ? p.image : p.image.src} alt={p.title} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
                 </div>
                 <div className="p-5">
                   <div className="flex items-center gap-2 mb-2">
@@ -177,3 +178,6 @@ const Blog = () => {
 };
 
 export default Blog;
+
+
+

@@ -1,7 +1,8 @@
+﻿"use client";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import { motion } from "framer-motion";
-import { Link } from "react-router-dom";
+import Link from "next/link";
 import { Download, ArrowRight, Palette, Layout, Type, Image, Layers, Grid3X3, FileText, Brush, Star, Eye } from "lucide-react";
 
 const resources = [
@@ -69,7 +70,7 @@ const Tools = () => (
       <div className="max-w-3xl mx-auto">
         <h2 className="font-heading text-4xl font-bold text-primary-foreground mb-4">Need custom design work?</h2>
         <p className="text-primary-foreground/80 mb-8">These resources are just the start. Let us create something uniquely yours.</p>
-        <Link to="/contact" className="bg-background text-foreground px-8 py-4 rounded-full font-semibold inline-flex items-center gap-2 hover:shadow-xl transition-all">
+        <Link href="/contact" className="bg-background text-foreground px-8 py-4 rounded-full font-semibold inline-flex items-center gap-2 hover:shadow-xl transition-all">
           Get a Free Quote <ArrowRight size={18} />
         </Link>
       </div>
@@ -80,3 +81,5 @@ const Tools = () => (
 );
 
 export default Tools;
+
+

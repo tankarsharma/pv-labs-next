@@ -1,7 +1,8 @@
+﻿"use client";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import { motion } from "framer-motion";
-import { Link } from "react-router-dom";
+import Link from "next/link";
 import { BarChart3, MessageCircle, FileText, Clock, CheckCircle, AlertCircle, ArrowRight, Bell, Settings, User, Folder, Image, Download, Calendar, TrendingUp } from "lucide-react";
 
 const projects = [
@@ -119,7 +120,7 @@ const Dashboard = () => (
                     </div>
                     <div>
                       <p className="text-sm font-medium text-foreground">{f.name}</p>
-                      <p className="text-xs text-muted-foreground">{f.size} • {f.date}</p>
+                      <p className="text-xs text-muted-foreground">{f.size} â€¢ {f.date}</p>
                     </div>
                   </div>
                   <button className="w-8 h-8 rounded-lg hover:bg-secondary flex items-center justify-center text-muted-foreground hover:text-primary">
@@ -183,3 +184,5 @@ const Dashboard = () => (
 );
 
 export default Dashboard;
+
+

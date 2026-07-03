@@ -1,3 +1,4 @@
+﻿"use client";
 // import { motion } from "framer-motion";
 // import { Link } from "react-router-dom";
 // import { ArrowRight } from "lucide-react";
@@ -44,7 +45,6 @@
 
 
 
-"use client";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import { ArrowRight, Sparkles } from "lucide-react";
@@ -178,7 +178,7 @@ const ContactCTA = () => {
                 variants={itemVariants}
                 className="text-xs sm:text-sm text-cyan-300 font-medium tracking-wide"
               >
-                🔥 <span className="font-bold text-emerald-400">Limited free slots</span> this month -{" "}
+                ðŸ”¥ <span className="font-bold text-emerald-400">Limited free slots</span> this month -{" "}
                 <span className="font-bold">4 remaining</span>
               </motion.p>
             </motion.div>

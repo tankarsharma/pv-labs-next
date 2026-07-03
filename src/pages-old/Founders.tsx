@@ -1,10 +1,11 @@
+﻿"use client";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import { motion } from "framer-motion";
 import { Linkedin, Phone } from "lucide-react";
 import tankaarImg from "../assets/Tankar.jpeg";
 import rudraImg from "../assets/rudra.jpeg";
-import { Link } from "react-router-dom";
+import Link from "next/link";
 import { FaWhatsappSquare } from "react-icons/fa";
 
 const founders = [
@@ -69,8 +70,7 @@ const Founders = ({ showLayout = true }: { showLayout?: boolean }) => {
                   <div className="relative w-40 h-40 mb-8 -mt-16 md:-mt-20">
                     <div className="absolute inset-0 bg-gradient-to-b from-[#7B2FD9] to-[#60B8F0] rounded-full p-[2px]">
                       <div className="w-full h-full rounded-full overflow-hidden bg-white">
-                        <img
-                          src={m.image}
+                        <img src={m.image.src}
                           alt={m.name}
                           className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                         />
@@ -137,3 +137,6 @@ const Founders = ({ showLayout = true }: { showLayout?: boolean }) => {
 };
 
 export default Founders;
+
+
+

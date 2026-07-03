@@ -1,7 +1,8 @@
+﻿"use client";
+import Link from "next/link";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import { motion } from "framer-motion";
-import { Link, useLocation } from "react-router-dom";
 import {
   ArrowRight, Check, ShoppingCart, Palette
 } from "lucide-react";
@@ -21,19 +22,20 @@ import { FaWhatsapp } from "react-icons/fa6";
 
 const Services = () => {
   const [activeCategory, setActiveCategory] = useState<"ecommerce" | "brand">("ecommerce");
-  const location = useLocation();
+useEffect(() => {
+  const hash = window.location.hash;
 
-  useEffect(() => {
-    if (location.hash) {
-      const id = location.hash.replace('#', '');
-      const element = document.getElementById(id);
-      if (element) {
-        setTimeout(() => {
-          element.scrollIntoView({ behavior: "smooth", block: "start" });
-        }, 100);
-      }
+  if (hash) {
+    const id = hash.replace("#", "");
+    const element = document.getElementById(id);
+
+    if (element) {
+      setTimeout(() => {
+        element.scrollIntoView({ behavior: "smooth", block: "start" });
+      }, 100);
     }
-  }, [location.hash]);
+  }
+}, []);
 
   const scrollToCategory = (category: "ecommerce" | "brand") => {
     setActiveCategory(category);
@@ -166,7 +168,7 @@ const Services = () => {
               Tell us about your business. We'll recommend exactly what you need - free.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center relative z-10 ">
-              <Link to="/contact" className="gradient-btn px-4  py-4 font-bold flex items-center justify-center gap-2">
+              <Link href="/contact" className="gradient-btn px-4  py-4 font-bold flex items-center justify-center gap-2">
                 Get Free Recommendation
               </Link>
               <a href="https://wa.me/917417791003" className="px-4 py-4 rounded-full border border-white text-white font-bold hover:bg-green-300 hover:text-white  transition-all flex items-center justify-center gap-2">
@@ -219,7 +221,7 @@ const ServiceCard = ({ service, index, category }: { service: any, index: number
           ) : (
             <SwiperSlide className="w-full h-full">
               <img
-                src={service.image}
+                src={typeof service.image === "string" ? service.image : service.image.src}
                 alt={service.imageAlt}
                 className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
               />
@@ -254,7 +256,7 @@ const ServiceCard = ({ service, index, category }: { service: any, index: number
         </div>
 
         <Link
-          to="/contact"
+          href="/contact"
           className="inline-flex items-center gap-2  font-bold text-[#7B2FD9] transition-colors group underline underline-offset-8 decoration-[#7B2FD9]/30 hover:decoration-[#7B2FD9]"
         >
           {service.cta} <ArrowRight size={18} className="transition-transform group-hover:translate-x-1" />
@@ -265,3 +267,6 @@ const ServiceCard = ({ service, index, category }: { service: any, index: number
 };
 
 export default Services;
+
+
+

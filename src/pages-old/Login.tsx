@@ -1,5 +1,6 @@
+﻿"use client";
 import { motion } from "framer-motion";
-import { Link } from "react-router-dom";
+import Link from "next/link";
 import { Mail, Lock, ArrowRight, Eye, EyeOff, Shield, Star, Zap } from "lucide-react";
 import { useState } from "react";
 import logo from "../../src/assets/logo-removebg-preview (1).png"
@@ -36,7 +37,7 @@ const Login = () => {
                 className="relative z-30 p-8 bg-white/40 backdrop-blur-xl border border-white/50 rounded-3xl shadow-xl flex items-center justify-center"
               >
                 <img 
-                  src={logo} 
+                  src={typeof logo === "string" ? logo : logo.src} 
                   alt="PV Labs" 
                   className="h-28 w-auto object-contain relative z-10 filter drop-shadow-lg" 
                 />
@@ -91,7 +92,7 @@ const Login = () => {
             >
               {/* Mobile Logo (Visible only on small screens) */}
               <div className="lg:hidden flex justify-center mb-6">
-                 <img src={logo} alt="PV Labs" className="h-16 w-auto" />
+                 <img src={typeof logo === "string" ? logo : logo.src} alt="PV Labs" className="h-16 w-auto" />
               </div>
 
               <h1 className="font-heading text-3xl font-bold text-foreground mb-2">Welcome Back</h1>
@@ -169,13 +170,13 @@ const Login = () => {
                   <label htmlFor="remember" className="text-sm text-muted-foreground select-none cursor-pointer">Remember me for 30 days</label>
                 </div>
 
-                <Link to="/dashboard" className="gradient-btn w-full py-4 text-sm font-bold tracking-wide flex items-center justify-center gap-2 rounded-xl shadow-lg shadow-primary/20 hover:shadow-primary/40 transition-all transform hover:-translate-y-0.5">
+                <Link href="/dashboard" className="gradient-btn w-full py-4 text-sm font-bold tracking-wide flex items-center justify-center gap-2 rounded-xl shadow-lg shadow-primary/20 hover:shadow-primary/40 transition-all transform hover:-translate-y-0.5">
                   Sign In <ArrowRight size={18} />
                 </Link>
               </form>
 
               <p className="text-center text-sm text-muted-foreground">
-                Don't have an account? <Link to="/signup" className="text-primary font-semibold hover:underline ml-1">Create account</Link>
+                Don't have an account? <Link href="/signup" className="text-primary font-semibold hover:underline ml-1">Create account</Link>
               </p>
             </div>
           </div>
@@ -186,3 +187,5 @@ const Login = () => {
 };
 
 export default Login;
+
+
