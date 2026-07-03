@@ -622,8 +622,8 @@ const blogData: Record<string, any> = {
   }
 };
 
-const BlogPost = () => {
-  const { slug } = {} as any;
+type BlogPostProps = { slug: string };
+const BlogPost = ({ slug }: BlogPostProps) => {
   const post = slug ? blogData[slug] : null;
 
   const { scrollYProgress } = useScroll();
