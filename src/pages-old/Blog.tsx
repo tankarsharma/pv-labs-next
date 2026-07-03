@@ -5,53 +5,16 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 import { useState } from "react";
 import { Clock, User, ArrowRight, Search } from "lucide-react";
-import serviceBranding from "@/assets/service-branding.jpg";
-import serviceWebdesign from "@/assets/service-webdesign.jpg";
-import serviceAppdesign from "@/assets/service-appdesign.jpg";
+import { blogPosts } from "@/content/blog/posts";
+
 
 const categories = ["All", "Guide", "Education"];
-
-const posts = [
-  {
-    slug: "amazon-listing-guide-2026",
-    title: "Amazon Listing Images — Complete Guide for Indian Sellers 2026",
-    excerpt: "Everything you need to know about creating high-converting Amazon listing images. CTR optimization, technical specs, and the 9-image strategy.",
-    image: serviceBranding,
-    cat: "Guide",
-    author: "Rudra",
-    date: "March 20, 2026",
-    readTime: "8 min read",
-    featured: true
-  },
-  {
-    slug: "amazon-a-plus-content-guide",
-    title: "What is A+ Content & Why Every Amazon Brand Needs It",
-    excerpt: "How A+ Content increases conversions by 3-10% and why every brand-registered Amazon seller should be using it right now.",
-    image: serviceWebdesign,
-    cat: "Education",
-    author: "Tankaar Sharma",
-    date: "March 25, 2026",
-    readTime: "7 min read",
-    featured: true
-  },
-  {
-    slug: "flipkart-listing-requirements-2026",
-    title: "Flipkart Listing Image Requirements — Full Size & Format Guide 2026",
-    excerpt: "Complete guide to Flipkart's image requirements, rejection reasons, and how to create 100% compliant listing images.",
-    image: serviceAppdesign,
-    cat: "Guide",
-    author: "Rudra",
-    date: "March 28, 2026",
-    readTime: "6 min read",
-    featured: false
-  }
-];
 
 const Blog = () => {
   const [active, setActive] = useState("All");
   const [search, setSearch] = useState("");
-  const featured = posts.filter(p => p.featured);
-  const filtered = (active === "All" ? posts : posts.filter(p => p.cat === active)).filter(p => p.title.toLowerCase().includes(search.toLowerCase()));
+  const featured = blogPosts.filter(p => p.featured);
+  const filtered = (active === "All" ? blogPosts : blogPosts.filter(p => p.category === active)).filter(p => p.title.toLowerCase().includes(search.toLowerCase()));
 
   return (
     <div className="min-h-screen bg-background">
@@ -95,7 +58,7 @@ const Blog = () => {
                     </div>
                     <div className="p-6">
                       <div className="flex items-center gap-3 mb-3">
-                        <span className="text-xs font-bold text-primary bg-primary/10 px-3 py-1 rounded-full">{p.cat}</span>
+                        <span className="text-xs font-bold text-primary bg-primary/10 px-3 py-1 rounded-full">{p.category}</span>
                         <span className="text-xs text-muted-foreground flex items-center gap-1"><Clock size={12} /> {p.readTime}</span>
                       </div>
                       <h3 className="font-heading text-xl font-bold text-foreground mb-2 group-hover:text-primary transition-colors">{p.title}</h3>
@@ -138,7 +101,7 @@ const Blog = () => {
                 </div>
                 <div className="p-5">
                   <div className="flex items-center gap-2 mb-2">
-                    <span className="text-xs font-bold text-primary bg-primary/10 px-2 py-0.5 rounded-full">{p.cat}</span>
+                    <span className="text-xs font-bold text-primary bg-primary/10 px-2 py-0.5 rounded-full">{p.category}</span>
                     <span className="text-xs text-muted-foreground">{p.readTime}</span>
                   </div>
                   <h3 className="font-heading font-bold text-foreground mb-2 group-hover:text-primary transition-colors">{p.title}</h3>
