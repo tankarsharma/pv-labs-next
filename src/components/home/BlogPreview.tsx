@@ -1,6 +1,7 @@
+"use client";
 import { motion } from "framer-motion";
 import { ArrowRight, Clock, User, Sparkles } from "lucide-react";
-import { Link } from "react-router-dom";
+import Link from "next/link";
 import serviceWebdesign from "../../assets/Blog11.png";
 import serviceBranding from "../../assets/Blog22.png";
 import serviceAppdesign from "../../assets/Blog33.png";
@@ -71,7 +72,7 @@ const BlogPreview = () => {
               transition={{ delay: i * 0.1 }}
               className={`relative ${p.side === 'center' ? 'lg:scale-110 z-20' : 'lg:scale-95 z-10'}`}
             >
-              <Link to={`/blog/${p.id}`} className="block h-full group">
+              <Link href={`/blog/${p.id}`} className="block h-full group">
                 <div className="glass-card overflow-hidden group cursor-pointer hover:shadow-xl transition-shadow h-full flex flex-col border border-gray-100">
                   <div className="aspect-[16/9] overflow-hidden relative">
                     <img src={p.image} alt={p.title} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />

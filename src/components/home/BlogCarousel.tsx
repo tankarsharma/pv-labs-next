@@ -1,6 +1,7 @@
+"use client";
 import React, { useState, useEffect, useRef } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Link } from "react-router-dom";
+import Link from "next/link";
 import { ArrowLeft, ArrowRight, Clock, User } from "lucide-react";
 
 // Placeholder for actual blog post data or import from a dedicated file
@@ -162,7 +163,7 @@ const BlogCarousel = () => {
                     <div className="aspect-[16/9] overflow-hidden relative">
                       <img src={post.image} alt={post.title} className="w-full h-full object-cover" />
                       <div className="absolute inset-0 bg-foreground/0 hover:bg-foreground/40 transition-colors flex items-center justify-center opacity-0 hover:opacity-100">
-                        <Link to={`/blog/${post.title.toLowerCase().replace(/\s+/g, '-')}`} className="gradient-btn px-5 py-2 text-sm inline-flex items-center gap-1">
+                        <Link href={`/blog/${post.title.toLowerCase().replace(/\s+/g, '-')}`} className="gradient-btn px-5 py-2 text-sm inline-flex items-center gap-1">
                           Read More <ArrowRight size={14} />
                         </Link>
                       </div>
@@ -176,7 +177,7 @@ const BlogCarousel = () => {
                       <p className="text-xs text-primary-foreground/60 mb-4 leading-relaxed">{post.excerpt}</p>
                       <div className="flex items-center justify-between mt-auto"> {/* Push to bottom */}
                         <span className="text-xs text-primary-foreground/60 flex items-center gap-1"><User size={12} /> {post.author}</span>
-                        <Link to={`/blog/${post.title.toLowerCase().replace(/\s+/g, '-')}`} className="text-sm text-primary flex items-center gap-1 font-medium">
+                        <Link href={`/blog/${post.title.toLowerCase().replace(/\s+/g, '-')}`} className="text-sm text-primary flex items-center gap-1 font-medium">
                           Read more <ArrowRight size={14} />
                         </Link>
                       </div>

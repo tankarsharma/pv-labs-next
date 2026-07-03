@@ -1,3 +1,4 @@
+"use client";
 import { motion } from "framer-motion";
 import { Zap, Shield, Clock, Users, HeartHandshake, Infinity, Headphones } from "lucide-react";
 

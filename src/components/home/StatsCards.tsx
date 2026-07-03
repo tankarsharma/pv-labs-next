@@ -1,3 +1,4 @@
+"use client";
 import { motion, Variants } from "framer-motion";
 import { Boxes, RefreshCw, Image as ImageIcon, Globe, CheckCircle2 } from "lucide-react";
 import { useState } from "react";

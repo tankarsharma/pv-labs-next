@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import Link from "next/link";
 import { Mail, Phone, Clock } from "lucide-react";
 import { socialLinks } from "@/lib/social-links";
 import logo from "../../assets/logo-removebg-preview (1).png"
@@ -11,7 +11,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5  gap-12 mb-12">
           {/* Brand */}
           <div className="lg:col-span-2">
-            <Link to="/" className="mb-4 inline-block">
+            <Link href="/" className="mb-4 inline-block">
               <img
                 src={logo}
                 alt="PV Labs"
@@ -46,7 +46,7 @@ const Footer = () => {
                 { label: "Logo & Brand Identity", path: "/services" },
                 { label: "All Services →", path: "/services" },
               ].map((l) => (
-                <Link key={l.label} to={l.path} className="text-sm text-background/60 hover:text-primary transition-colors">{l.label}</Link>
+                <Link key={l.label} href={l.path} className="text-sm text-background/60 hover:text-primary transition-colors">{l.label}</Link>
               ))}
             </div>
           </div>
@@ -63,7 +63,7 @@ const Footer = () => {
                 { label: "Careers", path: "/careers" },
                 { label: "Contact", path: "/contact" },
               ].map((l) => (
-                <Link key={l.label} to={l.path} className="text-sm text-background/60 hover:text-primary transition-colors">{l.label}</Link>
+                <Link key={l.label} href={l.path} className="text-sm text-background/60 hover:text-primary transition-colors">{l.label}</Link>
               ))}
             </div>
           </div>
@@ -99,8 +99,8 @@ const Footer = () => {
         <div className="border-t border-background/10 pt-8 flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-background/40">
           <p className="flex items-center gap-1">© 2026 PV Labs. Made for Indian E-Commerce 🇮🇳</p>
           <div className="flex gap-6 items-center">
-            <Link to="/privacy" className="hover:text-primary transition-colors">Privacy Policy</Link>
-            <Link to="/terms" className="hover:text-primary transition-colors">Terms of Service</Link>
+            <Link href="/privacy" className="hover:text-primary transition-colors">Privacy Policy</Link>
+            <Link href="/terms" className="hover:text-primary transition-colors">Terms of Service</Link>
             {/* <a href="https://pvlabs.ai" className="hover:text-primary transition-colors font-medium">pvlabs.ai</a> */}
           </div>
         </div>

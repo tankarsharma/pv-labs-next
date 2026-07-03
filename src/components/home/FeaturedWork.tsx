@@ -1,5 +1,6 @@
+"use client";
 import { motion } from "framer-motion";
-import { Link } from "react-router-dom";
+import Link from "next/link";
 import { ExternalLink, Eye } from "lucide-react";
 
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -189,7 +190,7 @@ const FeaturedWork = () => (
       </section>
 
       <div className="text-center mt-12">
-        <Link to="/portfolio" className="gradient-btn px-8 py-3 text-sm inline-flex items-center gap-2">
+        <Link href="/portfolio" className="gradient-btn px-8 py-3 text-sm inline-flex items-center gap-2">
           View All Projects <ExternalLink size={16} />
         </Link>
       </div>

@@ -1,5 +1,6 @@
+"use client";
 import { motion } from "framer-motion";
-import { Link } from "react-router-dom";
+import Link from "next/link";
 import { ArrowRight, ShoppingCart, Palette, Check } from "lucide-react";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, Navigation, Pagination } from 'swiper/modules';
@@ -88,7 +89,7 @@ const ServicesGrid = () => (
             </div>
 
             <div className="p-6 bg-white border-t border-gray-100">
-              <Link to="/services" className="flex items-center justify-center gap-2 gradient-btn w-full py-4 font-bold text-sm text-white hover:shadow-lg transition-all">
+              <Link href="/services" className="flex items-center justify-center gap-2 gradient-btn w-full py-4 font-bold text-sm text-white hover:shadow-lg transition-all">
                 Explore All Seller Services <ArrowRight size={16} />
               </Link>
             </div>
@@ -116,7 +117,7 @@ const ServicesGrid = () => (
             </div>
 
             <div className="p-6 bg-white border-t border-gray-100">
-              <Link to="/services" className="flex items-center justify-center gap-2 bg-purple-50 border border-purple-100 text-gray-900 w-full py-4 rounded-xl font-bold hover:bg-purple-100 transition-all text-sm">
+              <Link href="/services" className="flex items-center justify-center gap-2 bg-purple-50 border border-purple-100 text-gray-900 w-full py-4 rounded-xl font-bold hover:bg-purple-100 transition-all text-sm">
                 Explore All Brand Services <ArrowRight size={16} />
               </Link>
             </div>
@@ -180,7 +181,7 @@ const ServiceItem = ({ service, color }: { service: any, color: string }) => (
         ))}
       </div>
 
-      <Link to="/contact" className="text-xs font-bold text-gray-900 underline underline-offset-4 decoration-[#7B2FD9]/30 hover:decoration-[#7B2FD9] transition-all">
+      <Link href="/contact" className="text-xs font-bold text-gray-900 underline underline-offset-4 decoration-[#7B2FD9]/30 hover:decoration-[#7B2FD9] transition-all">
         {service.cta}
       </Link>
     </div>

@@ -1,6 +1,7 @@
+"use client";
 import { motion } from "framer-motion";
 import { ArrowRight, TrendingUp, Globe, Users } from "lucide-react";
-import { Link } from "react-router-dom";
+import Link from "next/link";
 import aboutTeam from "../../assets/about-team2.png";
 
 const AboutPreview = () => (
@@ -74,7 +75,7 @@ const AboutPreview = () => (
 
             {/* CTA */}
             <Link
-              to="/about"
+              href="/about"
               className="inline-flex items-center gap-2 text-primary font-semibold hover:gap-3 transition-all underline underline-offset-2"
             >
               See Our work <ArrowRight size={16} />

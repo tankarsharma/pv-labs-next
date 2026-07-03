@@ -1,5 +1,6 @@
+"use client";
 import { motion } from "framer-motion";
-import { Link } from "react-router-dom";
+import Link from "next/link";
 import { ArrowRight, Sparkles, CheckCircle, Play } from "lucide-react";
 // Realistic professional photography URL from Unsplash
 import herosection from "../../assets/hero-1.jpeg"
@@ -47,13 +48,13 @@ const Hero = () => (
 
           <div className="flex flex-col sm:flex-row gap-4 mb-12 mt-4">
             <Link
-              to="/contact"
+              href="/contact"
               className="gradient-btn px-4 py-4 text-base flex items-center justify-center gap-2 shadow-xl"
             >
              Try Free Sample<ArrowRight size={18} />
             </Link>
             <Link
-              to="/portfolio"
+              href="/portfolio"
               className="px-8 py-4 text-base font-semibold text-foreground border border-gray-300 rounded-full hover:bg-gray-100 backdrop-blur-sm transition-all text-center flex items-center justify-center gap-2" // Adjusted text/border/hover bg color
             >
               <Play size={16} /> See Real Results

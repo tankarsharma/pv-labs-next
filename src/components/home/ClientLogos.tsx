@@ -1,3 +1,4 @@
+"use client";
 import { useEffect, useRef } from "react";
 import attar from "@/assets/marquelogo/Attar2.jpeg";
 import nipura from "@/assets/marquelogo/Nipura.jpeg";

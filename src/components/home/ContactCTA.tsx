@@ -24,10 +24,10 @@
 //             Every day without great visuals is a day your product gets scrolled past. Let's fix that - starting with one SKU, free.
 //           </p>
 //           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8">
-//             <Link to="/contact" className="inline-flex items-center justify-center gap-2 bg-white text-black px-8 py-4 rounded-full font-bold text-base hover:shadow-xl transition-all w-full sm:w-auto">
+//             <Link href="/contact" className="inline-flex items-center justify-center gap-2 bg-white text-black px-8 py-4 rounded-full font-bold text-base hover:shadow-xl transition-all w-full sm:w-auto">
 //               Try a Free Sample<ArrowRight size={18} />
 //             </Link>
-//             <Link to="/pricing" className="inline-flex items-center justify-center gap-2 bg-white/10 border border-white/30 text-white px-8 py-4 rounded-full font-bold text-base hover:bg-white/20 transition-all w-full sm:w-auto">
+//             <Link href="/pricing" className="inline-flex items-center justify-center gap-2 bg-white/10 border border-white/30 text-white px-8 py-4 rounded-full font-bold text-base hover:bg-white/20 transition-all w-full sm:w-auto">
 //               View Pricing
 //             </Link>
 //           </div>
@@ -44,9 +44,9 @@
 
 
 
-
+"use client";
 import { motion } from "framer-motion";
-import { Link } from "react-router-dom";
+import Link from "next/link";
 import { ArrowRight, Sparkles } from "lucide-react";
 
 const ContactCTA = () => {
@@ -144,7 +144,7 @@ const ContactCTA = () => {
               >
                 {/* Primary Button */}
                 <Link
-                  to="/contact"
+                  href="/contact"
                   className=" relative inline-flex items-center justify-center gap-2 gradient-btn px-6 sm:px-8 md:px-10 py-3 sm:py-4 md:py-5 rounded-full font-bold text-sm sm:text-base text-white transition-all duration-300 overflow-hidden"
                   // style={{
                   //   background: "linear-gradient(135deg, #10b981 0%, #06b6d4 100%)",
@@ -162,7 +162,7 @@ const ContactCTA = () => {
 
                 {/* Secondary Button */}
                 <Link
-                  to="/pricing"
+                  href="/pricing"
                   className="group inline-flex items-center justify-center gap-2 px-6 sm:px-8 md:px-10 py-3 sm:py-4 md:py-5 rounded-full font-bold text-sm sm:text-base text-white border-2 border-cyan-400/50 hover:border-cyan-400 hover:bg-cyan-500/10 transition-all duration-300 whitespace-nowrap"
                 >
                   View Pricing
