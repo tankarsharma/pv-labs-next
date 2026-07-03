@@ -1,7 +1,8 @@
+﻿"use client";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import { motion } from "framer-motion";
-import { Link } from "react-router-dom";
+import Link from "next/link";
 import { ArrowRight, Quote } from "lucide-react";
 import { socialLinks } from "@/lib/social-links";
 
@@ -77,7 +78,7 @@ const TeamPage = () => (
       <div className="max-w-3xl mx-auto">
         <h2 className="font-heading text-4xl font-bold text-primary-foreground mb-4">Want to join the team?</h2>
         <p className="text-primary-foreground/80 mb-8">We're always looking for talented, passionate creatives.</p>
-        <Link to="/careers" className="bg-background text-foreground px-8 py-4 rounded-full font-semibold inline-flex items-center gap-2 hover:shadow-xl transition-all">
+        <Link href="/careers" className="bg-background text-foreground px-8 py-4 rounded-full font-semibold inline-flex items-center gap-2 hover:shadow-xl transition-all">
           View Open Positions <ArrowRight size={18} />
         </Link>
       </div>
@@ -88,3 +89,5 @@ const TeamPage = () => (
 );
 
 export default TeamPage;
+
+

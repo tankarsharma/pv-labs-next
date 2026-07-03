@@ -1,7 +1,8 @@
+﻿"use client";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import { motion } from "framer-motion";
-import { Link } from "react-router-dom";
+import Link from "next/link";
 import { useState } from "react";
 import { Clock, User, ArrowRight, Search } from "lucide-react";
 import serviceBranding from "@/assets/service-branding.jpg";
@@ -13,7 +14,7 @@ const categories = ["All", "Guide", "Education"];
 const posts = [
   {
     slug: "amazon-listing-guide-2026",
-    title: "Amazon Listing Images — Complete Guide for Indian Sellers 2026",
+    title: "Amazon Listing Images â€” Complete Guide for Indian Sellers 2026",
     excerpt: "Everything you need to know about creating high-converting Amazon listing images. CTR optimization, technical specs, and the 9-image strategy.",
     image: serviceBranding,
     cat: "Guide",
@@ -35,7 +36,7 @@ const posts = [
   },
   {
     slug: "flipkart-listing-requirements-2026",
-    title: "Flipkart Listing Image Requirements — Full Size & Format Guide 2026",
+    title: "Flipkart Listing Image Requirements â€” Full Size & Format Guide 2026",
     excerpt: "Complete guide to Flipkart's image requirements, rejection reasons, and how to create 100% compliant listing images.",
     image: serviceAppdesign,
     cat: "Guide",
@@ -88,9 +89,9 @@ const Blog = () => {
             <div className="grid md:grid-cols-2 gap-6">
               {featured.map((p, i) => (
                 <motion.div key={i} initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: i * 0.1 }}>
-                  <Link to={`/blog/${p.slug}`} className="glass-card overflow-hidden group block hover:shadow-xl transition-shadow">
+                  <Link href={`/blog/${p.slug}`} className="glass-card overflow-hidden group block hover:shadow-xl transition-shadow">
                     <div className="aspect-[16/9] overflow-hidden">
-                      <img src={p.image} alt={p.title} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+                      <img src={typeof p.image === "string" ? p.image : p.image.src} alt={p.title} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
                     </div>
                     <div className="p-6">
                       <div className="flex items-center gap-3 mb-3">
@@ -100,7 +101,7 @@ const Blog = () => {
                       <h3 className="font-heading text-xl font-bold text-foreground mb-2 group-hover:text-primary transition-colors">{p.title}</h3>
                       <p className="text-sm text-muted-foreground mb-4">{p.excerpt}</p>
                       <div className="flex items-center gap-2 text-xs text-muted-foreground">
-                        <User size={12} /> {p.author} • {p.date}
+                        <User size={12} /> {p.author} â€¢ {p.date}
                       </div>
                     </div>
                   </Link>
@@ -131,9 +132,9 @@ const Blog = () => {
         <div className="max-w-7xl mx-auto grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {filtered.map((p, i) => (
             <motion.div key={p.slug} initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: i * 0.05 }}>
-              <Link to={`/blog/${p.slug}`} className="glass-card overflow-hidden group block hover:shadow-xl transition-shadow h-full">
+              <Link href={`/blog/${p.slug}`} className="glass-card overflow-hidden group block hover:shadow-xl transition-shadow h-full">
                 <div className="aspect-[16/9] overflow-hidden">
-                  <img src={p.image} alt={p.title} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+                  <img src={typeof p.image === "string" ? p.image : p.image.src} alt={p.title} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
                 </div>
                 <div className="p-5">
                   <div className="flex items-center gap-2 mb-2">
@@ -142,7 +143,7 @@ const Blog = () => {
                   </div>
                   <h3 className="font-heading font-bold text-foreground mb-2 group-hover:text-primary transition-colors">{p.title}</h3>
                   <p className="text-sm text-muted-foreground mb-3 line-clamp-2">{p.excerpt}</p>
-                  <div className="text-xs text-muted-foreground">{p.author} • {p.date}</div>
+                  <div className="text-xs text-muted-foreground">{p.author} â€¢ {p.date}</div>
                 </div>
               </Link>
             </motion.div>
@@ -177,3 +178,6 @@ const Blog = () => {
 };
 
 export default Blog;
+
+
+

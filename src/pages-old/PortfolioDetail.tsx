@@ -1,7 +1,9 @@
+﻿"use client";
+import type { StaticImageData } from "next/image";
+import Link from "next/link";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import { motion } from "framer-motion";
-import { useParams, Link } from "react-router-dom";
 import { ArrowRight, ArrowLeft, ExternalLink, Calendar, Clock, Users, Palette, Layers } from "lucide-react";
 import serviceBranding from "@/assets/service-branding.jpg";
 import serviceWebdesign from "@/assets/service-webdesign.jpg";
@@ -13,8 +15,8 @@ import servicePrint from "@/assets/service-print.jpg";
 
 const projectData: Record<string, {
   title: string; client: string; category: string; year: string; duration: string;
-  team: string; desc: string; challenge: string; solution: string; heroImage: string;
-  gallery: string[]; colors: string[]; fonts: string[]; results: { metric: string; label: string }[];
+  team: string; desc: string; challenge: string; solution: string; heroImage: string | StaticImageData | StaticImageData;
+  gallery: Array<string | StaticImageData>; colors: string[]; fonts: string[]; results: { metric: string; label: string }[];
 }> = {
   "novatech-rebrand": {
     title: "NovaTech Complete Rebrand", client: "NovaTech Inc.", category: "Branding", year: "2024", duration: "8 weeks", team: "3 designers",
@@ -34,7 +36,7 @@ const projectData: Record<string, {
     heroImage: serviceAppdesign, gallery: [serviceAppdesign, serviceWebdesign, serviceSocial, serviceMotion],
     colors: ["#10B981", "#3B82F6", "#1F2937", "#FFFFFF", "#F3F4F6"],
     fonts: ["SF Pro Display", "SF Pro Text"],
-    results: [{ metric: "300%", label: "Engagement increase" }, { metric: "65%", label: "Better retention" }, { metric: "4.8★", label: "App Store rating" }, { metric: "150K", label: "New downloads" }],
+    results: [{ metric: "300%", label: "Engagement increase" }, { metric: "65%", label: "Better retention" }, { metric: "4.8â˜…", label: "App Store rating" }, { metric: "150K", label: "New downloads" }],
   },
 };
 
@@ -49,7 +51,7 @@ const defaultProject = {
 };
 
 const PortfolioDetail = () => {
-  const { slug } = useParams();
+  const { slug } = {} as any;
   const project = (slug && projectData[slug]) || defaultProject;
 
   return (
@@ -59,7 +61,7 @@ const PortfolioDetail = () => {
       {/* Hero */}
       <section className="pt-32 pb-8 px-6 md:px-12">
         <div className="max-w-7xl mx-auto">
-          <Link to="/portfolio" className="inline-flex items-center gap-2 text-sm text-muted-foreground hover:text-primary mb-6">
+          <Link href="/portfolio" className="inline-flex items-center gap-2 text-sm text-muted-foreground hover:text-primary mb-6">
             <ArrowLeft size={16} /> Back to Portfolio
           </Link>
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }}>
@@ -80,7 +82,7 @@ const PortfolioDetail = () => {
       <section className="px-6 md:px-12 pb-16">
         <div className="max-w-7xl mx-auto">
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.2 }} className="rounded-[24px] overflow-hidden shadow-xl">
-            <img src={project.heroImage} alt={project.title} className="w-full aspect-[21/9] object-cover" />
+            <img src={typeof project.heroImage === "string" ? project.heroImage : project.heroImage.src} alt={project.title} className="w-full aspect-[21/9] object-cover" />
           </motion.div>
         </div>
       </section>
@@ -106,7 +108,7 @@ const PortfolioDetail = () => {
           <div className="grid md:grid-cols-2 gap-6">
             {project.gallery.map((img, i) => (
               <motion.div key={i} initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: i * 0.1 }} className="rounded-[24px] overflow-hidden shadow-lg">
-                <img src={img} alt={`${project.title} - ${i + 1}`} className="w-full aspect-[4/3] object-cover hover:scale-105 transition-transform duration-500" />
+                <img src={typeof img === "string" ? img : img.src} alt={`${project.title} - ${i + 1}`} className="w-full aspect-[4/3] object-cover hover:scale-105 transition-transform duration-500" />
               </motion.div>
             ))}
           </div>
@@ -165,7 +167,7 @@ const PortfolioDetail = () => {
         <div className="max-w-3xl mx-auto">
           <h2 className="font-heading text-4xl font-bold text-primary-foreground mb-4">Like what you see?</h2>
           <p className="text-primary-foreground/80 mb-8">Let's create something amazing together.</p>
-          <Link to="/contact" className="bg-background text-foreground px-8 py-4 rounded-full font-semibold inline-flex items-center gap-2 hover:shadow-xl transition-all">
+          <Link href="/contact" className="bg-background text-foreground px-8 py-4 rounded-full font-semibold inline-flex items-center gap-2 hover:shadow-xl transition-all">
             Start Your Project <ArrowRight size={18} />
           </Link>
         </div>
@@ -177,3 +179,8 @@ const PortfolioDetail = () => {
 };
 
 export default PortfolioDetail;
+
+
+
+
+

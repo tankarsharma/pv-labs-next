@@ -1,3 +1,4 @@
+﻿"use client";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import { motion } from "framer-motion";
@@ -175,3 +176,5 @@ const Appointment = () => {
 };
 
 export default Appointment;
+
+

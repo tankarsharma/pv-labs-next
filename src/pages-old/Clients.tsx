@@ -1,8 +1,9 @@
+﻿"use client";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import { motion } from "framer-motion";
 import { Star, Quote, ArrowRight, ExternalLink } from "lucide-react";
-import { Link } from "react-router-dom";
+import Link from "next/link";
 import serviceBranding from "@/assets/service-branding.jpg";
 import serviceWebdesign from "@/assets/service-webdesign.jpg";
 import serviceAppdesign from "@/assets/service-appdesign.jpg";
@@ -43,7 +44,7 @@ const caseStudies = [
     image: serviceAppdesign,
     problem: "High user churn rate due to complex navigation and inconsistent design patterns across the fitness tracking app.",
     solution: "Full UI/UX redesign with intuitive navigation, personalized dashboards, and a cohesive design system.",
-    results: ["300% increase in user engagement", "50% reduction in churn", "4.8★ App Store rating"],
+    results: ["300% increase in user engagement", "50% reduction in churn", "4.8â˜… App Store rating"],
   },
   {
     title: "GreenLeaf Packaging Revolution",
@@ -180,7 +181,7 @@ const Clients = () => (
               className={`glass-card overflow-hidden grid md:grid-cols-2 ${i % 2 === 1 ? "md:[direction:rtl] md:[&>*]:[direction:ltr]" : ""}`}
             >
               <div className="aspect-[4/3] md:aspect-auto overflow-hidden">
-                <img src={cs.image} alt={cs.title} className="w-full h-full object-cover hover:scale-105 transition-transform duration-700" />
+                <img src={typeof cs.image === "string" ? cs.image : cs.image.src} alt={cs.title} className="w-full h-full object-cover hover:scale-105 transition-transform duration-700" />
               </div>
               <div className="p-8 md:p-10 flex flex-col justify-center">
                 <span className="text-xs font-medium text-primary bg-primary/10 px-3 py-1 rounded-full inline-block w-fit mb-3">{cs.category}</span>
@@ -229,7 +230,7 @@ const Clients = () => (
             <p className="text-primary-foreground/80 mb-8 max-w-lg mx-auto">
               Join 200+ brands who've elevated their visual identity with PV Labs.
             </p>
-            <Link to="/contact" className="inline-flex items-center gap-2 bg-background text-foreground px-8 py-4 rounded-full font-semibold hover:shadow-lg transition-all">
+            <Link href="/contact" className="inline-flex items-center gap-2 bg-background text-foreground px-8 py-4 rounded-full font-semibold hover:shadow-lg transition-all">
               Start Your Project <ArrowRight size={18} />
             </Link>
           </div>
@@ -242,3 +243,6 @@ const Clients = () => (
 );
 
 export default Clients;
+
+
+

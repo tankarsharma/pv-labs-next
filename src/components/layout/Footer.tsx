@@ -13,7 +13,7 @@ const Footer = () => {
           <div className="lg:col-span-2">
             <Link href="/" className="mb-4 inline-block">
               <img
-                src={logo}
+                src={logo.src}
                 alt="PV Labs"
                 className="h-16 w-auto object-contain filter drop-shadow-sm transition-transform duration-300 hover:scale-105"
               />

@@ -1,9 +1,10 @@
+﻿"use client";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import { motion } from "framer-motion";
 import { useState } from "react";
 import { ExternalLink, Eye, ArrowRight } from "lucide-react";
-import { Link } from "react-router-dom";
+import Link from "next/link";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, Navigation, Pagination } from 'swiper/modules';
 import 'swiper/css';
@@ -272,7 +273,7 @@ const Portfolio = () => {
         <section className={`px-6 md:px-12 pb-8 transition-all duration-500 ${active === 'All' ? 'order-1' : 'order-2'}`}>
           <div className="max-w-7xl mx-auto">
             <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="rounded-[24px] overflow-hidden shadow-lg">
-              <img src={heroimg} alt="Portfolio showcase" className="w-full" />
+              <img src={typeof heroimg === "string" ? heroimg : heroimg.src} alt="Portfolio showcase" className="w-full" />
             </motion.div>
           </div>
         </section>
@@ -303,7 +304,7 @@ const Portfolio = () => {
                     >
                       {p.images.map((img, idx) => (
                         <SwiperSlide key={idx}>
-                          <img src={img} alt={`${p.title} - ${idx + 1}`} className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
+                          <img src={img.src} alt={`${p.title} - ${idx + 1}`} className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
                         </SwiperSlide>
                       ))}
                     </Swiper>
@@ -314,7 +315,7 @@ const Portfolio = () => {
                       {p.cat.map(c => (
                         <span key={c} className="text-xs font-medium text-primary bg-primary/10 px-3 py-1 rounded-full">{c}</span>
                       ))}
-                      <span className="text-xs text-muted-foreground">• {p.brand}</span>
+                      <span className="text-xs text-muted-foreground">â€¢ {p.brand}</span>
                     </div>
                     <h3 className="font-heading font-bold text-foreground mb-1">{p.title}</h3>
                     <p className="text-sm text-muted-foreground mb-2">{p.desc}</p>
@@ -349,14 +350,14 @@ const Portfolio = () => {
                     <div className="grid grid-cols-2 gap-3 md:gap-4">
                       <div className="min-w-0">
                         <div className="aspect-square rounded-lg md:rounded-xl overflow-hidden mb-2">
-                          <img src={item.beforeImg} alt="Before" className="w-full h-full object-cover opacity-60 grayscale" />
+                          <img src={typeof item.beforeImg === "string" ? item.beforeImg : item.beforeImg.src} alt="Before" className="w-full h-full object-cover opacity-60 grayscale" />
                         </div>
                         <span className="text-[10px] md:text-xs font-semibold text-destructive">Before</span>
                         <p className="text-[9px] md:text-xs text-muted-foreground mt-1 break-words leading-tight">{item.before}</p>
                       </div>
                       <div className="min-w-0">
                         <div className="aspect-square rounded-lg md:rounded-xl overflow-hidden mb-2">
-                          <img src={item.afterImg} alt="After" className="w-full h-full object-cover" />
+                          <img src={typeof item.afterImg === "string" ? item.afterImg : item.afterImg.src} alt="After" className="w-full h-full object-cover" />
                         </div>
                         <span className="text-[10px] md:text-xs font-semibold text-primary">After</span>
                         <p className="text-[9px] md:text-xs text-muted-foreground mt-1 break-words leading-tight">{item.after}</p>
@@ -378,7 +379,7 @@ const Portfolio = () => {
             <div className="relative z-10 max-w-3xl mx-auto">
               <h2 className="font-heading text-3xl md:text-4xl font-bold text-primary-foreground mb-4">Like What You See?</h2>
               <p className="text-primary-foreground/80 mb-8">Let's do the same for your brand.</p>
-              <Link to="/contact" className="bg-background text-foreground px-8 py-4 rounded-full font-semibold inline-flex items-center gap-2 hover:shadow-xl transition-all">
+              <Link href="/contact" className="bg-background text-foreground px-8 py-4 rounded-full font-semibold inline-flex items-center gap-2 hover:shadow-xl transition-all">
                 Try a Free Sample
               </Link>
             </div>
@@ -392,3 +393,9 @@ const Portfolio = () => {
 };
 
 export default Portfolio;
+
+
+
+
+
+

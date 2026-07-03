@@ -1,7 +1,9 @@
+﻿import type { StaticImageData } from "next/image";
+"use client";
+import Link from "next/link";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import { motion } from "framer-motion";
-import { useParams, Link } from "react-router-dom";
 import { ArrowRight, Check, Clock, Layers, Palette, PenTool, Monitor, Smartphone, Zap, Star, Users, MessageCircle } from "lucide-react";
 // Realistic professional photography URLs from Unsplash
 const serviceBranding = "https://images.unsplash.com/photo-1626785774573-4b799315345d?auto=format&fit=crop&q=80&w=2071";
@@ -16,7 +18,7 @@ interface ServiceData {
   title: string;
   tagline: string;
   desc: string;
-  image: string;
+  image: string | StaticImageData;
   process: { step: string; desc: string }[];
   tools: string[];
   benefits: string[];
@@ -216,7 +218,7 @@ const defaultService = {
 };
 
 const ServiceDetail = () => {
-  const { slug } = useParams();
+  const { slug } = {} as any;
   const service = (slug && serviceData[slug]) || defaultService;
 
   return (
@@ -233,16 +235,16 @@ const ServiceDetail = () => {
               <p className="text-xl text-muted-foreground mb-2 font-medium">{service.tagline}</p>
               <p className="text-muted-foreground leading-relaxed mb-8">{service.desc}</p>
               <div className="flex gap-4">
-                <Link to="/contact" className="gradient-btn px-8 py-3.5 text-sm inline-flex items-center gap-2">
+                <Link href="/contact" className="gradient-btn px-8 py-3.5 text-sm inline-flex items-center gap-2">
                   Get a Quote <ArrowRight size={16} />
                 </Link>
-                <Link to="/portfolio" className="px-8 py-3.5 text-sm font-semibold border border-border rounded-full hover:bg-secondary transition-all">
+                <Link href="/portfolio" className="px-8 py-3.5 text-sm font-semibold border border-border rounded-full hover:bg-secondary transition-all">
                   See Examples
                 </Link>
               </div>
             </div>
             <div className="rounded-[24px] overflow-hidden shadow-xl">
-              <img src={service.image} alt={service.title} className="w-full aspect-[4/3] object-cover" />
+              <img src={typeof service.image === "string" ? service.image : service.image.src} alt={service.title} className="w-full aspect-[4/3] object-cover" />
             </div>
           </motion.div>
         </div>
@@ -316,7 +318,7 @@ const ServiceDetail = () => {
                     <li key={j} className="flex items-center gap-2 text-sm"><Check size={14} className="text-primary flex-shrink-0" /><span className="text-muted-foreground">{f}</span></li>
                   ))}
                 </ul>
-                <Link to="/contact" className={`block text-center py-3 rounded-full font-semibold text-sm ${i === 1 ? "gradient-btn" : "border border-border hover:bg-secondary"}`}>
+                <Link href="/contact" className={`block text-center py-3 rounded-full font-semibold text-sm ${i === 1 ? "gradient-btn" : "border border-border hover:bg-secondary"}`}>
                   Get Started
                 </Link>
               </motion.div>
@@ -348,7 +350,7 @@ const ServiceDetail = () => {
         <div className="max-w-3xl mx-auto">
           <h2 className="font-heading text-4xl font-bold text-primary-foreground mb-4">Ready to get started?</h2>
           <p className="text-primary-foreground/80 mb-8">Get a free quote for your {service.title.toLowerCase()} project today.</p>
-          <Link to="/contact" className="bg-background text-foreground px-8 py-4 rounded-full font-semibold inline-flex items-center gap-2 hover:shadow-xl transition-all">
+          <Link href="/contact" className="bg-background text-foreground px-8 py-4 rounded-full font-semibold inline-flex items-center gap-2 hover:shadow-xl transition-all">
             Get a Free Quote <ArrowRight size={18} />
           </Link>
         </div>
@@ -360,3 +362,7 @@ const ServiceDetail = () => {
 };
 
 export default ServiceDetail;
+
+
+
+

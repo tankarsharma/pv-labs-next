@@ -1,3 +1,4 @@
+﻿"use client";
 import React, { useState } from "react";
 import { ChevronDown, Shield, Mail, MapPin, Lock, Eye, ShieldCheck, Database, Globe, Bell, Fingerprint, UserCheck } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
@@ -95,7 +96,7 @@ const cardVariants = {
     opacity: 1, 
     y: 0, 
     scale: 1,
-    transition: { type: "spring", stiffness: 100, damping: 15 }
+    transition: { type: "spring" as const, stiffness: 100, damping: 15 }
   },
 };
 
@@ -315,3 +316,6 @@ const Privacy = () => {
 };
 
 export default Privacy;
+
+
+

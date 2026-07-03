@@ -91,7 +91,7 @@ const AboutPreview = () => (
           >
             <div className="rounded-[24px] overflow-hidden shadow-xl">
               <img
-                src={aboutTeam}
+                src={aboutTeam.src}
                 alt="PV Labs creative team"
                 className="w-full h-auto md:h-[600px] object-cover"
               />

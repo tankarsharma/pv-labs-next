@@ -1,5 +1,6 @@
+﻿"use client";
 import { motion } from "framer-motion";
-import { Link } from "react-router-dom";
+import Link from "next/link";
 import { ArrowRight, Sparkles, Home } from "lucide-react";
 
 const NotFound = () => (
@@ -13,10 +14,10 @@ const NotFound = () => (
       <h1 className="font-heading text-2xl md:text-3xl font-bold text-foreground mb-4">Lost in the design process?</h1>
       <p className="text-muted-foreground mb-8 text-sm md:text-base">The page you're looking for doesn't exist or has been moved. Let's get you back to our creative showcase.</p>
       <div className="flex flex-col sm:flex-row gap-4 justify-center">
-        <Link to="/" className="gradient-btn px-8 py-4 text-sm flex items-center justify-center gap-2">
+        <Link href="/" className="gradient-btn px-8 py-4 text-sm flex items-center justify-center gap-2">
           <Home size={16} /> Back to Home
         </Link>
-        <Link to="/contact" className="px-8 py-4 text-sm font-semibold border border-border rounded-full hover:bg-secondary transition-all text-center">
+        <Link href="/contact" className="px-8 py-4 text-sm font-semibold border border-border rounded-full hover:bg-secondary transition-all text-center">
           Contact Us
         </Link>
       </div>
@@ -25,3 +26,5 @@ const NotFound = () => (
 );
 
 export default NotFound;
+
+

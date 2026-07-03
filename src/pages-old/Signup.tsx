@@ -1,5 +1,6 @@
+﻿"use client";
 import { motion } from "framer-motion";
-import { Link } from "react-router-dom";
+import Link from "next/link";
 import { Mail, Lock, User, ArrowRight, Eye, EyeOff, CheckCircle, Shield, Star, Zap } from "lucide-react";
 import { useState } from "react";
 import logo from "../../src/assets/logo-removebg-preview (1).png"
@@ -35,7 +36,7 @@ const Signup = () => {  const [showPassword, setShowPassword] = useState(false);
                 className="relative z-30 p-8 bg-white/40 backdrop-blur-xl border border-white/50 rounded-3xl shadow-xl flex items-center justify-center"
               >
                 <img 
-                  src={logo} 
+                  src={typeof logo === "string" ? logo : logo.src} 
                   alt="PV Labs" 
                   className="h-28 w-auto object-contain relative z-10 filter drop-shadow-lg" 
                 />
@@ -90,7 +91,7 @@ const Signup = () => {  const [showPassword, setShowPassword] = useState(false);
             >
               {/* Mobile Logo (Visible only on small screens) */}
               <div className="lg:hidden flex justify-center mb-4">
-                 <img src={logo} alt="PV Labs" className="h-12 w-auto" />
+                 <img src={typeof logo === "string" ? logo : logo.src} alt="PV Labs" className="h-12 w-auto" />
               </div>
 
               <h1 className="font-heading text-2xl font-bold text-foreground mb-1">Create Account</h1>
@@ -180,17 +181,17 @@ const Signup = () => {  const [showPassword, setShowPassword] = useState(false);
               <div className="flex items-start gap-2 pt-0.5">
                 <input type="checkbox" id="terms" className="w-3.5 h-3.5 mt-0.5 rounded border-border text-primary focus:ring-primary/20" />
                 <label htmlFor="terms" className="text-[11px] text-muted-foreground leading-relaxed">
-                  I agree to the <Link to="/terms" className="text-primary hover:underline">Terms</Link> and <Link to="/privacy" className="text-primary hover:underline">Privacy Policy</Link>
+                  I agree to the <Link href="/terms" className="text-primary hover:underline">Terms</Link> and <Link href="/privacy" className="text-primary hover:underline">Privacy Policy</Link>
                 </label>
               </div>
 
-              <Link to="/dashboard" className="gradient-btn w-full py-3 text-sm font-bold tracking-wide flex items-center justify-center gap-2 rounded-xl shadow-lg shadow-primary/20 hover:shadow-primary/40 transition-all transform hover:-translate-y-0.5">
+              <Link href="/dashboard" className="gradient-btn w-full py-3 text-sm font-bold tracking-wide flex items-center justify-center gap-2 rounded-xl shadow-lg shadow-primary/20 hover:shadow-primary/40 transition-all transform hover:-translate-y-0.5">
                 Create Account <ArrowRight size={16} />
               </Link>
             </form>
 
             <p className="text-center text-xs text-muted-foreground mt-4">
-              Already have an account? <Link to="/login" className="text-primary font-semibold hover:underline ml-1">Sign in</Link>
+              Already have an account? <Link href="/login" className="text-primary font-semibold hover:underline ml-1">Sign in</Link>
             </p>
           </div>
         </div>        </div>
@@ -201,3 +202,5 @@ const Signup = () => {  const [showPassword, setShowPassword] = useState(false);
 
 export default Signup;
              
+
+

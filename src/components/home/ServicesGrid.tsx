@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import { ArrowRight, ShoppingCart, Palette, Check } from "lucide-react";
@@ -153,7 +153,7 @@ const ServiceItem = ({ service, color }: { service: any, color: string }) => (
         ))
       ) : (
         <SwiperSlide className="w-full h-full">
-          <img src={service.image} alt={service.title} className="w-full h-full object-cover transition-transform" />
+          <img src={service.image.src} alt={service.title} className="w-full h-full object-cover transition-transform" />
         </SwiperSlide>
       )}
       </Swiper>
@@ -189,3 +189,4 @@ const ServiceItem = ({ service, color }: { service: any, color: string }) => (
 );
 
 export default ServicesGrid;
+

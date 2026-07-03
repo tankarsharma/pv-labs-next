@@ -75,7 +75,7 @@ const BlogPreview = () => {
               <Link href={`/blog/${p.id}`} className="block h-full group">
                 <div className="glass-card overflow-hidden group cursor-pointer hover:shadow-xl transition-shadow h-full flex flex-col border border-gray-100">
                   <div className="aspect-[16/9] overflow-hidden relative">
-                    <img src={p.image} alt={p.title} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+                    <img src={p.image.src} alt={p.title} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
                   </div>
                   <div className="p-6 flex-grow flex flex-col bg-white">
                     <div className="flex items-center gap-3 mb-3">

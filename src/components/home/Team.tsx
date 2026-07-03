@@ -1,5 +1,5 @@
-import { motion } from "framer-motion";
-import { Link } from "react-router-dom";
+﻿import { motion } from "framer-motion";
+import Link from "next/link";
 import { Phone, Linkedin, Instagram } from "lucide-react";
 import tankaarImg from "@/assets/about-team.jpg";
 import rudraImg from "@/assets/teamcreativity.jpg";
@@ -58,7 +58,7 @@ const Team = () => (
                 <div className="absolute inset-0 bg-gradient-to-b from-[#7B2FD9] to-[#60B8F0] rounded-full p-[2px]">
                   <div className="w-full h-full rounded-full overflow-hidden bg-white">
                     <img 
-                      src={m.image} 
+                      src={m.image.src} 
                       alt={m.name} 
                       className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" 
                     />
@@ -97,3 +97,4 @@ const Team = () => (
 );
 
 export default Team;
+
