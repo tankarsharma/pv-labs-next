@@ -1,4 +1,4 @@
-import type { MetadataRoute } from "next";
+﻿import type { MetadataRoute } from "next";
 import { blogPosts } from "@/content/blog/posts";
 import { serviceSlugs } from "@/content/services/items";
 
@@ -38,7 +38,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   const blogRoutes = blogPosts.map((post) => ({
     url: `${BASE_URL}/blog/${post.slug}`,
-    lastModified: post.publishedAt ? new Date(post.publishedAt) : now,
+    lastModified: now,
     changeFrequency: "monthly" as const,
     priority: 0.7,
   }));
