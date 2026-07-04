@@ -30,9 +30,63 @@ export default async function ServicePage({ params }: { params: Params }) {
 
   if (!service) notFound();
 
+  const pageUrl = `https://pvlabs.ai/services/${service.slug}`;
+
+  const serviceSchema = {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    name: service.title,
+    description: service.description,
+    url: pageUrl,
+    serviceType: service.title,
+    areaServed: {
+      "@type": "Country",
+      name: "India",
+    },
+    provider: {
+      "@type": "Organization",
+      name: "PV Labs",
+      url: "https://pvlabs.ai",
+    },
+  };
+
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      {
+        "@type": "ListItem",
+        position: 1,
+        name: "Home",
+        item: "https://pvlabs.ai",
+      },
+      {
+        "@type": "ListItem",
+        position: 2,
+        name: "Services",
+        item: "https://pvlabs.ai/services",
+      },
+      {
+        "@type": "ListItem",
+        position: 3,
+        name: service.title,
+        item: pageUrl,
+      },
+    ],
+  };
+
   return (
     <div className="min-h-screen bg-background">
       <Navbar />
+
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
 
       <section className="pt-28 pb-16 px-6 md:px-12 gradient-bg-soft">
         <div className="max-w-4xl mx-auto">
