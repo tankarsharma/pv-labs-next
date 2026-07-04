@@ -3,6 +3,8 @@ import type { Metadata } from "next";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import { serviceSlugs, getServiceBySlug } from "@/content/services/items";
+import JsonLd from "@/components/seo/JsonLd";
+import { serviceSchema, breadcrumbSchema } from "@/lib/seo/schema";
 
 type Params = Promise<{ slug: string }>;
 
@@ -30,9 +32,25 @@ export default async function ServicePage({ params }: { params: Params }) {
 
   if (!service) notFound();
 
+  const pageUrl = `https://pvlabs.ai/services/${service.slug}`;
+  const serviceJsonLd = serviceSchema({
+    name: service.title,
+    description: service.description,
+    url: pageUrl,
+  });
+
+  const breadcrumbJsonLd = breadcrumbSchema([
+    { name: "Home", item: "https://pvlabs.ai" },
+    { name: "Services", item: "https://pvlabs.ai/services" },
+    { name: service.title, item: pageUrl },
+  ]);
+
   return (
     <div className="min-h-screen bg-background">
       <Navbar />
+
+      <JsonLd id="service-jsonld" data={serviceJsonLd} />
+      <JsonLd id="service-breadcrumb-jsonld" data={breadcrumbJsonLd} />
 
       <section className="pt-28 pb-16 px-6 md:px-12 gradient-bg-soft">
         <div className="max-w-4xl mx-auto">
@@ -55,4 +73,4 @@ export default async function ServicePage({ params }: { params: Params }) {
       <Footer />
     </div>
   );
-}
+} 
