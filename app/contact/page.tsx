@@ -10,5 +10,10 @@ export const metadata: Metadata = {
 };
 
 export default function Page() {
-  return <Contact />;
+  return (
+    <>
+      <h1 className="sr-only">Contact</h1>
+      <Contact />
+    </>
+  );
 }

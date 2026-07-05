@@ -10,5 +10,10 @@ export const metadata: Metadata = {
 };
 
 export default function Page() {
-  return <Services />;
+  return (
+    <>
+      <h1 className="sr-only">Services</h1>
+      <Services />
+    </>
+  );
 }
