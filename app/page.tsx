@@ -24,6 +24,7 @@ export default function HomePage() {
   return (
     <div className="min-h-screen bg-background">
       <Navbar />
+      <h1 className="sr-only">PV Labs — E-Commerce Design & Marketplace Visuals</h1>
       <Hero />
       <ClientLogos />
       <AboutPreview />
