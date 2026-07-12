@@ -11,6 +11,7 @@ import ClientLogos from "@/components/home/ClientLogos";
 import BlogPreview from "@/components/home/BlogPreview";
 import FAQ from "@/components/home/FAQ";
 import ContactCTA from "@/components/home/ContactCTA";
+import JsonLd from "@/components/seo/JsonLd";
 
 export const metadata: Metadata = {
   title: "PV Labs — E-Commerce Design & Marketplace Visuals",
@@ -21,8 +22,24 @@ export const metadata: Metadata = {
 };
 
 export default function HomePage() {
+  const organizationSchema = {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    name: "PV Labs",
+    url: "https://pvlabs.ai",
+  };
+
+  const websiteSchema = {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    name: "PV Labs",
+    url: "https://pvlabs.ai",
+  };
+
   return (
     <div className="min-h-screen bg-background">
+      <JsonLd id="ld-json-home-organization" data={organizationSchema} />
+      <JsonLd id="ld-json-home-website" data={websiteSchema} />
       <Navbar />
       <h1 className="sr-only">PV Labs — E-Commerce Design & Marketplace Visuals</h1>
       <Hero />
