@@ -71,7 +71,7 @@ const BlogPreview = () => {
                     </div>
                   </div>
                 </div>
-              </Link>
+              </Link> 
             </motion.div>
           ))}
         </div>
