@@ -175,7 +175,7 @@ const FeaturedWork = () => (
                   {p.images.map((img, idx) => (
                     <SwiperSlide key={idx}>
                       <Image
-                        src={img.src}
+                        src={img}
                         alt={`${p.title} - ${idx + 1}`}
                         width={1200}
                         height={900}
