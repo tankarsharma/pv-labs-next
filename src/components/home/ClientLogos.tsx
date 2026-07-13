@@ -1,5 +1,6 @@
 "use client";
 import { useEffect, useRef } from "react";
+import Image from "next/image";
 import attar from "@/assets/marquelogo/Attar2.jpeg";
 import nipura from "@/assets/marquelogo/Nipura.jpeg";
 import Aldo from "@/assets/marquelogo/aldo2.jpeg";
@@ -13,7 +14,6 @@ import hrx from "@/assets/marquelogo/hrx2.png";
 import bewkoof from "@/assets/marquelogo/Bewkoof.jpeg";
 import wakefit from "@/assets/marquelogo/wakefit.jpeg";
 import healtkart from "@/assets/marquelogo/health.jpeg";
-
 
 const logos = [
   attar, nipura, Aldo, pv, azelia, noise, mbmuscle, boat, snitch, hrx, bewkoof, wakefit, healtkart
@@ -47,19 +47,18 @@ const ClientLogos = () => {
         Brands we've worked with
       </p>
 
-      {/*  SCROLL CONTAINER */}
-      <div
-        ref={container}
-        className="w-full overflow-hidden"
-      >
-        {/*  MOVING STRIP */}
+      <div ref={container} className="w-full overflow-hidden">
         <div className="flex items-center gap-16 whitespace-nowrap w-max will-change-transform">
           {[...logos, ...logos].map((l, i) => (
-            <img
+            <Image
               key={i}
-              src={l.src}
+              src={l}
               alt="Client Logo"
-              className="h-12 w-auto   transition-all duration-300 select-none object-contain"
+              width={160}
+              height={48}
+              loading="lazy"
+              sizes="160px"
+              className="h-12 w-auto transition-all duration-300 select-none object-contain"
             />
           ))}
         </div>
