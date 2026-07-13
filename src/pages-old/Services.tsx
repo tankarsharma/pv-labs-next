@@ -209,10 +209,10 @@ const ServiceCard = ({ service, index, category }: { service: any, index: number
           className="w-full h-full"
         >
           {service.images && service.images.length > 0 ? (
-            service.images.map((img: string, idx: number) => (
+           service.images.map((img: string | { src: string }, idx: number) => (
               <SwiperSlide key={idx} className="w-full h-full">
                 <img
-                  src={img}
+                  src={typeof img === "string" ? img : img.src}
                   alt={`${service.title} - ${idx + 1}`}
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                 />
