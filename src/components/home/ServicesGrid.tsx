@@ -146,9 +146,9 @@ const ServiceItem = ({ service, color }: { service: any, color: string }) => (
         loop={true} // Disabled loop
         className="w-full h-full"
       >        {service.images && service.images.length > 0 ? (
-        service.images.map((img: string, idx: number) => (
+          service.images.map((img: string | { src: string }, idx: number) => (
           <SwiperSlide key={idx} className="w-full h-full">
-            <img src={img} alt={`${service.title} - ${idx + 1}`} className="w-full h-full object-cover" />
+             <img src={typeof img === "string" ? img : img.src} alt={`${service.title} - ${idx + 1}`} className="w-full h-full object-cover" />
           </SwiperSlide>
         ))
       ) : (
