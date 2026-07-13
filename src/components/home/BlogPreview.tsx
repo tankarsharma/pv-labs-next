@@ -2,6 +2,7 @@
 import { motion } from "framer-motion";
 import { ArrowRight, Clock, Sparkles } from "lucide-react";
 import Link from "next/link";
+import Image from "next/image";
 import { blogPosts } from "@/content/blog/posts";
 
 const BlogPreview = () => {
@@ -42,6 +43,7 @@ const BlogPreview = () => {
                     <img
                       src={typeof p.image === "string" ? p.image : p.image.src}
                       alt={p.title}
+                      loading="lazy"
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                     />
                   </div>
@@ -67,7 +69,7 @@ const BlogPreview = () => {
                     </div>
                   </div>
                 </div>
-              </Link>
+              </Link> 
             </motion.div>
           ))}
         </div>

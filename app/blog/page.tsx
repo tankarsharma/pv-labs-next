@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Blog from "@/pages-old/Blog";
+import JsonLd from "@/components/seo/JsonLd";
 
 export const metadata: Metadata = {
   title: "Blog & Insights",
@@ -10,8 +11,16 @@ export const metadata: Metadata = {
 };
 
 export default function Page() {
+  const blogSchema = {
+    "@context": "https://schema.org",
+    "@type": "Blog",
+    name: "PV Labs Blog",
+    url: "https://pvlabs.ai/blog",
+  };
+
   return (
     <>
+      <JsonLd id="ld-json-blog" data={blogSchema} />
       <h1 className="sr-only">Blog & Insights</h1>
       <Blog />
     </>
