@@ -40,12 +40,10 @@ const BlogPreview = () => {
               <Link href={`/blog/${p.slug}`} className="block h-full group">
                 <div className="glass-card overflow-hidden group cursor-pointer hover:shadow-xl transition-shadow h-full flex flex-col border border-gray-100">
                   <div className="aspect-[16/9] overflow-hidden relative">
-                    <Image
-                      src={p.image}
+                    <img
+                      src={typeof p.image === "string" ? p.image : p.image.src}
                       alt={p.title}
-                      fill
                       loading="lazy"
-                      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                     />
                   </div>
