@@ -41,7 +41,7 @@ const BlogPreview = () => {
                 <div className="glass-card overflow-hidden group cursor-pointer hover:shadow-xl transition-shadow h-full flex flex-col border border-gray-100">
                   <div className="aspect-[16/9] overflow-hidden relative">
                     <Image
-                      src={typeof p.image === "string" ? p.image : p.image.src}
+                      src={p.image}
                       alt={p.title}
                       fill
                       loading="lazy"
