@@ -52,7 +52,7 @@
 
 // Rewrite - Section by Section
 
-// 🔥”´ Hero Title
+// 🔴 Hero Title
 // Current: "Real results, Real impact"
 // Write instead:
 
@@ -64,13 +64,13 @@
 
 // Why: Instantly frames everything below as proof, not portfolio. The "no stock photos" line pre-handles a common skepticism.
 
-// 🔥”´ The 4 Stats Bar
+// 🔴 The 4 Stats Bar
 // Current: 2x CTR, 60% Avg. Cost Saving, 6+ Platforms, 96% Satisfaction
 // Write instead:
 // StatCurrent labelBetter label2xAvg. CTR ImprovementListings clicked twice as often60%Avg. Cost SavingSaved vs. hiring in-house6+PlatformsMarketplaces we've dominated96%Client SatisfactionClients who came back for more
 // Why: Labels should interpret the number, not just name it.
 
-// 🔥”´ Case Study 1 - SkinGlow
+// 🔴 Case Study 1 - SkinGlow
 // Current title: "SkinGlow Hero Image Redesign"
 // Write instead:
 
@@ -97,7 +97,7 @@
 // - Rahul M., Amazon Seller
 
 
-// 🔥”´ Case Study 2 - KitchenKraft
+// 🔴 Case Study 2 - KitchenKraft
 // Current title: "KitchenKraft Packaging & Listing Overhaul"
 // Write instead:
 
@@ -236,7 +236,7 @@
 // Want us to audit your current Amazon listing images for free? Get your free 1-SKU makeover - no commitment required.
 // [Get Free Listing Audit →]
 
-// 🔥“Š SEO Details:
+// 📊 SEO Details:
 // Meta Title: Amazon Listing Images - Complete Guide for Indian Sellers 2026
 // Meta Description: Everything Indian sellers need to know about 
 // Amazon listing images - specs, strategy, common mistakes, 
@@ -370,7 +370,7 @@
 // Need A+ Content designed for your Amazon listing? We create complete A+ modules - brand story, lifestyle, comparison charts - delivered in 5 business days.
 // [Get Your A+ Content Done →]
 
-// 🔥“Š SEO Details:
+// 📊 SEO Details:
 // Meta Title: What is A+ Content on Amazon - Complete Guide 
 //             for Indian Sellers 2026
 // Meta Description: A+ Content can increase your Amazon 
@@ -548,7 +548,7 @@
 // Struggling with Flipkart listing rejections or low CTR? We create Flipkart-compliant listing image sets - delivered in 3â€“5 business days, zero rejections guaranteed.
 // [Get Flipkart-Ready Images →]
 
-// 🔥“Š SEO Details:
+// 📊 SEO Details:
 // Meta Title: Flipkart Listing Image Requirements - 
 //             Complete Guide for Indian Sellers 2026
 // Meta Description: Exact Flipkart image specs, category rules, 
