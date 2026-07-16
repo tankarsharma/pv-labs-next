@@ -178,7 +178,7 @@ const ContactCTA = () => {
                 variants={itemVariants}
                 className="text-xs sm:text-sm text-cyan-300 font-medium tracking-wide"
               >
-                ðŸ”¥ <span className="font-bold text-emerald-400">Limited free slots</span> this month -{" "}
+                 🔥 <span className="font-bold text-emerald-400">Limited free slots</span> this month -{" "}
                 <span className="font-bold">4 remaining</span>
               </motion.p>
             </motion.div>

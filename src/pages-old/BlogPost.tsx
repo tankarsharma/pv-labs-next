@@ -13,7 +13,7 @@ import serviceSocial from "@/assets/service-social.jpg";
 
 const blogData: Record<string, any> = {
   "amazon-listing-guide-2026": {
-    title: "Amazon Listing Images â€” Complete Guide for Indian Sellers 2026",
+    title: "Amazon Listing Images - Complete Guide for Indian Sellers 2026",
     category: "Guide",
     subtitle: "CTR & Conversion Optimization",
     author: "Rudra",
@@ -34,7 +34,7 @@ const blogData: Record<string, any> = {
               <Sparkles size={80} className="text-primary" />
             </div>
             <p className="text-lg md:text-xl text-gray-600 leading-relaxed italic font-medium relative z-10">
-              "Amazon gives every buyer a split second to decide â€” scroll or click. In that moment, your main image is the only thing that exists. No title, no price, no reviews â€” just the image. A bad image = no click = no sale. Simple."
+              "Amazon gives every buyer a split second to decide, scroll or click. In that moment, your main image is the only thing that exists. No title, no price, no reviews - just the image. A bad image = no click = no sale. Simple."
             </p>
           </div>
         </section>
@@ -47,7 +47,7 @@ const blogData: Record<string, any> = {
             <ul className="space-y-4 text-gray-600 font-medium">
               <li className="flex items-start gap-3">
                 <div className="w-1.5 h-1.5 rounded-full bg-primary mt-2 flex-shrink-0" />
-                <span>Pure white background â€” <span className="text-gray-900 font-bold">RGB (255, 255, 255)</span></span>
+                <span>Pure white background - <span className="text-gray-900 font-bold">RGB (255, 255, 255)</span></span>
               </li>
               <li className="flex items-start gap-3">
                 <div className="w-1.5 h-1.5 rounded-full bg-primary mt-2 flex-shrink-0" />
@@ -55,11 +55,11 @@ const blogData: Record<string, any> = {
               </li>
               <li className="flex items-start gap-3">
                 <div className="w-1.5 h-1.5 rounded-full bg-primary mt-2 flex-shrink-0" />
-                <span>Minimum <span className="text-gray-900 font-bold">1500 Ã— 1500 pixels</span> recommended</span>
+                <span>Minimum <span className="text-gray-900 font-bold">1500 × 1500 pixels</span> recommended</span>
               </li>
               <li className="flex items-start gap-3">
                 <div className="w-1.5 h-1.5 rounded-full bg-primary mt-2 flex-shrink-0" />
-                <span>JPEG, PNG, or TIFF format â€” <span className="text-gray-900 font-bold">No watermarks</span></span>
+                <span>JPEG, PNG, or TIFF format - <span className="text-gray-900 font-bold">No watermarks</span></span>
               </li>
             </ul>
           </div>
@@ -79,7 +79,7 @@ const blogData: Record<string, any> = {
         <section>
           <h2 className="text-2xl font-black text-gray-900 mb-8 flex items-center gap-3">
             <span className="w-8 h-8 rounded-lg bg-gray-900 text-white flex items-center justify-center text-sm">01</span>
-            The 9-Image Strategy â€” A Winning Set
+            The 9-Image Strategy - A Winning Set
           </h2>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
             {[
@@ -177,9 +177,9 @@ const blogData: Record<string, any> = {
             {/* Checklist Grid - Fully Responsive */}
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4 md:gap-5 mb-6 sm:mb-8 md:mb-10 w-full">
               {[
-                "White background hero â€” RGB 255,255,255",
+                "White background hero - RGB 255,255,255",
                 "Product fills 85%+ of frame",
-                "Minimum 1500 Ã— 1500px resolution",
+                "Minimum 1500 × 1500px resolution",
                 "All 9 image slots utilized",
                 "Lifestyle image included",
                 "Size/dimension reference included",
@@ -209,7 +209,7 @@ const blogData: Record<string, any> = {
                 Want us to audit your current Amazon listing images for free?
               </p>
               <button className="w-full sm:w-auto px-4 sm:px-6 md:px-10 py-2 sm:py-2.5 md:py-4 bg-primary hover:bg-accent text-white font-black uppercase tracking-widest text-[9px] sm:text-[10px] md:text-xs lg:text-sm rounded-lg sm:rounded-xl md:rounded-2xl transition-all duration-300 hover:shadow-lg hover:shadow-primary/30 active:scale-95 shadow-md">
-                Get Free Listing Audit â†’
+                Get Free Listing Audit →
               </button>
             </div>
           </div>
@@ -236,7 +236,7 @@ const blogData: Record<string, any> = {
           </div>
           <div className="glass-card p-6 md:p-8 border-l-4 border-purple-500 bg-white/50">
             <p className="text-lg md:text-xl text-gray-600 leading-relaxed font-medium">
-              "Your competitor's listing looks like a magazine spread. Yours looks like a plain text document from 2015. Same product. Same price. But they're outselling you â€” and <span className="text-purple-600 font-bold">A+ Content</span> is probably why."
+              "Your competitor's listing looks like a magazine spread. Yours looks like a plain text document from 2015. Same product. Same price. But they're outselling you and <span className="text-purple-600 font-bold">A+ Content</span> is probably why."
             </p>
           </div>
         </section>
@@ -245,7 +245,7 @@ const blogData: Record<string, any> = {
           <div className="glass-card p-6 md:p-8 bg-white/50 border-purple-50">
             <h3 className="text-xl font-bold mb-4 text-gray-900">What is A+ Content?</h3>
             <p className="text-gray-600 text-sm leading-relaxed font-medium">
-              A+ Content (previously EBC) is Amazon's premium listing feature that lets brand-registered sellers replace the plain text product description with rich visual content â€” banners, comparison charts, LifeStyle Images - C, and more.
+              A+ Content (previously EBC) is Amazon's premium listing feature that lets brand-registered sellers replace the plain text product description with rich visual content banners, comparison charts, LifeStyle Images - C, and more.
             </p>
           </div>
           <div className="glass-card p-6 md:p-8 bg-purple-900 text-white border-none relative overflow-hidden">
@@ -391,7 +391,7 @@ const blogData: Record<string, any> = {
                 Need high-converting A+ modules designed in 5 days?
               </p>
               <button className="w-full sm:w-auto px-4 sm:px-6 md:px-10 py-2 sm:py-2.5 md:py-4 bg-white hover:bg-purple-50 text-purple-900 font-black uppercase tracking-widest text-[9px] sm:text-[10px] md:text-xs lg:text-sm rounded-lg sm:rounded-xl md:rounded-2xl transition-all duration-300 hover:shadow-lg hover:shadow-purple-600/30 active:scale-95 shadow-md">
-                Get Your A+ Content Done â†’
+                Get Your A+ Content Done →
               </button>
             </div>
           </div>
@@ -400,7 +400,7 @@ const blogData: Record<string, any> = {
     )
   },
   "flipkart-listing-requirements-2026": {
-    title: "Flipkart Listing Image Requirements â€” Full Size & Format Guide 2026",
+    title: "Flipkart Listing Image Requirements - Full Size & Format Guide 2026",
     category: "Guide",
     subtitle: "Seller Compliance Guide",
     author: "Rudra",
@@ -434,11 +434,11 @@ const blogData: Record<string, any> = {
             <ul className="space-y-3 sm:space-y-4 text-gray-600 font-medium text-xs sm:text-sm md:text-base">
               <li className="flex justify-between items-center border-b border-gray-100 pb-2 sm:pb-3">
                 <span>Min Resolution</span>
-                <span className="text-gray-900 font-bold text-right">1000 Ã— 1000 px</span>
+                <span className="text-gray-900 font-bold text-right">1000 × 1000 px</span>
               </li>
               <li className="flex justify-between items-center border-b border-gray-100 pb-2 sm:pb-3">
                 <span>Recommended</span>
-                <span className="text-gray-900 font-bold text-right">1500 Ã— 1500 px</span>
+                <span className="text-gray-900 font-bold text-right">1500 × 1500 px</span>
               </li>
               <li className="flex justify-between items-center border-b border-gray-100 pb-2 sm:pb-3">
                 <span>Background</span>
@@ -529,7 +529,7 @@ const blogData: Record<string, any> = {
 
         <section>
           <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-black text-gray-900 mb-4 md:mb-6">
-            Flipkart vs. Amazon â€” Key Differences
+            Flipkart vs. Amazon Key Differences
           </h2>
 
           <div className="w-[280px] sm:w-full overflow-x-auto rounded-xl sm:rounded-2xl lg:rounded-3xl border border-gray-100 scrollbar-hide">
@@ -544,8 +544,8 @@ const blogData: Record<string, any> = {
               <tbody className="font-medium text-gray-600">
                 <tr className="border-t border-gray-100">
                   <td className="p-3 sm:p-4 md:p-4 bg-gray-50/30">Min Res</td>
-                  <td className="p-3 sm:p-4 md:p-4">1000 Ã— 1000</td>
-                  <td className="p-3 sm:p-4 md:p-4">1000 Ã— 1000</td>
+                  <td className="p-3 sm:p-4 md:p-4">1000 × 1000</td>
+                  <td className="p-3 sm:p-4 md:p-4">1000 × 1000</td>
                 </tr>
                 <tr className="border-t border-gray-100">
                   <td className="p-3 sm:p-4 md:p-4 bg-gray-50/30">Product Fill</td>
@@ -567,7 +567,7 @@ const blogData: Record<string, any> = {
           </div>
 
           <p className="text-[8px] sm:text-[10px] md:text-xs text-gray-400 mt-2 md:mt-4 text-center italic">
-            Scroll table horizontally to view more â†’
+            Scroll table horizontally to view more →
           </p>
         </section>
 
@@ -580,12 +580,12 @@ const blogData: Record<string, any> = {
             {/* Checklist Grid - Fully Responsive */}
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4 md:gap-5 mb-6 sm:mb-8 md:mb-10 w-full">
               {[
-                "Pure white background â€” RGB 255,255,255",
-                "Minimum 1500 Ã— 1500px resolution",
+                "Pure white background - RGB 255,255,255",
+                "Minimum 1500 × 1500px resolution",
                 "Product fills 80%+ of frame",
                 "Square 1:1 ratio maintained",
                 "No watermarks or logos on hero image",
-                "Maximum image slots filled (6â€“9)",
+                "Maximum image slots filled (6–9)",
                 "Lifestyle image included",
                 "Size chart included (for fashion)",
               ].map((item, i) => (
@@ -612,7 +612,7 @@ const blogData: Record<string, any> = {
                 We create 100% Flipkart-compliant listing image sets with zero rejections guaranteed.
               </p>
               <button className="w-full sm:w-auto px-4 sm:px-6 md:px-8 lg:px-10 py-2 sm:py-2.5 md:py-3 lg:py-4 bg-blue-600 hover:bg-blue-500 text-white font-black uppercase tracking-widest text-[9px] sm:text-[10px] md:text-xs lg:text-sm rounded-lg sm:rounded-xl lg:rounded-2xl transition-all duration-300 hover:shadow-lg hover:shadow-blue-600/30 active:scale-95 shadow-md">
-                Get Flipkart-Ready Images â†’
+                Get Flipkart-Ready Images →
               </button>
             </div>
           </div>
