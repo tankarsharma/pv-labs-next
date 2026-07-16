@@ -15,7 +15,7 @@ const perks = [
   { icon: DollarSign, title: "No Salary Games", desc: "What we offer, we pay. No we'll revisit in 6 months stories." },
   { icon: Heart, title: "Talk to the Top", desc: "Your idea reaches the decision-maker the same day. Not next quarter." },
   { icon: GraduationCap, title: "Deep Work Only", desc: "We don't do pointless meetings. Your focus stays yours." },
-  { icon: Coffee, title: "Grow or Stagnate", desc: "Small team means nowhere to hide â€” and nowhere to stop learning." },
+  { icon: Coffee, title: "Grow or Stagnate", desc: "Small team means nowhere to hide and nowhere to stop learning." },
   { icon: Palette, title: "Real Brands. Real Stakes", desc: "You'll see your work on actual product listings people buy from." },
   { icon: Zap, title: "Tools That Work", desc: " We don't make you fight bad software. Right tools, from day one." },
 ];
@@ -29,7 +29,7 @@ const jobs = [
 
     desc: "Create premium product visuals for Indian e-commerce brands using advanced digital tools and proprietary workflows.",
     requirements: [
-      "Strong visual sense â€” you know what looks premium and what doesn't",
+      "Strong visual sense - you know what looks premium and what doesn't",
       "Expert in crafting detailed creative briefs and visual direction",
       "Strong command over digital content generation tools",
       "Ability to translate a client brief into precise visual output",
@@ -43,7 +43,7 @@ const jobs = [
     type: "Full-time",
     location: "Remote",
 
-    desc: "Keep everything running smoothly â€” client communication, project tracking, delivery coordination, and record maintenance.",
+    desc: "Keep everything running smoothly - client communication, project tracking, delivery coordination, and record maintenance.",
     requirements: [
       "Clear communicator in Hindi and English both",
       "Genuinely organized, not just on paper",
@@ -58,9 +58,9 @@ const jobs = [
     type: "Full-time",
     location: "Remote",
 
-    desc: "Manage Etsy store operations while creating fresh, on-demand listing visuals and product graphics using Canva and similar tools â€” as per project requirements.",
+    desc: "Manage Etsy store operations while creating fresh, on-demand listing visuals and product graphics using Canva and similar tools as per project requirements.",
     requirements: [
-      "Canva expert â€” fast, clean, creative output",
+      "Canva expert - fast, clean, creative output",
       "Can create new designs from scratch based on brief, not just templates",
       "Understands what visually sells on Etsy and international platforms",
       "Detail-oriented with listing titles, tags, and descriptions",
@@ -139,9 +139,9 @@ const Careers = () => {
           <h2 className="font-heading text-3xl font-bold text-foreground text-center mb-12">Our <span className="gradient-text">Culture</span></h2>
           <div className="grid md:grid-cols-3 gap-6">
             {[
-              { title: "Quality Over Speed", desc: "We don't rush work out the door. Every visual we deliver represents a brand â€” and we treat it that way. One good image beats five average ones." },
-              { title: "No Hidden Agendas", desc: "Small team means no room for politics. What's working, what's not â€” everyone knows. We talk straight, fix fast, move on." },
-              { title: "Builder's Mindset", desc: "We're still building â€” systems, processes, client base. If you're someone who sees a problem and fixes it without being asked, you'll fit right in." },
+              { title: "Quality Over Speed", desc: "We don't rush work out the door. Every visual we deliver represents a brand and we treat it that way. One good image beats five average ones." },
+              { title: "No Hidden Agendas", desc: "Small team means no room for politics. What's working, what's not everyone knows. We talk straight, fix fast, move on." },
+              { title: "Builder's Mindset", desc: "We're still building systems, processes, client base. If you're someone who sees a problem and fixes it without being asked, you'll fit right in." },
             ].map((v, i) => (
               <motion.div key={i} initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: i * 0.1 }} className="glass-card p-8">
                 <h3 className="font-heading text-xl font-bold text-foreground mb-3">{v.title}</h3>
@@ -197,7 +197,7 @@ const Careers = () => {
       <section className="max-w-3xl mx-auto  section-padding bg-gradient-to-r from-slate-900 to-slate-800 text-center m-5 rounded-md shadow-sm">
         <div className="max-w-3xl mx-auto ">
           <h2 className="font-heading text-4xl font-bold text-primary-foreground mb-4">Don't see your role?</h2>
-          <p className="text-primary-foreground/80 mb-8">If you think you can add value to what we're building â€” just reach out. Send your work to growth@pvlabs.in
+          <p className="text-primary-foreground/80 mb-8">If you think you can add value to what we're building - just reach out. Send your work to growth@pvlabs.in
           </p>
           <Link href="/contact" className="bg-background text-foreground px-8 py-4 rounded-full font-semibold inline-flex items-center gap-2 hover:shadow-xl transition-all">
             Send Your Portfolio <ArrowRight size={18} />
