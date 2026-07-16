@@ -315,7 +315,7 @@ const Portfolio = () => {
                       {p.cat.map(c => (
                         <span key={c} className="text-xs font-medium text-primary bg-primary/10 px-3 py-1 rounded-full">{c}</span>
                       ))}
-                      <span className="text-xs text-muted-foreground">â€¢ {p.brand}</span>
+                      <span className="text-xs text-muted-foreground">• {p.brand}</span>
                     </div>
                     <h3 className="font-heading font-bold text-foreground mb-1">{p.title}</h3>
                     <p className="text-sm text-muted-foreground mb-2">{p.desc}</p>
