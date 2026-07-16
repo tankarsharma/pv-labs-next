@@ -120,7 +120,7 @@ const Dashboard = () => (
                     </div>
                     <div>
                       <p className="text-sm font-medium text-foreground">{f.name}</p>
-                      <p className="text-xs text-muted-foreground">{f.size} â€¢ {f.date}</p>
+                      <p className="text-xs text-muted-foreground">{f.size} • {f.date}</p>
                     </div>
                   </div>
                   <button className="w-8 h-8 rounded-lg hover:bg-secondary flex items-center justify-center text-muted-foreground hover:text-primary">
