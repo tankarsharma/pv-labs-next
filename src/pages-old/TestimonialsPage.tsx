@@ -8,8 +8,8 @@ import { Star, ArrowRight, Play, Quote } from "lucide-react";
 const testimonials = [
   {
     name: "Sunita Agarwal",
-    role: "Amazon Seller Â· Lucknow",
-    text: "Humara serum 3 mahine se Amazon pe pada tha. Traffic tha, clicks nahi the. PV Labs ne images dekhi aur bola â€” 'yeh product acha hai, presentation kharab hai.' Ek hafte mein naye images live the. Dusre hafte clicks shuru.",
+    role: "Amazon Seller · Lucknow",
+    text: "Humara serum 3 mahine se Amazon pe pada tha. Traffic tha, clicks nahi the. PV Labs ne images dekhi aur bola 'yeh product acha hai, presentation kharab hai.' Ek hafte mein naye images live the. Dusre hafte clicks shuru.",
     rating: 5,
     result: "Personal Care Category",
     featured: true
@@ -17,8 +17,8 @@ const testimonials = [
 
   {
     name: "Ramesh Nair",
-    role: "Flipkart Seller Â· Kochi",
-    text: "My pressure cooker listing had 11 returns in one month. All saying 'not as described.' I thought the product was the problem. PV Labs told me the images were the problem â€” buyers couldn't see what they were actually getting. New images, zero returns next month.",
+    role: "Flipkart Seller · Kochi",
+    text: "My pressure cooker listing had 11 returns in one month. All saying 'not as described.' I thought the product was the problem. PV Labs told me the images were the problem buyers couldn't see what they were actually getting. New images, zero returns next month.",
     rating: 5,
     result: "Home & Kitchen Category",
     featured: true
@@ -26,96 +26,96 @@ const testimonials = [
 
   {
     name: "Farheen Siddiqui",
-    role: "Ajio Seller Â· Surat",
-    text: "Ajio ne 2 baar reject kiya. Unhone kaha image quality nahi hai. Maine socha product hi nahi bikega is platform pe. PV Labs ko diya â€” unhone poora catalog banaya, sabse pehle ek baar mein approve.",
+    role: "Ajio Seller · Surat",
+    text: "Ajio ne 2 baar reject kiya. Unhone kaha image quality nahi hai. Maine socha product hi nahi bikega is platform pe. PV Labs ko diya unhone poora catalog banaya, sabse pehle ek baar mein approve.",
     rating: 5,
     result: "Ethnic Wear Category"
   },
 
   {
     name: "Karthik Menon",
-    role: "Amazon Brand Â· Pune",
-    text: "I run a small protein brand out of Pune. Couldn't afford a proper studio â€” quotes I got were â‚¹25,000 minimum per shoot. PV Labs did my entire listing set for less than half that. And honestly? It looks better than what the studio would have done.",
+    role: "Amazon Brand · Pune",
+    text: "I run a small protein brand out of Pune. Couldn't afford a proper studio quotes I got were â‚¹25,000 minimum per shoot. PV Labs did my entire listing set for less than half that. And honestly? It looks better than what the studio would have done.",
     rating: 5,
     result: "Health & Supplements"
   },
 
   {
     name: "Divya Krishnamurthy",
-    role: "Nykaa Brand Â· Bangalore",
-    text: "Nykaa pe listed thi lekin koi brand identity nahi thi. Baaki brands ke saamne hum bilkul invisible the. PV Labs ne brand store banaya â€” pehle mahine mein Nykaa ne khud humein Beauty Edit mein feature kiya. Humne unhe request nahi ki thi.",
+    role: "Nykaa Brand · Bangalore",
+    text: "Nykaa pe listed thi lekin koi brand identity nahi thi. Baaki brands ke saamne hum bilkul invisible the. PV Labs ne brand store banaya pehle mahine mein Nykaa ne khud humein Beauty Edit mein feature kiya. Humne unhe request nahi ki thi.",
     rating: 5,
     result: "Skincare Category"
   },
 
   {
     name: "Gurpreet Singh",
-    role: "D2C Brand Â· Amritsar",
-    text: "We launched our honey brand on our own website. First two months â€” almost no sales. A friend suggested maybe the product photos were the issue. Found PV Labs. They delivered in 4 days. Third month was our best month. I don't know what changed but I know what changed.",
+    role: "D2C Brand · Amritsar",
+    text: "We launched our honey brand on our own website. First two months almost no sales. A friend suggested maybe the product photos were the issue. Found PV Labs. They delivered in 4 days. Third month was our best month. I don't know what changed but I know what changed.",
     rating: 5,
     result: "Organic Food"
   },
 
   {
     name: "Meera Joshi",
-    role: "Flipkart Seller Â· Nagpur",
-    text: "Baby products mein trust bahut important hota hai. Meri images dekh ke koi nahi khareedta tha â€” phone se li hui thi, background bhi sahi nahi tha. PV Labs ne jo images banayi â€” mere relative ne website dekhi aur bola 'yeh brand trusted lagta hai.' Wahi chahiye tha mujhe.",
+    role: "Flipkart Seller · Nagpur",
+    text: "Baby products mein trust bahut important hota hai. Meri images dekh ke koi nahi khareedta tha phone se li hui thi, background bhi sahi nahi tha. PV Labs ne jo images banayi mere relative ne website dekhi aur bola 'yeh brand trusted lagta hai.' Wahi chahiye tha mujhe.",
     rating: 5,
     result: "Baby Products Category"
   },
 
   {
     name: "Aditya Shah",
-    role: "Amazon Seller Â· Ahmedabad",
-    text: "Listing quality score was stuck at 47 for months. Amazon keeps pushing down low quality listings in search. After PV Labs redid our images and infographics â€” score went to 91. Organic rank improved without changing a single rupee in ad spend.",
+    role: "Amazon Seller · Ahmedabad",
+    text: "Listing quality score was stuck at 47 for months. Amazon keeps pushing down low quality listings in search. After PV Labs redid our images and infographics score went to 91. Organic rank improved without changing a single rupee in ad spend.",
     rating: 5,
     result: "Electronics & Accessories"
   },
 
   {
     name: "Lakshmi Venkatesh",
-    role: "Myntra Brand Â· Chennai",
-    text: "Hamare earrings handcrafted hain â€” har ek piece mein mehnat hai. Lekin Myntra pe woh dikh nahi raha tha. PV Labs ne RPD banaya â€” close ups, material details, styling shots. Ab buyers comments mein likhte hain 'quality is even better than photos.' Pehle aisa kabhi nahi hua tha.",
+    role: "Myntra Brand · Chennai",
+    text: "Hamare earrings handcrafted hain har ek piece mein mehnat hai. Lekin Myntra pe woh dikh nahi raha tha. PV Labs ne RPD banaya close ups, material details, styling shots. Ab buyers comments mein likhte hain 'quality is even better than photos.' Pehle aisa kabhi nahi hua tha.",
     rating: 5,
     result: "Handcrafted Jewellery"
   },
 
   {
     name: "Rohan Deshmukh",
-    role: "D2C Brand Â· Nashik",
-    text: "Ayurvedic products mein buyers bahut sceptical hote hain. Certification dikhana zaroori hai, ingredients explain karne padte hain. Meri website pe yeh sab tha â€” lekin visuals weak the isliye koi read nahi karta tha. PV Labs ke baad bounce rate half ho gaya. Same content, better visuals.",
+    role: "D2C Brand · Nashik",
+    text: "Ayurvedic products mein buyers bahut sceptical hote hain. Certification dikhana zaroori hai, ingredients explain karne padte hain. Meri website pe yeh sab tha lekin visuals weak the isliye koi read nahi karta tha. PV Labs ke baad bounce rate half ho gaya. Same content, better visuals.",
     rating: 5,
     result: "Ayurvedic Wellness"
   },
 
   {
     name: "Ella Furniture",
-    role: "Amazon Seller Â· Delhi NCR",
-    text: "I was about to give up on Amazon. My sofa listing had been live for 4 months with barely any orders. Competitor was selling the same product at higher price â€” their images were just better. PV Labs fixed mine. First order came 9 days after new images went live. Haven't looked back since.",
+    role: "Amazon Seller · Delhi NCR",
+    text: "I was about to give up on Amazon. My sofa listing had been live for 4 months with barely any orders. Competitor was selling the same product at higher price their images were just better. PV Labs fixed mine. First order came 9 days after new images went live. Haven't looked back since.",
     rating: 5,
     result: "Home & Furniture Category"
   },
 
   {
     name: "Ashok Gupta",
-    role: "Flipkart Seller Â· Bikaner",
-    text: "Mera dry fruits brand 2 saal se chal raha hai. Packaging bilkul basic thi â€” koi poochta bhi nahi tha. PV Labs ne packaging aur listing dono sath banaye. Ek cheez jo unhone boli woh yaad hai â€” 'aapka product premium hai, aapki packaging wholesale lagti hai.' Sahi kaha tha unhone.",
+    role: "Flipkart Seller · Bikaner",
+    text: "Mera dry fruits brand 2 saal se chal raha hai. Packaging bilkul basic thi koi poochta bhi nahi tha. PV Labs ne packaging aur listing dono sath banaye. Ek cheez jo unhone boli woh yaad hai 'aapka product premium hai, aapki packaging wholesale lagti hai.' Sahi kaha tha unhone.",
     rating: 5,
     result: "Dry Fruits & Nuts"
   },
 
   {
     name: "Zara Merchant",
-    role: "D2C Brand Â· Mumbai",
-    text: "Ad budget tha, results nahi the. Agency se creatives banwaye the â€” generic the, convert nahi kar rahe the. PV Labs se banwaye â€” same budget, pehle campaign mein hi difference dikh gaya. Unhone explain kiya ki buyer kya dekhna chahta hai ad mein. Woh perspective nahi tha pehle.",
+    role: "D2C Brand · Mumbai",
+    text: "Ad budget tha, results nahi the. Agency se creatives banwaye the generic the, convert nahi kar rahe the. PV Labs se banwaye same budget, pehle campaign mein hi difference dikh gaya. Unhone explain kiya ki buyer kya dekhna chahta hai ad mein. Woh perspective nahi tha pehle.",
     rating: 5,
     result: "Women's Fashion"
   },
 
   {
     name: "Hardeep Chawla",
-    role: "Amazon Brand Â· Ludhiana",
-    text: "Honestly I was sceptical. No studio shoot, no physical sample â€” just send reference images and brief. Thought the output would look fake. When I got the files I showed my wife without telling her anything. She asked which studio we went to. That was enough for me.",
+    role: "Amazon Brand · Ludhiana",
+    text: "Honestly I was sceptical. No studio shoot, no physical sample just send reference images and brief. Thought the output would look fake. When I got the files I showed my wife without telling her anything. She asked which studio we went to. That was enough for me.",
     rating: 5,
     result: "Men's Apparel Category"
   }
