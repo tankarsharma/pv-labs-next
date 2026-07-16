@@ -316,15 +316,15 @@ const Pricing = () => {
       {/* Final Risk Reversal */}
       <section className="pb-24 px-6 text-center bg-white">
         <div className="max-w-3xl mx-auto border-t border-slate-100 pt-12">
-          <p className="text-slate-600 mb-4 font-medium">ðŸ›¡ï¸ Not happy with the result? We redo it free - no questions asked.</p>
-          <p className="text-slate-600 font-medium">ðŸ’¬ Still confused? WhatsApp us - we'll help you pick the right plan.</p>
+          <p className="text-slate-600 mb-4 font-medium">🛡️ Not happy with the result? We redo it free - no questions asked.</p>
+          <p className="text-slate-600 font-medium"> 💬 Still confused? WhatsApp us - we'll help you pick the right plan.</p>
           <div className="mt-12">
             <Link href="/contact" className="gradient-btn px-12 py-5 font-bold text-lg inline-flex items-center gap-3 shadow-xl hover:shadow-purple-500/30 hover:-translate-y-1 transition-all text-white">
               Book Free Consultation 
             </Link>
             <div className="mt-8 space-y-2 text-slate-500 text-xs font-medium">
-              <p>ðŸ“ž We respond within 2 hours · Mon–Sat 10am–7pm IST</p>
-              <p>ðŸ’¬ Or WhatsApp us directly: +91 74177 91003</p>
+              <p> 📞 We respond within 2 hours · Mon–Sat 10am–7pm IST</p>
+              <p> 💬 Or WhatsApp us directly: +91 74177 91003</p>
             </div>
           </div>
         </div>
