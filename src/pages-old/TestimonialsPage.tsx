@@ -35,7 +35,7 @@ const testimonials = [
   {
     name: "Karthik Menon",
     role: "Amazon Brand · Pune",
-    text: "I run a small protein brand out of Pune. Couldn't afford a proper studio quotes I got were â‚¹25,000 minimum per shoot. PV Labs did my entire listing set for less than half that. And honestly? It looks better than what the studio would have done.",
+    text: "I run a small protein brand out of Pune. Couldn't afford a proper studio quotes I got were ₹25,000 minimum per shoot. PV Labs did my entire listing set for less than half that. And honestly? It looks better than what the studio would have done.",
     rating: 5,
     result: "Health & Supplements"
   },
