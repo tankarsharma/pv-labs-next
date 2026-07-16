@@ -1,12 +1,12 @@
-﻿"use client";
-// Platform tag: Flipkart Â· Pukhraj Â· 4 Days
+"use client";
+// Platform tag: Flipkart · Pukhraj · 4 Days
 // Headline:
 // This jasmine oil brand had a great product.
 // Their listing was invisible. Here's what we did.
 // Hero Image:
 // [Pukhraj before/after listing images here]
 // Problem + Approach:
-// ðŸ”´ The Problem
+// 🔴 The Problem
 // Pukhraj had a quality jasmine oil product
 // but their Flipkart listing was driving buyers
 // away. Phone camera images, off-white
@@ -15,9 +15,9 @@
 // scrolling. They weren't losing on product.
 // They were losing on presentation.
 
-// ðŸ”µ Our Approach
+// 🔵 Our Approach
 // We rebuilt the entire visual identity for
-// Flipkart â€” studio-quality hero image,
+// Flipkart — studio-quality hero image,
 // white background compliant, product fills
 // 85% of frame, shadow work, ingredient
 // callout infographics, and lifestyle imagery.
@@ -38,28 +38,28 @@
 // PV Labs made our listing show that.
 // Clicks doubled in the first week itself."
 
-// â€” Pukhraj Brand Â· Flipkart Seller Â· Jasmine Oil
+// — Pukhraj Brand · Flipkart Seller · Jasmine Oil
 
-// Case Study 2 â€” Nipura Jewellery
-// Platform tag: Myntra Â· Nipura Jewellery Â· 5 Days
+// Case Study 2 — Nipura Jewellery
+// Platform tag: Myntra · Nipura Jewellery · 5 Days
 // Headline:
 // Their earrings were premium.
-// Their Myntra page looked anything but. 
+// Their Myntra page looked anything but.
 // Here's how we fixed it.
 // Hero Image:
 // [Nipura before/after RPD images here]
 // Problem + Approach:
-// ðŸ”´ The Problem
+// 🔴 The Problem
 // Nipura Jewellery was live on Myntra but
-// had a default seller page â€” no RPD modules,
+// had a default seller page — no RPD modules,
 // no brand banner, no material callouts,
 // no size reference. In a category full of
 // premium-looking jewellery brands, they were
 // completely invisible. Buyers couldn't see
 // the craftsmanship. Price looked unjustified.
 
-// ðŸ”µ Our Approach
-// We designed a complete Myntra RPD â€”
+// 🔵 Our Approach
+// We designed a complete Myntra RPD —
 // brand story banner, material callout modules
 // showing 92.5 sterling silver hallmark,
 // styling guide with Indian skin tone reference,
@@ -76,7 +76,7 @@
 // BEFORE: Default Myntra page, no RPD,
 //         no brand identity, no modules
 
-// AFTER:  Complete RPD â€” material callouts,
+// AFTER:  Complete RPD — material callouts,
 //         styling guide, size reference live
 // Client Quote:
 // "The difference was night and day.
@@ -84,28 +84,28 @@
 // we actually are. Orders picked up the
 // same week RPD went live."
 
-// â€” Nipura Jewellery Â· Myntra Seller Â· Earrings
+// — Nipura Jewellery · Myntra Seller · Earrings
 
 
-// Case Study 3 â€” Attar Ayurveda
-// Platform tag: Amazon Â· Attar Ayurveda Â· 6 Days
+// Case Study 3 — Attar Ayurveda
+// Platform tag: Amazon · Attar Ayurveda · 6 Days
 // Headline:
-// This Ayurvedic brand was getting buried 
-// on Amazon. No A+ content. 
+// This Ayurvedic brand was getting buried
+// on Amazon. No A+ content.
 // No brand story. Here's what changed.
 // Problem + Approach:
-// ðŸ”´ The Problem
+// 🔴 The Problem
 // Attar Ayurveda had a quality bhringraj
 // powder product but their Amazon listing
-// was plain text only â€” no banners, no visuals,
+// was plain text only — no banners, no visuals,
 // no brand story, no ingredient callouts.
 // Competitors with A+ content were outranking
 // them despite an inferior product.
 // Buyers had no reason to trust an Ayurvedic
 // health product with zero visual credibility.
 
-// ðŸ”µ Our Approach
-// We built a complete A+ module from scratch â€”
+// 🔵 Our Approach
+// We built a complete A+ module from scratch —
 // Ayurvedic brand story banner, ingredient
 // sourcing story, usage guide visuals,
 // Ayush certification highlight, and lifestyle
@@ -122,7 +122,7 @@
 // BEFORE: Plain text description, no banners,
 //         no visuals, no brand story
 
-// AFTER:  Full A+ module â€” ingredient sourcing,
+// AFTER:  Full A+ module — ingredient sourcing,
 //         usage guide, certification highlights
 // Client Quote:
 // "Our product was always Ayurvedic and pure.
@@ -130,27 +130,27 @@
 // The A+ content they built is the reason
 // buyers trust us before even reading reviews."
 
-// â€” Attar Ayurveda Â· Amazon Seller Â· Bhringraj Powder
+// — Attar Ayurveda · Amazon Seller · Bhringraj Powder
 
-// Case Study 4 â€” Only Essentials
-// Platform tag: D2C Website Â· Only Essentials Â· 5 Days
+// Case Study 4 — Only Essentials
+// Platform tag: D2C Website · Only Essentials · 5 Days
 // Headline:
-// Their Ayurvedic gut health product 
-// was live. But their D2C presence 
+// Their Ayurvedic gut health product
+// was live. But their D2C presence
 // looked like an afterthought.
 // Problem + Approach:
-// ðŸ”´ The Problem
+// 🔴 The Problem
 // Only Essentials had a quality Ayurvedic
 // gut health powder but their D2C website
-// had generic product images â€” no ingredient
+// had generic product images — no ingredient
 // storytelling, no lifestyle context, no trust
 // badges, no brand visual system.
 // In a category where trust is everything,
 // their visuals were costing them credibility
 // before buyers even read the description.
 
-// ðŸ”µ Our Approach
-// We created a complete D2C visual set â€”
+// 🔵 Our Approach
+// We created a complete D2C visual set —
 // premium product hero images, ingredient
 // callout infographics with Ayush certification
 // prominently highlighted, lifestyle imagery
@@ -167,38 +167,38 @@
 // BEFORE: Generic images, no ingredient story,
 //         no trust badges, no brand identity
 
-// AFTER:  Premium D2C visual set â€” ingredient
+// AFTER:  Premium D2C visual set — ingredient
 //         callouts, lifestyle imagery, trust
 //         badges, Ayurvedic positioning clear
 // Client Quote:
 // "We always struggled to show buyers why
 // our product was worth trusting.
 // PV Labs built visuals that do that
-// automatically â€” without us saying a word."
+// automatically — without us saying a word."
 
-// â€” Only Essentials Â· D2C Brand Â· Ayurvedic Gut Health
+// — Only Essentials · D2C Brand · Ayurvedic Gut Health
 
-// Case Study 5 â€” Aakirti
-// Platform tag: Ajio Â· Aakirti Â· 7 Days
+// Case Study 5 — Aakirti
+// Platform tag: Ajio · Aakirti · 7 Days
 // Headline:
-// 40+ ethnic suit SKUs. 
+// 40+ ethnic suit SKUs.
 // Ajio kept rejecting them.
 // Here's how we got every single one approved.
 // Problem + Approach:
-// ðŸ”´ The Problem
+// 🔴 The Problem
 // Aakirti had 40+ ethnic suit SKUs ready
 // to list on Ajio but only had basic
-// front-facing images â€” no flat lays,
+// front-facing images — no flat lays,
 // no detail shots, no fabric close-ups,
 // no lifestyle context. Ajio's catalog
 // standards require multiple angles and
-// lifestyle imagery â€” their listings kept
+// lifestyle imagery — their listings kept
 // getting rejected. Beautiful suits,
 // invisible on the platform.
 
-// ðŸ”µ Our Approach
+// 🔵 Our Approach
 // We created a complete catalog set for
-// all 40+ SKUs â€” flat lay, styled shot,
+// all 40+ SKUs — flat lay, styled shot,
 // detail shot, and fabric texture close-up
 // per SKU. Standardized visual language
 // across the entire range so the brand
@@ -214,7 +214,7 @@
 // BEFORE: Basic front-facing images,
 //         listing rejections, no catalog standard
 
-// AFTER:  Complete catalog set â€” flat lay,
+// AFTER:  Complete catalog set — flat lay,
 //         detail shot, size guide, Ajio compliant
 // Client Quote:
 // "Three rejections before PV Labs.
@@ -222,36 +222,36 @@
 // on the first try. That's the difference
 // between designers and e-commerce specialists."
 
-// â€” Aakirti Â· Ajio Brand Â· Ethnic Wear
-// Case Study 6 â€” ALDO Sandal
-// Platform tag: Brand Website Â· ALDO Â· 5 Days
+// — Aakirti · Ajio Brand · Ethnic Wear
+// Case Study 6 — ALDO Sandal
+// Platform tag: Brand Website · ALDO · 5 Days
 // Headline:
-// This sandal brand was selling on 
-// marketplaces. But they had no brand 
+// This sandal brand was selling on
+// marketplaces. But they had no brand
 // of their own. Here's what we built.
 // Problem + Approach:
-// ðŸ”´ The Problem
+// 🔴 The Problem
 // ALDO had a quality sandal product selling
-// on marketplaces but zero D2C presence â€”
+// on marketplaces but zero D2C presence —
 // no website, no brand identity online,
 // no direct customer relationship.
-// Their product visuals were inconsistent â€”
+// Their product visuals were inconsistent —
 // different angles, different lighting,
 // different backgrounds across platforms.
 // No visual system. No brand story.
 // Buyers couldn't tell if this was a
 // premium brand or a generic reseller.
 
-// ðŸ”µ Our Approach
+// 🔵 Our Approach
 // We created a complete D2C visual set
-// for ALDO's brand website â€” premium
+// for ALDO's brand website — premium
 // product photography style visuals,
 // multiple angles per SKU, lifestyle
 // context shots showing sandals in real
 // environments, clean white background
 // hero images, and detail shots highlighting
 // craftsmanship. Every visual consistent
-// across the entire product range â€”
+// across the entire product range —
 // one unified brand language.
 // Results:
 // Premium       5 Days        Zero           Consistent
@@ -262,7 +262,7 @@
 // BEFORE: Inconsistent marketplace images,
 //         no brand identity, no visual system
 
-// AFTER:  Premium D2C visual set â€”
+// AFTER:  Premium D2C visual set —
 //         multiple angles, lifestyle context,
 //         consistent brand language
 // Client Quote:
@@ -271,37 +271,37 @@
 // sandals the visual identity they deserved.
 // Our D2C website finally feels premium."
 
-// â€” ALDO Â· D2C Brand Â· Footwear
+// — ALDO · D2C Brand · Footwear
 
-// Case Study 7 â€” Ashoka Dry Fruits
-// Platform tag: Packaging Â· Flipkart Â· Brand Website Â· 6 Days
+// Case Study 7 — Ashoka Dry Fruits
+// Platform tag: Packaging · Flipkart · Brand Website · 6 Days
 // Headline:
 // Their dry fruits were premium quality.
-// Their packaging was making them 
+// Their packaging was making them
 // look like a commodity. Here's the fix.
 // Problem + Approach:
-// ðŸ”´ The Problem
+// 🔴 The Problem
 // Ashoka had a quality dry fruits product
-// but their packaging looked homemade â€”
+// but their packaging looked homemade —
 // basic label design, no brand color system,
 // no visual hierarchy, no premium positioning.
 // On Flipkart shelves dominated by
 // established dry fruit brands, they were
 // completely invisible. Same product on
 // their website had completely different
-// images â€” zero consistency across platforms.
+// images — zero consistency across platforms.
 // Buyers couldn't justify the price because
 // the packaging didn't match the quality.
 
-// ðŸ”µ Our Approach
+// 🔵 Our Approach
 // We redesigned the complete packaging system
-// for Ashoka â€” new label design with premium
+// for Ashoka — new label design with premium
 // color system, clear visual hierarchy,
 // product window highlighting the dry fruits
 // inside, FSSAI and quality certification
 // badges prominently placed. Then extended
 // the same visual language to Flipkart listing
-// images and D2C website product visuals â€”
+// images and D2C website product visuals —
 // so every touchpoint told the same
 // premium, consistent brand story.
 // Results:
@@ -313,48 +313,48 @@
 // BEFORE: Basic label, no brand system,
 //         inconsistent images across platforms
 
-// AFTER:  Premium packaging design â€”
+// AFTER:  Premium packaging design —
 //         unified visual language on
 //         Flipkart + website both
 // Client Quote:
 // "Our product quality was always there.
 // PV Labs made our packaging finally show it.
-// We look like a premium brand now â€”
+// We look like a premium brand now —
 // not just another dry fruits seller."
 
-// â€” Ashoka Â· Flipkart Seller Â· Dry Fruits
+// — Ashoka · Flipkart Seller · Dry Fruits
 
-// Case Study 8 â€” HighEk Blazer
-// Platform tag: Branding Â· Ads Creative Â· Amazon Â· 7 Days
+// Case Study 8 — HighEk Blazer
+// Platform tag: Branding · Ads Creative · Amazon · 7 Days
 // Headline:
 // Great blazer. Zero brand identity.
 // Ads spending money with nothing to show.
 // Here's how we turned it around.
 // Problem + Approach:
-// ðŸ”´ The Problem
+// 🔴 The Problem
 // HighEk had a premium blazer product on
-// Amazon but two critical problems â€”
+// Amazon but two critical problems —
 // first, zero brand identity: no consistent
 // visual language, no brand story, no A+
 // content, nothing to differentiate from
 // 100 other blazer sellers. Second, their
 // Meta ad creatives were generic product
-// shots with no conversion focus â€” high
+// shots with no conversion focus — high
 // spend, low returns. Money going out,
 // sales not coming in. Both problems
 // had the same root cause: no visual strategy.
 
-// ðŸ”µ Our Approach
+// 🔵 Our Approach
 // We tackled both simultaneously. First,
 // built a complete A+ content module for
-// Amazon â€” brand story banner, fabric detail
+// Amazon — brand story banner, fabric detail
 // highlights, size guide, styling imagery,
 // care instructions. Then designed
-// high-converting Meta ad creatives â€”
+// high-converting Meta ad creatives —
 // multiple formats, conversion-focused
 // layouts, brand consistent design.
 // Same visual language across Amazon
-// listing and Meta ads â€” so every touchpoint
+// listing and Meta ads — so every touchpoint
 // reinforced the same premium brand message.
 // Results:
 // 4.1x          38%            7 Days         Zero
@@ -365,7 +365,7 @@
 //         low-converting ad creatives
 
 // AFTER:  Complete A+ content + high-converting
-//         Meta ad creatives â€” same brand
+//         Meta ad creatives — same brand
 //         language across all touchpoints
 // Client Quote:
 // "Two problems fixed in one project.
@@ -373,6 +373,4 @@
 // and our ads are actually converting.
 // PV Labs understood exactly what we needed."
 
-// â€” HighEk Â· Amazon Brand Â· Premium Blazers
-
-
+// — HighEk · Amazon Brand · Premium Blazers
