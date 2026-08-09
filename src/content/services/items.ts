@@ -20,9 +20,9 @@ export const serviceItems: ServiceItem[] = [
       <p>Each listing image set includes up to 9 images for Amazon and 8 for Flipkart — all delivered in high-resolution PNG/JPEG format, ready to upload directly to Seller Central or Flipkart Seller Hub.</p>
 
       <h2>Why Listing Images Matter More Than Anything Else</h2>
-      <p>On Amazon and Flipkart, your product image is the first thing buyers see in search results. In a marketplace with 12 lakh+ sellers competing for attention, your main image determines whether someone clicks or scrolls past. No click = no sale. It's that simple.</p>
+      <p>On Amazon and Flipkart, your product image is the first thing buyers see in search results. In a marketplace with 12 lakh+ sellers competing for attention, your main image determines whether someone clicks or scrolls past. No click = no sale. It's that simple. Read our <a href="/blog/amazon-listing-guide-2026">complete Amazon listing image guide</a> for the full breakdown of specs, strategies, and mistakes to avoid.</p>
       <p>Amazon's A9 algorithm tracks Click-Through Rate (CTR) as a key ranking signal. Better images → higher CTR → Amazon shows your listing to more buyers → more sales → higher organic rank. It's a compounding growth loop that starts with one thing: the image.</p>
-      <p>Flipkart's Catalog Quality Score directly impacts search ranking and eligibility for Flipkart Assured badges. Listings with 6+ professional images receive 40% more clicks than those with just 2–3 basic shots.</p>
+      <p>Flipkart's Catalog Quality Score directly impacts search ranking and eligibility for Flipkart Assured badges. Listings with 6+ professional images receive 40% more clicks than those with just 2–3 basic shots. See our <a href="/blog/flipkart-listing-requirements-2026">Flipkart listing requirements guide</a> for platform-specific details.</p>
 
       <h2>Our Process — From Brief to Upload-Ready</h2>
       <p><strong>Step 1 — Product Brief:</strong> You share product photos (even phone shots are fine), key features, target audience, and competitor references. We handle the rest.</p>
@@ -40,13 +40,16 @@ export const serviceItems: ServiceItem[] = [
       <p><strong>Flipkart:</strong> Pure white background, product fills 80%+ of frame, minimum 1000×1000px (1500×1500px recommended), square 1:1 ratio, JPEG/PNG format. Manual catalog review in most categories.</p>
       <p>We also optimize for Meesho, Myntra, and JioMart specifications when needed — one brief, multiple platform-ready deliverables.</p>
 
+      <h2>Pair With A+ Content for Maximum Impact</h2>
+      <p>Listing images get the click. <a href="/services/a-plus-content">A+ Content</a> closes the sale. Together, they create a complete conversion funnel — from search result to purchase. Most of our clients bundle listing images with <a href="/blog/amazon-a-plus-content-guide">A+ Content design</a> for 3–10% additional conversion boost.</p>
+
       <h2>Who This Is For</h2>
       <p>Our listing image service is designed for Indian sellers and brands who want to compete at the highest level without spending lakhs on photography. Whether you're launching your first product or scaling an existing brand with 50+ SKUs — we deliver the same professional quality at every scale.</p>
       <p>Categories we specialize in: Skincare & Beauty, Home & Kitchen, Electronics & Gadgets, Food & Supplements, Fashion Accessories, Baby Products, and Health & Wellness.</p>
 
       <h2>Pricing</h2>
       <p>Per-SKU pricing starts at ₹4,000 for a complete image set. Bulk packages (10+ SKUs) bring per-SKU cost below ₹3,000. Dual-platform packages (Amazon + Flipkart optimized) available at 30% less than ordering separately.</p>
-      <p>Every package includes: full image set, 2 revision rounds, platform compliance guarantee, and delivery in 3–5 business days.</p>
+      <p>Every package includes: full image set, 2 revision rounds, platform compliance guarantee, and delivery in 3–5 business days. Check our <a href="/pricing">pricing page</a> for detailed package breakdowns.</p>
     `,
   },
   {
@@ -58,7 +61,7 @@ export const serviceItems: ServiceItem[] = [
       "Rich A+ modules that tell your brand story, increase conversion by 3–10%, and get approved on the first submission.",
     content: `
       <h2>What is A+ Content?</h2>
-      <p>A+ Content (previously Enhanced Brand Content) is Amazon's premium listing feature that lets brand-registered sellers replace plain text product descriptions with rich visual modules — brand banners, comparison charts, lifestyle images, ingredient breakdowns, and more.</p>
+      <p>A+ Content (previously Enhanced Brand Content) is Amazon's premium listing feature that lets brand-registered sellers replace plain text product descriptions with rich visual modules — brand banners, comparison charts, lifestyle images, ingredient breakdowns, and more. Read our <a href="/blog/amazon-a-plus-content-guide">complete A+ Content guide</a> for everything you need to know.</p>
       <p>Amazon's data shows A+ Content increases conversion rates by 3–10% on average. In competitive Indian categories like skincare, supplements, and kitchen appliances, our clients have seen conversion increases of 15–38%.</p>
 
       <h2>Why Every Amazon India Brand Needs A+ Content in 2026</h2>
@@ -88,9 +91,12 @@ export const serviceItems: ServiceItem[] = [
       <p><strong>Premium A+ (Conditional):</strong> Video modules, interactive hotspots, image carousels, full-width HD banners. Available to brands that have published A+ on all ASINs with active Brand Story. Increases conversion by additional 5–8% beyond Basic A+.</p>
       <p>We design both. For most sellers, we recommend starting with Basic A+, building consistent sales, then graduating to Premium.</p>
 
+      <h2>Complete Your Amazon Presence</h2>
+      <p>A+ Content works best when paired with <a href="/services/listing-images">professional listing images</a> (which get the initial click) and an <a href="/services/brand-store">Amazon Brand Store</a> (which drives repeat purchases and maximizes Sponsored Brands ad ROI). Together, these three form a complete brand presence on Amazon.</p>
+
       <h2>Pricing</h2>
       <p>A+ Content design starts at ₹5,000 per ASIN for the full 5-module set. Includes 2 revision rounds, compliance guarantee, and submission support. Bulk packages (10+ ASINs) available below ₹4,000 per ASIN.</p>
-      <p>ROI math: 5% conversion boost on a product doing ₹2,00,000/month = ₹10,000 extra revenue per month, forever. One-time ₹5,000–₹8,000 investment pays back in under 25 days.</p>
+      <p>ROI math: 5% conversion boost on a product doing ₹2,00,000/month = ₹10,000 extra revenue per month, forever. One-time ₹5,000–₹8,000 investment pays back in under 25 days. See our <a href="/pricing">pricing page</a> for all packages.</p>
 
       <h2>Who This Is For</h2>
       <p>Any Amazon India seller with Brand Registry who wants to look like an established brand, increase conversions, and reduce returns. Whether you sell skincare, electronics, kitchen appliances, supplements, or fashion — A+ Content works across every category.</p>
@@ -134,8 +140,11 @@ export const serviceItems: ServiceItem[] = [
       <h2>Brand Store Analytics</h2>
       <p>Amazon provides detailed Brand Store analytics — visits, views per page, sales from store visitors, and traffic sources. We set up your store with analytics tracking in mind, creating distinct pages for different campaigns so you can measure exactly which traffic sources convert best.</p>
 
+      <h2>The Complete Amazon Brand Ecosystem</h2>
+      <p>A Brand Store works best as part of a complete Amazon presence: <a href="/services/listing-images">professional listing images</a> drive clicks from search, <a href="/services/a-plus-content">A+ Content</a> converts browsers into buyers, and the Brand Store ties everything together — building loyalty and repeat purchases. Learn more about <a href="/blog/amazon-listing-guide-2026">optimizing your listing images</a> and <a href="/blog/amazon-a-plus-content-guide">creating high-converting A+ Content</a>.</p>
+
       <h2>Pricing</h2>
-      <p>Brand Store design starts at ₹15,000 for a 3-page store (Home + 2 Category pages). Full stores with 5+ pages, campaign pages, and seasonal updates start at ₹25,000. Includes 2 revision rounds, mobile optimization, and publishing support.</p>
+      <p>Brand Store design starts at ₹15,000 for a 3-page store (Home + 2 Category pages). Full stores with 5+ pages, campaign pages, and seasonal updates start at ₹25,000. Includes 2 revision rounds, mobile optimization, and publishing support. See our <a href="/pricing">pricing page</a> for complete details.</p>
       <p>For brands running Sponsored Brands ads, a well-designed Brand Store typically improves ad ROAS by 25–40% — paying for itself within the first month of ad spend.</p>
 
       <h2>Who This Is For</h2>
