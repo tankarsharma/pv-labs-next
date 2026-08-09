@@ -1,0 +1,6 @@
+"URL","Status","JsonLdScripts","HasSchema"
+"http://localhost:3000/","200","2","YES"
+"http://localhost:3000/services","200","1","YES"
+"http://localhost:3000/blog","200","1","YES"
+"http://localhost:3000/services/listing-images","200","2","YES"
+"http://localhost:3000/blog/amazon-listing-guide-2026","200","1","YES"

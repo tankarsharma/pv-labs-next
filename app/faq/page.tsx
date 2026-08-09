@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import Faq from "@/pages-old/FAQPage";
+import JsonLd from "@/components/seo/JsonLd";
+import { faqs } from "@/lib/Faq";
 
 export const metadata: Metadata = {
   title: "FAQ",
@@ -10,5 +12,24 @@ export const metadata: Metadata = {
 };
 
 export default function Page() {
-  return <Faq />;
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "@id": "https://pvlabs.ai/faq#faqpage",
+    mainEntity: faqs.map((f) => ({
+      "@type": "Question",
+      name: f.q,
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: f.a,
+      },
+    })),
+  };
+
+  return (
+    <>
+      <JsonLd id="ld-json-faq" data={faqSchema} />
+      <Faq />
+    </>
+  );
 }
