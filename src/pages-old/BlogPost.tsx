@@ -214,6 +214,95 @@ const blogData: Record<string, any> = {
             </div>
           </div>
         </section>
+                <section>
+          <h2 className="text-2xl font-black text-gray-900 mb-6">Why Indian Sellers Struggle with Amazon Images</h2>
+          <div className="space-y-4 text-gray-600 font-medium leading-relaxed">
+            <p>
+              The Indian e-commerce market crossed ₹7 lakh crore in 2025, and Amazon India now hosts over 12 lakh active sellers. Competition is fierce — especially in categories like skincare, electronics, kitchen, and fashion. Yet most Indian sellers still upload phone-camera shots with uneven lighting, cluttered backgrounds, and zero infographics.
+            </p>
+            <p>
+              The reason? Traditional product photography in India costs ₹8,000–₹40,000 per SKU. You need a studio, a photographer, props, lighting equipment, and days of back-and-forth. For a seller launching 10 SKUs, that's ₹80,000–₹4,00,000 just for images — before a single sale is made.
+            </p>
+            <p>
+              This is why CGI-based product visualization has exploded in 2026. Studios like PV Labs create photorealistic listing images without ever touching your physical product. You send reference photos, we build the visuals digitally — Amazon-compliant, conversion-optimized, delivered in 3–5 days at 80% less cost than a traditional shoot.
+            </p>
+          </div>
+        </section>
+
+        <section>
+          <h2 className="text-2xl font-black text-gray-900 mb-6">How Amazon's Algorithm Uses Your Images</h2>
+          <div className="space-y-4 text-gray-600 font-medium leading-relaxed">
+            <p>
+              Amazon's A9 algorithm doesn't just look at keywords and reviews. It tracks <span className="text-gray-900 font-bold">Click-Through Rate (CTR)</span> from search results — and your main image is the #1 factor that determines whether someone clicks or scrolls past.
+            </p>
+            <p>
+              Here's how the algorithm loop works: Better image → Higher CTR → Amazon shows your listing to more people → More sales → Higher organic rank → Even more visibility. It's a compounding effect. One image improvement can cascade into 2–3x revenue growth over 30 days.
+            </p>
+            <p>
+              Amazon also uses image quality as a ranking signal for the "Amazon's Choice" badge. Listings with all 9 image slots filled, high resolution, and proper white backgrounds are significantly more likely to earn featured placement.
+            </p>
+            <p>
+              Conversely, listings with poor images get suppressed. Amazon's automated systems flag low-resolution images, non-white backgrounds, and text on hero images — pushing your listing down in search or even suppressing it entirely.
+            </p>
+          </div>
+        </section>
+
+        <section>
+          <h2 className="text-2xl font-black text-gray-900 mb-6">The Psychology Behind High-Converting Images</h2>
+          <div className="space-y-4 text-gray-600 font-medium leading-relaxed">
+            <p>
+              Indian buyers on Amazon make purchase decisions in under 7 seconds. In that window, your images need to answer three questions: "What is this product?", "Is it high quality?", and "Is it right for me?"
+            </p>
+            <p>
+              <span className="text-gray-900 font-bold">Hero Image:</span> This answers "what is it?" — a clean, professional, zoomed-in shot on pure white. The product must dominate the frame. No distractions, no props, no text. Just the product looking its absolute best.
+            </p>
+            <p>
+              <span className="text-gray-900 font-bold">Infographics:</span> These answer "is it high quality?" — callout key features, certifications, materials, and dimensions. Indian buyers are extremely value-conscious. They want to know exactly what they're getting before they spend ₹500 or ₹5,000.
+            </p>
+            <p>
+              <span className="text-gray-900 font-bold">Lifestyle Images:</span> These answer "is it right for me?" — show the product in a real Indian home, on a real person, in a real kitchen. Context builds emotional connection. A pressure cooker on a white background is a product. A pressure cooker in a modern Indian kitchen with rotis being made — that's a story.
+            </p>
+            <p>
+              <span className="text-gray-900 font-bold">Comparison Charts:</span> These reduce return rates by 15–25%. When buyers clearly understand size, variants, and what's included — they make confident purchases and don't send products back.
+            </p>
+          </div>
+        </section>
+
+        <section>
+          <h2 className="text-2xl font-black text-gray-900 mb-6">Image Optimization for Mobile (70% of Amazon India Traffic)</h2>
+          <div className="space-y-4 text-gray-600 font-medium leading-relaxed">
+            <p>
+              Over 70% of Amazon India traffic comes from mobile devices — primarily Android phones with 5.5–6.5 inch screens. This means your images are being viewed at roughly 350–400 pixels wide. Any text smaller than 24pt becomes unreadable. Any fine detail disappears.
+            </p>
+            <p>
+              The biggest mobile optimization mistakes Indian sellers make:
+            </p>
+            <ul className="space-y-2 ml-4">
+              <li className="flex items-start gap-2"><span className="text-primary font-bold">•</span> Infographic text too small — buyers pinch-zoom and leave</li>
+              <li className="flex items-start gap-2"><span className="text-primary font-bold">•</span> Too many features crammed into one image — pick 3–4 max per frame</li>
+              <li className="flex items-start gap-2"><span className="text-primary font-bold">•</span> Dark backgrounds that don't contrast well on AMOLED screens</li>
+              <li className="flex items-start gap-2"><span className="text-primary font-bold">•</span> Hero image product too small — wasted white space on already-tiny screens</li>
+            </ul>
+            <p>
+              At PV Labs, every image we deliver is mobile-first tested. We preview all infographics at 400px width before delivery to ensure readability on the smallest screens your buyers are using.
+            </p>
+          </div>
+        </section>
+
+        <section>
+          <h2 className="text-2xl font-black text-gray-900 mb-6">ROI of Professional Listing Images — Real Numbers</h2>
+          <div className="space-y-4 text-gray-600 font-medium leading-relaxed">
+            <p>
+              Let's do simple math. Say your product gets 1,000 impressions per day on Amazon search. With average images, your CTR is 2% — that's 20 clicks/day. With professional, optimized images, CTR jumps to 5% — that's 50 clicks/day. Same impressions, 150% more traffic.
+            </p>
+            <p>
+              If your conversion rate is 10% and average order value is ₹800, that's the difference between ₹1,600/day and ₹4,000/day in revenue. Over a month: ₹48,000 vs ₹1,20,000. The ₹72,000 difference — every single month — came from one image upgrade that cost you ₹5,000–₹8,000 one time.
+            </p>
+            <p>
+              This is why the smartest Amazon India sellers treat listing images as their highest-ROI investment. Not PPC. Not keywords. Not reviews. Images come first because everything else depends on the click.
+            </p>
+          </div>
+        </section>
       </div>
     )
   },
@@ -394,6 +483,131 @@ const blogData: Record<string, any> = {
                 Get Your A+ Content Done →
               </button>
             </div>
+          </div>
+        </section>
+                <section>
+          <h2 className="text-2xl font-black text-gray-900 mb-6">A+ Content for Indian Sellers — Why It's Non-Negotiable in 2026</h2>
+          <div className="space-y-4 text-gray-600 font-medium leading-relaxed">
+            <p>
+              Amazon India crossed 12 lakh active sellers in 2025. In categories like skincare, supplements, and kitchen appliances — there are 500+ sellers offering nearly identical products at similar prices. When your product looks the same, costs the same, and has similar reviews — A+ Content is what makes the buyer choose YOU.
+            </p>
+            <p>
+              Think about it from the buyer's perspective. They scroll down past your bullet points and see either: (a) a plain text description that looks like it was written in 2015, or (b) a magazine-quality visual experience with brand story, ingredient breakdowns, comparison charts, and lifestyle shots. Which seller looks more trustworthy? Which one feels like a "real brand" vs a random reseller?
+            </p>
+            <p>
+              Amazon's own data confirms this: listings with A+ Content see <span className="text-gray-900 font-bold">3–10% higher conversion rates</span> on average. In highly competitive Indian categories, we've seen increases of 15–38% because the gap between sellers WITH A+ and those WITHOUT is enormous.
+            </p>
+            <p>
+              The best part? Basic A+ Content is completely free for Brand Registered sellers. You're leaving money on the table every single day you don't have it.
+            </p>
+          </div>
+        </section>
+
+        <section>
+          <h2 className="text-2xl font-black text-gray-900 mb-6">How to Get Brand Registry in India (Step-by-Step)</h2>
+          <div className="space-y-4 text-gray-600 font-medium leading-relaxed">
+            <p>
+              A+ Content requires Amazon Brand Registry. Here's exactly how Indian sellers can get it:
+            </p>
+            <ul className="space-y-3 ml-4">
+              <li className="flex items-start gap-2"><span className="text-purple-600 font-bold">1.</span> Register your trademark with the Indian Trademark Registry (Class 1–45 based on your product category)</li>
+              <li className="flex items-start gap-2"><span className="text-purple-600 font-bold">2.</span> You need either a registered trademark (®) OR a pending application with a serial number</li>
+              <li className="flex items-start gap-2"><span className="text-purple-600 font-bold">3.</span> Go to brandregistry.amazon.in and enroll with your trademark details</li>
+              <li className="flex items-start gap-2"><span className="text-purple-600 font-bold">4.</span> Amazon sends a verification code to the trademark correspondent — confirm it</li>
+              <li className="flex items-start gap-2"><span className="text-purple-600 font-bold">5.</span> Once approved (3–14 days), A+ Content Manager appears in your Seller Central</li>
+            </ul>
+            <p>
+              Pro tip: Even with a "pending" trademark (™ not yet ®), Amazon India now accepts applications. Don't wait for full registration — start the process today and you'll have A+ access within 2 weeks.
+            </p>
+          </div>
+        </section>
+
+        <section>
+          <h2 className="text-2xl font-black text-gray-900 mb-6">The 5-Module A+ Content Strategy That Converts</h2>
+          <div className="space-y-4 text-gray-600 font-medium leading-relaxed">
+            <p>
+              After designing A+ Content for 200+ Indian brands, we've identified the exact 5-module structure that maximizes conversion:
+            </p>
+            <p>
+              <span className="text-gray-900 font-bold">Module 1 — Brand Story Banner (Full Width):</span> This is the first thing buyers see after scrolling past bullet points. Use a cinematic banner that communicates your brand identity in one glance. Include your logo, tagline, and one powerful lifestyle image. This module builds instant credibility — you look like a "real brand", not a random seller.
+            </p>
+            <p>
+              <span className="text-gray-900 font-bold">Module 2 — Feature Highlight (Image + Text):</span> Pick your top 3 selling points and present them with icons, short text, and supporting visuals. Indian buyers scan — they don't read paragraphs. Use bold headlines and 10–15 word descriptions max per feature.
+            </p>
+            <p>
+              <span className="text-gray-900 font-bold">Module 3 — Ingredient/Material Breakdown:</span> Critical for skincare, food, supplements, and baby products. Show what's inside with clean visuals. For electronics, show build materials and certifications (BIS, ISI). This module builds trust and reduces "is this genuine?" doubts.
+            </p>
+            <p>
+              <span className="text-gray-900 font-bold">Module 4 — Comparison Chart:</span> Compare your product variants (not competitor products — that violates policy). Show your 500ml vs 1L vs 2L. Show your Basic vs Pro vs Premium. This reduces confusion, reduces returns, and often upsells buyers to higher-priced variants.
+            </p>
+            <p>
+              <span className="text-gray-900 font-bold">Module 5 — Lifestyle/Usage Context:</span> Full-width image showing the product in a real Indian setting. A water purifier in a modern Indian kitchen. A yoga mat in a living room with morning light. A face serum on a vanity table. This creates emotional connection and helps buyers visualize owning the product.
+            </p>
+          </div>
+        </section>
+
+        <section>
+          <h2 className="text-2xl font-black text-gray-900 mb-6">A+ Content Approval — What Gets Rejected and Why</h2>
+          <div className="space-y-4 text-gray-600 font-medium leading-relaxed">
+            <p>
+              Amazon takes 3–7 business days to review A+ Content. Rejection rate for first-time submissions is around 30–40% — mostly due to easily avoidable mistakes. Here's what triggers rejection:
+            </p>
+            <p>
+              <span className="text-gray-900 font-bold">Pricing claims:</span> "50% off", "Best value", "Cheapest" — any pricing or promotional language gets instant rejection. Even "affordable" can be flagged.
+            </p>
+            <p>
+              <span className="text-gray-900 font-bold">Competitor mentions:</span> You cannot name other brands. No "better than Brand X" or "unlike Brand Y". Even subtle comparisons get caught.
+            </p>
+            <p>
+              <span className="text-gray-900 font-bold">Contact information:</span> No phone numbers, email addresses, website URLs, or social media handles anywhere in A+ Content.
+            </p>
+            <p>
+              <span className="text-gray-900 font-bold">Health/medical claims:</span> "Cures acne", "Prevents hair fall", "Doctor recommended" — unless you have clinical proof uploaded to Amazon, these get rejected immediately.
+            </p>
+            <p>
+              <span className="text-gray-900 font-bold">Low resolution images:</span> All A+ images must be minimum 970px wide. Blurry or pixelated images are auto-rejected by Amazon's system before a human even reviews them.
+            </p>
+            <p>
+              At PV Labs, our A+ Content approval rate is 99% on first submission. We know exactly what Amazon's review team looks for because we've submitted thousands of A+ modules across every category.
+            </p>
+          </div>
+        </section>
+
+        <section>
+          <h2 className="text-2xl font-black text-gray-900 mb-6">A+ Content Cost in India — What to Expect</h2>
+          <div className="space-y-4 text-gray-600 font-medium leading-relaxed">
+            <p>
+              The A+ Content feature itself is free from Amazon. But designing professional A+ modules requires a skilled design team. Here's what the Indian market charges in 2026:
+            </p>
+            <ul className="space-y-2 ml-4">
+              <li className="flex items-start gap-2"><span className="text-purple-600 font-bold">•</span> Freelance designers on Fiverr/Upwork: ₹3,000–₹8,000 per ASIN (inconsistent quality, 0 revisions)</li>
+              <li className="flex items-start gap-2"><span className="text-purple-600 font-bold">•</span> Generic design agencies: ₹8,000–₹15,000 per ASIN (no Amazon expertise)</li>
+              <li className="flex items-start gap-2"><span className="text-purple-600 font-bold">•</span> Specialized e-commerce studios (like PV Labs): ₹5,000–₹12,000 per ASIN (Amazon-specific, revision included, compliance guaranteed)</li>
+            </ul>
+            <p>
+              The ROI math is simple: if A+ Content increases your conversion rate by even 5% on a product doing ₹2,00,000/month in revenue — that's ₹10,000 extra revenue per month, forever. A one-time ₹8,000 investment pays for itself in 25 days and keeps compounding.
+            </p>
+            <p>
+              For brands with 10+ ASINs, we offer bulk packages that bring per-ASIN cost below ₹4,000 — making it one of the cheapest, highest-impact investments any Amazon India seller can make.
+            </p>
+          </div>
+        </section>
+
+        <section>
+          <h2 className="text-2xl font-black text-gray-900 mb-6">Premium A+ Content vs Basic — Is It Worth It?</h2>
+          <div className="space-y-4 text-gray-600 font-medium leading-relaxed">
+            <p>
+              Amazon now offers Premium A+ Content (formerly A++ or Brand Story) to sellers who meet certain criteria — typically brands that have published A+ on all ASINs and have an active Brand Story. Premium unlocks:
+            </p>
+            <ul className="space-y-2 ml-4">
+              <li className="flex items-start gap-2"><span className="text-purple-600 font-bold">•</span> Video modules embedded directly in the product description</li>
+              <li className="flex items-start gap-2"><span className="text-purple-600 font-bold">•</span> Interactive hotspot images (buyers tap areas to reveal details)</li>
+              <li className="flex items-start gap-2"><span className="text-purple-600 font-bold">•</span> Image carousels and Q&A modules</li>
+              <li className="flex items-start gap-2"><span className="text-purple-600 font-bold">•</span> Full-width HD banner images with no compression</li>
+            </ul>
+            <p>
+              Is it worth it? For brands doing ₹10L+/month on Amazon — absolutely. Premium A+ can increase conversion by an additional 5–8% beyond basic A+. For smaller sellers, focus on getting Basic A+ right first. Nail the 5-module structure, get consistent sales, then graduate to Premium.
+            </p>
           </div>
         </section>
       </div>
@@ -615,6 +829,131 @@ const blogData: Record<string, any> = {
                 Get Flipkart-Ready Images →
               </button>
             </div>
+          </div>
+        </section>
+                <section>
+          <h2 className="text-2xl font-black text-gray-900 mb-6">Why Flipkart Is Different from Amazon — And Why It Matters</h2>
+          <div className="space-y-4 text-gray-600 font-medium leading-relaxed">
+            <p>
+              Most Indian sellers list on both Amazon and Flipkart. And most make the same mistake: they upload identical images to both platforms. This is a problem because Flipkart and Amazon have fundamentally different catalog systems.
+            </p>
+            <p>
+              Amazon uses primarily algorithmic image review — their systems auto-check resolution, background color, and text. Flipkart, on the other hand, has <span className="text-gray-900 font-bold">manual catalog teams</span> that review images in many categories, especially fashion, electronics, and home. A human reviewer is far stricter than an algorithm.
+            </p>
+            <p>
+              Flipkart also has different UI behavior. On the Flipkart app (which accounts for 80%+ of Flipkart traffic), images are displayed in a slightly different aspect ratio and zoom level than Amazon. Text that's readable on Amazon's viewer may become unreadable on Flipkart's. Color profiles render differently. What looks crisp on Amazon can look washed out on Flipkart.
+            </p>
+            <p>
+              At PV Labs, we create platform-specific image sets. Same product, optimized differently for each marketplace. This costs marginally more but eliminates rejections and maximizes conversion on both platforms.
+            </p>
+          </div>
+        </section>
+
+        <section>
+          <h2 className="text-2xl font-black text-gray-900 mb-6">Flipkart Image Specifications — The Complete Technical Guide</h2>
+          <div className="space-y-4 text-gray-600 font-medium leading-relaxed">
+            <p>
+              Here are the exact specifications Flipkart enforces in 2026, based on their latest seller documentation and our experience with 500+ listings:
+            </p>
+            <p>
+              <span className="text-gray-900 font-bold">Primary Image (Hero):</span> Pure white background (RGB 255,255,255). Product must fill minimum 80% of the frame. No text, no logos, no watermarks, no props. JPEG or PNG format. Minimum 1000×1000px, recommended 1500×1500px. Square 1:1 aspect ratio mandatory.
+            </p>
+            <p>
+              <span className="text-gray-900 font-bold">Secondary Images:</span> Up to 8 additional images allowed. These can include lifestyle shots, infographics, size charts, ingredient lists, and feature callouts. Text is allowed on secondary images but must be readable at mobile scale (minimum 24pt equivalent).
+            </p>
+            <p>
+              <span className="text-gray-900 font-bold">Fashion-Specific Rules:</span> Front and back shots are mandatory. Model images preferred over flat lays or ghost mannequins. Size chart is compulsory for all clothing and footwear. Color accuracy is critical — Flipkart's QC team rejects listings where the displayed color doesn't match the actual product.
+            </p>
+            <p>
+              <span className="text-gray-900 font-bold">Electronics-Specific Rules:</span> All ports, buttons, and connectivity options must be visible in at least one image. "In the box" contents shot is strongly recommended. BIS certification mark should be visible for applicable products.
+            </p>
+            <p>
+              <span className="text-gray-900 font-bold">Food & Grocery:</span> FSSAI license number must be clearly visible in at least one image. Manufacturing date, expiry date, and nutritional information should be shown. MRP must be printed on packaging and visible.
+            </p>
+          </div>
+        </section>
+
+        <section>
+          <h2 className="text-2xl font-black text-gray-900 mb-6">Flipkart's Manual Review Process — What Actually Happens</h2>
+          <div className="space-y-4 text-gray-600 font-medium leading-relaxed">
+            <p>
+              Unlike Amazon where most image checks are automated, Flipkart employs catalog quality teams that manually review images in high-volume categories. Here's what their review process looks like:
+            </p>
+            <p>
+              <span className="text-gray-900 font-bold">Stage 1 — Auto Check:</span> Flipkart's system automatically checks resolution (must be 1000px+), file format (JPEG/PNG only), and file size. Images that fail these basic checks are rejected instantly — you see the error in Seller Hub within minutes.
+            </p>
+            <p>
+              <span className="text-gray-900 font-bold">Stage 2 — Manual Review:</span> For categories like fashion, beauty, electronics, and baby products, a human reviewer examines your images. They check: Is the background truly white? Does the product fill 80%+ of the frame? Are mandatory shots included (front/back for fashion, size chart for apparel)? Is there any policy violation (watermarks, competitor logos, misleading imagery)?
+            </p>
+            <p>
+              <span className="text-gray-900 font-bold">Stage 3 — Approval or Rejection:</span> If approved, your listing goes live within 24–48 hours. If rejected, you get a reason code in Seller Hub. Common codes include: "Image quality not as per guidelines", "Background not white", "Mandatory image missing". You can resubmit immediately after fixing the issue.
+            </p>
+            <p>
+              The manual review is why Flipkart rejections are so common among Indian sellers. We've seen sellers get rejected 3–4 times before getting images right. With PV Labs, our Flipkart approval rate is 100% on first submission because we know exactly what the manual reviewers look for.
+            </p>
+          </div>
+        </section>
+
+        <section>
+          <h2 className="text-2xl font-black text-gray-900 mb-6">How Flipkart's Algorithm Rewards Better Images</h2>
+          <div className="space-y-4 text-gray-600 font-medium leading-relaxed">
+            <p>
+              Flipkart's search algorithm considers what they call a "Catalog Quality Score" — a composite metric that includes image quality, number of images, attribute completeness, and description quality. This score directly affects your search ranking.
+            </p>
+            <p>
+              Listings with 6+ high-quality images score significantly higher than listings with 2–3 mediocre shots. Flipkart's data shows that listings with complete image sets (all slots filled) receive <span className="text-gray-900 font-bold">40% more clicks</span> than listings with just a hero image and one or two secondary shots.
+            </p>
+            <p>
+              Flipkart also uses image quality for their "Flipkart Assured" and "Top Seller" badge eligibility. If your listing images don't meet quality thresholds, you're automatically disqualified from these trust badges — which significantly reduce buyer hesitation and increase conversion.
+            </p>
+            <p>
+              During Flipkart sales events like Big Billion Days, Flipkart Dussehra Sale, and Republic Day Sale — the algorithm gives even more weight to catalog quality. Sellers with professional images and complete catalogs get preferred placement in deal pages, flash sales, and category banners.
+            </p>
+          </div>
+        </section>
+
+        <section>
+          <h2 className="text-2xl font-black text-gray-900 mb-6">Flipkart Listing Image Cost in India — 2026 Pricing</h2>
+          <div className="space-y-4 text-gray-600 font-medium leading-relaxed">
+            <p>
+              What does it cost to get professional Flipkart-compliant images in India? Here's a realistic breakdown for 2026:
+            </p>
+            <ul className="space-y-2 ml-4">
+              <li className="flex items-start gap-2"><span className="text-blue-600 font-bold">•</span> DIY (phone camera + Canva): ₹0 cost, but 40–60% rejection rate and poor conversion</li>
+              <li className="flex items-start gap-2"><span className="text-blue-600 font-bold">•</span> Local photographer: ₹5,000–₹15,000 per SKU (not Flipkart-optimized, no infographics)</li>
+              <li className="flex items-start gap-2"><span className="text-blue-600 font-bold">•</span> Freelancer (Fiverr/Upwork): ₹2,000–₹6,000 per SKU (hit or miss quality, no compliance guarantee)</li>
+              <li className="flex items-start gap-2"><span className="text-blue-600 font-bold">•</span> Specialized e-commerce studio (PV Labs): ₹4,000–₹10,000 per SKU (platform-specific, compliance guaranteed, revisions included)</li>
+            </ul>
+            <p>
+              The hidden cost most sellers miss is <span className="text-gray-900 font-bold">rejection rework</span>. Every rejection costs you 2–5 days of lost sales while you fix and resubmit. If your product does ₹2,000/day in revenue, one rejection cycle costs you ₹4,000–₹10,000 in lost revenue — more than the cost of getting it right the first time.
+            </p>
+            <p>
+              For sellers listing on both Amazon and Flipkart (which most Indian sellers do), PV Labs offers dual-platform packages. You get Amazon-optimized AND Flipkart-optimized images for each SKU at 30% less than ordering them separately. Same product, different specifications, zero rejections on both platforms.
+            </p>
+          </div>
+        </section>
+
+        <section>
+          <h2 className="text-2xl font-black text-gray-900 mb-6">Flipkart vs Meesho vs Myntra — Image Requirements Compared</h2>
+          <div className="space-y-4 text-gray-600 font-medium leading-relaxed">
+            <p>
+              If you're selling on multiple Indian marketplaces, here's how their image requirements differ:
+            </p>
+            <p>
+              <span className="text-gray-900 font-bold">Flipkart:</span> 1000×1000px minimum, white background, manual review in most categories, size chart compulsory for fashion. Strictest enforcement among Indian platforms.
+            </p>
+            <p>
+              <span className="text-gray-900 font-bold">Meesho:</span> 800×800px minimum, white background preferred but not always enforced. More lenient review process. However, Meesho's buyer base is extremely price-sensitive — professional images create trust that justifies even small price premiums over competitors.
+            </p>
+            <p>
+              <span className="text-gray-900 font-bold">Myntra:</span> Strictest of all Indian platforms for fashion. Model shots are mandatory (no flat lays, no ghost mannequin for most categories). Specific angle requirements: front, back, side, detail close-up. Images must show accurate color under neutral lighting. Myntra rejects more fashion listings than Flipkart and Amazon combined.
+            </p>
+            <p>
+              <span className="text-gray-900 font-bold">JioMart:</span> Relatively new catalog requirements. 1000×1000px minimum, white background. Review process is evolving. Getting in early with professional images gives you first-mover advantage as JioMart scales.
+            </p>
+            <p>
+              At PV Labs, we create images optimized for all Indian marketplaces simultaneously. One photoshoot brief, multiple platform-specific deliverables. This is how smart Indian brands scale across Flipkart, Amazon, Meesho, Myntra, and JioMart without multiplying their design costs.
+            </p>
           </div>
         </section>
       </div>
