@@ -4,7 +4,7 @@ import Footer from "@/components/layout/Footer";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import { useState } from "react";
-import { MapPin, Clock, DollarSign, ArrowRight, Heart, Zap, Globe, Coffee, Palette, Users, GraduationCap, Briefcase, Send } from "lucide-react";
+import { MapPin, Clock, DollarSign, ArrowRight, Heart, Zap, Globe, Coffee, Palette, Users, GraduationCap, Briefcase, Send, CheckCircle } from "lucide-react";
 import aboutTeam from "@/assets/about-team.jpg";
 
 const perks = [
@@ -26,7 +26,8 @@ const jobs = [
     dept: "Creative",
     type: "Full-time",
     location: "Remote",
-
+    applyLink: "",
+    closed: false,
     desc: "Create premium product visuals for Indian e-commerce brands using advanced digital tools and proprietary workflows.",
     requirements: [
       "Strong visual sense - you know what looks premium and what doesn't",
@@ -38,17 +39,22 @@ const jobs = [
   },
 
   {
-    title: "Operations Executive",
-    dept: "Operations",
-    type: "Full-time",
-    location: "Remote",
-
-    desc: "Keep everything running smoothly - client communication, project tracking, delivery coordination, and record maintenance.",
+    title: "Business Development Intern",
+    dept: "Growth & Sales",
+    type: "Internship (3 months)",
+    location: "Remote — Work From Home, India",
+    applyLink: "https://forms.gle/y4ro1jgXBuZYd7pW8",
+    closed: false,
+    desc: "",
+    descHtml: true,
     requirements: [
-      "Clear communicator in Hindi and English both",
-      "Genuinely organized, not just on paper",
-      "Can handle multiple ongoing projects without dropping things",
-      "Comfortable sending follow-ups and client emails independently"
+      "Comfortable speaking in Hindi and English, you'll be on sales calls and Instagram DMs daily",
+      "Can find and approach D2C brands on Instagram without hand-holding",
+      "Not afraid of cold calling, cold emailing, rejections, and persistent follow-ups",
+      "Able to maintain a lead tracker and CRM in Google Sheets independently",
+      "Willing to create short-form video content and Instagram Reels for outreach",
+      "Available for a 3-month work-from-home internship",
+      "MBA, BBA, BMM, B.Tech or Mass Communication students and freshers welcome - attitude and hustle over resume"
     ]
   },
 
@@ -57,7 +63,8 @@ const jobs = [
     dept: "E-commerce + Design",
     type: "Full-time",
     location: "Remote",
-
+    applyLink: "",
+    closed: true,
     desc: "Manage Etsy store operations while creating fresh, on-demand listing visuals and product graphics using Canva and similar tools as per project requirements.",
     requirements: [
       "Canva expert - fast, clean, creative output",
@@ -74,7 +81,8 @@ const jobs = [
     dept: "Finance",
     type: "Full-time / Part-time",
     location: "Remote",
-
+    applyLink: "",
+    closed: false,
     desc: "Track transactions, manage payment follow-ups, maintain GST records and invoices.",
     requirements: [
       "Basic accounting knowledge",
@@ -121,7 +129,7 @@ const Careers = () => {
           <h2 className="font-heading text-3xl font-bold text-foreground text-center mb-12">Why work at <span className="gradient-text">PV Labs</span>?</h2>
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
             {perks.map((p, i) => (
-              <motion.div key={i} initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: i * 0.05 }} className="glass-card p-6 text-center hover:shadow-lg transition-shadow">
+              <motion.div key={i} initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: i * 0.05 }} className="glass-card p-6 text-center">
                 <div className="w-12 h-12 rounded-2xl bg-primary/10 flex items-center justify-center mx-auto mb-3">
                   <p.icon size={22} className="text-primary" />
                 </div>
@@ -158,22 +166,41 @@ const Careers = () => {
           <h2 className="font-heading text-3xl font-bold text-foreground text-center mb-12">Open <span className="gradient-text">Positions</span></h2>
           <div className="space-y-4">
             {jobs.map((j, i) => (
-              <motion.div key={i} initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="glass-card overflow-hidden">
-                <button onClick={() => setSelectedJob(selectedJob === i ? null : i)} className="w-full p-6 text-left flex items-center justify-between">
+              <motion.div key={i} initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className={`glass-card overflow-hidden ${j.closed ? "opacity-60" : ""}`}>
+                <button onClick={() => !j.closed && setSelectedJob(selectedJob === i ? null : i)} className={`w-full p-6 text-left flex items-center justify-between ${j.closed ? "cursor-default" : ""}`}>
                   <div>
-                    <h3 className="font-heading text-lg font-bold text-foreground">{j.title}</h3>
+                    <div className="flex items-center gap-3">
+                      <h3 className="font-heading text-lg font-bold text-foreground">{j.title}</h3>
+                      {j.closed && (
+                        <span className="text-xs font-semibold bg-green-500/10 text-green-500 px-3 py-1 rounded-full inline-flex items-center gap-1">
+                          <CheckCircle size={12} /> Position Filled
+                        </span>
+                      )}
+                    </div>
                     <div className="flex flex-wrap gap-3 mt-2">
                       <span className="text-xs text-muted-foreground flex items-center gap-1"><Briefcase size={12} /> {j.dept}</span>
                       <span className="text-xs text-muted-foreground flex items-center gap-1"><Clock size={12} /> {j.type}</span>
                       <span className="text-xs text-muted-foreground flex items-center gap-1"><MapPin size={12} /> {j.location}</span>
-                      {/* <span className="text-xs text-primary font-semibold flex items-center gap-1"><DollarSign size={12} /> {j.salary}</span> */}
                     </div>
                   </div>
-                  <span className={`text-primary text-xl transition-transform ${selectedJob === i ? "rotate-45" : ""}`}>+</span>
+                  {!j.closed && (
+                    <span className={`text-primary text-xl transition-transform ${selectedJob === i ? "rotate-45" : ""}`}>+</span>
+                  )}
                 </button>
-                {selectedJob === i && (
+                {selectedJob === i && !j.closed && (
                   <motion.div initial={{ opacity: 0, height: 0 }} animate={{ opacity: 1, height: "auto" }} className="px-6 pb-6 border-t border-border">
-                    <p className="text-muted-foreground mt-4 mb-4">{j.desc}</p>
+                    {j.descHtml ? (
+                      <div className="text-muted-foreground mt-4 mb-4 space-y-3 text-sm leading-relaxed">
+                        <p>PV Labs is a visual design agency that helps D2C and e-commerce brands create high-converting product images,A+ content,Brand Story,Brand Store for Amazon, Flipkart, and Myntra.</p>
+                        <p>We're hiring one <strong className="text-foreground">Business Development Intern</strong> to find D2C brands on Instagram, run cold outreach via DMs and sales calls, follow up systematically (Day 2/5/10), manage leads in a Google Sheets CRM, and create short-form content and Instagram Reels for brand outreach.</p>
+                        <p>This is a remote internship, work from home from anywhere in India. You'll do real lead generation, client acquisition, and sales from Day 1, reporting directly to the founder. No classroom theory, just real outreach, real clients, real revenue.</p>
+                        <p><strong className="text-foreground">Stipend:</strong> ₹8,000–₹12,000/month + performance bonus per closed client.</p>
+                        <p><strong className="text-foreground">Top performers</strong> receive a full-time employment after 3 months.</p>
+                        <p>Ideal for BBA, MBA, BMM, Mass Communication students or freshers looking for hands-on experience in business development, digital marketing, sales, and startup operations.</p>
+                      </div>
+                    ) : (
+                      <p className="text-muted-foreground mt-4 mb-4">{j.desc}</p>
+                    )}
                     <h4 className="font-heading font-bold text-foreground mb-2">Requirements:</h4>
                     <ul className="space-y-2 mb-6">
                       {j.requirements.map((r, k) => (
@@ -182,9 +209,15 @@ const Careers = () => {
                         </li>
                       ))}
                     </ul>
-                    <Link href="/contact" className="gradient-btn px-6 py-3 text-sm inline-flex items-center gap-2">
-                      Apply Now <Send size={14} />
-                    </Link>
+                    {j.applyLink ? (
+                      <a href={j.applyLink} target="_blank" rel="noopener noreferrer" className="gradient-btn px-6 py-3 text-sm inline-flex items-center gap-2">
+                        Apply Now <Send size={14} />
+                      </a>
+                    ) : (
+                      <Link href="/contact" className="gradient-btn px-6 py-3 text-sm inline-flex items-center gap-2">
+                        Apply Now <Send size={14} />
+                      </Link>
+                    )}
                   </motion.div>
                 )}
               </motion.div>
@@ -211,6 +244,3 @@ const Careers = () => {
 };
 
 export default Careers;
-
-
-
