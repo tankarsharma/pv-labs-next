@@ -1220,6 +1220,205 @@ export const blogPosts: BlogPost[] = [
       <p><strong>Get started:</strong> <a href="/contact">Contact PV Labs</a> for a free consultation. No commitment, no pressure — just honest feedback on your listing images.</p>
     `,
   },
+  
+  {
+    slug: "amazon-listing-images-design-service-guide",
+    title: "Amazon Listing Images Design Service: What Indian Sellers Should Expect in 2026",
+    description:
+      "A complete deep-dive on Amazon listing image design services in India — deliverables, process, turnaround, compliance, pricing models, and how to evaluate ROI before hiring.",
+    excerpt:
+      "If you're hiring an Amazon listing image agency, this guide shows exactly what good service looks like — and what red flags to avoid.",
+    category: "Service Guide",
+    readTime: "13 min",
+    author: "Tankaar Sharma",
+    date: "August 16, 2026",
+    featured: false,
+    image: "",
+    content: `
+      <h2>Why This Service Exists</h2>
+      <p>Most Amazon sellers do not lose sales because of product quality. They lose sales because buyers never click — or click and don’t trust what they see. Listing image design exists to solve exactly this problem.</p>
+      <p>At search-result level, your main image competes against dozens of similar products. On product pages, your secondary images must remove doubt quickly. That means visual clarity, compliance, and conversion psychology — not just “nice design.”</p>
+
+      <h2>What a High-Quality Listing Image Service Should Include</h2>
+      <ul>
+        <li>Main hero image optimized for click-through</li>
+        <li>Secondary image sequence mapped to buyer objections</li>
+        <li>Category-aware infographic strategy</li>
+        <li>Mobile readability checks at small viewport sizes</li>
+        <li>Amazon compliance checks before final delivery</li>
+      </ul>
+      <p>If a vendor only asks for your logo and product name, that is not enough. Good service starts with offer positioning, competitor context, and conversion intent.</p>
+
+      <h2>Expected Deliverables (Per SKU)</h2>
+      <p>A practical deliverable structure for Amazon India sellers usually looks like this:</p>
+      <ul>
+        <li><strong>Image 1:</strong> White background hero (strictly compliant)</li>
+        <li><strong>Image 2:</strong> Alternate angle / product depth</li>
+        <li><strong>Image 3:</strong> Lifestyle usage context</li>
+        <li><strong>Image 4:</strong> Top feature infographic</li>
+        <li><strong>Image 5:</strong> Dimensions and scale</li>
+        <li><strong>Image 6:</strong> Material/ingredients or technical detail</li>
+        <li><strong>Image 7:</strong> Variant comparison</li>
+        <li><strong>Image 8:</strong> Trust proof/certification/social signal</li>
+        <li><strong>Image 9:</strong> Brand narrative + CTA</li>
+      </ul>
+
+      <h2>How to Evaluate ROI Before You Hire</h2>
+      <p>Ask one question: “If CTR improves from 2% to 4%, what is the monthly revenue delta at current impressions?” If the upside is meaningful (it usually is), professional visuals are not a cost — they are a conversion multiplier.</p>
+      <p>Also check if your current images fail zoom, fail readability, or fail trust. Those are silent conversion killers.</p>
+
+      <h2>Common Red Flags in Agencies/Freelancers</h2>
+      <ul>
+        <li>No compliance checklist</li>
+        <li>No mobile-first testing process</li>
+        <li>Template-heavy output with no category logic</li>
+        <li>No revision framework tied to conversion goals</li>
+      </ul>
+
+      <h2>How PV Labs Positions This Service</h2>
+      <p>At PV Labs, listing image design is treated as a performance asset — not only as creative output. Our process combines marketplace compliance, buyer psychology, and visual hierarchy tuned for Amazon India behavior.</p>
+      <p>Explore service details here: <a href="/services/listing-images">Amazon Listing Images Service</a>.</p>
+
+      <h2>Supporting Guides You Should Read Next</h2>
+      <ul>
+        <li><a href="/blog/amazon-product-image-size-guide-2026">Amazon Product Image Size Guide</a></li>
+        <li><a href="/blog/amazon-product-photography-vs-cgi">Photography vs CGI for Amazon</a></li>
+        <li><a href="/blog/amazon-listing-guide-2026">Complete Listing Images Strategy</a></li>
+      </ul>
+    `,
+  },
+  {
+    slug: "amazon-a-plus-content-design-service-guide",
+    title: "Amazon A+ Content Design Service: Complete Hiring & Strategy Guide for Indian Brands",
+    description:
+      "A deep-dive guide on Amazon A+ Content design services in India — module planning, storytelling structure, approval-safe copy, visual systems, pricing expectations, and ROI model.",
+    excerpt:
+      "A+ Content should do more than look premium — it should reduce hesitation and increase conversion. Here's how to hire for that outcome.",
+    category: "Service Guide",
+    readTime: "14 min",
+    author: "Tankaar Sharma",
+    date: "August 16, 2026",
+    featured: false,
+    image: "",
+    content: `
+      <h2>What Brands Get Wrong About A+ Content</h2>
+      <p>Most sellers think A+ Content is “design work after listing.” In reality, A+ is a conversion layer that answers buyer objections your bullets can’t fully handle. If your A+ modules are generic, your conversion lift will also be generic.</p>
+
+      <h2>What an Effective A+ Service Should Deliver</h2>
+      <ul>
+        <li>Brand story module with clear positioning</li>
+        <li>Feature modules mapped to decision triggers</li>
+        <li>Comparison logic that prevents wrong product selection</li>
+        <li>Visual consistency across ASINs for brand memory</li>
+        <li>Submission-safe copy and layout checks</li>
+      </ul>
+
+      <h2>Ideal A+ Module Flow (Practical)</h2>
+      <ol>
+        <li><strong>Brand context:</strong> who you are and why trust you</li>
+        <li><strong>Core benefits:</strong> top 3 reasons to buy</li>
+        <li><strong>Proof block:</strong> ingredients/material/process or certifications</li>
+        <li><strong>Comparison section:</strong> choose the right variant</li>
+        <li><strong>Usage/lifestyle:</strong> relevance in real life</li>
+      </ol>
+
+      <h2>Policy-Safe Copy Is Non-Negotiable</h2>
+      <p>Many A+ submissions fail due to promotional language, unverified claims, competitor references, or compliance issues in visuals. A good service team writes for conversion while staying within review guidelines.</p>
+      <p>For broader education, review our <a href="/blog/amazon-a-plus-content-design-guide">complete A+ design guide</a>.</p>
+
+      <h2>How to Measure A+ ROI</h2>
+      <p>Track pre/post metrics for:</p>
+      <ul>
+        <li>Unit session percentage (conversion rate)</li>
+        <li>Return rate (for expectation mismatch products)</li>
+        <li>Average order value (for variant/up-sell categories)</li>
+      </ul>
+      <p>If conversion rises even modestly on a high-traffic ASIN, the A+ project often pays back quickly.</p>
+
+      <h2>When to Outsource vs Do In-House</h2>
+      <p>If you have an in-house design and content team experienced with Amazon module structure, in-house can work. For most growing brands, outsourcing is faster and safer because marketplace-specific constraints are easy to miss.</p>
+
+      <h2>PV Labs Approach to A+ Design</h2>
+      <p>PV Labs designs A+ systems for conversion outcomes: structured narrative, visual hierarchy, category-aware messaging, and submission-safe delivery.</p>
+      <p>Service details: <a href="/services/a-plus-content">Amazon A+ Content Design Service</a>.</p>
+
+      <h2>Suggested Next Reads</h2>
+      <ul>
+        <li><a href="/blog/amazon-a-plus-content-guide">What is A+ Content?</a></li>
+        <li><a href="/blog/how-to-sell-on-amazon-india-2026">How to Sell on Amazon India (End-to-End)</a></li>
+        <li><a href="/services/brand-store">Amazon Brand Store Design Service</a></li>
+      </ul>
+    `,
+  },
+  {
+    slug: "amazon-brand-store-design-service-guide",
+    title: "Amazon Brand Store Design Service: Full Guide for Indian Brands in 2026",
+    description:
+      "Complete guide to Amazon Brand Store design services in India — storefront architecture, page strategy, UX flow, creative structure, ad landing optimization, and performance benchmarks.",
+    excerpt:
+      "Your Amazon Brand Store is not just a brochure — it's a conversion path. Here's how to design it for sales, not vanity.",
+    category: "Service Guide",
+    readTime: "13 min",
+    author: "Tankaar Sharma",
+    date: "August 16, 2026",
+    featured: false,
+    image: "",
+    content: `
+      <h2>Why a Brand Store Matters</h2>
+      <p>When buyers click your brand, they should land inside a structured shopping experience — not a random product list. A Brand Store helps you control category narrative, improve cross-sell flow, and increase trust during high-consideration purchases.</p>
+
+      <h2>What a Strong Brand Store Service Should Cover</h2>
+      <ul>
+        <li>Store architecture (homepage + category/subcategory pages)</li>
+        <li>Navigation design for fast product discovery</li>
+        <li>Creative system aligned with listing/A+ branding</li>
+        <li>Campaign landing page planning for Sponsored Brands traffic</li>
+        <li>Mobile usability and readability checks</li>
+      </ul>
+
+      <h2>Store Structure That Usually Performs Better</h2>
+      <p>A practical store layout for most Indian brands:</p>
+      <ol>
+        <li><strong>Homepage:</strong> value proposition + hero category routing</li>
+        <li><strong>Category pages:</strong> product clusters by use-case or audience</li>
+        <li><strong>Best-seller section:</strong> reduce decision friction</li>
+        <li><strong>Comparison blocks:</strong> guide users to the right product</li>
+        <li><strong>Brand trust elements:</strong> manufacturing/process/social proof</li>
+      </ol>
+
+      <h2>Design Alone Is Not Enough</h2>
+      <p>A pretty store with weak information architecture underperforms. Strong stores align page flow with buyer intent, especially for ad traffic where attention windows are short.</p>
+      <p>If your listings are also being upgraded, align store messaging with <a href="/services/listing-images">listing images</a> and <a href="/services/a-plus-content">A+ content design</a> for consistency.</p>
+
+      <h2>When Should You Invest in Brand Store Design?</h2>
+      <ul>
+        <li>You have multiple ASINs and need cross-sell flow</li>
+        <li>You run Sponsored Brands campaigns</li>
+        <li>You want stronger brand perception versus reseller-style listings</li>
+        <li>You are preparing for seasonal sale traffic spikes</li>
+      </ul>
+
+      <h2>How to Measure Store Performance</h2>
+      <p>Track these indicators after launch:</p>
+      <ul>
+        <li>Store page views and dwell behavior</li>
+        <li>Traffic-to-product click-through</li>
+        <li>Category page drop-off points</li>
+        <li>Campaign landing efficiency (for ad-linked pages)</li>
+      </ul>
+
+      <h2>PV Labs Brand Store Service Positioning</h2>
+      <p>PV Labs builds Amazon Brand Stores as conversion pathways, not static design assets. The emphasis is on structure, navigation intent, and cohesive visual storytelling across the brand journey.</p>
+      <p>View service details: <a href="/services/brand-store">Amazon Brand Store Design Service</a>.</p>
+
+      <h2>Recommended Follow-Up Reading</h2>
+      <ul>
+        <li><a href="/blog/amazon-a-plus-content-guide">A+ Content Fundamentals</a></li>
+        <li><a href="/blog/amazon-a-plus-content-design-guide">A+ Content Design Deep Dive</a></li>
+        <li><a href="/blog/how-to-sell-on-amazon-india-2026">Complete Amazon India Selling Guide</a></li>
+      </ul>
+    `,
+  }
 ];
 
 export const blogSlugs = blogPosts.map((p) => p.slug);
