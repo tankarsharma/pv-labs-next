@@ -54,7 +54,13 @@ const Blog = () => {
                 <motion.div key={i} initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: i * 0.1 }}>
                   <Link href={`/blog/${p.slug}`} className="glass-card overflow-hidden group block hover:shadow-xl transition-shadow">
                     <div className="aspect-[16/9] overflow-hidden">
-                      <img src={typeof p.image === "string" ? p.image : p.image.src} alt={p.title} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+                      {p.image ? (
+                        <img src={typeof p.image === "string" ? p.image : p.image.src} alt={p.title} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+                      ) : (
+                        <div className="w-full h-full bg-gradient-to-br from-gray-900 via-gray-800 to-primary/80 flex items-center justify-center p-6">
+                          <h3 className="text-white font-black text-lg sm:text-xl text-center leading-tight">{p.title}</h3>
+                        </div>
+                      )}
                     </div>
                     <div className="p-6">
                       <div className="flex items-center gap-3 mb-3">
@@ -97,7 +103,13 @@ const Blog = () => {
             <motion.div key={p.slug} initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: i * 0.05 }}>
               <Link href={`/blog/${p.slug}`} className="glass-card overflow-hidden group block hover:shadow-xl transition-shadow h-full">
                 <div className="aspect-[16/9] overflow-hidden">
-                  <img src={typeof p.image === "string" ? p.image : p.image.src} alt={p.title} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+                  {p.image ? (
+                    <img src={typeof p.image === "string" ? p.image : p.image.src} alt={p.title} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+                  ) : (
+                    <div className="w-full h-full bg-gradient-to-br from-gray-900 via-gray-800 to-primary/80 flex items-center justify-center p-6">
+                      <h3 className="text-white font-black text-lg text-center leading-tight">{p.title}</h3>
+                    </div>
+                  )}
                 </div>
                 <div className="p-5">
                   <div className="flex items-center gap-2 mb-2">
@@ -141,6 +153,3 @@ const Blog = () => {
 };
 
 export default Blog;
-
-
-

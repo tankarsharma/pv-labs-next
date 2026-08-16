@@ -12,6 +12,306 @@ import serviceAppdesign from "../assets/Blog33.png";
 import serviceSocial from "@/assets/service-social.jpg";
 
 const blogData: Record<string, any> = {
+    "amazon-product-image-size-guide-2026": {
+    title: "Amazon Product Image Size Guide 2026: Complete Requirements & Best Practices",
+    category: "Guide",
+    subtitle: "Image Size & Compliance",
+    author: "Tankaar Sharma",
+    date: "August 10, 2026",
+    readTime: "12 min",
+    image: null,
+    content: (
+      <div className="space-y-8 sm:space-y-10 md:space-y-12 lg:space-y-16">
+        <section>
+          <div className="flex items-center gap-3 mb-6">
+            <div className="w-12 h-12 rounded-2xl bg-primary/10 flex items-center justify-center">
+              <ShieldCheck className="text-primary" size={24} />
+            </div>
+            <h2 className="text-2xl md:text-3xl font-black text-gray-900">Amazon Product Image Size Requirements 2026</h2>
+          </div>
+          <div className="glass-card p-6 md:p-8 border-l-4 border-primary bg-white/50 relative overflow-hidden">
+            <p className="text-lg md:text-xl text-gray-600 leading-relaxed font-medium relative z-10">
+              "Amazon's technical minimum is 500×500 pixels, but if you upload at that size, you're sabotaging your own listing. The zoom feature — the single biggest conversion driver — only activates at 1600×1600px or above."
+            </p>
+          </div>
+        </section>
+
+        <section className="grid md:grid-cols-2 gap-8">
+          <div className="glass-card p-6 md:p-8 hover:border-primary/30 transition-all bg-white/50 group">
+            <h3 className="text-xl font-bold mb-6 flex items-center gap-3 text-gray-900">
+              <ShieldCheck className="text-primary group-hover:scale-110 transition-transform" size={24} /> Main Image Specs
+            </h3>
+            <ul className="space-y-4 text-gray-600 font-medium">
+              <li className="flex items-start gap-3">
+                <div className="w-1.5 h-1.5 rounded-full bg-primary mt-2 flex-shrink-0" />
+                <span>Recommended: <span className="text-gray-900 font-bold">1600×1600px minimum</span> (zoom requires this)</span>
+              </li>
+              <li className="flex items-start gap-3">
+                <div className="w-1.5 h-1.5 rounded-full bg-primary mt-2 flex-shrink-0" />
+                <span>Maximum: <span className="text-gray-900 font-bold">10,000×10,000px</span></span>
+              </li>
+              <li className="flex items-start gap-3">
+                <div className="w-1.5 h-1.5 rounded-full bg-primary mt-2 flex-shrink-0" />
+                <span>Aspect ratio: <span className="text-gray-900 font-bold">1:1 (square)</span></span>
+              </li>
+              <li className="flex items-start gap-3">
+                <div className="w-1.5 h-1.5 rounded-full bg-primary mt-2 flex-shrink-0" />
+                <span>Background: <span className="text-gray-900 font-bold">Pure white RGB (255, 255, 255)</span></span>
+              </li>
+              <li className="flex items-start gap-3">
+                <div className="w-1.5 h-1.5 rounded-full bg-primary mt-2 flex-shrink-0" />
+                <span>Frame fill: <span className="text-gray-900 font-bold">85%+ of image area</span></span>
+              </li>
+              <li className="flex items-start gap-3">
+                <div className="w-1.5 h-1.5 rounded-full bg-primary mt-2 flex-shrink-0" />
+                <span>Format: <span className="text-gray-900 font-bold">JPEG, PNG, TIFF</span> — no watermarks/text</span>
+              </li>
+              <li className="flex items-start gap-3">
+                <div className="w-1.5 h-1.5 rounded-full bg-primary mt-2 flex-shrink-0" />
+                <span>Color profile: <span className="text-gray-900 font-bold">sRGB</span></span>
+              </li>
+            </ul>
+          </div>
+          <div className="glass-card p-6 md:p-8 hover:border-accent/30 transition-all bg-white/50">
+            <h3 className="text-xl font-bold mb-4 flex items-center gap-3 text-gray-900">
+              <Clock className="text-accent" size={24} /> A+ Content Sizes
+            </h3>
+            <ul className="space-y-4 text-gray-600 font-medium">
+              <li className="flex items-start gap-3">
+                <div className="w-1.5 h-1.5 rounded-full bg-accent mt-2 flex-shrink-0" />
+                <span>Standard modules: <span className="text-gray-900 font-bold">970×600px</span></span>
+              </li>
+              <li className="flex items-start gap-3">
+                <div className="w-1.5 h-1.5 rounded-full bg-accent mt-2 flex-shrink-0" />
+                <span>Comparison charts: <span className="text-gray-900 font-bold">150×300px per cell</span></span>
+              </li>
+              <li className="flex items-start gap-3">
+                <div className="w-1.5 h-1.5 rounded-full bg-accent mt-2 flex-shrink-0" />
+                <span>Brand Story banner: <span className="text-gray-900 font-bold">1464×625px</span></span>
+              </li>
+              <li className="flex items-start gap-3">
+                <div className="w-1.5 h-1.5 rounded-full bg-accent mt-2 flex-shrink-0" />
+                <span>Brand Store hero: <span className="text-gray-900 font-bold">3000×600px</span></span>
+              </li>
+            </ul>
+            <div className="flex items-center gap-2 p-4 bg-accent/5 rounded-2xl border border-accent/10 text-accent font-bold text-sm mt-6">
+              <Sparkles size={16} /> DPI is irrelevant — only pixels matter on screens
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <h2 className="text-2xl font-black text-gray-900 mb-6">Why Image Size Matters for Rankings & Conversions</h2>
+          <div className="space-y-4 text-gray-600 font-medium leading-relaxed">
+            <p>
+              Amazon's A9 algorithm uses Click-Through Rate (CTR) as a primary ranking signal. Your product image is the #1 factor determining whether someone clicks your listing in search results — not your title, not your price, not your reviews. The image.
+            </p>
+            <p>
+              Here's the chain reaction: higher-quality images → higher CTR → Amazon ranks you higher → more impressions → more clicks → more sales → even higher rank. It's a compounding growth loop that starts with whether your image is sharp, zoom-eligible, and professionally composed.
+            </p>
+            <p>
+              The zoom feature alone changes conversion dramatically. Amazon's own data shows listings with zoom-eligible images (1600px+) see <span className="text-gray-900 font-bold">30%+ higher conversion rates</span> compared to listings without zoom. When a buyer can pinch-to-zoom and see the stitching on a leather wallet or the ingredient label on a protein powder — that's what closes the sale.
+            </p>
+            <p>
+              In India specifically, over 70% of Amazon traffic comes from mobile devices. A 1000×1000px image might look "fine" on desktop, but on a 6.5-inch phone screen, it's blurry when pinched. Your infographic text becomes unreadable. The buyer leaves and buys from a competitor whose images are crisp.
+            </p>
+          </div>
+        </section>
+
+        <section className="bg-gray-900 rounded-[32px] md:rounded-[40px] p-6 md:p-10 text-white relative overflow-hidden">
+          <div className="absolute bottom-0 right-0 w-64 h-64 bg-primary/10 blur-[100px]" />
+          <h2 className="text-2xl font-black mb-8">Common Image Size Mistakes Indian Sellers Make</h2>
+          <div className="grid md:grid-cols-2 gap-8">
+            <ul className="space-y-4">
+              <li className="flex gap-4">
+                <span className="text-red-400 font-bold">01.</span>
+                <p className="text-sm text-gray-300"><span className="text-white font-bold">WhatsApp compression:</span> Sharing product photos via WhatsApp auto-compresses to ~800px. Always transfer via Google Drive or cable.</p>
+              </li>
+              <li className="flex gap-4">
+                <span className="text-red-400 font-bold">02.</span>
+                <p className="text-sm text-gray-300"><span className="text-white font-bold">Wrong aspect ratio:</span> Uploading 1600×900px landscape images. Amazon crops or pads — making your product look small.</p>
+              </li>
+              <li className="flex gap-4">
+                <span className="text-red-400 font-bold">03.</span>
+                <p className="text-sm text-gray-300"><span className="text-white font-bold">Not filling 85% frame:</span> Too much white space makes your thumbnail tiny in search results. Buyers scroll past.</p>
+              </li>
+            </ul>
+            <ul className="space-y-4">
+              <li className="flex gap-4">
+                <span className="text-red-400 font-bold">04.</span>
+                <p className="text-sm text-gray-300"><span className="text-white font-bold">Text too small for mobile:</span> Infographic text unreadable at 400px width is decoration, not information.</p>
+              </li>
+              <li className="flex gap-4">
+                <span className="text-red-400 font-bold">05.</span>
+                <p className="text-sm text-gray-300"><span className="text-white font-bold">Same images for Amazon & Flipkart:</span> Different platforms, different specs. Copy-pasting leads to rejections.</p>
+              </li>
+              <li className="flex gap-4">
+                <span className="text-red-400 font-bold">06.</span>
+                <p className="text-sm text-gray-300"><span className="text-white font-bold">Over-compression:</span> JPEG quality 60 destroys sharpness. Amazon allows 10MB — save at quality 85-95.</p>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <section>
+          <h2 className="text-2xl font-black text-gray-900 mb-8">Category-Specific Image Requirements</h2>
+          <div className="space-y-4">
+            {[
+              { c: "Fashion & Apparel", t: "Model shots mandatory (front/back). Size charts reduce returns by 2-3x. Human models required — no mannequins." },
+              { c: "Electronics", t: "All ports and buttons visible. BIS certification marks in secondary images. Scale reference with common objects." },
+              { c: "Food & Grocery", t: "FSSAI license visible. Nutritional info, MRP, expiry date must be legible. Show product outside packaging." },
+              { c: "Jewelry & Accessories", t: "Macro close-ups for stone setting and clasp quality. Worn-on-model for scale. Hallmark visibility for gold/silver." },
+              { c: "Home & Kitchen", t: "Lifestyle context in Indian home settings. Dimension images essential. Show product with common objects for scale." }
+            ].map((item, i) => (
+              <div key={i} className="flex flex-col md:flex-row md:items-center gap-4 md:gap-6 p-6 rounded-3xl border border-gray-100 hover:border-primary/20 transition-all">
+                <div className="w-full md:w-36 font-black text-[10px] uppercase tracking-tighter text-gray-400 md:border-r md:border-gray-100 md:pr-6">{item.c}</div>
+                <p className="text-sm text-gray-600 font-medium">{item.t}</p>
+              </div>
+            ))}
+          </div>
+        </section>
+
+        <section>
+          <h2 className="text-2xl font-black text-gray-900 mb-6">How to Resize & Optimize Images for Amazon</h2>
+          <div className="space-y-4 text-gray-600 font-medium leading-relaxed">
+            <p>
+              <span className="text-gray-900 font-bold">Using Adobe Photoshop:</span> Image → Image Size → Set to 1600px or 2000px. If not square, use Canvas Size to add white space. Convert to sRGB profile. Save for Web at JPEG quality 85-92, or PNG for graphics-heavy infographics.
+            </p>
+            <p>
+              <span className="text-gray-900 font-bold">Using Canva (free):</span> Create custom design at 1600×1600px. Upload product photo, position to fill 85%+ of canvas. Set background to white (#FFFFFF). Download as PNG.
+            </p>
+            <p>
+              <span className="text-gray-900 font-bold">Critical point:</span> Resizing a small image UP doesn't improve quality. An 800×800px image resized to 1600×1600px is just a blurry image made bigger. You need high-resolution source files — either from a good camera (12MP+) or from CGI renders.
+            </p>
+            <p>
+              At PV Labs, we deliver all images at 2000×2000px with platform-specific variants — ready to upload directly to Seller Central without any resizing on your end.
+            </p>
+          </div>
+        </section>
+
+        <section>
+          <h2 className="text-2xl font-black text-gray-900 mb-8 flex items-center gap-3">
+            <span className="w-8 h-8 rounded-lg bg-gray-900 text-white flex items-center justify-center text-sm">9</span>
+            Main Image vs Secondary Images
+          </h2>
+          <div className="space-y-4 text-gray-600 font-medium leading-relaxed">
+            <p>
+              <span className="text-gray-900 font-bold">Main Image = The Click Generator.</span> Its only job is to make someone click from search results. Clean, high-resolution, pure white background, product filling the frame. No text, no infographics, no lifestyle. Violations get your listing suppressed.
+            </p>
+            <p>
+              <span className="text-gray-900 font-bold">Secondary Images = The Conversion Machine.</span> Once someone clicks, images PT01–PT08 must convince them to buy:
+            </p>
+          </div>
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 mt-6">
+            {[
+              { t: "Second Angle", d: "Back, side, or top-down perspective." },
+              { t: "Lifestyle Shot", d: "Product in use in an Indian home setting." },
+              { t: "Feature Infographic", d: "Top 3-4 features with icons and text." },
+              { t: "Dimensions/Scale", d: "Exact measurements with reference objects." },
+              { t: "Material/Ingredients", d: "Close-up of materials, certifications." },
+              { t: "Comparison Chart", d: "Your variants side by side." },
+              { t: "Social Proof", d: "Review quotes, awards, star ratings." },
+              { t: "Brand Story/CTA", d: "Who you are, why you're different." }
+            ].map((item, i) => (
+              <div key={i} className="p-6 rounded-2xl border border-gray-100 bg-gray-50/50 hover:bg-white hover:shadow-xl hover:border-primary/20 transition-all group">
+                <span className="text-[10px] font-black text-primary uppercase tracking-widest mb-2 block">Image {i + 2}</span>
+                <h4 className="font-bold text-gray-900 mb-2 group-hover:text-primary transition-colors">{item.t}</h4>
+                <p className="text-xs text-gray-500 leading-relaxed font-medium">{item.d}</p>
+              </div>
+            ))}
+          </div>
+        </section>
+
+        <section>
+          <h2 className="text-2xl font-black text-gray-900 mb-6">Mobile Optimization: Why 1500px+ Is Non-Negotiable</h2>
+          <div className="space-y-4 text-gray-600 font-medium leading-relaxed">
+            <p>
+              Over 70% of Amazon India's traffic comes from mobile devices. In Tier 2 and Tier 3 cities — where e-commerce is growing fastest — that number is closer to 85%.
+            </p>
+            <p>
+              On mobile, your image displays at 400-500px in search and 600-800px on the detail page. When a buyer pinch-to-zooms, Amazon renders the full-resolution image. If it's only 1000px, the zoom is blurry. At 1600px+, it's crisp — and that detail converts browsers into buyers.
+            </p>
+            <p>
+              For infographics: if text isn't readable at 400px width, it's too small. Use minimum 24pt body text and 36pt+ for headlines. At PV Labs, we test every infographic at mobile display sizes before delivery.
+            </p>
+          </div>
+        </section>
+
+        <section className="bg-primary/5 rounded-[32px] md:rounded-[40px] p-6 md:p-10 border border-primary/10">
+          <h2 className="text-2xl font-black text-gray-900 mb-6">Professional vs DIY: Cost Comparison</h2>
+          <div className="grid md:grid-cols-3 gap-6">
+            <div className="p-6 rounded-3xl bg-white border border-gray-100">
+              <h4 className="font-black text-gray-900 mb-2">DIY (Phone + Canva)</h4>
+              <p className="text-2xl font-black text-gray-900 mb-3">₹0</p>
+              <ul className="space-y-2 text-xs text-gray-500 font-medium">
+                <li>• High rejection rate</li>
+                <li>• No zoom quality</li>
+                <li>• Poor CTR</li>
+                <li>• Best for: testing 1 product</li>
+              </ul>
+            </div>
+            <div className="p-6 rounded-3xl bg-white border border-gray-100">
+              <h4 className="font-black text-gray-900 mb-2">Professional Photography</h4>
+              <p className="text-2xl font-black text-gray-900 mb-3">₹8K–₹40K<span className="text-sm font-medium text-gray-400">/SKU</span></p>
+              <ul className="space-y-2 text-xs text-gray-500 font-medium">
+                <li>• High quality but inflexible</li>
+                <li>• Full reshoot for changes</li>
+                <li>• 7-14 day turnaround</li>
+                <li>• Best for: large brands</li>
+              </ul>
+            </div>
+            <div className="p-6 rounded-3xl bg-gray-900 text-white border border-gray-800">
+              <h4 className="font-black mb-2">CGI (PV Labs)</h4>
+              <p className="text-2xl font-black mb-3">₹3K–₹8K<span className="text-sm font-medium text-gray-400">/SKU</span></p>
+              <ul className="space-y-2 text-xs text-gray-300 font-medium">
+                <li>• Photorealistic renders</li>
+                <li>• No shipping needed</li>
+                <li>• Unlimited angles & revisions</li>
+                <li>• 3-5 days, 100% compliant</li>
+              </ul>
+            </div>
+          </div>
+          <p className="text-sm text-gray-600 font-medium mt-6 leading-relaxed">
+            <span className="text-gray-900 font-bold">ROI math:</span> Upgrading from 2% CTR to 5% CTR on 1,000 daily impressions at ₹800 AOV = ₹24,000 more revenue per day — ₹7.2 lakh/month from a one-time ₹5,000-8,000 investment. Payback: 1 day.
+          </p>
+        </section>
+
+        <section>
+          <h2 className="text-2xl font-black text-gray-900 mb-6">Frequently Asked Questions</h2>
+          <div className="space-y-6">
+            {[
+              { q: "What size image for Amazon 2026?", a: "1600×1600 pixels minimum for zoom in 1:1 square ratio. Technical minimum is 500px but zoom requires 1600+. Best practice: upload at 2000×2000px in JPEG quality 85+ or PNG with pure white background." },
+              { q: "How to create Amazon product images?", a: "Three options: (1) DIY with phone + Canva at ₹0; (2) Professional photographer at ₹8,000-40,000/SKU; (3) CGI team like PV Labs at ₹3,000-8,000/SKU with compliance guarantee and 3-5 day delivery." },
+              { q: "Which size for Amazon A+ listing images?", a: "Standard modules: 970×600px. Comparison charts: 150×300px per cell. Image-with-text: 300×300px or 600×180px. Brand Story banners: 1464×625px. Never stretch smaller images to fit." },
+              { q: "What is Amazon product image size in pixels?", a: "1600×1600px minimum for zoom, up to 10,000×10,000px maximum. Most professionals upload at 2000×2000px for optimal quality-to-file-size balance. Always 1:1 square ratio." },
+              { q: "What is the Amazon image size ratio?", a: "1:1 (square). Non-square images get cropped or padded with white space, making your product look smaller than competitors. Always design at square ratio." }
+            ].map((item, i) => (
+              <div key={i} className="p-6 rounded-2xl border border-gray-100 bg-gray-50/30">
+                <h3 className="font-bold text-gray-900 mb-2">{item.q}</h3>
+                <p className="text-sm text-gray-600 font-medium leading-relaxed">{item.a}</p>
+              </div>
+            ))}
+          </div>
+        </section>
+
+        <section>
+          <div className="glass-card p-6 md:p-10 bg-white shadow-2xl border border-gray-100 rounded-2xl md:rounded-3xl w-full">
+            <div className="p-4 sm:p-6 md:p-10 bg-gradient-to-br from-gray-900 to-gray-950 rounded-xl sm:rounded-2xl md:rounded-3xl text-center w-full">
+              <h3 className="text-base sm:text-lg md:text-xl lg:text-2xl text-white font-black mb-2 sm:mb-3 md:mb-4 px-2">
+                Get Amazon-Compliant Images — Zero Rejections Guaranteed
+              </h3>
+              <p className="text-gray-400 text-[11px] sm:text-xs md:text-sm lg:text-base mb-4 sm:mb-5 md:mb-6 leading-relaxed px-2">
+                9 images per SKU. CGI-based. 3-5 day delivery. If Amazon rejects any image, we redo it free.
+              </p>
+              <button className="w-full sm:w-auto px-4 sm:px-6 md:px-10 py-2 sm:py-2.5 md:py-4 bg-primary hover:bg-accent text-white font-black uppercase tracking-widest text-[9px] sm:text-[10px] md:text-xs rounded-xl transition-all">
+                Get Your Images Done →
+              </button>
+            </div>
+          </div>
+        </section>
+      </div>
+    )
+  },
   "amazon-listing-guide-2026": {
     title: "Amazon Listing Images - Complete Guide for Indian Sellers 2026",
     category: "Guide",
@@ -1017,7 +1317,13 @@ const BlogPost = ({ slug }: BlogPostProps) => {
         <section className="px-4 sm:px-6 md:px-12 mb-12 md:mb-16">
           <div className="max-w-7xl mx-auto">
             <div className="rounded-2xl sm:rounded-3xl md:rounded-[40px] overflow-hidden shadow-2xl border border-gray-100">
-              <img src={typeof post.image === "string" ? post.image : post.image.src} alt={post.title} className="w-screen h-full  object-cover" />
+              {post.image ? (
+                <img src={typeof post.image === "string" ? post.image : post.image.src} alt={post.title} className="w-screen h-full object-cover" />
+              ) : (
+                <div className="w-full h-[200px] sm:h-[300px] md:h-[400px] bg-gradient-to-br from-gray-900 via-gray-800 to-primary/80 flex items-center justify-center">
+                  <h2 className="text-white font-black text-xl sm:text-2xl md:text-4xl text-center px-8 leading-tight max-w-3xl">{post.title}</h2>
+                </div>
+              )}
             </div>
           </div>
         </section>
