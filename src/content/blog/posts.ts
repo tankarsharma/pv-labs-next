@@ -229,6 +229,184 @@ export const blogPosts: BlogPost[] = [
       <p>Upgrading from 2% to 5% CTR on 1,000 daily impressions means ₹72,000 more revenue per month — from a one-time ₹5,000–₹8,000 image investment.</p>
     `,
   },
+    {
+    slug: "how-to-sell-on-amazon-india-2026",
+    title: "How to Sell on Amazon India 2026: Complete Step-by-Step Guide for Beginners",
+    description:
+      "Complete guide on how to sell on Amazon India in 2026 — account registration, product listing, FBA vs self-ship, fees, listing images, A+ content, advertising, and scaling strategies for new Indian sellers.",
+    excerpt:
+      "Amazon India has 300M+ active buyers waiting. Here's exactly how to go from zero to your first sale — and then scale to ₹10L/month.",
+    category: "Guide",
+    readTime: "18 min",
+    author: "Tankaar Sharma",
+    date: "August 12, 2026",
+    featured: true,
+    image: "",
+    content: `
+      <h2>Why Sell on Amazon India in 2026?</h2>
+      <p>Amazon India is the largest e-commerce marketplace in the country with over 300 million active buyers, 15 lakh+ sellers, and a GMV (Gross Merchandise Value) crossing ₹4 lakh crore annually. Whether you're a manufacturer in Rajkot, a reseller in Delhi, or a D2C brand in Bangalore — Amazon India gives you access to buyers in 19,000+ pin codes without needing a single physical store.</p>
+      <p>In 2026, several factors make this the best time to start selling on Amazon India:</p>
+      <ul>
+        <li><strong>Tier 2 & 3 city growth:</strong> 65% of new Amazon India buyers come from non-metro cities. These buyers have fewer local shopping options and actively search on Amazon for products they can't find locally.</li>
+        <li><strong>Government support:</strong> The ONDC initiative and Digital India programs are pushing millions of small businesses online. Amazon's partnership with MSME schemes makes seller onboarding easier than ever.</li>
+        <li><strong>Lower competition per niche:</strong> While 15 lakh sellers sounds like a lot, most categories still have only 20-50 serious sellers with professional listings. The bar is low — professional images and A+ content immediately put you in the top 10%.</li>
+        <li><strong>FBA infrastructure:</strong> Amazon now operates 60+ fulfillment centers across India. FBA (Fulfillment by Amazon) handles storage, packing, shipping, and returns — letting you run an e-commerce business from your laptop.</li>
+      </ul>
+
+      <h2>Step 1: Choose What to Sell on Amazon India</h2>
+      <p>Before you create an account, you need a product. This is where 80% of new sellers fail — they pick a product based on gut feeling instead of data. Here's how to choose correctly:</p>
+      <p><strong>Product Research Method:</strong></p>
+      <ul>
+        <li><strong>Best Sellers & Movers and Shakers:</strong> Go to amazon.in/bestsellers. Look at top-selling products in your category of interest. Note which ones have fewer than 100 reviews — these are beatable.</li>
+        <li><strong>Demand validation:</strong> Use tools like Helium 10, Jungle Scout, or even Google Trends India to check monthly search volume. If a keyword gets 5,000+ searches/month on Amazon India, there's demand.</li>
+        <li><strong>Competition analysis:</strong> Search your target keyword on Amazon. If the first page results have poor images (phone camera shots, no infographics), weak A+ content, and fewer than 200 reviews — you can outrank them with better execution.</li>
+        <li><strong>Margin calculation:</strong> Your product selling price minus (product cost + Amazon referral fee + FBA fee + shipping + GST) should leave you at least 25-30% margin. Below that, it's not worth the effort.</li>
+      </ul>
+      <p><strong>Best categories for new Indian sellers in 2026:</strong></p>
+      <ul>
+        <li>Home & Kitchen (low return rates, high demand)</li>
+        <li>Health & Personal Care (repeat purchases, brand loyalty)</li>
+        <li>Baby Products (parents spend without much price sensitivity)</li>
+        <li>Office Products (steady B2B + B2C demand)</li>
+        <li>Pet Supplies (fastest growing category on Amazon India)</li>
+      </ul>
+
+      <h2>Step 2: Register Your Amazon Seller Account</h2>
+      <p>Creating an Amazon seller account in India takes 15-30 minutes if you have your documents ready. Here's what you need:</p>
+      <p><strong>Documents required:</strong></p>
+      <ul>
+        <li>GST number (GSTIN) — mandatory for all sellers</li>
+        <li>PAN card (individual or business)</li>
+        <li>Bank account with IFSC code (for payment deposits)</li>
+        <li>Mobile number and email ID</li>
+        <li>Address proof (Aadhaar, utility bill, or rent agreement)</li>
+      </ul>
+      <p><strong>Registration process:</strong></p>
+      <ul>
+        <li>Go to sellercentral.amazon.in and click "Register Now"</li>
+        <li>Enter your mobile number — Amazon sends an OTP</li>
+        <li>Fill business details: legal name (as per PAN), business type (Individual/Company/LLP), and address</li>
+        <li>Upload GST certificate and PAN</li>
+        <li>Add bank account details for payment settlement (Amazon pays every 7 days to your bank)</li>
+        <li>Complete tax interview and identity verification</li>
+        <li>Choose your display name (this is your brand name buyers will see)</li>
+      </ul>
+      <p><strong>Pro tip:</strong> Register as a "Business" seller, not "Individual" — even if you're a one-person operation. Business accounts get access to Amazon Business (B2B) orders which can add 20-30% extra revenue with zero additional effort.</p>
+      <p>For a detailed Hindi walkthrough of account creation, read our <a href="/blog/amazon-seller-account-kaise-banaye">Amazon seller account kaise banaye guide</a>.</p>
+
+      <h2>Step 3: List Your First Product</h2>
+      <p>Once your account is active, you need to create your product listing. This is where most Indian sellers rush and pay the price later. A listing has 5 components that directly impact your sales:</p>
+      <p><strong>3.1 Product Title (200 characters max):</strong></p>
+      <p>Your title must include: Brand Name + Product Name + Key Feature + Size/Quantity + Color/Variant. Example: "NutriFuel Whey Protein Powder | 24g Protein Per Scoop | 1kg Double Chocolate | No Added Sugar | For Gym & Recovery"</p>
+      <p><strong>3.2 Bullet Points (5 bullets, 500 characters each):</strong></p>
+      <p>Each bullet should cover one benefit. Start with the benefit, then explain the feature. Example: "BUILDS LEAN MUSCLE — 24g of fast-absorbing whey protein per scoop with complete amino acid profile for post-workout recovery."</p>
+      <p><strong>3.3 Product Description (2000 characters):</strong></p>
+      <p>This is what appears below the fold. Use it to tell your brand story, explain use cases, and address objections. If you have Brand Registry, replace this with <a href="/blog/amazon-a-plus-content-guide">A+ Content</a> instead — it converts 3-10% better.</p>
+      <p><strong>3.4 Backend Keywords (250 bytes):</strong></p>
+      <p>Hidden keywords that help Amazon's algorithm find your product. Include: Hindi spellings, common misspellings, synonyms, and related terms. Don't repeat words from your title.</p>
+      <p><strong>3.5 Product Images (9 slots):</strong></p>
+      <p>This is the single most important part of your listing. Professional images can increase your CTR by 150% and conversion by 30-50%. You need: 1 hero image (white background, 1600×1600px+), lifestyle shots, infographics, size charts, and comparison visuals. Read our <a href="/blog/amazon-product-image-size-guide-2026">complete Amazon image size guide</a> for exact specifications.</p>
+      <p>For a step-by-step listing creation walkthrough in Hindi, check our <a href="/blog/amazon-listing-kaise-kare">Amazon listing kaise kare guide</a>.</p>
+
+      <h2>Step 4: FBA vs Self-Ship — Which to Choose?</h2>
+      <p>Amazon offers two fulfillment options in India. Your choice here impacts delivery speed, Buy Box win rate, customer trust, and your margins:</p>
+      <p><strong>FBA (Fulfillment by Amazon):</strong></p>
+      <ul>
+        <li>You ship inventory to Amazon's warehouse. They handle storage, packing, shipping, and returns.</li>
+        <li>Your products get "Fulfilled by Amazon" and "Prime" badges — which increase conversion by 20-30%</li>
+        <li>Delivery in 1-2 days to most pin codes</li>
+        <li>Amazon handles customer service and returns</li>
+        <li>Fees: ₹25-150 per unit (depending on size and weight) + storage fee (₹35-45/cubic ft per month)</li>
+        <li>Best for: Products under 5kg, high-volume SKUs, sellers who don't want to handle logistics</li>
+      </ul>
+      <p><strong>Self-Ship (Easy Ship / Seller Flex):</strong></p>
+      <ul>
+        <li>You store inventory at your location. Amazon's courier picks up orders daily.</li>
+        <li>Lower fees but slower delivery (3-5 days)</li>
+        <li>You handle packaging and returns</li>
+        <li>Best for: Large/heavy products, low-volume testing, sellers with existing warehouse space</li>
+      </ul>
+      <p><strong>Recommendation for new sellers:</strong> Start with FBA for your top 2-3 SKUs. The Prime badge and faster delivery will get you initial sales and reviews faster. Once you're doing 50+ orders/day, add Seller Flex for cost optimization. For detailed FBA fee breakdown, read our <a href="/blog/amazon-fba-india-2026">Amazon FBA India guide</a>.</p>
+
+      <h2>Step 5: Pricing Strategy for Amazon India</h2>
+      <p>Pricing on Amazon India is different from pricing in your local market. You need to account for multiple fees and still remain competitive:</p>
+      <p><strong>Amazon's fee structure:</strong></p>
+      <ul>
+        <li><strong>Referral fee:</strong> 6-45% of selling price (depends on category — most are 8-15%)</li>
+        <li><strong>Closing fee:</strong> ₹5-30 per unit (fixed, based on price slab)</li>
+        <li><strong>FBA fee:</strong> ₹25-150 per unit (if using FBA)</li>
+        <li><strong>GST:</strong> 18% on all Amazon fees (not on your product price)</li>
+        <li><strong>Weight handling:</strong> Additional for items over 500g</li>
+      </ul>
+      <p><strong>Pricing formula:</strong> Selling Price = (Product Cost + All Amazon Fees + Shipping + GST on Fees) ÷ (1 - Your Target Margin). If your product costs ₹200, total Amazon fees are ₹120, and you want 30% margin, your selling price should be: (200 + 120) ÷ 0.7 = ₹457.</p>
+      <p>Use Amazon's Revenue Calculator in Seller Central to check exact fees before listing. Never price without calculating — many Indian sellers discover they're losing money per order because they didn't account for all fees.</p>
+
+      <h2>Step 6: Get Your First Reviews</h2>
+      <p>Reviews are the social proof that converts browsers into buyers. New listings with zero reviews struggle to get traction. Here's how to ethically get your first 10-20 reviews:</p>
+      <ul>
+        <li><strong>Amazon Vine:</strong> Enroll your product in Amazon Vine (costs ₹0 but you give away free units). Vine reviewers are trusted and leave detailed reviews within 30 days.</li>
+        <li><strong>Request a Review button:</strong> In Seller Central, go to Orders → click any delivered order → click "Request a Review". Do this for every order. Expect 5-10% of buyers to leave a review.</li>
+        <li><strong>Product inserts:</strong> Include a small card in your packaging thanking the buyer and asking for honest feedback. Never ask for "5 stars" — just say "We'd love your honest review on Amazon." Keep it compliant.</li>
+        <li><strong>Quality product = organic reviews:</strong> If your product genuinely delivers value, reviews come naturally over time. The fastest path to reviews is selling a good product to the right audience.</li>
+      </ul>
+      <p><strong>What NOT to do:</strong> Never buy fake reviews. Amazon India's AI detection is aggressive in 2026. Sellers caught manipulating reviews get permanent account suspension — losing all inventory, reviews, and brand equity overnight.</p>
+
+      <h2>Step 7: Amazon Advertising (PPC) — Start Getting Sales</h2>
+      <p>For new listings with no reviews and no sales history, organic ranking is nearly impossible. Amazon PPC (Pay-Per-Click) advertising is how you get your first 50-100 sales and start the ranking flywheel:</p>
+      <p><strong>Campaign types for beginners:</strong></p>
+      <ul>
+        <li><strong>Sponsored Products (Auto):</strong> Start here. Amazon automatically shows your ad for relevant searches. Set ₹500-1000/day budget. Let it run 7 days to gather keyword data.</li>
+        <li><strong>Sponsored Products (Manual):</strong> After 7 days, check which keywords converted in your auto campaign. Move the winners to a manual campaign with higher bids for more control.</li>
+        <li><strong>Sponsored Brands:</strong> Available after Brand Registry. Shows your brand logo + 3 products at the top of search. Great for brand awareness.</li>
+      </ul>
+      <p><strong>Target ACoS (Advertising Cost of Sale):</strong> For new products, accept 30-50% ACoS for the first 2-3 months. You're buying reviews and ranking, not profit. Once you hit 50+ reviews and page 1 organic ranking, reduce bids and aim for 15-20% ACoS.</p>
+      <p><strong>Budget recommendation:</strong> Minimum ₹15,000-25,000/month for the first 3 months. This is not an expense — it's an investment in ranking. Sellers who skip advertising stay on page 10 forever.</p>
+
+      <h2>Step 8: Optimize Your Listing Images</h2>
+      <p>After your listing is live and you've started getting some traffic via PPC, the biggest lever you can pull is image optimization. This is where most Indian sellers leave money on the table.</p>
+      <p>Your listing images are responsible for:</p>
+      <ul>
+        <li><strong>CTR (Click-Through Rate):</strong> Your main image determines whether buyers click on your listing from search results. Professional images get 2-3x more clicks than phone camera shots.</li>
+        <li><strong>Conversion Rate:</strong> Your secondary images (lifestyle, infographic, comparison chart) convince the buyer to add to cart. Listings with all 9 image slots filled convert 30-50% better.</li>
+        <li><strong>Return Rate:</strong> Clear dimension images, material close-ups, and "what's in the box" shots set accurate expectations — reducing returns by 15-25%.</li>
+      </ul>
+      <p>At PV Labs, we create complete 9-image listing sets using CGI product visualization. No product shipping needed, delivered in 3-5 days, 100% Amazon compliant. Our clients see an average 40% increase in conversion after upgrading their images. <a href="/contact">Get a free listing audit</a> to see where your images are losing you sales.</p>
+
+      <h2>Step 9: Scale with A+ Content & Brand Store</h2>
+      <p>Once you're getting 10+ orders/day, it's time to build your brand presence on Amazon:</p>
+      <ul>
+        <li><strong>A+ Content:</strong> Replace your plain text description with rich visual modules — brand story, feature highlights, comparison charts, lifestyle images. Increases conversion by 3-10%. Read our <a href="/blog/amazon-a-plus-content-guide">complete A+ Content guide</a>.</li>
+        <li><strong>Brand Store:</strong> Your own multi-page storefront on Amazon. Drives repeat purchases and cross-sells. Useful for running Sponsored Brand ads that send traffic to your store instead of a single listing.</li>
+        <li><strong>Brand Registry:</strong> Register your trademark to unlock A+ Content, Brand Store, Vine, Brand Analytics, and protection against hijackers. Even a pending TM application works.</li>
+      </ul>
+
+      <h2>Step 10: Common Mistakes New Amazon India Sellers Make</h2>
+      <ul>
+        <li><strong>Launching without professional images:</strong> You only get one chance at a first impression. Bad images = low CTR = Amazon stops showing your listing. Invest in images before spending on ads.</li>
+        <li><strong>Ignoring Amazon fees:</strong> Many sellers realize they're losing ₹50-100 per order after 3 months of selling. Calculate fees BEFORE setting your price.</li>
+        <li><strong>Copying competitor listings:</strong> Amazon penalizes duplicate content. Write original titles, bullets, and descriptions. Same applies to images — don't screenshot competitor photos.</li>
+        <li><strong>Not using FBA:</strong> Self-shipping is cheaper but the Prime badge and 1-2 day delivery win the Buy Box 80% of the time. Use FBA for your top sellers.</li>
+        <li><strong>Giving up after 30 days:</strong> Amazon is a 3-6 month game. Most successful sellers start seeing profit in month 4-5 after building reviews, ranking, and optimizing ads.</li>
+      </ul>
+
+      <h2>Frequently Asked Questions</h2>
+      <h3>How much does it cost to start selling on Amazon India?</h3>
+      <p>Minimum investment: ₹50,000-1,00,000 for a serious launch. This covers: product inventory (₹20,000-50,000), professional listing images (₹5,000-8,000), advertising budget for first 2 months (₹30,000-50,000), and GST registration (₹2,000-5,000 via CA). You can start with less, but underfunded launches rarely succeed.</p>
+      <h3>Is selling on Amazon India profitable in 2026?</h3>
+      <p>Yes — if you pick the right product and execute well. Average successful sellers on Amazon India make 20-35% net margin after all fees. The key is product selection (avoid ultra-competitive categories), professional presentation (images + A+ content), and patience (3-6 months to profitability).</p>
+      <h3>Do I need GST to sell on Amazon India?</h3>
+      <p>Yes, GST registration is mandatory for all Amazon India sellers — there is no exemption regardless of turnover. You need a GSTIN before Amazon will activate your account. Register at gst.gov.in or through a CA (costs ₹2,000-5,000).</p>
+      <h3>Can I sell on Amazon India without inventory?</h3>
+      <p>Yes, through dropshipping or Amazon's "Local Shops" program. However, margins are thin (5-10%) and you have no control over quality or delivery. For sustainable income, hold your own inventory — even if it's just 50-100 units stored at home or in an FBA warehouse.</p>
+      <h3>How long does it take to get first sale on Amazon India?</h3>
+      <p>With PPC advertising: 1-7 days after listing goes live. Without advertising: could take weeks or months if your listing doesn't rank organically. This is why we recommend ₹500-1000/day ad spend from day 1.</p>
+
+      <h2>Ready to Start Selling on Amazon India?</h2>
+      <p>Selling on Amazon India in 2026 is a genuine business opportunity — not a get-rich-quick scheme. It requires the right product, professional presentation, strategic advertising, and 3-6 months of patience. But the payoff is real: sellers who execute well are building ₹5L-50L/month businesses from their homes.</p>
+      <p>The #1 thing that separates successful Amazon India sellers from failures is listing quality — specifically images and A+ content. This is what we do at PV Labs. We create conversion-optimized listing images and A+ content for Indian sellers, delivered in 3-5 days with zero rejections guaranteed.</p>
+      <p><strong>Starting your Amazon journey?</strong> <a href="/contact">Get in touch with PV Labs</a> for a free listing strategy consultation. We'll tell you exactly what images you need for your category and how to outrank your top 5 competitors visually.</p>
+    `,
+  },
   {
     slug: "amazon-a-plus-content-guide",
     title: "What is A+ Content & Why Every Amazon Brand Needs It",

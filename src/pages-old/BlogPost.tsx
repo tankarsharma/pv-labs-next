@@ -312,6 +312,218 @@ const blogData: Record<string, any> = {
       </div>
     )
   },
+    "how-to-sell-on-amazon-india-2026": {
+    title: "How to Sell on Amazon India 2026: Complete Step-by-Step Guide for Beginners",
+    category: "Guide",
+    subtitle: "Amazon India Seller Guide",
+    author: "Tankaar Sharma",
+    date: "August 12, 2026",
+    readTime: "18 min",
+    image: null,
+    content: (
+      <div className="space-y-8 sm:space-y-10 md:space-y-12 lg:space-y-16">
+        <section>
+          <div className="flex items-center gap-3 mb-6">
+            <div className="w-12 h-12 rounded-2xl bg-primary/10 flex items-center justify-center">
+              <Sparkles className="text-primary" size={24} />
+            </div>
+            <h2 className="text-2xl md:text-3xl font-black text-gray-900">Why Sell on Amazon India in 2026?</h2>
+          </div>
+          <div className="glass-card p-6 md:p-8 border-l-4 border-primary bg-white/50 relative overflow-hidden">
+            <p className="text-lg md:text-xl text-gray-600 leading-relaxed font-medium relative z-10">
+              "Amazon India has 300M+ active buyers across 19,000+ pin codes. Whether you're a manufacturer, reseller, or D2C brand — this is the largest marketplace opportunity in India right now."
+            </p>
+          </div>
+        </section>
+
+        <section className="grid md:grid-cols-2 gap-8">
+          <div className="glass-card p-6 md:p-8 hover:border-primary/30 transition-all bg-white/50 group">
+            <h3 className="text-xl font-bold mb-6 flex items-center gap-3 text-gray-900">
+              <Sparkles className="text-primary group-hover:scale-110 transition-transform" size={24} /> Why Now?
+            </h3>
+            <ul className="space-y-4 text-gray-600 font-medium">
+              <li className="flex items-start gap-3">
+                <div className="w-1.5 h-1.5 rounded-full bg-primary mt-2 flex-shrink-0" />
+                <span><span className="text-gray-900 font-bold">65% of new buyers</span> from Tier 2 & 3 cities</span>
+              </li>
+              <li className="flex items-start gap-3">
+                <div className="w-1.5 h-1.5 rounded-full bg-primary mt-2 flex-shrink-0" />
+                <span><span className="text-gray-900 font-bold">60+ fulfillment centers</span> across India (FBA)</span>
+              </li>
+              <li className="flex items-start gap-3">
+                <div className="w-1.5 h-1.5 rounded-full bg-primary mt-2 flex-shrink-0" />
+                <span><span className="text-gray-900 font-bold">Low competition per niche</span> — most sellers have poor images</span>
+              </li>
+              <li className="flex items-start gap-3">
+                <div className="w-1.5 h-1.5 rounded-full bg-primary mt-2 flex-shrink-0" />
+                <span><span className="text-gray-900 font-bold">Government MSME</span> support for online sellers</span>
+              </li>
+            </ul>
+          </div>
+          <div className="glass-card p-6 md:p-8 hover:border-accent/30 transition-all bg-white/50">
+            <h3 className="text-xl font-bold mb-4 flex items-center gap-3 text-gray-900">
+              <ShieldCheck className="text-accent" size={24} /> Documents Needed
+            </h3>
+            <ul className="space-y-4 text-gray-600 font-medium">
+              <li className="flex items-start gap-3">
+                <div className="w-1.5 h-1.5 rounded-full bg-accent mt-2 flex-shrink-0" />
+                <span>GST number (GSTIN) — mandatory</span>
+              </li>
+              <li className="flex items-start gap-3">
+                <div className="w-1.5 h-1.5 rounded-full bg-accent mt-2 flex-shrink-0" />
+                <span>PAN card (individual or business)</span>
+              </li>
+              <li className="flex items-start gap-3">
+                <div className="w-1.5 h-1.5 rounded-full bg-accent mt-2 flex-shrink-0" />
+                <span>Bank account with IFSC code</span>
+              </li>
+              <li className="flex items-start gap-3">
+                <div className="w-1.5 h-1.5 rounded-full bg-accent mt-2 flex-shrink-0" />
+                <span>Mobile number + email ID</span>
+              </li>
+              <li className="flex items-start gap-3">
+                <div className="w-1.5 h-1.5 rounded-full bg-accent mt-2 flex-shrink-0" />
+                <span>Address proof (Aadhaar/utility bill)</span>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <section>
+          <h2 className="text-2xl font-black text-gray-900 mb-8 flex items-center gap-3">
+            <span className="w-8 h-8 rounded-lg bg-gray-900 text-white flex items-center justify-center text-sm">10</span>
+            Steps to Start Selling
+          </h2>
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+            {[
+              { t: "Choose Product", d: "Research demand, competition, and margins using data — not gut feeling." },
+              { t: "Register Account", d: "sellercentral.amazon.in — 15-30 min with GST, PAN, and bank details." },
+              { t: "Create Listing", d: "Title, bullets, description, backend keywords, and 9 images." },
+              { t: "Choose FBA vs Self-Ship", d: "FBA for Prime badge & speed. Self-ship for large/heavy items." },
+              { t: "Set Pricing", d: "Account for referral fee, closing fee, FBA fee, GST. Target 25-30% margin." },
+              { t: "Get First Reviews", d: "Amazon Vine, Request a Review button, product inserts." },
+              { t: "Run PPC Ads", d: "₹500-1000/day. Auto campaign first, then manual with winning keywords." },
+              { t: "Optimize Images", d: "Professional 9-image set increases conversion 30-50%." },
+              { t: "Add A+ Content", d: "Rich visual description. 3-10% conversion boost. Needs Brand Registry." },
+              { t: "Scale & Repeat", d: "Hit ₹10L/month? Add SKUs, optimize ads, build brand store." }
+            ].map((item, i) => (
+              <div key={i} className="p-6 rounded-2xl border border-gray-100 bg-gray-50/50 hover:bg-white hover:shadow-xl hover:border-primary/20 transition-all group">
+                <span className="text-[10px] font-black text-primary uppercase tracking-widest mb-2 block">Step {i + 1}</span>
+                <h4 className="font-bold text-gray-900 mb-2 group-hover:text-primary transition-colors">{item.t}</h4>
+                <p className="text-xs text-gray-500 leading-relaxed font-medium">{item.d}</p>
+              </div>
+            ))}
+          </div>
+        </section>
+
+        <section className="bg-gray-900 rounded-[32px] md:rounded-[40px] p-6 md:p-10 text-white relative overflow-hidden">
+          <div className="absolute bottom-0 right-0 w-64 h-64 bg-primary/10 blur-[100px]" />
+          <h2 className="text-2xl font-black mb-8">FBA vs Self-Ship Comparison</h2>
+          <div className="grid md:grid-cols-2 gap-8">
+            <div>
+              <h3 className="text-lg font-bold text-primary mb-4">FBA (Fulfillment by Amazon)</h3>
+              <ul className="space-y-3 text-sm text-gray-300">
+                <li className="flex items-start gap-2"><span className="text-green-400">✓</span> Prime badge + 1-2 day delivery</li>
+                <li className="flex items-start gap-2"><span className="text-green-400">✓</span> Amazon handles packing, shipping, returns</li>
+                <li className="flex items-start gap-2"><span className="text-green-400">✓</span> 20-30% higher conversion</li>
+                <li className="flex items-start gap-2"><span className="text-yellow-400">₹</span> ₹25-150/unit + storage fee</li>
+              </ul>
+            </div>
+            <div>
+              <h3 className="text-lg font-bold text-accent mb-4">Self-Ship (Easy Ship)</h3>
+              <ul className="space-y-3 text-sm text-gray-300">
+                <li className="flex items-start gap-2"><span className="text-green-400">✓</span> Lower fees</li>
+                <li className="flex items-start gap-2"><span className="text-green-400">✓</span> You control packaging quality</li>
+                <li className="flex items-start gap-2"><span className="text-red-400">✗</span> 3-5 day delivery (no Prime)</li>
+                <li className="flex items-start gap-2"><span className="text-red-400">✗</span> You handle returns</li>
+              </ul>
+            </div>
+          </div>
+          <div className="mt-8 p-4 bg-white/5 rounded-2xl border border-white/10">
+            <p className="text-sm text-gray-300"><span className="text-white font-bold">Recommendation:</span> Start with FBA for top 2-3 SKUs. Prime badge wins the Buy Box 80% of the time.</p>
+          </div>
+        </section>
+
+        <section>
+          <h2 className="text-2xl font-black text-gray-900 mb-6">Amazon India Fee Structure 2026</h2>
+          <div className="space-y-4 text-gray-600 font-medium leading-relaxed">
+            <p>Before pricing your product, understand every fee Amazon charges:</p>
+          </div>
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 mt-6">
+            {[
+              { t: "Referral Fee", d: "6-45% of selling price (most categories: 8-15%)" },
+              { t: "Closing Fee", d: "₹5-30 per unit (fixed, based on price slab)" },
+              { t: "FBA Fee", d: "₹25-150 per unit (size & weight based)" },
+              { t: "Storage Fee", d: "₹35-45/cubic ft per month at Amazon warehouse" },
+              { t: "GST on Fees", d: "18% GST on all Amazon service fees" },
+              { t: "Weight Handling", d: "Additional charge for items over 500g" }
+            ].map((item, i) => (
+              <div key={i} className="p-5 rounded-2xl border border-gray-100 bg-gray-50/30">
+                <h4 className="font-bold text-gray-900 mb-1 text-sm">{item.t}</h4>
+                <p className="text-xs text-gray-500 font-medium">{item.d}</p>
+              </div>
+            ))}
+          </div>
+          <div className="mt-6 p-6 bg-primary/5 rounded-2xl border border-primary/10">
+            <p className="text-sm text-gray-700 font-medium"><span className="text-gray-900 font-bold">Pricing Formula:</span> Selling Price = (Product Cost + All Fees + Shipping) ÷ (1 - Target Margin). Always use Amazon's Revenue Calculator in Seller Central before setting your price.</p>
+          </div>
+        </section>
+
+        <section>
+          <h2 className="text-2xl font-black text-gray-900 mb-6">Common Mistakes New Indian Sellers Make</h2>
+          <div className="grid md:grid-cols-2 gap-4">
+            {[
+              "Launching without professional images — low CTR = Amazon stops showing your listing",
+              "Ignoring Amazon fees — discovering ₹50-100 loss per order after 3 months",
+              "Copying competitor listings — Amazon penalizes duplicate content",
+              "Not using FBA — missing Prime badge that wins Buy Box 80% of the time",
+              "Skipping PPC ads — staying on page 10 forever without advertising",
+              "Giving up after 30 days — Amazon is a 3-6 month game, profit comes in month 4-5"
+            ].map((err, i) => (
+              <div key={i} className="flex items-start gap-4 p-5 rounded-2xl bg-red-50/50 border border-red-100/50">
+                <div className="w-2 h-2 rounded-full bg-red-400 mt-1.5 flex-shrink-0" />
+                <span className="text-xs text-gray-600 font-bold">{err}</span>
+              </div>
+            ))}
+          </div>
+        </section>
+
+        <section>
+          <h2 className="text-2xl font-black text-gray-900 mb-6">Frequently Asked Questions</h2>
+          <div className="space-y-6">
+            {[
+              { q: "How much does it cost to start selling on Amazon India?", a: "Minimum ₹50,000-1,00,000 for a serious launch. Covers: inventory (₹20K-50K), professional images (₹5K-8K), advertising first 2 months (₹30K-50K), and GST registration (₹2K-5K)." },
+              { q: "Is selling on Amazon India profitable in 2026?", a: "Yes — average successful sellers make 20-35% net margin after all fees. Key is product selection, professional images + A+ content, and 3-6 months patience." },
+              { q: "Do I need GST to sell on Amazon India?", a: "Yes, mandatory for all sellers regardless of turnover. Register at gst.gov.in or through a CA (₹2,000-5,000). No exemption exists." },
+              { q: "Can I sell on Amazon without inventory?", a: "Yes via dropshipping, but margins are thin (5-10%) with no quality control. For sustainable income, hold your own inventory — even 50-100 units." },
+              { q: "How long to get first sale?", a: "With PPC ads: 1-7 days. Without advertising: weeks or months. We recommend ₹500-1000/day ad spend from day 1." }
+            ].map((item, i) => (
+              <div key={i} className="p-6 rounded-2xl border border-gray-100 bg-gray-50/30">
+                <h3 className="font-bold text-gray-900 mb-2">{item.q}</h3>
+                <p className="text-sm text-gray-600 font-medium leading-relaxed">{item.a}</p>
+              </div>
+            ))}
+          </div>
+        </section>
+
+        <section>
+          <div className="glass-card p-6 md:p-10 bg-white shadow-2xl border border-gray-100 rounded-2xl md:rounded-3xl w-full">
+            <div className="p-4 sm:p-6 md:p-10 bg-gradient-to-br from-gray-900 to-gray-950 rounded-xl sm:rounded-2xl md:rounded-3xl text-center w-full">
+              <h3 className="text-base sm:text-lg md:text-xl lg:text-2xl text-white font-black mb-2 sm:mb-3 md:mb-4 px-2">
+                Starting Your Amazon India Journey?
+              </h3>
+              <p className="text-gray-400 text-[11px] sm:text-xs md:text-sm lg:text-base mb-4 sm:mb-5 md:mb-6 leading-relaxed px-2">
+                Professional listing images are the #1 factor that separates successful sellers from failures. Get yours done in 3-5 days.
+              </p>
+              <button className="w-full sm:w-auto px-4 sm:px-6 md:px-10 py-2 sm:py-2.5 md:py-4 bg-primary hover:bg-accent text-white font-black uppercase tracking-widest text-[9px] sm:text-[10px] md:text-xs rounded-xl transition-all">
+                Get Free Listing Strategy Call →
+              </button>
+            </div>
+          </div>
+        </section>
+      </div>
+    )
+  },
   "amazon-listing-guide-2026": {
     title: "Amazon Listing Images - Complete Guide for Indian Sellers 2026",
     category: "Guide",
