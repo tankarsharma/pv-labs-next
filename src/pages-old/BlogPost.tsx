@@ -1470,6 +1470,765 @@ const blogData: Record<string, any> = {
         </section>
       </div>
     )
+  },
+    "amazon-seller-account-kaise-banaye": {
+    title: "Amazon Seller Account Kaise Banaye 2026: Complete Hindi Guide",
+    category: "Guide",
+    subtitle: "Amazon Seller Registration (Hindi)",
+    author: "Tankaar Sharma",
+    date: "August 14, 2026",
+    readTime: "15 min",
+    image: null,
+    content: (
+      <div className="space-y-8 sm:space-y-10 md:space-y-12 lg:space-y-16">
+        <section>
+          <div className="flex items-center gap-3 mb-6">
+            <div className="w-12 h-12 rounded-2xl bg-primary/10 flex items-center justify-center">
+              <Sparkles className="text-primary" size={24} />
+            </div>
+            <h2 className="text-2xl md:text-3xl font-black text-gray-900">Amazon Seller Account Kaise Banaye</h2>
+          </div>
+          <div className="glass-card p-6 md:p-8 border-l-4 border-primary bg-white/50 relative overflow-hidden">
+            <p className="text-lg md:text-xl text-gray-600 leading-relaxed font-medium relative z-10">
+              "Amazon India pe selling start karna chahte ho? 15-30 minutes mein account ban jaata hai — agar documents ready hain. Yeh guide aapko exact step-by-step process batayegi."
+            </p>
+          </div>
+        </section>
+
+        <section className="grid md:grid-cols-2 gap-8">
+          <div className="glass-card p-6 md:p-8 hover:border-primary/30 transition-all bg-white/50 group">
+            <h3 className="text-xl font-bold mb-6 flex items-center gap-3 text-gray-900">
+              <ShieldCheck className="text-primary group-hover:scale-110 transition-transform" size={24} /> Documents Required
+            </h3>
+            <ul className="space-y-4 text-gray-600 font-medium">
+              {["GST Number (GSTIN) — mandatory", "PAN Card (individual/business)", "Bank Account + IFSC Code", "Mobile Number (OTP ke liye)", "Email ID (dedicated)", "Address Proof (Aadhaar/utility bill)"].map((item, i) => (
+                <li key={i} className="flex items-start gap-3">
+                  <div className="w-1.5 h-1.5 rounded-full bg-primary mt-2 flex-shrink-0" />
+                  <span>{item}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
+          <div className="glass-card p-6 md:p-8 hover:border-accent/30 transition-all bg-white/50">
+            <h3 className="text-xl font-bold mb-4 flex items-center gap-3 text-gray-900">
+              <Clock className="text-accent" size={24} /> Timeline
+            </h3>
+            <ul className="space-y-4 text-gray-600 font-medium">
+              <li className="flex items-start gap-3"><div className="w-1.5 h-1.5 rounded-full bg-accent mt-2 flex-shrink-0" /><span>Registration: <span className="text-gray-900 font-bold">15-30 minutes</span></span></li>
+              <li className="flex items-start gap-3"><div className="w-1.5 h-1.5 rounded-full bg-accent mt-2 flex-shrink-0" /><span>Verification: <span className="text-gray-900 font-bold">24-48 hours</span></span></li>
+              <li className="flex items-start gap-3"><div className="w-1.5 h-1.5 rounded-full bg-accent mt-2 flex-shrink-0" /><span>First Listing Live: <span className="text-gray-900 font-bold">Day 2-3</span></span></li>
+              <li className="flex items-start gap-3"><div className="w-1.5 h-1.5 rounded-full bg-accent mt-2 flex-shrink-0" /><span>First Sale (with PPC): <span className="text-gray-900 font-bold">Day 3-10</span></span></li>
+            </ul>
+          </div>
+        </section>
+
+        <section>
+          <h2 className="text-2xl font-black text-gray-900 mb-8 flex items-center gap-3">
+            <span className="w-8 h-8 rounded-lg bg-gray-900 text-white flex items-center justify-center text-sm">7</span>
+            Steps — Account Creation
+          </h2>
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+            {[
+              { t: "sellercentral.amazon.in", d: "Go to Seller Central → 'Register Now' click karein" },
+              { t: "OTP Verification", d: "Mobile number enter → OTP verify → Password set karein" },
+              { t: "Business Details", d: "Legal name (PAN jaisa), business type, address fill karein" },
+              { t: "GST & Tax Info", d: "15-digit GSTIN enter karein. PAN se match hona chahiye" },
+              { t: "Bank Account", d: "Account number + IFSC. Amazon har 7 din payment deta hai" },
+              { t: "Identity Verification", d: "PAN upload + address proof + video/selfie verification" },
+              { t: "Account Active!", d: "24-48 hours mein approve. First product list karein" }
+            ].map((item, i) => (
+              <div key={i} className="p-6 rounded-2xl border border-gray-100 bg-gray-50/50 hover:bg-white hover:shadow-xl hover:border-primary/20 transition-all group">
+                <span className="text-[10px] font-black text-primary uppercase tracking-widest mb-2 block">Step {i + 1}</span>
+                <h4 className="font-bold text-gray-900 mb-2 group-hover:text-primary transition-colors">{item.t}</h4>
+                <p className="text-xs text-gray-500 leading-relaxed font-medium">{item.d}</p>
+              </div>
+            ))}
+          </div>
+        </section>
+
+        <section className="bg-gray-900 rounded-[32px] md:rounded-[40px] p-6 md:p-10 text-white relative overflow-hidden">
+          <div className="absolute bottom-0 right-0 w-64 h-64 bg-primary/10 blur-[100px]" />
+          <h2 className="text-2xl font-black mb-8">Common Mistakes (Hindi)</h2>
+          <div className="grid md:grid-cols-2 gap-6">
+            {[
+              { t: "GST-PAN Mismatch", d: "Dono pe naam exactly same hona chahiye. Ek letter bhi alag = rejection." },
+              { t: "Phone Camera Images", d: "Low quality images = low CTR = no sales. Professional images invest karein." },
+              { t: "Fees Calculate Na Karna", d: "Bahut sellers ko loss pata chalta hai 2-3 mahine baad. Pehle calculate karein." },
+              { t: "FBA Skip Karna", d: "Prime badge se 20-30% zyada conversion milta hai. Top SKUs pe FBA use karein." },
+              { t: "30 Din Mein Give Up", d: "Amazon 3-6 month ka game hai. Profit month 4-5 se start hota hai." },
+              { t: "Hindi Mein Title", d: "Amazon English keywords index karta hai. Title always English mein likhein." }
+            ].map((item, i) => (
+              <div key={i} className="flex items-start gap-4 p-4 rounded-2xl bg-white/5 border border-white/10">
+                <span className="text-red-400 font-bold text-sm">{String(i + 1).padStart(2, '0')}.</span>
+                <div>
+                  <h5 className="text-white font-bold text-sm">{item.t}</h5>
+                  <p className="text-xs text-gray-400 mt-1">{item.d}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </section>
+
+        <section>
+          <h2 className="text-2xl font-black text-gray-900 mb-6">Frequently Asked Questions</h2>
+          <div className="space-y-6">
+            {[
+              { q: "Amazon seller account banane mein kitna kharcha aata hai?", a: "Account banana free hai. Selling start karne ke liye total ₹50,000-1,00,000 chahiye (inventory + images + advertising + GST registration)." },
+              { q: "Bina GST ke Amazon pe sell kar sakte hain?", a: "Nahi. Amazon India pe GST mandatory hai — koi exemption nahi. Pehle GST lein, phir account banayein." },
+              { q: "Account approval mein kitna time lagta hai?", a: "24-48 hours agar documents sahi hain. Verification issue ho toh 3-7 din lag sakte hain." },
+              { q: "Individual bhi sell kar sakta hai?", a: "Haan. Individual PAN + GST se account ban jaata hai. Long term ke liye business entity better hai." },
+              { q: "Kitna kama sakte hain Amazon se?", a: "Serious sellers ₹1-5 lakh/month profit 6-12 mahine mein. Top sellers ₹10-50 lakh/month bhi karte hain." }
+            ].map((item, i) => (
+              <div key={i} className="p-6 rounded-2xl border border-gray-100 bg-gray-50/30">
+                <h3 className="font-bold text-gray-900 mb-2">{item.q}</h3>
+                <p className="text-sm text-gray-600 font-medium leading-relaxed">{item.a}</p>
+              </div>
+            ))}
+          </div>
+        </section>
+
+        <section>
+          <div className="glass-card p-6 md:p-10 bg-white shadow-2xl border border-gray-100 rounded-2xl md:rounded-3xl w-full">
+            <div className="p-4 sm:p-6 md:p-10 bg-gradient-to-br from-gray-900 to-gray-950 rounded-xl sm:rounded-2xl md:rounded-3xl text-center w-full">
+              <h3 className="text-base sm:text-lg md:text-xl lg:text-2xl text-white font-black mb-2 sm:mb-3 md:mb-4 px-2">
+                Amazon Journey Start Karein — Professional Images Ke Saath
+              </h3>
+              <p className="text-gray-400 text-[11px] sm:text-xs md:text-sm lg:text-base mb-4 sm:mb-5 md:mb-6 leading-relaxed px-2">
+                PV Labs mein hum CGI-based product images banate hain. Product ship karne ki zaroorat nahi. 3-5 din delivery.
+              </p>
+              <button className="w-full sm:w-auto px-4 sm:px-6 md:px-10 py-2 sm:py-2.5 md:py-4 bg-primary hover:bg-accent text-white font-black uppercase tracking-widest text-[9px] sm:text-[10px] md:text-xs rounded-xl transition-all">
+                Free Consultation Lein →
+              </button>
+            </div>
+          </div>
+        </section>
+      </div>
+    )
+  },
+  "amazon-a-plus-content-design-guide": {
+    title: "Amazon A+ Content Guide: How to Create Enhanced Brand Content That Converts in 2026",
+    category: "Education",
+    subtitle: "A+ Content Strategy",
+    author: "Tankaar Sharma",
+    date: "August 15, 2026",
+    readTime: "16 min",
+    image: null,
+    content: (
+      <div className="space-y-8 sm:space-y-10 md:space-y-12 lg:space-y-16">
+        <section>
+          <div className="flex items-center gap-3 mb-6">
+            <div className="w-12 h-12 rounded-2xl bg-purple-500/10 flex items-center justify-center">
+              <Sparkles className="text-purple-600" size={24} />
+            </div>
+            <h2 className="text-2xl md:text-3xl font-black text-gray-900">What is Amazon A+ Content?</h2>
+          </div>
+          <div className="glass-card p-6 md:p-8 border-l-4 border-purple-500 bg-white/50 relative overflow-hidden">
+            <p className="text-lg md:text-xl text-gray-600 leading-relaxed font-medium relative z-10">
+              "A+ Content turns your boring text description into a visual sales machine. Brand banners, comparison charts, lifestyle images — all below the fold. 3-10% conversion boost guaranteed."
+            </p>
+          </div>
+        </section>
+
+        <section className="grid md:grid-cols-2 gap-8">
+          <div className="glass-card p-6 md:p-8 hover:border-purple-300 transition-all bg-white/50 group">
+            <h3 className="text-xl font-bold mb-6 flex items-center gap-3 text-gray-900">
+              <Sparkles className="text-purple-600 group-hover:scale-110 transition-transform" size={24} /> Impact on Numbers
+            </h3>
+            <ul className="space-y-4 text-gray-600 font-medium">
+              {["Conversion: +3-10% (up to 25% in competitive categories)", "Time on page: 2-3x longer engagement", "Return rate: -15-25% (better buyer understanding)", "Brand perception: established brand vs random seller", "Repeat purchases: brand recognition drives direct searches"].map((item, i) => (
+                <li key={i} className="flex items-start gap-3">
+                  <div className="w-1.5 h-1.5 rounded-full bg-purple-500 mt-2 flex-shrink-0" />
+                  <span>{item}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
+          <div className="glass-card p-6 md:p-8 hover:border-accent/30 transition-all bg-white/50">
+            <h3 className="text-xl font-bold mb-4 flex items-center gap-3 text-gray-900">
+              <ShieldCheck className="text-accent" size={24} /> Image Specs
+            </h3>
+            <ul className="space-y-4 text-gray-600 font-medium">
+              {["Standard Header: 970×600px", "Image + Text: 300×300px", "Comparison Chart: 150×300px/column", "Brand Story Hero: 1464×625px", "Brand Story Card: 362×453px", "All images: min 72 DPI, RGB, JPEG/PNG"].map((item, i) => (
+                <li key={i} className="flex items-start gap-3">
+                  <div className="w-1.5 h-1.5 rounded-full bg-accent mt-2 flex-shrink-0" />
+                  <span>{item}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </section>
+
+        <section>
+          <h2 className="text-2xl font-black text-gray-900 mb-8">The 5-Module Strategy That Converts</h2>
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+            {[
+              { t: "Brand Story Banner", d: "Full-width cinematic image (1464×625px). Brand identity + tagline. First impression after bullets." },
+              { t: "Feature Highlight", d: "Top 3 selling points with images (300×300px). Benefit-focused copy. Don't repeat bullets." },
+              { t: "Ingredient/Material", d: "What's inside — icons, percentages, certifications. Critical for skincare, food, supplements." },
+              { t: "Comparison Chart", d: "YOUR variants side by side (not competitors). Size/price/specs. Reduces returns, upsells." },
+              { t: "Lifestyle Context", d: "Full-width (970×600px) product in real Indian setting. Emotional connection with buyer." }
+            ].map((item, i) => (
+              <div key={i} className="p-6 rounded-2xl border border-purple-50 bg-purple-50/20 hover:bg-white hover:shadow-xl hover:border-purple-200 transition-all group">
+                <span className="text-[10px] font-black text-purple-600 uppercase tracking-widest mb-2 block">Module {i + 1}</span>
+                <h4 className="font-bold text-gray-900 mb-2 group-hover:text-purple-600 transition-colors">{item.t}</h4>
+                <p className="text-xs text-gray-500 leading-relaxed font-medium">{item.d}</p>
+              </div>
+            ))}
+          </div>
+        </section>
+
+        <section className="bg-gray-900 rounded-[32px] md:rounded-[40px] p-6 md:p-10 text-white relative overflow-hidden">
+          <div className="absolute bottom-0 right-0 w-64 h-64 bg-purple-500/10 blur-[100px]" />
+          <h2 className="text-2xl font-black mb-8 text-red-400">What Gets Rejected</h2>
+          <div className="grid md:grid-cols-2 gap-6">
+            {[
+              { t: "Pricing Claims", d: "'50% off', 'Best value', 'Cheapest' — instant rejection" },
+              { t: "Competitor Mentions", d: "No brand names. Even subtle comparisons get caught" },
+              { t: "Contact Information", d: "No phone, email, website, or social handles" },
+              { t: "Health/Medical Claims", d: "'Cures acne', 'Doctor recommended' — needs clinical proof" },
+              { t: "Low Resolution", d: "Below 970px width = auto-rejected before human review" },
+              { t: "Time-Sensitive Language", d: "'Limited time', 'Only 50 left' — not allowed in A+" }
+            ].map((item, i) => (
+              <div key={i} className="flex items-start gap-4 p-4 rounded-2xl bg-white/5 border border-white/10">
+                <div className="w-2 h-2 rounded-full bg-red-400 mt-1.5 flex-shrink-0" />
+                <div>
+                  <h5 className="text-white font-bold text-sm">{item.t}</h5>
+                  <p className="text-xs text-gray-400 mt-1">{item.d}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+          <div className="mt-8 p-4 bg-white/5 rounded-2xl border border-white/10">
+            <p className="text-sm text-gray-300"><span className="text-white font-bold">PV Labs approval rate:</span> 99% on first submission. We've submitted thousands of A+ modules.</p>
+          </div>
+        </section>
+
+        <section className="bg-purple-50/50 rounded-[32px] md:rounded-[40px] p-6 md:p-10 border border-purple-100">
+          <h2 className="text-2xl font-black text-gray-900 mb-6">Cost in India — 2026</h2>
+          <div className="grid md:grid-cols-3 gap-6">
+            <div className="p-6 rounded-3xl bg-white border border-gray-100">
+              <h4 className="font-black text-gray-900 mb-2">Freelancers</h4>
+              <p className="text-2xl font-black text-gray-900 mb-3">₹3K–₹8K<span className="text-sm font-medium text-gray-400">/ASIN</span></p>
+              <ul className="space-y-2 text-xs text-gray-500 font-medium">
+                <li>• Quality varies wildly</li>
+                <li>• No compliance expertise</li>
+                <li>• High rejection rate</li>
+              </ul>
+            </div>
+            <div className="p-6 rounded-3xl bg-white border border-gray-100">
+              <h4 className="font-black text-gray-900 mb-2">Generic Agencies</h4>
+              <p className="text-2xl font-black text-gray-900 mb-3">₹8K–₹15K<span className="text-sm font-medium text-gray-400">/ASIN</span></p>
+              <ul className="space-y-2 text-xs text-gray-500 font-medium">
+                <li>• Good design quality</li>
+                <li>• No e-commerce specialization</li>
+                <li>• Don't know Amazon policies</li>
+              </ul>
+            </div>
+            <div className="p-6 rounded-3xl bg-purple-900 text-white border border-purple-800">
+              <h4 className="font-black mb-2">PV Labs</h4>
+              <p className="text-2xl font-black mb-3">₹5K–₹12K<span className="text-sm font-medium text-purple-300">/ASIN</span></p>
+              <ul className="space-y-2 text-xs text-purple-200 font-medium">
+                <li>• Amazon-specific design</li>
+                <li>• 99% approval rate</li>
+                <li>• 5-day delivery</li>
+                <li>• Bulk: under ₹4K/ASIN</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <h2 className="text-2xl font-black text-gray-900 mb-6">Frequently Asked Questions</h2>
+          <div className="space-y-6">
+            {[
+              { q: "Is Amazon A+ Content free?", a: "The feature is free for Brand Registered sellers. Design costs ₹5,000-12,000/ASIN if you hire a studio." },
+              { q: "How long does approval take?", a: "3-7 business days. 30-40% first-time rejection rate. With PV Labs: 99% approval on first submission." },
+              { q: "Does A+ Content help Amazon SEO?", a: "A+ text is NOT indexed by A9. But higher conversion rate IS a ranking signal. So indirectly, yes." },
+              { q: "Can I do A+ without Brand Registry?", a: "No. But you can start with a pending trademark (₹4,500 govt fee). Full registration takes 12-18 months." },
+              { q: "Basic vs Premium A+?", a: "Basic: 5 modules, static images (free). Premium: video, hotspots, carousels (unlocks after all ASINs have basic A+)." }
+            ].map((item, i) => (
+              <div key={i} className="p-6 rounded-2xl border border-gray-100 bg-gray-50/30">
+                <h3 className="font-bold text-gray-900 mb-2">{item.q}</h3>
+                <p className="text-sm text-gray-600 font-medium leading-relaxed">{item.a}</p>
+              </div>
+            ))}
+          </div>
+        </section>
+
+        <section>
+          <div className="glass-card p-6 md:p-10 bg-white shadow-2xl border border-gray-100 rounded-2xl md:rounded-3xl w-full">
+            <div className="p-4 sm:p-6 md:p-10 bg-gradient-to-br from-purple-900 to-purple-950 rounded-xl sm:rounded-2xl md:rounded-3xl text-center w-full">
+              <h3 className="text-base sm:text-lg md:text-xl lg:text-2xl text-white font-black mb-2 sm:mb-3 md:mb-4 px-2">
+                Get A+ Content That Converts — 99% Approval Guaranteed
+              </h3>
+              <p className="text-purple-200/90 text-[11px] sm:text-xs md:text-sm lg:text-base mb-4 sm:mb-5 md:mb-6 leading-relaxed px-2">
+                5 custom modules + brand story + comparison chart. Delivered in 5 business days.
+              </p>
+              <button className="w-full sm:w-auto px-4 sm:px-6 md:px-10 py-2 sm:py-2.5 md:py-4 bg-white hover:bg-purple-50 text-purple-900 font-black uppercase tracking-widest text-[9px] sm:text-[10px] md:text-xs rounded-xl transition-all">
+                Get A+ Content Done →
+              </button>
+            </div>
+          </div>
+        </section>
+      </div>
+    )
+  },
+  "amazon-fba-india-2026": {
+    title: "Amazon FBA India 2026: Complete Guide — Fees, Profit & Is It Worth It?",
+    category: "Guide",
+    subtitle: "FBA Fulfillment Guide",
+    author: "Tankaar Sharma",
+    date: "August 16, 2026",
+    readTime: "16 min",
+    image: null,
+    content: (
+      <div className="space-y-8 sm:space-y-10 md:space-y-12 lg:space-y-16">
+        <section>
+          <div className="flex items-center gap-3 mb-6">
+            <div className="w-12 h-12 rounded-2xl bg-primary/10 flex items-center justify-center">
+              <ShieldCheck className="text-primary" size={24} />
+            </div>
+            <h2 className="text-2xl md:text-3xl font-black text-gray-900">What is Amazon FBA India?</h2>
+          </div>
+          <div className="glass-card p-6 md:p-8 border-l-4 border-primary bg-white/50 relative overflow-hidden">
+            <p className="text-lg md:text-xl text-gray-600 leading-relaxed font-medium relative z-10">
+              "Send products to Amazon's warehouse. They handle storage, packing, shipping, returns. You get Prime badge + 1-2 day delivery. 60+ fulfillment centers across India, 19,000+ pin codes."
+            </p>
+          </div>
+        </section>
+
+        <section>
+          <h2 className="text-2xl font-black text-gray-900 mb-8 flex items-center gap-3">
+            <span className="w-8 h-8 rounded-lg bg-gray-900 text-white flex items-center justify-center text-sm">6</span>
+            How FBA Works
+          </h2>
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+            {[
+              { t: "Create Shipment", d: "Select products → Amazon assigns warehouse location based on demand" },
+              { t: "Prep & Label", d: "FNSKU barcode on each unit → Pack in boxes per Amazon guidelines" },
+              { t: "Amazon Receives", d: "Inspect, count, shelve. Products 'Available' in 2-5 days" },
+              { t: "Customer Orders", d: "Amazon picks, packs, ships. 1-2 day Prime delivery" },
+              { t: "Returns Handled", d: "Amazon receives, inspects, restocks or marks unsellable" },
+              { t: "You Get Paid", d: "Sales revenue minus fees → your bank every 7 days" }
+            ].map((item, i) => (
+              <div key={i} className="p-6 rounded-2xl border border-gray-100 bg-gray-50/50 hover:bg-white hover:shadow-xl hover:border-primary/20 transition-all group">
+                <span className="text-[10px] font-black text-primary uppercase tracking-widest mb-2 block">Step {i + 1}</span>
+                <h4 className="font-bold text-gray-900 mb-2 group-hover:text-primary transition-colors">{item.t}</h4>
+                <p className="text-xs text-gray-500 leading-relaxed font-medium">{item.d}</p>
+              </div>
+            ))}
+          </div>
+        </section>
+
+        <section className="bg-gray-900 rounded-[32px] md:rounded-[40px] p-6 md:p-10 text-white relative overflow-hidden">
+          <div className="absolute bottom-0 right-0 w-64 h-64 bg-primary/10 blur-[100px]" />
+          <h2 className="text-2xl font-black mb-8">FBA Fees — 2026 Breakdown</h2>
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+            {[
+              { t: "Under 500g", d: "₹25-45/unit" },
+              { t: "500g-1kg", d: "₹45-65/unit" },
+              { t: "1kg-2kg", d: "₹65-85/unit" },
+              { t: "2kg-5kg", d: "₹85-130/unit" },
+              { t: "5kg+ (Oversize)", d: "₹130-250+/unit" },
+              { t: "Storage", d: "₹35-55/cubic ft/month" }
+            ].map((item, i) => (
+              <div key={i} className="p-4 rounded-2xl bg-white/5 border border-white/10">
+                <h5 className="text-white font-bold text-sm">{item.t}</h5>
+                <p className="text-primary font-black text-lg mt-1">{item.d}</p>
+              </div>
+            ))}
+          </div>
+          <div className="mt-8 p-6 bg-white/5 rounded-2xl border border-white/10">
+            <h3 className="text-white font-bold mb-3">Profit Example (500g product, ₹499 selling price):</h3>
+            <div className="grid grid-cols-2 gap-2 text-sm">
+              <span className="text-gray-400">Referral Fee (15%):</span><span className="text-red-300">-₹74.85</span>
+              <span className="text-gray-400">Closing Fee:</span><span className="text-red-300">-₹20</span>
+              <span className="text-gray-400">FBA Fee:</span><span className="text-red-300">-₹45</span>
+              <span className="text-gray-400">GST on Fees:</span><span className="text-red-300">-₹25.17</span>
+              <span className="text-gray-400">Product Cost:</span><span className="text-red-300">-₹149</span>
+              <span className="text-gray-400">Inward Shipping:</span><span className="text-red-300">-₹15</span>
+              <span className="text-white font-bold border-t border-white/20 pt-2">Net Profit:</span><span className="text-green-400 font-bold border-t border-white/20 pt-2">₹170.98 (34.3%)</span>
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <h2 className="text-2xl font-black text-gray-900 mb-6">FBA vs Self-Ship vs Easy Ship</h2>
+          <div className="grid md:grid-cols-3 gap-6">
+            <div className="p-6 rounded-3xl border border-primary/20 bg-primary/5">
+              <h4 className="font-black text-gray-900 mb-3">FBA</h4>
+              <ul className="space-y-2 text-xs text-gray-600 font-medium">
+                <li className="flex gap-2"><span className="text-green-500">✓</span> Prime badge + 1-2 day delivery</li>
+                <li className="flex gap-2"><span className="text-green-500">✓</span> Amazon handles everything</li>
+                <li className="flex gap-2"><span className="text-green-500">✓</span> Wins Buy Box 80%+</li>
+                <li className="flex gap-2"><span className="text-red-400">✗</span> Higher fees (₹25-250/unit)</li>
+                <li className="flex gap-2"><span className="text-red-400">✗</span> No packaging control</li>
+              </ul>
+            </div>
+            <div className="p-6 rounded-3xl border border-gray-200 bg-gray-50/50">
+              <h4 className="font-black text-gray-900 mb-3">Easy Ship</h4>
+              <ul className="space-y-2 text-xs text-gray-600 font-medium">
+                <li className="flex gap-2"><span className="text-green-500">✓</span> Lower fees</li>
+                <li className="flex gap-2"><span className="text-green-500">✓</span> You control packaging</li>
+                <li className="flex gap-2"><span className="text-red-400">✗</span> No Prime badge</li>
+                <li className="flex gap-2"><span className="text-red-400">✗</span> 3-5 day delivery</li>
+                <li className="flex gap-2"><span className="text-red-400">✗</span> Daily packaging work</li>
+              </ul>
+            </div>
+            <div className="p-6 rounded-3xl border border-gray-200 bg-gray-50/50">
+              <h4 className="font-black text-gray-900 mb-3">Self-Ship</h4>
+              <ul className="space-y-2 text-xs text-gray-600 font-medium">
+                <li className="flex gap-2"><span className="text-green-500">✓</span> Lowest fees</li>
+                <li className="flex gap-2"><span className="text-green-500">✓</span> Full control</li>
+                <li className="flex gap-2"><span className="text-red-400">✗</span> No Prime, slowest delivery</li>
+                <li className="flex gap-2"><span className="text-red-400">✗</span> You handle returns</li>
+                <li className="flex gap-2"><span className="text-red-400">✗</span> Lowest Buy Box rate</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <h2 className="text-2xl font-black text-gray-900 mb-6">Is FBA Worth It?</h2>
+          <div className="grid md:grid-cols-2 gap-6">
+            <div className="p-6 rounded-2xl bg-green-50/50 border border-green-100">
+              <h4 className="font-bold text-green-900 mb-3">✓ Worth It If:</h4>
+              <ul className="space-y-2 text-xs text-gray-600 font-medium">
+                <li>• Product under 5kg</li>
+                <li>• Margins above 25%</li>
+                <li>• 10+ units/day per SKU</li>
+                <li>• You value Prime badge</li>
+                <li>• No warehouse infrastructure</li>
+              </ul>
+            </div>
+            <div className="p-6 rounded-2xl bg-red-50/50 border border-red-100">
+              <h4 className="font-bold text-red-900 mb-3">✗ Not Worth It If:</h4>
+              <ul className="space-y-2 text-xs text-gray-600 font-medium">
+                <li>• Very heavy/bulky products</li>
+                <li>• Margins under 20%</li>
+                <li>• Less than 2-3 units/day</li>
+                <li>• Perishable/short expiry</li>
+                <li>• Existing logistics setup</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <h2 className="text-2xl font-black text-gray-900 mb-6">Frequently Asked Questions</h2>
+          <div className="space-y-6">
+            {[
+              { q: "How much does Amazon FBA cost in India?", a: "₹25-250/unit depending on size/weight + ₹35-55/cubic ft monthly storage. Use Amazon's Revenue Calculator for exact numbers." },
+              { q: "Can I use FBA for all products?", a: "Technically yes, strategically no. Top 5-10 fast-moving SKUs on FBA, slow-movers on Easy Ship." },
+              { q: "What if FBA products don't sell?", a: "Monthly storage fees apply. After 6 months, long-term fees kick in. Never let inventory age — create removal orders." },
+              { q: "How long for inventory to become available?", a: "2-5 business days after Amazon receives shipment. Peak season: 7-10 days." },
+              { q: "Does FBA handle returns?", a: "Yes. Amazon receives, inspects, restocks sellable items. Unsellable items can be returned to you (₹10-25/unit) or disposed." }
+            ].map((item, i) => (
+              <div key={i} className="p-6 rounded-2xl border border-gray-100 bg-gray-50/30">
+                <h3 className="font-bold text-gray-900 mb-2">{item.q}</h3>
+                <p className="text-sm text-gray-600 font-medium leading-relaxed">{item.a}</p>
+              </div>
+            ))}
+          </div>
+        </section>
+
+        <section>
+          <div className="glass-card p-6 md:p-10 bg-white shadow-2xl border border-gray-100 rounded-2xl md:rounded-3xl w-full">
+            <div className="p-4 sm:p-6 md:p-10 bg-gradient-to-br from-gray-900 to-gray-950 rounded-xl sm:rounded-2xl md:rounded-3xl text-center w-full">
+              <h3 className="text-base sm:text-lg md:text-xl lg:text-2xl text-white font-black mb-2 sm:mb-3 md:mb-4 px-2">
+                Maximize FBA Success — Professional Images First
+              </h3>
+              <p className="text-gray-400 text-[11px] sm:text-xs md:text-sm lg:text-base mb-4 sm:mb-5 md:mb-6 leading-relaxed px-2">
+                FBA gives you fast delivery. Professional images give you clicks. Together = Amazon success formula.
+              </p>
+              <button className="w-full sm:w-auto px-4 sm:px-6 md:px-10 py-2 sm:py-2.5 md:py-4 bg-primary hover:bg-accent text-white font-black uppercase tracking-widest text-[9px] sm:text-[10px] md:text-xs rounded-xl transition-all">
+                Get Free Listing Audit →
+              </button>
+            </div>
+          </div>
+        </section>
+      </div>
+    )
+  },
+  "amazon-listing-kaise-kare": {
+    title: "Amazon Listing Kaise Kare: Product List Karne Ka Complete Process 2026",
+    category: "Guide",
+    subtitle: "Amazon Listing Guide (Hindi)",
+    author: "Tankaar Sharma",
+    date: "August 16, 2026",
+    readTime: "14 min",
+    image: null,
+    content: (
+      <div className="space-y-8 sm:space-y-10 md:space-y-12 lg:space-y-16">
+        <section>
+          <div className="flex items-center gap-3 mb-6">
+            <div className="w-12 h-12 rounded-2xl bg-primary/10 flex items-center justify-center">
+              <Sparkles className="text-primary" size={24} />
+            </div>
+            <h2 className="text-2xl md:text-3xl font-black text-gray-900">Amazon Pe Product Listing Kaise Karein</h2>
+          </div>
+          <div className="glass-card p-6 md:p-8 border-l-4 border-primary bg-white/50 relative overflow-hidden">
+            <p className="text-lg md:text-xl text-gray-600 leading-relaxed font-medium relative z-10">
+              "Title kaise likhein? Bullet points mein kya daalein? Images kis size ki chahiye? Backend keywords kya hote hain? Yeh guide sab clearly batayegi — Hindi mein."
+            </p>
+          </div>
+        </section>
+
+        <section>
+          <h2 className="text-2xl font-black text-gray-900 mb-8 flex items-center gap-3">
+            <span className="w-8 h-8 rounded-lg bg-gray-900 text-white flex items-center justify-center text-sm">8</span>
+            Steps — Listing Create Karna
+          </h2>
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+            {[
+              { t: "Seller Central → Add Product", d: "Catalog menu → 'Add Products' → New product ya existing pe sell" },
+              { t: "Title Likhein (200 chars)", d: "Brand + Product + Feature + Size + Color. English mein. No ALL CAPS." },
+              { t: "Bullet Points (5)", d: "BENEFIT first, then feature. 500 characters each. No Hindi." },
+              { t: "Description / A+ Content", d: "Brand Registry hai? → A+ use karein. Nahi? → 2000 char text description." },
+              { t: "Images Upload (9 slots)", d: "1600×1600px, white BG hero. Lifestyle, infographic, dimensions, comparison." },
+              { t: "Backend Keywords", d: "250 bytes hidden keywords. Hindi spellings, synonyms, misspellings." },
+              { t: "Price Set Karein", d: "Revenue Calculator use karein. All fees + margin calculate karke price rakhein." },
+              { t: "Listing Live!", d: "Save → 15-30 min mein active. Mobile pe check karein. PPC start karein." }
+            ].map((item, i) => (
+              <div key={i} className="p-6 rounded-2xl border border-gray-100 bg-gray-50/50 hover:bg-white hover:shadow-xl hover:border-primary/20 transition-all group">
+                <span className="text-[10px] font-black text-primary uppercase tracking-widest mb-2 block">Step {i + 1}</span>
+                <h4 className="font-bold text-gray-900 mb-2 group-hover:text-primary transition-colors">{item.t}</h4>
+                <p className="text-xs text-gray-500 leading-relaxed font-medium">{item.d}</p>
+              </div>
+            ))}
+          </div>
+        </section>
+
+        <section className="bg-gray-900 rounded-[32px] md:rounded-[40px] p-6 md:p-10 text-white relative overflow-hidden">
+          <div className="absolute bottom-0 right-0 w-64 h-64 bg-primary/10 blur-[100px]" />
+          <h2 className="text-2xl font-black mb-8">Title Formula</h2>
+          <div className="p-6 bg-white/5 rounded-2xl border border-white/10 mb-6">
+            <p className="text-sm text-gray-300 font-medium">[Brand Name] + [Product Name] + [Key Feature] + [Size/Qty] + [Color/Variant]</p>
+          </div>
+          <div className="space-y-4">
+            <div className="p-4 rounded-xl bg-green-500/10 border border-green-500/20">
+              <p className="text-xs text-green-300"><span className="text-green-400 font-bold">✓ Good:</span> "NutriFuel Whey Protein Powder | 24g Protein Per Scoop | 1kg Double Chocolate | No Added Sugar"</p>
+            </div>
+            <div className="p-4 rounded-xl bg-red-500/10 border border-red-500/20">
+              <p className="text-xs text-red-300"><span className="text-red-400 font-bold">✗ Bad:</span> "BEST PROTEIN POWDER BUY NOW CHEAP PRICE WHEY PROTEIN" (spam — suppress hoga)</p>
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <h2 className="text-2xl font-black text-gray-900 mb-6">9-Image Strategy</h2>
+          <div className="grid sm:grid-cols-3 gap-4">
+            {[
+              "Hero (white BG, 85% fill)", "Second Angle", "Lifestyle Shot",
+              "Feature Infographic", "Dimensions/Scale", "Ingredients/Material",
+              "Comparison Chart", "Social Proof", "Brand Story/CTA"
+            ].map((item, i) => (
+              <div key={i} className="p-4 rounded-2xl border border-gray-100 bg-gray-50/30 text-center">
+                <span className="text-[10px] font-black text-primary uppercase block mb-1">Image {i + 1}</span>
+                <p className="text-xs text-gray-700 font-bold">{item}</p>
+              </div>
+            ))}
+          </div>
+          <div className="mt-6 p-6 bg-primary/5 rounded-2xl border border-primary/10">
+            <p className="text-sm text-gray-700 font-medium"><span className="text-gray-900 font-bold">Pro tip:</span> Phone camera images = low CTR. Professional images se CTR 2-3x badhta hai. PV Labs: 3-5 din, zero rejection, product ship nahi karna.</p>
+          </div>
+        </section>
+
+        <section>
+          <h2 className="text-2xl font-black text-gray-900 mb-6">Common Mistakes</h2>
+          <div className="grid md:grid-cols-2 gap-4">
+            {[
+              "Hindi mein title — algorithm English index karta hai",
+              "Phone camera images — low CTR = no sales",
+              "Backend keywords khali — free real estate waste",
+              "Fees calculate na karna — loss mein bechna",
+              "Sirf 2-3 images — saare 9 slots use karein",
+              "A+ Content skip karna — 5-15% conversion loss"
+            ].map((err, i) => (
+              <div key={i} className="flex items-start gap-4 p-5 rounded-2xl bg-red-50/50 border border-red-100/50">
+                <div className="w-2 h-2 rounded-full bg-red-400 mt-1.5 flex-shrink-0" />
+                <span className="text-xs text-gray-600 font-bold">{err}</span>
+              </div>
+            ))}
+          </div>
+        </section>
+
+        <section>
+          <h2 className="text-2xl font-black text-gray-900 mb-6">Frequently Asked Questions</h2>
+          <div className="space-y-6">
+            {[
+              { q: "Listing banane mein kitna time lagta hai?", a: "Sab ready ho toh 30-45 minutes. Images design mein 3-5 din (professional studio se)." },
+              { q: "Free mein product list kar sakte hain?", a: "Haan, listing create karna free hai. Fees tab lagte hain jab product bikta hai." },
+              { q: "Listing suppress kyun hoti hai?", a: "Banned words in title, images pe text/watermarks, wrong category, price > MRP." },
+              { q: "Kitne products list kar sakte hain?", a: "Unlimited. Lekin 5-10 se start karein, optimize karein, phir scale karein." }
+            ].map((item, i) => (
+              <div key={i} className="p-6 rounded-2xl border border-gray-100 bg-gray-50/30">
+                <h3 className="font-bold text-gray-900 mb-2">{item.q}</h3>
+                <p className="text-sm text-gray-600 font-medium leading-relaxed">{item.a}</p>
+              </div>
+            ))}
+          </div>
+        </section>
+
+        <section>
+          <div className="glass-card p-6 md:p-10 bg-white shadow-2xl border border-gray-100 rounded-2xl md:rounded-3xl w-full">
+            <div className="p-4 sm:p-6 md:p-10 bg-gradient-to-br from-gray-900 to-gray-950 rounded-xl sm:rounded-2xl md:rounded-3xl text-center w-full">
+              <h3 className="text-base sm:text-lg md:text-xl lg:text-2xl text-white font-black mb-2 sm:mb-3 md:mb-4 px-2">
+                Apni Listing Professional Banayein
+              </h3>
+              <p className="text-gray-400 text-[11px] sm:text-xs md:text-sm lg:text-base mb-4 sm:mb-5 md:mb-6 leading-relaxed px-2">
+                PV Labs: CGI-based Amazon images. Product bhejne ki zaroorat nahi. 3-5 din delivery. Zero rejection.
+              </p>
+              <button className="w-full sm:w-auto px-4 sm:px-6 md:px-10 py-2 sm:py-2.5 md:py-4 bg-primary hover:bg-accent text-white font-black uppercase tracking-widest text-[9px] sm:text-[10px] md:text-xs rounded-xl transition-all">
+                Free Consultation →
+              </button>
+            </div>
+          </div>
+        </section>
+      </div>
+    )
+  },
+  "amazon-product-photography-vs-cgi": {
+    title: "Amazon Product Photography vs CGI: Which is Better for Your Listings in 2026?",
+    category: "Education",
+    subtitle: "Photography vs CGI",
+    author: "Tankaar Sharma",
+    date: "August 16, 2026",
+    readTime: "14 min",
+    image: null,
+    content: (
+      <div className="space-y-8 sm:space-y-10 md:space-y-12 lg:space-y-16">
+        <section>
+          <div className="flex items-center gap-3 mb-6">
+            <div className="w-12 h-12 rounded-2xl bg-primary/10 flex items-center justify-center">
+              <Sparkles className="text-primary" size={24} />
+            </div>
+            <h2 className="text-2xl md:text-3xl font-black text-gray-900">Photography or CGI — Which is Better?</h2>
+          </div>
+          <div className="glass-card p-6 md:p-8 border-l-4 border-primary bg-white/50 relative overflow-hidden">
+            <p className="text-lg md:text-xl text-gray-600 leading-relaxed font-medium relative z-10">
+              "Studio photography costs ₹8K-40K per SKU. CGI costs ₹3K-8K and looks identical. But is CGI actually better? Here's the honest, no-BS comparison for Indian sellers."
+            </p>
+          </div>
+        </section>
+
+        <section className="bg-gray-900 rounded-[32px] md:rounded-[40px] p-6 md:p-10 text-white relative overflow-hidden">
+          <div className="absolute bottom-0 right-0 w-64 h-64 bg-primary/10 blur-[100px]" />
+          <h2 className="text-2xl font-black mb-8">Head-to-Head Comparison</h2>
+          <div className="space-y-4">
+            {[
+              { cat: "Cost", photo: "₹8K-40K/SKU", cgi: "₹3K-8K/SKU", winner: "CGI" },
+              { cat: "Turnaround", photo: "7-14 days", cgi: "3-5 days", winner: "CGI" },
+              { cat: "Flexibility", photo: "Reshoot for changes", cgi: "Unlimited revisions", winner: "CGI" },
+              { cat: "Scalability", photo: "Linear cost per SKU", cgi: "Variants in hours", winner: "CGI" },
+              { cat: "Food/Fabric", photo: "Superior realism", cgi: "Good but not perfect", winner: "Photo" },
+              { cat: "Clean Surfaces", photo: "Great", cgi: "Perfect (no dust/scratches)", winner: "CGI" }
+            ].map((item, i) => (
+              <div key={i} className="grid grid-cols-4 gap-4 p-4 rounded-xl bg-white/5 border border-white/10 items-center">
+                <span className="text-xs text-gray-400 font-bold">{item.cat}</span>
+                <span className="text-xs text-gray-300">{item.photo}</span>
+                <span className="text-xs text-gray-300">{item.cgi}</span>
+                <span className={`text-xs font-black ${item.winner === "CGI" ? "text-primary" : "text-accent"}`}>{item.winner}</span>
+              </div>
+            ))}
+          </div>
+        </section>
+
+        <section className="grid md:grid-cols-2 gap-8">
+          <div className="glass-card p-6 md:p-8 hover:border-accent/30 transition-all bg-white/50">
+            <h3 className="text-xl font-bold mb-4 text-gray-900">📸 When Photography Wins</h3>
+            <ul className="space-y-3 text-gray-600 font-medium text-sm">
+              <li className="flex items-start gap-3"><div className="w-1.5 h-1.5 rounded-full bg-accent mt-2 flex-shrink-0" /><span>Food products (steam, moisture, imperfections)</span></li>
+              <li className="flex items-start gap-3"><div className="w-1.5 h-1.5 rounded-full bg-accent mt-2 flex-shrink-0" /><span>Fashion with real human models</span></li>
+              <li className="flex items-start gap-3"><div className="w-1.5 h-1.5 rounded-full bg-accent mt-2 flex-shrink-0" /><span>Handcrafted/artisanal products</span></li>
+              <li className="flex items-start gap-3"><div className="w-1.5 h-1.5 rounded-full bg-accent mt-2 flex-shrink-0" /><span>Products where texture IS the feature</span></li>
+            </ul>
+          </div>
+          <div className="glass-card p-6 md:p-8 hover:border-primary/30 transition-all bg-white/50">
+            <h3 className="text-xl font-bold mb-4 text-gray-900">🖥️ When CGI Wins</h3>
+            <ul className="space-y-3 text-gray-600 font-medium text-sm">
+              <li className="flex items-start gap-3"><div className="w-1.5 h-1.5 rounded-full bg-primary mt-2 flex-shrink-0" /><span>Clean surface products (electronics, bottles, boxes)</span></li>
+              <li className="flex items-start gap-3"><div className="w-1.5 h-1.5 rounded-full bg-primary mt-2 flex-shrink-0" /><span>Multiple color variants from one model</span></li>
+              <li className="flex items-start gap-3"><div className="w-1.5 h-1.5 rounded-full bg-primary mt-2 flex-shrink-0" /><span>Products not yet manufactured (pre-launch)</span></li>
+              <li className="flex items-start gap-3"><div className="w-1.5 h-1.5 rounded-full bg-primary mt-2 flex-shrink-0" /><span>Infographic-heavy listings</span></li>
+              <li className="flex items-start gap-3"><div className="w-1.5 h-1.5 rounded-full bg-primary mt-2 flex-shrink-0" /><span>10+ SKUs (cost compounds)</span></li>
+              <li className="flex items-start gap-3"><div className="w-1.5 h-1.5 rounded-full bg-primary mt-2 flex-shrink-0" /><span>No product access (dropship/resell)</span></li>
+            </ul>
+          </div>
+        </section>
+
+        <section>
+          <h2 className="text-2xl font-black text-gray-900 mb-6">PV Labs CGI Process</h2>
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
+            {[
+              { t: "Day 1", d: "Share reference photos (phone camera, 4-5 angles) + brief" },
+              { t: "Day 2-3", d: "3D model built, textured, scenes set up for all 9 slots" },
+              { t: "Day 4", d: "First draft delivered. You request changes." },
+              { t: "Day 5", d: "Final delivery — 9 images at 2000×2000px, Amazon-ready" }
+            ].map((item, i) => (
+              <div key={i} className="p-5 rounded-2xl border border-primary/10 bg-primary/5">
+                <span className="text-[10px] font-black text-primary uppercase tracking-widest block mb-2">{item.t}</span>
+                <p className="text-xs text-gray-600 font-medium">{item.d}</p>
+              </div>
+            ))}
+          </div>
+          <div className="mt-6 p-6 bg-gray-50 rounded-2xl border border-gray-100">
+            <h4 className="font-bold text-gray-900 mb-3">What's Included (₹3K-8K/SKU):</h4>
+            <div className="grid sm:grid-cols-2 gap-2 text-xs text-gray-600 font-medium">
+              {["1 hero image (white BG, 85%+ fill)", "2-3 lifestyle renders (Indian settings)", "2-3 infographic images", "1 comparison chart", "1 brand story image", "Mobile-optimized, tested at 400px"].map((item, i) => (
+                <span key={i} className="flex items-center gap-2"><div className="w-1.5 h-1.5 rounded-full bg-primary flex-shrink-0" />{item}</span>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <h2 className="text-2xl font-black text-gray-900 mb-6">The Hybrid Approach</h2>
+          <div className="p-6 md:p-8 rounded-2xl border border-gray-100 bg-gray-50/30">
+            <p className="text-gray-600 font-medium leading-relaxed mb-4">Many successful Amazon India sellers use both:</p>
+            <ul className="space-y-3 text-sm text-gray-600 font-medium">
+              <li className="flex items-start gap-3"><span className="text-gray-900 font-bold">Photography for:</span> Hero image + real model shots</li>
+              <li className="flex items-start gap-3"><span className="text-gray-900 font-bold">CGI for:</span> Lifestyle renders, infographics, comparisons, dimensions, variants</li>
+            </ul>
+            <p className="text-sm text-gray-600 font-medium mt-4">Total cost: ₹5,000-12,000/SKU — much less than full studio for all 9 images.</p>
+          </div>
+        </section>
+
+        <section>
+          <h2 className="text-2xl font-black text-gray-900 mb-6">Frequently Asked Questions</h2>
+          <div className="space-y-6">
+            {[
+              { q: "Can buyers tell CGI from real photography?", a: "No. Modern CGI is photorealistic. IKEA, Nike, Samsung use CGI for 75%+ product images. Amazon buyers cannot tell." },
+              { q: "Is CGI Amazon compliant?", a: "Yes. Amazon's rules are about pixel size and background — not how image was created. We've never had a CGI image rejected." },
+              { q: "Do I need to ship my product for CGI?", a: "No. Share phone camera reference photos (4-5 angles). We build 3D model from references. No shipping, no delays." },
+              { q: "What about fabric/textile products?", a: "Photography is slightly better for complex drape/knit. For most other textures (metal, glass, plastic, wood), CGI is perfect." },
+              { q: "How much does CGI cost in India?", a: "PV Labs: ₹3,000-8,000/SKU for complete 9-image set. Bulk (5+ SKUs) gets additional discount." }
+            ].map((item, i) => (
+              <div key={i} className="p-6 rounded-2xl border border-gray-100 bg-gray-50/30">
+                <h3 className="font-bold text-gray-900 mb-2">{item.q}</h3>
+                <p className="text-sm text-gray-600 font-medium leading-relaxed">{item.a}</p>
+              </div>
+            ))}
+          </div>
+        </section>
+
+        <section>
+          <div className="glass-card p-6 md:p-10 bg-white shadow-2xl border border-gray-100 rounded-2xl md:rounded-3xl w-full">
+            <div className="p-4 sm:p-6 md:p-10 bg-gradient-to-br from-gray-900 to-gray-950 rounded-xl sm:rounded-2xl md:rounded-3xl text-center w-full">
+              <h3 className="text-base sm:text-lg md:text-xl lg:text-2xl text-white font-black mb-2 sm:mb-3 md:mb-4 px-2">
+                Try CGI for Your Amazon Listings — Free Audit
+              </h3>
+              <p className="text-gray-400 text-[11px] sm:text-xs md:text-sm lg:text-base mb-4 sm:mb-5 md:mb-6 leading-relaxed px-2">
+                Send us your current listing. We'll show you what professional CGI images would look like — free, no commitment.
+              </p>
+              <button className="w-full sm:w-auto px-4 sm:px-6 md:px-10 py-2 sm:py-2.5 md:py-4 bg-primary hover:bg-accent text-white font-black uppercase tracking-widest text-[9px] sm:text-[10px] md:text-xs rounded-xl transition-all">
+                Get Free Listing Audit →
+              </button>
+            </div>
+          </div>
+        </section>
+      </div>
+    )
   }
 };
 
