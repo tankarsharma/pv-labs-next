@@ -21,22 +21,24 @@ const perks = [
 ];
 
 const jobs = [
-  {
-    title: "Visual Content Intern",
-    dept: "Creative",
-    type: "Full-time",
-    location: "Remote",
-    applyLink: "",
-    closed: false,
-    desc: "Create premium product visuals for Indian e-commerce brands using advanced digital tools and proprietary workflows.",
-    requirements: [
-      "Strong visual sense - you know what looks premium and what doesn't",
-      "Expert in crafting detailed creative briefs and visual direction",
-      "Strong command over digital content generation tools",
-      "Ability to translate a client brief into precise visual output",
-      "Deadline-driven, no hand-holding needed"
-    ]
-  },
+{
+  title: "Product Visual Designer",
+  dept: "Creative",
+  type: "Freelance / Part-time / Full-time",
+  location: "Remote - India",
+  applyLink: "PASTE_DESIGNER_FORM_LINK_HERE",
+  closed: false,
+  desc: "We’re hiring a Product Visual Designer for e-commerce visual work at PV Labs - product photoshoots, A+ content banner, hero images, and lifestyle visuals for D2C brands selling on Amazon, Flipkart and other E-commerce platform.\n\nYou don’t need prior e-commerce experience. What matters most is strong design craft and your ability to use AI tools (ChatGPT, Gemini, Midjourney, etc.) as part of a real creative workflow - blending AI-generated elements with manual editing to produce photorealistic, premium results.\n\nShortlisted candidates will receive a real trial task with a 24-hour deadline before any paid work begins.",
+  requirements: [
+    "Strong design fundamentals in composition, lighting, color, and visual storytelling",
+    "Confident compositing AI-generated elements into photorealistic final visuals",
+    "Skilled in manual editing and retouching to remove obvious AI artifacts",
+    "Able to share a strong portfolio (Drive/Behance/Instagram/Figma links)",
+    "Can understand written briefs, reference images, and production specs quickly",
+    "Comfortable creating high-quality work for product listings and e-commerce creatives",
+    "Available for freelance, part-time, or full-time engagement"
+  ]
+},
 
 {
   title: "Business Development Associate",
