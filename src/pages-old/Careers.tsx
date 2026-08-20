@@ -38,25 +38,24 @@ const jobs = [
     ]
   },
 
-  {
-    title: "Business Development Intern",
-    dept: "Growth & Sales",
-    type: "Internship (3 months)",
-    location: "Remote — Work From Home, India",
-    applyLink: "https://forms.gle/y4ro1jgXBuZYd7pW8",
-    closed: false,
-    desc: "",
-    descHtml: true,
-    requirements: [
-      "Comfortable speaking in Hindi and English, you'll be on sales calls and Instagram DMs daily",
-      "Can find and approach D2C brands on Instagram without hand-holding",
-      "Not afraid of cold calling, cold emailing, rejections, and persistent follow-ups",
-      "Able to maintain a lead tracker and CRM in Google Sheets independently",
-      "Willing to create short-form video content and Instagram Reels for outreach",
-      "Available for a 3-month work-from-home internship",
-      "MBA, BBA, BMM, B.Tech or Mass Communication students and freshers welcome - attitude and hustle over resume"
-    ]
-  },
+{
+  title: "Business Development Associate",
+  dept: "Growth & Sales",
+  type: "Full-time",
+  location: "Remote — India",
+  applyLink: "https://forms.gle/y4ro1jgXBuZYd7pW8",
+  closed: false,
+  desc: "We’re hiring one Business Development Associate to join PV Labs, a growing e-commerce visual design company working with D2C brands and Amazon/Flipkart sellers across India.\n\nThis is a high-ownership, execution-first role where you’ll drive outreach, start conversations, and help convert leads into clients.\n\nEligibility: This role is currently open to female candidates.\n\nSelection process includes practical tasks (real outreach + a short pitch video). We review every application personally and contact shortlisted candidates within 48 hours.",
+  requirements: [
+    "Strong communication in Hindi and English",
+    "Comfortable with cold DMs, cold calling, and follow-ups",
+    "Can identify and approach relevant D2C brands independently",
+    "Can manage lead tracking/CRM in Google Sheets",
+    "Comfortable being on camera and creating short-form outreach content",
+    "Action-oriented, resilient, and consistent in daily execution",
+    "Prior sales, outreach, or content experience is a plus"
+  ]
+},
 
   {
     title: "Etsy & Marketplace Specialist",
