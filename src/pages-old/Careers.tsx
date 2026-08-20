@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import { motion } from "framer-motion";
@@ -21,43 +21,45 @@ const perks = [
 ];
 
 const jobs = [
-{
-  title: "Product Visual Designer",
-  dept: "Creative",
-  type: "Freelance / Part-time / Full-time",
-  location: "Remote - India",
-  applyLink: "PASTE_DESIGNER_FORM_LINK_HERE",
-  closed: false,
-  desc: "We’re hiring a Product Visual Designer for e-commerce visual work at PV Labs - product photoshoots, A+ content banner, hero images, and lifestyle visuals for D2C brands selling on Amazon, Flipkart and other E-commerce platform.\n\nYou don’t need prior e-commerce experience. What matters most is strong design craft and your ability to use AI tools (ChatGPT, Gemini, Midjourney, etc.) as part of a real creative workflow - blending AI-generated elements with manual editing to produce photorealistic, premium results.\n\nShortlisted candidates will receive a real trial task with a 24-hour deadline before any paid work begins.",
-  requirements: [
-    "Strong design fundamentals in composition, lighting, color, and visual storytelling",
-    "Confident compositing AI-generated elements into photorealistic final visuals",
-    "Skilled in manual editing and retouching to remove obvious AI artifacts",
-    "Able to share a strong portfolio (Drive/Behance/Instagram/Figma links)",
-    "Can understand written briefs, reference images, and production specs quickly",
-    "Comfortable creating high-quality work for product listings and e-commerce creatives",
-    "Available for freelance, part-time, or full-time engagement"
-  ]
-},
+  {
+    title: "Product Visual Designer",
+    dept: "Creative",
+    type: "Freelance / Part-time / Full-time",
+    location: "Remote - India",
+    applyLink: "PASTE_DESIGNER_FORM_LINK_HERE",
+    closed: false,
+    desc: "We’re hiring a Product Visual Designer for e-commerce visual work at PV Labs - product photoshoots, A+ content banner, hero images, and lifestyle visuals for D2C brands selling on Amazon, Flipkart and other E-commerce platform.\n\nYou don’t need prior e-commerce experience. What matters most is strong design craft and your ability to use AI tools (ChatGPT, Gemini, Midjourney, etc.) as part of a real creative workflow - blending AI-generated elements with manual editing to produce photorealistic, premium results.\n\nShortlisted candidates will receive a real trial task with a 24-hour deadline before any paid work begins.",
+    descHtml: false,
+    requirements: [
+      "Strong design fundamentals in composition, lighting, color, and visual storytelling",
+      "Confident compositing AI-generated elements into photorealistic final visuals",
+      "Skilled in manual editing and retouching to remove obvious AI artifacts",
+      "Able to share a strong portfolio (Drive/Behance/Instagram/Figma links)",
+      "Can understand written briefs, reference images, and production specs quickly",
+      "Comfortable creating high-quality work for product listings and e-commerce creatives",
+      "Available for freelance, part-time, or full-time engagement"
+    ]
+  },
 
-{
-  title: "Business Development Associate",
-  dept: "Growth & Sales",
-  type: "Full-time",
-  location: "Remote — India",
-  applyLink: "https://forms.gle/y4ro1jgXBuZYd7pW8",
-  closed: false,
-  desc: "We’re hiring one Business Development Associate to join PV Labs, a growing e-commerce visual design company working with D2C brands and Amazon/Flipkart sellers across India.\n\nThis is a high-ownership, execution-first role where you’ll drive outreach, start conversations, and help convert leads into clients.\n\nEligibility: This role is currently open to female candidates.\n\nSelection process includes practical tasks (real outreach + a short pitch video). We review every application personally and contact shortlisted candidates within 48 hours.",
-  requirements: [
-    "Strong communication in Hindi and English",
-    "Comfortable with cold DMs, cold calling, and follow-ups",
-    "Can identify and approach relevant D2C brands independently",
-    "Can manage lead tracking/CRM in Google Sheets",
-    "Comfortable being on camera and creating short-form outreach content",
-    "Action-oriented, resilient, and consistent in daily execution",
-    "Prior sales, outreach, or content experience is a plus"
-  ]
-},
+  {
+    title: "Business Development Associate",
+    dept: "Growth & Sales",
+    type: "Full-time",
+    location: "Remote — India",
+    applyLink: "https://forms.gle/y4ro1jgXBuZYd7pW8",
+    closed: false,
+    desc: "We’re hiring one Business Development Associate to join PV Labs, a growing e-commerce visual design company working with D2C brands and Amazon/Flipkart sellers across India.\n\nThis is a high-ownership, execution-first role where you’ll drive outreach, start conversations, and help convert leads into clients.\n\nEligibility: This role is currently open to female candidates.\n\nSelection process includes practical tasks (real outreach + a short pitch video). We review every application personally and contact shortlisted candidates within 48 hours.",
+    descHtml: false,
+    requirements: [
+      "Strong communication in Hindi and English",
+      "Comfortable with cold DMs, cold calling, and follow-ups",
+      "Can identify and approach relevant D2C brands independently",
+      "Can manage lead tracking/CRM in Google Sheets",
+      "Comfortable being on camera and creating short-form outreach content",
+      "Action-oriented, resilient, and consistent in daily execution",
+      "Prior sales, outreach, or content experience is a plus"
+    ]
+  },
 
   {
     title: "Etsy & Marketplace Specialist",
@@ -190,7 +192,7 @@ const Careers = () => {
                 </button>
                 {selectedJob === i && !j.closed && (
                   <motion.div initial={{ opacity: 0, height: 0 }} animate={{ opacity: 1, height: "auto" }} className="px-6 pb-6 border-t border-border">
-                    {j.descHtml ? (
+                    {j.descHtml === true ? (
                       <div className="text-muted-foreground mt-4 mb-4 space-y-3 text-sm leading-relaxed">
                         <p>PV Labs is a visual design agency that helps D2C and e-commerce brands create high-converting product images,A+ content,Brand Story,Brand Store for Amazon, Flipkart, and Myntra.</p>
                         <p>We're hiring one <strong className="text-foreground">Business Development Intern</strong> to find D2C brands on Instagram, run cold outreach via DMs and sales calls, follow up systematically (Day 2/5/10), manage leads in a Google Sheets CRM, and create short-form content and Instagram Reels for brand outreach.</p>
