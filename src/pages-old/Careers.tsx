@@ -26,7 +26,7 @@ const jobs = [
     dept: "Creative",
     type: "Freelance / Part-time / Full-time",
     location: "Remote - India",
-    applyLink: "PASTE_DESIGNER_FORM_LINK_HERE",
+    applyLink: "https://forms.gle/4P96Ur2hxwCPqC9h9",
     closed: false,
     desc: "We’re hiring a Product Visual Designer for e-commerce visual work at PV Labs - product photoshoots, A+ content banner, hero images, and lifestyle visuals for D2C brands selling on Amazon, Flipkart and other E-commerce platform.\n\nYou don’t need prior e-commerce experience. What matters most is strong design craft and your ability to use AI tools (ChatGPT, Gemini, Midjourney, etc.) as part of a real creative workflow - blending AI-generated elements with manual editing to produce photorealistic, premium results.\n\nShortlisted candidates will receive a real trial task with a 24-hour deadline before any paid work begins.",
     descHtml: false,
