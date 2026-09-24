@@ -31,7 +31,7 @@ const AboutPreview = () => (
             </h2>
 
             <span className="text-gray-600 leading-relaxed mb-4 text-xl w-auto block">
-              We started PV Labs with one mission - help Indian e-commerce sellers compete with the best...
+              We help Amazon sellers and D2C brands build high-converting visuals that make products easier to trust, understand, and buy.
             </span>
 
             {/* ✅ UPDATED LIST */}
@@ -78,7 +78,7 @@ const AboutPreview = () => (
               href="/about"
               className="inline-flex items-center gap-2 text-primary font-semibold hover:gap-3 transition-all underline underline-offset-2"
             >
-              See Our work <ArrowRight size={16} />
+              Learn more about PV Labs <ArrowRight size={16} />
             </Link>
           </motion.div>
 
