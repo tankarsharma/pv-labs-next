@@ -19,7 +19,7 @@ const Footer = () => {
               />
             </Link>
             <p className="text-background/60 text-sm leading-relaxed mb-6 max-w-[280px]">
-              PV Labs helps Indian sellers and brands create studio-quality visuals - without a studio. Amazon, Flipkart & Myntra ready.
+              PV Labs is an e-commerce creative company helping Amazon sellers and D2C brands build high-converting visuals.
             </p>
             <div className="flex flex-col gap-3">
               <div className="flex flex-wrap gap-2">
