@@ -28,7 +28,7 @@ const Hero = () => (
             className="inline-flex items-center gap-2 bg-primary/10 border border-primary/20 rounded-full px-5 py-2.5 mb-8" // Adjusted bg/border for white bg
           >
             <Sparkles size={14} className="text-primary" />
-            <span className="text-xs font-semibold text-foreground">India's E-Commerce Visual Partner</span> {/* Adjusted text color */}
+            <span className="text-xs font-semibold text-foreground">E-Commerce Creative Company for Amazon Sellers & D2C Brands</span> {/* Adjusted text color */}
           </motion.div>
 
           <h1 className="font-heading text-3xl sm:text-4xl  lg:text-5xl font-extrabold leading-[1.05] mb-6 tracking-tight text-foreground"> {/* Adjusted text color */}
