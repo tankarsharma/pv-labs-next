@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Script from "next/script";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -30,6 +31,10 @@ twitter: {
   },
 };
 
+// AI-GENERATED-START | user:tankarsharmaa | date:2026-09-24 | model:GPT-5
+const GA_MEASUREMENT_ID = "G-MS7CHRD6CZ";
+// AI-GENERATED-END | user:tankarsharmaa | date:2026-09-24
+
 export default function RootLayout({
   children,
 }: {
@@ -37,7 +42,37 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+        {children}
+        {/* AI-GENERATED-START | user:tankarsharmaa | date:2026-09-24 | model:GPT-5 */}
+        <Script
+          src={`https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`}
+          strategy="afterInteractive"
+        />
+        <Script id="ga4-init" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', '${GA_MEASUREMENT_ID}');
+
+            // Fire a GA4 event whenever a lead-intent link is clicked anywhere on the site
+            document.addEventListener('click', function (e) {
+              const el = e.target.closest('a');
+              if (!el) return;
+              const href = el.getAttribute('href') || '';
+              if (href.startsWith('https://wa.me/')) {
+                gtag('event', 'lead_whatsapp_click', { link_url: href });
+              } else if (href.startsWith('tel:')) {
+                gtag('event', 'lead_call_click', { link_url: href });
+              } else if (href.startsWith('mailto:')) {
+                gtag('event', 'lead_email_click', { link_url: href });
+              }
+            });
+          `}
+        </Script>
+        {/* AI-GENERATED-END | user:tankarsharmaa | date:2026-09-24 */}
+      </body>
     </html>
   );
 }
