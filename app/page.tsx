@@ -14,9 +14,9 @@ import ContactCTA from "@/components/home/ContactCTA";
 import JsonLd from "@/components/seo/JsonLd";
 
 export const metadata: Metadata = {
-  title: "PV Labs — E-Commerce Design & Marketplace Visuals",
+  title: "PV Labs — E-Commerce Creative Company for Amazon Sellers & D2C Brands",
   description:
-    "PV Labs helps Indian e-commerce brands dominate Amazon and Flipkart with high-converting listing images, A+ content, and marketplace visuals.",
+    "PV Labs is an e-commerce creative company helping Amazon sellers and D2C brands build high-converting visuals for Amazon, Flipkart, and beyond.",
   alternates: { canonical: "https://pvlabs.ai" },
   openGraph: { url: "https://pvlabs.ai" },
 };
@@ -32,8 +32,8 @@ export default function HomePage() {
         url: "https://pvlabs.ai",
         logo: "https://pvlabs.ai/logo.png",
         description:
-          "PV Labs is India's e-commerce visual design studio. We create Amazon product listing images, A+ content, Flipkart catalog visuals, infographics, packaging design and brand identity for sellers on Amazon, Flipkart, Myntra, Meesho and Ajio.",
-        foundingDate: "2023",
+        "PV Labs is an e-commerce creative company helping Amazon sellers and D2C brands build high-converting visuals. We create listing images, A+ content, infographics, packaging design, and marketplace creatives for Amazon, Flipkart, Myntra, Meesho, and Ajio.",
+          foundingDate: "2023",
         areaServed: ["IN"],
         knowsAbout: [
           "Amazon Product Listing Images",
@@ -69,7 +69,7 @@ export default function HomePage() {
         url: "https://pvlabs.ai",
         name: "PV Labs",
         description:
-          "Amazon product listing images, A+ content and Flipkart catalog design agency for Indian e-commerce sellers.",
+         "E-commerce creative company for Amazon sellers and D2C brands.",
         publisher: { "@id": "https://pvlabs.ai/#organization" },
         potentialAction: {
           "@type": "SearchAction",
