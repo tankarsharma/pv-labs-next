@@ -42,17 +42,17 @@ useEffect(() => {
                 Flipkart were losing sales because of bad visuals. Not bad products. Bad visuals.
               </p>
               <p className="text-muted-foreground leading-relaxed mb-6">
-                We're a team of experts graphics Designers -
-                who built a studio that replaces expensive photoshoots with world-class
-                product visuals. No camera. No shipping. No delays.
+                We built PV Labs as an e-commerce creative company focused on one thing:
+                helping Amazon sellers and D2C brands build high-converting visuals without
+                expensive photoshoots, complex production, or long delays.
               </p>
               <p className="text-muted-foreground leading-relaxed">
-                Today, PV Labs serves sellers and brands across Amazon India, Flipkart,
-                Myntra, and Meesho - delivering catalog-ready visuals that convert.
+                Today, PV Labs works with sellers and brands across Amazon India, Flipkart &
+                Myntra - delivering catalog-ready visuals built for conversion.
               </p>
             </div>
             <div className="rounded-[24px] overflow-hidden shadow-2xl border border-white/20">
-              <img src={heroImage} alt="PV Labs Studio" className="w-full h-auto object-cover aspect-[4/3]" />
+              <img src={heroImage} alt="PV Labs team" className="w-full h-auto object-cover aspect-[4/3]" />
             </div>
           </motion.div>
         </div>
@@ -72,9 +72,9 @@ useEffect(() => {
             </div>
             <h2 className="font-heading text-2xl font-bold mb-4 text-foreground">Our Mission</h2>
             <p className="text-muted-foreground text-lg leading-relaxed">
-              To make premium product visuals accessible to every Indian e-commerce
-              seller - not just big brands. We believe great design shouldn't require
-              a â‚¹50,000 studio shoot.
+             To make high-converting product visuals accessible to every Indian e-commerce
+              seller - not just big brands. We believe strong creative should not require
+              an expensive production setup.
             </p>
           </motion.div>
 
@@ -90,9 +90,9 @@ useEffect(() => {
             </div>
             <h2 className="font-heading text-2xl font-bold mb-4 text-foreground">Our Vision</h2>
             <p className="text-muted-foreground text-lg leading-relaxed">
-              To become India's most trusted visual studio for e-commerce - where every
-              seller, from first-time Flipkart lister to established Amazon brand, gets
-              visuals that actually sell.
+             To become India's most trusted e-commerce creative company - where every
+             seller, from first-time Flipkart lister to established Amazon brand, gets
+             visuals that actually help products sell.
             </p>
           </motion.div>
         </div>
