@@ -19,9 +19,9 @@ export type BlogPost = {
 export const blogPosts: BlogPost[] = [
   {
     slug: "amazon-product-image-size-guide-2026",
-    title: "Amazon Product Image Size Guide 2026: Complete Requirements & Best Practices",
+    title: "Amazon Image Size 2026: Exact Pixel Specs (Avoid Listing Suppression)",
     description:
-      "Amazon product photo size guide for 2026 — exact pixel requirements, main vs secondary image specs, A+ content sizes, mobile optimization, and how Indian sellers can get compliant images.",
+      "1600×1600px or your zoom breaks. Full 2026 Amazon image size chart: main image, A+ content, mobile specs — plus the #1 mistake that gets Indian sellers suppressed.",
     excerpt:
       "Uploading the wrong size image on Amazon kills your zoom, tanks your CTR, and gets your listing suppressed. Here's the exact pixel-by-pixel spec sheet for 2026.",
     category: "Guide",
@@ -196,9 +196,9 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: "amazon-listing-guide-2026",
-    title: "Amazon Listing Images — Complete Guide for Indian Sellers 2026",
+    title: "Amazon Listing Images 2026: The 9-Image Strategy That Boosts CTR 150%",
     description:
-      "Complete guide to Amazon listing images for Indian sellers — technical specs, 9-image strategy, mobile optimization, CTR tips, CGI vs studio shoots, and ROI calculations for 2026.",
+      "The exact 9-image sequence top Amazon India sellers use — hero, lifestyle, infographic, comparison plus CGI vs studio cost comparison and real ROI numbers.",
     excerpt:
       "Wrong images cost you sales every single day. Here's exactly what Amazon wants — and what Indian sellers keep getting wrong.",
     category: "Guide",
@@ -231,9 +231,9 @@ export const blogPosts: BlogPost[] = [
   },
     {
     slug: "how-to-sell-on-amazon-india-2026",
-    title: "How to Sell on Amazon India 2026: Complete Step-by-Step Guide for Beginners",
+    title: "How to Sell on Amazon India 2026: Step-by-Step Guide (300M+ Buyers)",
     description:
-      "Complete guide on how to sell on Amazon India in 2026 — account registration, product listing, FBA vs self-ship, fees, listing images, A+ content, advertising, and scaling strategies for new Indian sellers.",
+      "From account setup to your first sale, the complete 2026 beginner roadmap for Amazon India: registration, FBA vs self-ship, listing, and pricing",
     excerpt:
       "Amazon India has 300M+ active buyers waiting. Here's exactly how to go from zero to your first sale — and then scale to ₹10L/month.",
     category: "Guide",
@@ -409,9 +409,9 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: "amazon-a-plus-content-guide",
-    title: "What is A+ Content & Why Every Amazon Brand Needs It",
+    title: "Amazon A+ Content 2026: Get 3–38% More Conversions (India Guide)",
     description:
-      "Everything Indian sellers need to know about Amazon A+ Content — Brand Registry steps, 5-module strategy, approval tips, pricing in India, and Basic vs Premium A+ comparison for 2026.",
+      "Brand Registry steps, the 5-module layout that converts, approval tips, and real India pricing — everything before you spend a rupee on A+ Content.",
     excerpt:
       "Most Amazon sellers have never used A+ Content. The ones who have — won't stop. Here's everything you need to know before your competitors figure it out.",
     category: "Education",
@@ -445,9 +445,9 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: "flipkart-listing-requirements-2026",
-    title: "Flipkart Listing Image Requirements — Full Size & Format Guide 2026",
+    title: "Flipkart Listing Requirements 2026: Avoid the #1 Rejection Reason",
     description:
-      "Complete Flipkart listing image guide for Indian sellers — technical specs, manual review process, rejection reasons, algorithm ranking, pricing, and comparison with Amazon, Meesho, Myntra, and JioMart.",
+      "Exact Flipkart image specs, manual review process, and the top rejection reasons Indian sellers hit — plus how to get approved on your first submission.",
     excerpt:
       "Flipkart rejects thousands of listings every day for image errors. Here's the exact spec sheet Indian sellers need — so yours never gets rejected.",
     category: "Guide",
@@ -481,9 +481,9 @@ export const blogPosts: BlogPost[] = [
   },
     {
     slug: "amazon-seller-account-kaise-banaye",
-    title: "Amazon Seller Account Kaise Banaye 2026: Complete Hindi Guide",
+    title: "Amazon Seller Account Kaise Banaye 2026: 15-Minute Hindi Guide",
     description:
-      "Amazon seller account kaise banaye — step-by-step Hindi guide for 2026. GST registration, documents, Seller Central setup, product listing, FBA enrollment, and common mistakes to avoid.",
+      "Amazon India pe account 15-30 minute mein ban jaata hai — agar documents ready hain. Step-by-step Hindi guide: documents, GST, bank details, sab kuch.",
     excerpt:
       "Amazon pe selling start karna chahte ho? Yeh complete Hindi guide aapko step-by-step batayegi — account creation se lekar first sale tak.",
     category: "Guide",
@@ -755,9 +755,9 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: "amazon-fba-india-2026",
-    title: "Amazon FBA India 2026: Complete Guide — Fees, Profit & Is It Worth It?",
+    title: "Amazon FBA India 2026: Real Fees & Profit Calculator (Is It Worth It?)",
     description:
-      "Complete Amazon FBA India guide for 2026 — how it works, fee structure, profit calculation, FBA vs self-ship comparison, enrollment process, and is FBA worth it for Indian sellers.",
+      "Exact FBA fee breakdown for India — fulfillment, storage, and hidden charges — plus a real profit calculation. Find out if FBA actually pays off for your product.",
     excerpt:
       "FBA gives you Prime badge, 1-2 day delivery, and Amazon handles returns. But is it actually profitable after all fees? Here's the full breakdown for Indian sellers.",
     category: "Guide",
