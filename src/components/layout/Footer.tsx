@@ -72,41 +72,33 @@ const Footer = () => {
           <div>
             <h4 className="font-heading font-semibold mb-6 text-white uppercase tracking-wider text-xs">Talk to us</h4>
             <div className="flex flex-col gap-4 text-sm text-background/60">
-              {/* <a 
-            href="mailto:growth@pvlabs.ai" 
-            className="flex items-center gap-2 hover:text-primary transition-colors"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Mail size={14} className="text-primary" /> growth@pvlabs.ai
-          </a>
-          <a href="tel:+917417791003" className="flex items-center gap-2 hover:text-primary transition-colors">
-            <Phone size={14} className="text-primary" /> +91 74177 91003
-          </a> */}
-              <a 
-              href="mailto:growth@pvlabs.ai" 
-              className="bg-white/10 hover:bg-primary hover:text-white text-background px-4 py-2 rounded-full font-semibold flex items-center justify-center gap-2 transition-all w-fit"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Mail size={14} /> Email Us
-            </a>
-            <a 
-              href="tel:+917417791003" 
-              className="bg-white/10 hover:bg-primary hover:text-white text-background px-4 py-2 rounded-full font-semibold flex items-center justify-center gap-2 transition-all w-fit"
-            >
-              <Phone size={14} /> Call Us
-            </a>
-              
+              {/* AI-GENERATED-START | user:tankarsharmaa | date:2026-09-25 | model:GPT-5 */}
+              <div className="flex flex-wrap gap-3">
+                <a
+                  href="mailto:growth@pvlabs.ai"
+                  className="bg-white/10 hover:bg-[#EA4335] hover:text-white text-background px-4 py-2 rounded-full font-semibold flex items-center justify-center gap-2 transition-all w-fit"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Mail size={14} /> Email Us
+                </a>
+                <a
+                  href="tel:+917417791003"
+                  className="bg-white/10 hover:bg-primary hover:text-white text-background px-4 py-2 rounded-full font-semibold flex items-center justify-center gap-2 transition-all w-fit"
+                >
+                  <Phone size={14} /> Call Us
+                </a>
+                <a
+                  href="https://wa.me/917417791003"
+                  className="bg-black hover:bg-green-300 border-white text-white px-4 py-2 rounded-full font-bold flex items-center justify-center gap-2 hover:shadow-lg transition-all w-fit"
+                >
+                  <FaWhatsapp /> WhatsApp Us
+                </a>
+              </div>
               <div className="flex items-center gap-2">
                 <Clock size={14} className="text-primary" /> Mon–Sat · 10am–7pm IST
               </div>
-              <a
-                href="https://wa.me/917417791003"
-                className="mt-2 bg-black hover:bg-green-300 border-white text-white px-6 py-2.5 rounded-full font-bold flex items-center justify-center gap-2 hover:shadow-lg transition-all w-fit"
-              >
-                <FaWhatsapp /> WhatsApp Us
-              </a>
+              {/* AI-GENERATED-END | user:tankarsharmaa | date:2026-09-25 */}
             </div>
           </div>
         </div>
