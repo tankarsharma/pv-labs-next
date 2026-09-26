@@ -4,7 +4,7 @@ import Footer from "@/components/layout/Footer";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import { ArrowRight, TrendingUp, Target, Users, BarChart3 } from "lucide-react";
-import { caseStudies } from "@/content/case-studies/items";
+import { caseStudies } from "@/content/case-studies/items"; 
 
 const CaseStudies = () => (
   <div className="min-h-screen gradient-bg-soft">
