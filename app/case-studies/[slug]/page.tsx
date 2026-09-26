@@ -4,7 +4,7 @@ import Link from "next/link";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import JsonLd from "@/components/seo/JsonLd";
-import { caseStudySlugs, getCaseStudyBySlug } from "@/src/content/case-studies/items";
+import { caseStudySlugs, getCaseStudyBySlug } from "@/content/case-studies/items";
 
 type Params = Promise<{ slug: string }>;
 
