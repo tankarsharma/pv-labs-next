@@ -3,7 +3,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { Menu, X, ChevronDown, ChevronRight } from "lucide-react";
+import { Menu, X, ChevronDown } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import logo from "../../assets/logo-removebg-preview (1).png";
 
@@ -14,60 +14,27 @@ interface NavLinkItem {
 }
 
 const navLinks: NavLinkItem[] = [
-  { label: "Home", path: "/" },
   {
     label: "Services",
     path: "/services",
     children: [
-      {
-        label: "E-Commerce",
-        path: "/services#ecommerce",
-        children: [
-          { label: "Product Hero Images", path: "/services#product-hero-images" },
-          { label: "Lifestyle & Scene", path: "/services#lifestyle-scene-images" },
-          { label: "A+ Content (EBC)", path: "/services#a-content-ebc-design" },
-          { label: "Infographics", path: "/services#infographics-listing-images" },
-          { label: "Cataloging & RPD", path: "/services#catalog-rpd-creation" },
-        ],
-      },
-      {
-        label: "Brand & Marketing",
-        path: "/services#brand",
-        children: [
-          { label: "Logo & Identity", path: "/services#logo-brand-identity" },
-          { label: "Packaging Design", path: "/services#packaging-design" },
-          { label: "Social Media", path: "/services#social-media-creatives" },
-          { label: "Ad Creatives", path: "/services#ad-creatives-meta-google" },
-          { label: "Pitch Decks", path: "/services#presentation-pitch-deck" },
-        ],
-      },
+      { label: "A+ Content", path: "/services#a-content-ebc-design" },
+      { label: "Listing Images", path: "/services#product-hero-images" },
+      { label: "Storefront / Brand Store", path: "/services#catalog-rpd-creation" },
+      { label: "Case Studies", path: "/case-studies" },
       { label: "Pricing", path: "/pricing" },
     ],
   },
-  {
-    label: "Work",
-    path: "/portfolio",
-    children: [
-      { label: "Portfolio", path: "/portfolio" },
-      { label: "Case Studies", path: "/case-studies" },
-      { label: "Testimonials", path: "/testimonials" },
-    ],
-  },
-  {
-    label: "Company",
-    path: "/about",
-    children: [
-      { label: "About Us", path: "/about" },
-      { label: "Founders", path: "/founders" },
-      { label: "FAQ", path: "/faq" },
-    ],
-  },
+  { label: "Results", path: "/case-studies" },
+  { label: "Pricing", path: "/pricing" },
+  { label: "Blog", path: "/blog" },
+  { label: "About", path: "/about" },
+  { label: "Contact", path: "/contact" },
 ];
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
   const [hoveredMenu, setHoveredMenu] = useState<string | null>(null);
-  const [hoveredSubMenu, setHoveredSubMenu] = useState<string | null>(null);
   const [openMobileSubMenus, setOpenMobileSubMenus] = useState<Record<string, boolean>>({});
   const pathname = usePathname();
 
@@ -95,13 +62,12 @@ const Navbar = () => {
                 onMouseEnter={() => link.children && setHoveredMenu(link.label)}
                 onMouseLeave={() => {
                   setHoveredMenu(null);
-                  setHoveredSubMenu(null);
                 }}
               >
                 <Link
                   href={link.path}
                   className={`relative text-xs font-semibold transition-colors flex items-center gap-1.5 px-5 py-2 z-10 rounded-full ${
-                    link.path === "/" ? pathname === "/" : pathname.startsWith(link.path)
+                    pathname === link.path || (link.path !== "/" && pathname.startsWith(link.path))
                       ? "text-primary"
                       : "text-muted-foreground hover:text-foreground"
                   }`}
@@ -114,7 +80,7 @@ const Navbar = () => {
                     />
                   )}
 
-                  {(link.path === "/" ? pathname === "/" : pathname.startsWith(link.path)) && (
+                  {(pathname === link.path || (link.path !== "/" && pathname.startsWith(link.path))) && (
                     <motion.div
                       layoutId="active-pill"
                       className="absolute inset-0 bg-white shadow-[0_2px_10px_-3px_rgba(0,0,0,0.1)] rounded-full -z-10"
@@ -135,47 +101,18 @@ const Navbar = () => {
                       animate={{ opacity: 1, y: 0 }}
                       exit={{ opacity: 0, y: 8 }}
                       transition={{ duration: 0.15 }}
-                      className="absolute top-full left-0 mt-3 w-64 glass-card p-3 shadow-xl rounded-2xl"
+                      className="absolute top-full left-0 mt-3 w-72 glass-card p-3 shadow-xl rounded-2xl"
                     >
                       {link.children.map((child) => (
-                        <div
+                        <Link
                           key={child.label}
-                          className="relative group/sub"
-                          onMouseEnter={() => setHoveredSubMenu(child.label)}
-                          onMouseLeave={() => setHoveredSubMenu(null)}
+                          href={child.path}
+                          className={`block px-4 py-2.5 rounded-xl text-sm transition-colors hover:bg-primary/10 hover:text-primary ${
+                            pathname === child.path ? "text-primary bg-primary/5 font-medium" : "text-muted-foreground"
+                          }`}
                         >
-                          <Link
-                            href={child.path}
-                            className={`flex items-center justify-between px-4 py-2.5 rounded-xl text-sm transition-colors hover:bg-primary/10 hover:text-primary ${
-                              pathname === child.path ? "text-primary bg-primary/5 font-medium" : "text-muted-foreground"
-                            }`}
-                          >
-                            {child.label}
-                            {child.children && <ChevronRight size={14} className="opacity-50" />}
-                          </Link>
-
-                          <AnimatePresence>
-                            {child.children && hoveredSubMenu === child.label && (
-                              <motion.div
-                                initial={{ opacity: 0, x: 8 }}
-                                animate={{ opacity: 1, x: 0 }}
-                                exit={{ opacity: 0, x: 8 }}
-                                transition={{ duration: 0.15 }}
-                                className="absolute left-full top-0 ml-1 w-64 glass-card p-3 shadow-xl rounded-2xl"
-                              >
-                                {child.children.map((subChild) => (
-                                  <Link
-                                    key={subChild.label}
-                                    href={subChild.path}
-                                    className="block px-4 py-2.5 rounded-xl text-sm text-muted-foreground hover:bg-primary/10 hover:text-primary transition-colors"
-                                  >
-                                    {subChild.label}
-                                  </Link>
-                                ))}
-                              </motion.div>
-                            )}
-                          </AnimatePresence>
-                        </div>
+                          {child.label}
+                        </Link>
                       ))}
                     </motion.div>
                   )}
@@ -186,7 +123,7 @@ const Navbar = () => {
 
           <div className="flex items-center gap-6">
             <Link href="/contact" className="gradient-btn px-6 py-2.5 text-sm">
-              Free Consultation
+              Request Creative Audit
             </Link>
           </div>
         </div>
@@ -235,47 +172,14 @@ const Navbar = () => {
                       className="pl-4 space-y-1 mb-2"
                     >
                       {link.children.map((child) => (
-                        <div key={child.label}>
-                          <div className="flex items-center justify-between py-1.5">
-                            <Link
-                              href={child.path}
-                              onClick={() => !child.children && setOpen(false)}
-                              className={`text-sm ${pathname === child.path ? "text-primary" : "text-muted-foreground"}`}
-                            >
-                              {child.label}
-                            </Link>
-                            {child.children && (
-                              <button
-                                onClick={() => toggleMobileSubMenu(child.label)}
-                                className="p-1.5 text-muted-foreground"
-                              >
-                                <ChevronDown
-                                  size={16}
-                                  className={`transition-transform ${openMobileSubMenus[child.label] ? "rotate-180" : ""}`}
-                                />
-                              </button>
-                            )}
-                          </div>
-
-                          {child.children && openMobileSubMenus[child.label] && (
-                            <motion.div
-                              initial={{ opacity: 0, height: 0 }}
-                              animate={{ opacity: 1, height: "auto" }}
-                              className="pl-4 space-y-1 mb-2 border-l border-border/50"
-                            >
-                              {child.children.map((subChild) => (
-                                <Link
-                                  key={subChild.label}
-                                  href={subChild.path}
-                                  onClick={() => setOpen(false)}
-                                  className="block text-xs py-1.5 text-muted-foreground hover:text-primary transition-colors"
-                                >
-                                  {subChild.label}
-                                </Link>
-                              ))}
-                            </motion.div>
-                          )}
-                        </div>
+                        <Link
+                          key={child.label}
+                          href={child.path}
+                          onClick={() => setOpen(false)}
+                          className={`block text-sm py-1.5 ${pathname === child.path ? "text-primary" : "text-muted-foreground"}`}
+                        >
+                          {child.label}
+                        </Link>
                       ))}
                     </motion.div>
                   )}
@@ -287,7 +191,7 @@ const Navbar = () => {
                   onClick={() => setOpen(false)}
                   className="flex-1 gradient-btn px-6 py-3 text-center text-sm font-bold"
                 >
-                  Get a Quote
+                  Request Creative Audit
                 </Link>
               </div>
             </div>

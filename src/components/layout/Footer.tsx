@@ -1,15 +1,14 @@
 import Link from "next/link";
 import { Mail, Phone, Clock } from "lucide-react";
 import { socialLinks } from "@/lib/social-links";
-import logo from "../../assets/logo-removebg-preview (1).png"
+import logo from "../../assets/logo-removebg-preview (1).png";
 import { FaWhatsapp } from "react-icons/fa6";
 
 const Footer = () => {
   return (
     <footer className="bg-foreground text-background">
       <div className="w-full px-6 md:px-12 py-16">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5  gap-12 mb-12">
-          {/* Brand */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-12 mb-12">
           <div className="lg:col-span-2">
             <Link href="/" className="mb-4 inline-block">
               <img
@@ -24,7 +23,14 @@ const Footer = () => {
             <div className="flex flex-col gap-3">
               <div className="flex flex-wrap gap-2">
                 {socialLinks.map(({ icon: Icon, label, href, hoverColor }, i) => (
-                  <a key={i} href={href} target="_blank" rel="noopener noreferrer" aria-label={label} className={`group w-10 h-10 rounded-full bg-background/10 flex items-center justify-center text-background/60 transition-all ${hoverColor}`}>
+                  <a
+                    key={i}
+                    href={href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label={label}
+                    className={`group w-10 h-10 rounded-full bg-background/10 flex items-center justify-center text-background/70 transition-all duration-300 hover:scale-110 ${hoverColor}`}
+                  >
                     <Icon size={16} />
                   </a>
                 ))}
@@ -33,46 +39,46 @@ const Footer = () => {
             </div>
           </div>
 
-          {/* Services */}
           <div>
             <h4 className="font-heading font-semibold mb-6 text-white uppercase tracking-wider text-xs">Services</h4>
-            <div className="flex flex-col  gap-3">
+            <div className="flex flex-col gap-3">
               {[
-                { label: "Product Hero Images", path: "/services" },
-                { label: "LifeStyle Images", path: "/services" },
-                { label: "A+ Content & EBC", path: "/services" },
-                { label: "Infographics", path: "/services" },
-                { label: "Packaging Design", path: "/services" },
-                { label: "Logo & Brand Identity", path: "/services" },
-                { label: "All Services →", path: "/services" },
+                { label: "A+ Content", path: "/services#a-content-ebc-design" },
+                { label: "Listing Images", path: "/services#product-hero-images" },
+                { label: "Storefront", path: "/services#catalog-rpd-creation" },
+                { label: "Pricing", path: "/pricing" },
+                { label: "Case Studies", path: "/case-studies" },
+                { label: "FAQ", path: "/faq" },
+                { label: "Contact", path: "/contact" },
               ].map((l) => (
-                <Link key={l.label} href={l.path} className="text-sm text-background/60 hover:text-primary transition-colors">{l.label}</Link>
+                <Link key={l.label} href={l.path} className="text-sm text-background/60 hover:text-primary transition-colors">
+                  {l.label}
+                </Link>
               ))}
             </div>
           </div>
 
-          {/* Company */}
           <div>
             <h4 className="font-heading font-semibold mb-6 text-white uppercase tracking-wider text-xs">Company</h4>
             <div className="flex flex-col gap-3">
               {[
-                { label: "About Us", path: "/about" },
-                { label: "Our Work", path: "/portfolio" },
-                // { label: "Testimonials", path: "/testimonials" },
-                { label: "FAQ", path: "/faq" },
-                { label: "Careers", path: "/careers" },
+                { label: "About", path: "/about" },
+                { label: "Results / Case Studies", path: "/case-studies" },
+                { label: "Pricing", path: "/pricing" },
+                { label: "Founders", path: "/founders" },
+                { label: "Blog", path: "/blog" },
                 { label: "Contact", path: "/contact" },
               ].map((l) => (
-                <Link key={l.label} href={l.path} className="text-sm text-background/60 hover:text-primary transition-colors">{l.label}</Link>
+                <Link key={l.label} href={l.path} className="text-sm text-background/60 hover:text-primary transition-colors">
+                  {l.label}
+                </Link>
               ))}
             </div>
           </div>
 
-          {/* Contact - Replacing Newsletter */}
           <div>
             <h4 className="font-heading font-semibold mb-6 text-white uppercase tracking-wider text-xs">Talk to us</h4>
             <div className="flex flex-col gap-4 text-sm text-background/60">
-              {/* AI-GENERATED-START | user:tankarsharmaa | date:2026-09-25 | model:GPT-5 */}
               <div className="flex flex-wrap gap-3">
                 <a
                   href="mailto:growth@pvlabs.ai"
@@ -92,13 +98,12 @@ const Footer = () => {
                   href="https://wa.me/917417791003"
                   className="bg-black hover:bg-green-300 border-white text-white px-4 py-2 rounded-full font-bold flex items-center justify-center gap-2 hover:shadow-lg transition-all w-fit"
                 >
-                  <FaWhatsapp /> WhatsApp Us
+                  <FaWhatsapp /> Talk on WhatsApp
                 </a>
               </div>
               <div className="flex items-center gap-2">
                 <Clock size={14} className="text-primary" /> Mon–Sat · 10am–7pm IST
               </div>
-              {/* AI-GENERATED-END | user:tankarsharmaa | date:2026-09-25 */}
             </div>
           </div>
         </div>
@@ -108,7 +113,6 @@ const Footer = () => {
           <div className="flex gap-6 items-center">
             <Link href="/privacy" className="hover:text-primary transition-colors">Privacy Policy</Link>
             <Link href="/terms" className="hover:text-primary transition-colors">Terms of Service</Link>
-            {/* <a href="https://pvlabs.ai" className="hover:text-primary transition-colors font-medium">pvlabs.ai</a> */}
           </div>
         </div>
       </div>

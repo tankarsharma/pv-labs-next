@@ -1,31 +1,134 @@
-export const faqs: { cat: string; q: string; a: string }[] = [
-  // General
-  { cat: "General", q: "What is PV Labs?", a: "PV Labs is India's dedicated e-commerce visual studio. We create product hero images, A+ content, lifestyle visuals, infographics, packaging design, and brand identity - everything your listing needs to convert on Amazon, Flipkart, Myntra, and Meesho. No studio shoot required." },
-  { cat: "General", q: "What industries do you serve?", a: "We work with sellers and brands across all major e-commerce categories - skincare & personal care, fashion & apparel, electronics, home & kitchen, fitness & supplements, food & beverages, jewellery, baby products, and more." },
-  { cat: "General", q: "Do I need to send my physical product?", a: "No. Just share clear reference images of your product + your brief. Our team handles everything from there. No shipping, no delays." },
-  { cat: "General", q: "Are your visuals Amazon and Flipkart compliant?", a: "Yes. All images are delivered in platform-specific dimensions and specifications - white background hero images for Amazon, Flipkart-ready formats, and A+ content as per Amazon's guidelines." },
-  { cat: "General", q: "Do you work with first-time sellers?", a: "Absolutely. Whether you're launching your first product or scaling an existing brand, we'll guide you on exactly what visuals you need and why." },
+export type FAQLink = {
+  label: string;
+  href: string;
+};
 
-  // Process
-  { cat: "Process", q: "What does your design process look like?", a: "Simple 4-step process: 1. You share your product details + brief. 2. Our design team creates initial concepts. 3. You review and share feedback. 4. We deliver final files, Amazon & Flipkart ready. No shipping your product. No studio visit. Just results." },
-  { cat: "Process", q: "How long does a typical project take?", a: "Most projects are delivered within 3–5 business days. Larger projects (10+ SKUs, full A+ content) may take 7–10 days. We always confirm the timeline before starting." },
-  { cat: "Process", q: "How many revisions are included?", a: "Every project includes 2 rounds of revisions. Additional revisions can be requested at a nominal charge." },
-  { cat: "Process", q: "What if I don't like the initial concepts?", a: "Your revision rounds cover this. Share your feedback clearly and our team will rework the concepts. We don't stop until you're satisfied within the agreed revision scope." },
-  { cat: "Process", q: "How do you handle communication?", a: "Primarily via WhatsApp and email. You'll have direct access to your project manager throughout. No ticketing systems, no bots - real people, real responses within a few hours." },
-  { cat: "Process", q: "What file formats do you deliver?", a: "JPEG and PNG for listing images (Amazon/Flipkart compliant dimensions). PDF for packaging and print. Source files (PSD/AI) available on request." },
-  { cat: "Process", q: "Can I edit the files you deliver?", a: "Final delivered files are ready-to-upload. Source files can be provided at an additional charge if you need to make future edits yourself." },
+export type FAQItem = {
+  cat: "Choosing an agency" | "Pricing" | "Conversion" | "Compliance" | "Storefront" | "Categories";
+  q: string;
+  a: string;
+  links?: FAQLink[];
+};
 
-  // Pricing
-  { cat: "Pricing", q: "How much does a project cost?", a: "Pricing depends on the number of SKUs and type of visuals needed. We offer per-SKU pricing as well as custom packages for brands. Get a free quote - no commitment required." },
-  { cat: "Pricing", q: "Do you offer payment plans?", a: "Yes. For larger projects we offer 50% advance + 50% on delivery. For smaller projects, full payment upfront is required." },
-  { cat: "Pricing", q: "Is there a refund policy?", a: "If we haven't started work yet, full refund is issued. Once work begins, refunds are not applicable - but we will always make it right through revisions." },
-  { cat: "Pricing", q: "Do you charge for consultations?", a: "No. Your first consultation is completely free. We'll understand your requirements, suggest the right package, and give you a no-obligation quote." },
-
-  // Services
-  { cat: "Services", q: "What services do you offer?", a: "Product hero images, lifestyle visuals, A+ content & EBC banners, infographics, packaging design, logo & brand identity, social media creatives, and more. View our full services list here." },
-  { cat: "Services", q: "Can you handle multiple services for one project?", a: "Absolutely. Most of our clients combine hero images + infographics + A+ content in one order. Bundling saves time and ensures visual consistency across your listing." },
-
-  // Support
-  { cat: "Support", q: "What kind of support do you offer post-delivery?", a: "If there's any issue with delivered files - wrong dimensions, format issues - we fix it free of charge within 7 days of delivery." },
-  { cat: "Support", q: "How quickly do you respond?", a: "Within 2–4 hours on WhatsApp during business hours (Mon–Sat, 10AM–7PM IST)." },
+export const faqs: FAQItem[] = [
+  {
+    cat: "Choosing an agency",
+    q: "How do I know if PV Labs is the right company for my listing work?",
+    a: "PV Labs is a fit when you need conversion-focused marketplace creatives, not just design output. If your goal is better listing clarity, stronger buyer trust, and a more commercially useful creative system, this is the type of work we support.",
+    links: [
+      { label: "See Results", href: "/case-studies" },
+      { label: "View Pricing", href: "/pricing" },
+      { label: "Request Creative Audit", href: "/contact" },
+    ],
+  },
+  {
+    cat: "Choosing an agency",
+    q: "Should I hire a freelancer or a company for A+ Content and listing images?",
+    a: "A freelancer can be enough for isolated tasks. A company is usually the better fit when you need consistency across SKUs, stronger commercial thinking, faster coordination, and creative work mapped to a larger catalog or marketplace growth plan.",
+    links: [
+      { label: "View Pricing", href: "/pricing" },
+      { label: "See Results", href: "/case-studies" },
+    ],
+  },
+  {
+    cat: "Pricing",
+    q: "How much do listing images cost?",
+    a: "Listing image pricing depends on SKU count, complexity, and whether you need only image support or a larger listing upgrade. Use the pricing page for current package direction, then contact PV Labs for a scope-specific recommendation.",
+    links: [
+      { label: "View Pricing", href: "/pricing" },
+      { label: "Listing Images Service", href: "/services/listing-images" },
+    ],
+  },
+  {
+    cat: "Pricing",
+    q: "How much does A+ Content cost?",
+    a: "A+ Content pricing depends on module count, storytelling depth, and whether it is bundled with listing images. It is usually best evaluated alongside your current conversion problem, not in isolation.",
+    links: [
+      { label: "View Pricing", href: "/pricing" },
+      { label: "A+ Content Service", href: "/services/a-plus-content" },
+    ],
+  },
+  {
+    cat: "Pricing",
+    q: "How much does storefront or brand store design cost?",
+    a: "Storefront pricing depends on structure, page count, content readiness, and how much buyer-navigation support is needed. If your product range is growing, storefront work is often scoped differently from single-listing work.",
+    links: [
+      { label: "View Pricing", href: "/pricing" },
+      { label: "Brand Store Service", href: "/services/brand-store" },
+      { label: "Request Creative Audit", href: "/contact" },
+    ],
+  },
+  {
+    cat: "Conversion",
+    q: "My ads get clicks but my listing does not convert. What should I fix first?",
+    a: "Usually the first fix is the buyer’s first impression: listing images, product communication, and clarity of benefits. If buyers arrive but hesitate, the issue is often visual trust and information structure rather than traffic alone.",
+    links: [
+      { label: "Listing Images Service", href: "/services/listing-images" },
+      { label: "See Results", href: "/case-studies" },
+      { label: "View Pricing", href: "/pricing" },
+    ],
+  },
+  {
+    cat: "Conversion",
+    q: "When should I choose A+ Content instead of only listing images?",
+    a: "Choose A+ Content when the listing needs more explanation, stronger brand trust, deeper product education, or better support for buyer objections below the fold. Choose both when the top of page and the rest of the listing both need work.",
+    links: [
+      { label: "A+ Content Service", href: "/services/a-plus-content" },
+      { label: "View Pricing", href: "/pricing" },
+    ],
+  },
+  {
+    cat: "Compliance",
+    q: "Do you support Amazon and marketplace-compliant creative formats?",
+    a: "Yes. PV Labs supports marketplace-ready creative work built around current platform requirements and commercial usability. Exact requirements still depend on platform and asset type.",
+    links: [
+      { label: "Listing Images Service", href: "/services/listing-images" },
+      { label: "Request Creative Audit", href: "/contact" },
+    ],
+  },
+  {
+    cat: "Compliance",
+    q: "Can you help if my current listing visuals are inconsistent across marketplaces?",
+    a: "Yes. This is a common issue when products are live across Amazon, Flipkart, Myntra, or other channels. The goal is usually to create a more consistent visual system while still respecting platform-specific constraints.",
+    links: [
+      { label: "See Results", href: "/case-studies" },
+      { label: "Request Creative Audit", href: "/contact" },
+    ],
+  },
+  {
+    cat: "Storefront",
+    q: "When does a brand need storefront support?",
+    a: "Storefront support becomes important when you have multiple products, need a stronger branded path for buyers, or want better product discovery beyond a single listing page.",
+    links: [
+      { label: "Brand Store Service", href: "/services/brand-store" },
+      { label: "View Pricing", href: "/pricing" },
+    ],
+  },
+  {
+    cat: "Storefront",
+    q: "What is the difference between listing images and storefront work?",
+    a: "Listing images help a single product page sell better. Storefront work helps buyers navigate your broader brand and product range. One improves product-level conversion; the other improves multi-product discovery and branded shopping flow.",
+    links: [
+      { label: "Listing Images Service", href: "/services/listing-images" },
+      { label: "Brand Store Service", href: "/services/brand-store" },
+    ],
+  },
+  {
+    cat: "Categories",
+    q: "Do you work only with Amazon sellers?",
+    a: "No. PV Labs supports commercial creative work for Amazon, other marketplaces, and brand-led commerce use cases where better visuals can improve buyer trust and decision-making.",
+    links: [
+      { label: "See Results", href: "/case-studies" },
+      { label: "Request Creative Audit", href: "/contact" },
+    ],
+  },
+  {
+    cat: "Categories",
+    q: "Can you support multiple SKUs or catalog-level work?",
+    a: "Yes. Catalog-level support is often where stronger systems matter most because consistency, pricing efficiency, and faster creative decisions become more important as SKU count grows.",
+    links: [
+      { label: "View Pricing", href: "/pricing" },
+      { label: "Request Creative Audit", href: "/contact" },
+    ],
+  },
 ];
