@@ -176,7 +176,7 @@ const Pricing = () => {
                       <Link href="/case-studies" className="text-[#7B2FD9] font-bold hover:underline">
                         See related results
                       </Link>
-                      <Link href="/contact" data-cta="pricing" data-cta="pricing" className="block text-center py-4 rounded-full font-bold border-2 border-slate-200 text-slate-700 hover:border-[#7B2FD9] hover:text-[#7B2FD9] hover:bg-purple-50 transition-all duration-300">
+                      <Link href="/contact" data-cta="pricing" className="block text-center py-4 rounded-full font-bold border-2 border-slate-200 text-slate-700 hover:border-[#7B2FD9] hover:text-[#7B2FD9] hover:bg-purple-50 transition-all duration-300">
                         Request Creative Audit
                       </Link>
                     </div>
