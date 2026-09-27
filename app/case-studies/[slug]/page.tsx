@@ -97,12 +97,11 @@ export default async function CaseStudyDetailPage({ params }: { params: Params }
           </div>
 
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-10">
-            {study.results.map((r, i) => (
+            {study.results.map((result, i) => (
               <div key={i} className="glass-card p-6 text-center">
-                <div className="font-heading text-2xl md:text-3xl font-bold gradient-text">
-                  {r.metric}
+                <div className="text-sm md:text-base text-foreground font-semibold leading-snug">
+                  {result}
                 </div>
-                <div className="text-sm text-muted-foreground mt-1">{r.label}</div>
               </div>
             ))}
           </div>
