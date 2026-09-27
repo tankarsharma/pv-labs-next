@@ -3,11 +3,25 @@ export type FAQLink = {
   href: string;
 };
 
+export type FAQIntent =
+  | "qualified-lead"
+  | "pricing"
+  | "service-selection"
+  | "conversion"
+  | "compliance"
+  | "storefront"
+  | "catalog-support";
+
 export type FAQItem = {
   cat: "Choosing an agency" | "Pricing" | "Conversion" | "Compliance" | "Storefront" | "Categories";
   q: string;
   a: string;
   links?: FAQLink[];
+  intent: FAQIntent;
+  relatedLinks?: FAQLink[];
+  serviceSlug?: string;
+  pricingPath?: string;
+  caseStudySlug?: string;
 };
 
 export const faqs: FAQItem[] = [
@@ -20,6 +34,13 @@ export const faqs: FAQItem[] = [
       { label: "View Pricing", href: "/pricing" },
       { label: "Request Creative Audit", href: "/contact" },
     ],
+    intent: "qualified-lead",
+    relatedLinks: [
+      { label: "See Results", href: "/case-studies" },
+      { label: "View Pricing", href: "/pricing" },
+      { label: "Request Creative Audit", href: "/contact" },
+    ],
+    pricingPath: "/pricing",
   },
   {
     cat: "Choosing an agency",
@@ -29,6 +50,12 @@ export const faqs: FAQItem[] = [
       { label: "View Pricing", href: "/pricing" },
       { label: "See Results", href: "/case-studies" },
     ],
+    intent: "service-selection",
+    relatedLinks: [
+      { label: "A+ Content Service", href: "/services/a-plus-content" },
+      { label: "Listing Images Service", href: "/services/listing-images" },
+    ],
+    pricingPath: "/pricing",
   },
   {
     cat: "Pricing",
@@ -38,6 +65,13 @@ export const faqs: FAQItem[] = [
       { label: "View Pricing", href: "/pricing" },
       { label: "Listing Images Service", href: "/services/listing-images" },
     ],
+    intent: "pricing",
+    relatedLinks: [
+      { label: "View Pricing", href: "/pricing" },
+      { label: "Listing Images Service", href: "/services/listing-images" },
+    ],
+    serviceSlug: "listing-images",
+    pricingPath: "/pricing",
   },
   {
     cat: "Pricing",
@@ -47,6 +81,14 @@ export const faqs: FAQItem[] = [
       { label: "View Pricing", href: "/pricing" },
       { label: "A+ Content Service", href: "/services/a-plus-content" },
     ],
+    intent: "pricing",
+    relatedLinks: [
+      { label: "View Pricing", href: "/pricing" },
+      { label: "A+ Content Service", href: "/services/a-plus-content" },
+    ],
+    serviceSlug: "a-plus-content",
+    pricingPath: "/pricing",
+    caseStudySlug: "attar-ayurveda-amazon",
   },
   {
     cat: "Pricing",
@@ -57,6 +99,14 @@ export const faqs: FAQItem[] = [
       { label: "Brand Store Service", href: "/services/brand-store" },
       { label: "Request Creative Audit", href: "/contact" },
     ],
+    intent: "pricing",
+    relatedLinks: [
+      { label: "View Pricing", href: "/pricing" },
+      { label: "Brand Store Service", href: "/services/brand-store" },
+      { label: "Request Creative Audit", href: "/contact" },
+    ],
+    serviceSlug: "brand-store",
+    pricingPath: "/pricing",
   },
   {
     cat: "Conversion",
@@ -67,6 +117,15 @@ export const faqs: FAQItem[] = [
       { label: "See Results", href: "/case-studies" },
       { label: "View Pricing", href: "/pricing" },
     ],
+    intent: "conversion",
+    relatedLinks: [
+      { label: "Listing Images Service", href: "/services/listing-images" },
+      { label: "See Results", href: "/case-studies" },
+      { label: "View Pricing", href: "/pricing" },
+    ],
+    serviceSlug: "listing-images",
+    pricingPath: "/pricing",
+    caseStudySlug: "pukhraj-flipkart",
   },
   {
     cat: "Conversion",
@@ -76,6 +135,15 @@ export const faqs: FAQItem[] = [
       { label: "A+ Content Service", href: "/services/a-plus-content" },
       { label: "View Pricing", href: "/pricing" },
     ],
+    intent: "service-selection",
+    relatedLinks: [
+      { label: "A+ Content Service", href: "/services/a-plus-content" },
+      { label: "View Pricing", href: "/pricing" },
+      { label: "See Results", href: "/case-studies" },
+    ],
+    serviceSlug: "a-plus-content",
+    pricingPath: "/pricing",
+    caseStudySlug: "attar-ayurveda-amazon",
   },
   {
     cat: "Compliance",
@@ -85,6 +153,12 @@ export const faqs: FAQItem[] = [
       { label: "Listing Images Service", href: "/services/listing-images" },
       { label: "Request Creative Audit", href: "/contact" },
     ],
+    intent: "compliance",
+    relatedLinks: [
+      { label: "Listing Images Service", href: "/services/listing-images" },
+      { label: "Request Creative Audit", href: "/contact" },
+    ],
+    serviceSlug: "listing-images",
   },
   {
     cat: "Compliance",
@@ -94,6 +168,12 @@ export const faqs: FAQItem[] = [
       { label: "See Results", href: "/case-studies" },
       { label: "Request Creative Audit", href: "/contact" },
     ],
+    intent: "compliance",
+    relatedLinks: [
+      { label: "See Results", href: "/case-studies" },
+      { label: "Request Creative Audit", href: "/contact" },
+    ],
+    caseStudySlug: "aakirti-ajio",
   },
   {
     cat: "Storefront",
@@ -103,12 +183,24 @@ export const faqs: FAQItem[] = [
       { label: "Brand Store Service", href: "/services/brand-store" },
       { label: "View Pricing", href: "/pricing" },
     ],
+    intent: "storefront",
+    relatedLinks: [
+      { label: "Brand Store Service", href: "/services/brand-store" },
+      { label: "View Pricing", href: "/pricing" },
+    ],
+    serviceSlug: "brand-store",
+    pricingPath: "/pricing",
   },
   {
     cat: "Storefront",
     q: "What is the difference between listing images and storefront work?",
-    a: "Listing images help a single product page sell better. Storefront work helps buyers navigate your broader brand and product range. One improves product-level conversion; the other improves multi-product discovery and branded shopping flow.",
+    a: "Listing images help a single product page sell better. Storefront work helps buyers navigate your broader brand and product range. One improves product-level conversion; the other improves buyer navigation across multiple products.",
     links: [
+      { label: "Listing Images Service", href: "/services/listing-images" },
+      { label: "Brand Store Service", href: "/services/brand-store" },
+    ],
+    intent: "service-selection",
+    relatedLinks: [
       { label: "Listing Images Service", href: "/services/listing-images" },
       { label: "Brand Store Service", href: "/services/brand-store" },
     ],
@@ -121,6 +213,11 @@ export const faqs: FAQItem[] = [
       { label: "See Results", href: "/case-studies" },
       { label: "Request Creative Audit", href: "/contact" },
     ],
+    intent: "catalog-support",
+    relatedLinks: [
+      { label: "See Results", href: "/case-studies" },
+      { label: "Request Creative Audit", href: "/contact" },
+    ],
   },
   {
     cat: "Categories",
@@ -130,5 +227,13 @@ export const faqs: FAQItem[] = [
       { label: "View Pricing", href: "/pricing" },
       { label: "Request Creative Audit", href: "/contact" },
     ],
+    intent: "catalog-support",
+    relatedLinks: [
+      { label: "View Pricing", href: "/pricing" },
+      { label: "Request Creative Audit", href: "/contact" },
+      { label: "See Results", href: "/case-studies" },
+    ],
+    pricingPath: "/pricing",
+    caseStudySlug: "aakirti-ajio",
   },
 ];
