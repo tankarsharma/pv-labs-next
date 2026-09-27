@@ -176,7 +176,7 @@ const Pricing = () => {
                       <Link href="/case-studies" className="text-[#7B2FD9] font-bold hover:underline">
                         See related results
                       </Link>
-                      <Link href="/contact" className="block text-center py-4 rounded-full font-bold border-2 border-slate-200 text-slate-700 hover:border-[#7B2FD9] hover:text-[#7B2FD9] hover:bg-purple-50 transition-all duration-300">
+                      <Link href="/contact" data-cta="pricing" className="block text-center py-4 rounded-full font-bold border-2 border-slate-200 text-slate-700 hover:border-[#7B2FD9] hover:text-[#7B2FD9] hover:bg-purple-50 transition-all duration-300">
                         Request Creative Audit
                       </Link>
                     </div>
@@ -219,7 +219,7 @@ const Pricing = () => {
                       <Link href="/case-studies" className="text-[#7B2FD9] font-bold hover:underline">
                         See related results
                       </Link>
-                      <Link href="/contact" className="block text-center py-4 rounded-full font-bold bg-gradient-to-r from-[#7B2FD9] to-[#60B8F0] text-white hover:shadow-lg hover:shadow-purple-500/20 transition-all duration-300">
+                      <Link href="/contact" data-cta="pricing" className="block text-center py-4 rounded-full font-bold bg-gradient-to-r from-[#7B2FD9] to-[#60B8F0] text-white hover:shadow-lg hover:shadow-purple-500/20 transition-all duration-300">
                         Request Creative Audit
                       </Link>
                     </div>
@@ -259,7 +259,7 @@ const Pricing = () => {
                       <Link href="/case-studies" className="text-[#7B2FD9] font-bold hover:underline">
                         See related results
                       </Link>
-                      <Link href="/contact" className="block text-center py-4 rounded-full font-bold border-2 border-slate-200 text-slate-700 hover:border-[#7B2FD9] hover:text-[#7B2FD9] hover:bg-purple-50 transition-all duration-300">
+                      <Link href="/contact" data-cta="pricing" className="block text-center py-4 rounded-full font-bold border-2 border-slate-200 text-slate-700 hover:border-[#7B2FD9] hover:text-[#7B2FD9] hover:bg-purple-50 transition-all duration-300">
                         Request Creative Audit
                       </Link>
                     </div>
@@ -383,7 +383,7 @@ const Pricing = () => {
                 </div>
 
                 <div className="mt-6 flex flex-wrap gap-4">
-                  <Link href="/contact" className="inline-flex items-center gap-2 bg-white text-slate-900 px-5 py-3 rounded-full font-bold hover:bg-purple-50 transition-colors">
+                  <Link href="/contact" data-cta="pricing" className="inline-flex items-center gap-2 bg-white text-slate-900 px-5 py-3 rounded-full font-bold hover:bg-purple-50 transition-colors">
                     Request Creative Audit <ArrowRight size={18} />
                   </Link>
                   <Link href="/case-studies" className="inline-flex items-center gap-2 text-white border border-white/20 px-5 py-3 rounded-full font-bold hover:bg-white/5 transition-colors">
@@ -452,7 +452,7 @@ const Pricing = () => {
                     </div>
                     <h3 className="text-slate-900 font-bold text-xl mb-3">{item.title}</h3>
                     <p className="text-slate-600 text-sm leading-relaxed mb-6">{item.text}</p>
-                    <Link href="/contact" className="inline-flex items-center gap-2 text-[#7B2FD9] font-bold hover:gap-3 transition-all">
+                    <Link href="/contact" data-cta="pricing" className="inline-flex items-center gap-2 text-[#7B2FD9] font-bold hover:gap-3 transition-all">
                       Request Creative Audit
                     </Link>
                   </div>
@@ -466,7 +466,7 @@ const Pricing = () => {
                   Tell us about your company. We will scope it clearly and point you toward the right next step.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                  <Link href="/contact" className="gradient-btn px-10 py-4 font-bold text-white shadow-lg hover:shadow-purple-500/20 transition-all">
+                  <Link href="/contact" data-cta="pricing" className="gradient-btn px-10 py-4 font-bold text-white shadow-lg hover:shadow-purple-500/20 transition-all">
                     Request Creative Audit
                   </Link>
                   <a
