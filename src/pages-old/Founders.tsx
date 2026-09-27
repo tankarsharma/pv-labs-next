@@ -44,10 +44,10 @@ const Founders = ({ showLayout = true }: { showLayout?: boolean }) => {
               THE PERSON BEHIND PV LABS
             </span>
             <h2 className="font-heading text-3xl md:text-4xl font-bold text-gray-900">
-              Built by someone who understands <br className="hidden md:block" /> both data and design.
+              Built by someone who understands <br className="hidden md:block" /> both product and design.
             </h2>
             <p className="text-gray-600 max-w-2xl mx-auto font-medium">
-              PV Labs was founded by Tankaar Sharma to fix a problem sellers face every day - great products, weak visuals.
+              PV Labs was founded by Tankaar Sharma to fix a problem brands face every day - great products, weak visuals.
             </p>
           </motion.div>
 
