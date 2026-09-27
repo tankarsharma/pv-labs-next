@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import { motion, AnimatePresence } from "framer-motion";
@@ -146,7 +146,7 @@ const Pricing = () => {
                     <h3 className="text-2xl font-bold text-slate-900 mb-2">A+ Content</h3>
                     <p className="text-slate-500 text-sm mb-8 font-medium">Best when the listing lacks depth, trust, and buyer education</p>
                     <div className="mb-8 p-4 bg-purple-50 rounded-2xl border border-purple-100">
-                      <span className="text-5xl font-extrabold text-[#7B2FD9]">₹699</span>
+                      <span className="text-5xl font-extrabold text-[#7B2FD9]">₹999</span>
                       <span className="text-sm text-slate-500 font-bold ml-2">/ starting</span>
                       <p className="text-slate-400 text-xs mt-1 font-semibold uppercase">Depends on module count and scope</p>
                     </div>
@@ -189,7 +189,7 @@ const Pricing = () => {
                     <h3 className="text-2xl font-bold text-slate-900 mb-2">Listing Images</h3>
                     <p className="text-slate-500 text-sm mb-8 font-medium">Best when traffic is coming but first impression and click-through are weak</p>
                     <div className="mb-8 p-4 bg-gradient-to-br from-purple-50 to-blue-50 rounded-2xl border border-purple-100">
-                      <span className="text-5xl font-extrabold bg-gradient-to-r from-[#7B2FD9] to-[#60B8F0] bg-clip-text text-transparent">₹399</span>
+                      <span className="text-5xl font-extrabold bg-gradient-to-r from-[#7B2FD9] to-[#60B8F0] bg-clip-text text-transparent">₹499</span>
                       <span className="text-sm text-slate-500 font-bold ml-2">/ starting</span>
                       <p className="text-slate-400 text-xs mt-1 font-semibold uppercase">Depends on SKU count and category complexity</p>
                     </div>
@@ -300,10 +300,10 @@ const Pricing = () => {
                           <br />
                           <span className="text-slate-400 font-medium text-xs">(5 images per SKU)</span>
                         </td>
-                        <td className="p-6 text-center text-slate-600 font-medium text-sm">₹399/SKU</td>
-                        <td className="p-6 text-center text-slate-600 font-medium text-sm">₹349/SKU</td>
+                        <td className="p-6 text-center text-slate-600 font-medium text-sm">₹499/SKU</td>
+                        <td className="p-6 text-center text-slate-600 font-medium text-sm">₹449/SKU</td>
                         <td className="p-6 text-center text-slate-900 font-bold text-lg bg-purple-50/30">
-                          ₹299<span className="text-xs font-normal text-slate-500">/SKU</span>
+                          ₹399<span className="text-xs font-normal text-slate-500">/SKU</span>
                         </td>
                       </tr>
                       <tr className="border-b border-slate-100 hover:bg-slate-50 transition-colors">
@@ -312,10 +312,10 @@ const Pricing = () => {
                           <br />
                           <span className="text-slate-400 font-medium text-xs">(scope-based support)</span>
                         </td>
-                        <td className="p-6 text-center text-slate-600 font-medium text-sm">₹699/SKU</td>
-                        <td className="p-6 text-center text-slate-600 font-medium text-sm">₹599/SKU</td>
+                        <td className="p-6 text-center text-slate-600 font-medium text-sm">₹999/SKU</td>
+                        <td className="p-6 text-center text-slate-600 font-medium text-sm">₹899/SKU</td>
                         <td className="p-6 text-center text-slate-900 font-bold text-lg bg-purple-50/30">
-                          ₹499<span className="text-xs font-normal text-slate-500">/SKU</span>
+                          ₹799<span className="text-xs font-normal text-slate-500">/SKU</span>
                         </td>
                       </tr>
                       <tr className="bg-gradient-to-r from-white to-purple-50 border-l-[6px] border-[#7B2FD9]">
@@ -325,10 +325,10 @@ const Pricing = () => {
                             RECOMMENDED
                           </span>
                         </td>
-                        <td className="p-6 text-center text-[#7B2FD9] font-bold text-sm">₹999/SKU</td>
-                        <td className="p-7 text-center text-[#7B2FD9] font-bold text-sm">₹899/SKU</td>
+                        <td className="p-6 text-center text-[#7B2FD9] font-bold text-sm">₹1299/SKU</td>
+                        <td className="p-7 text-center text-[#7B2FD9] font-bold text-sm">₹999/SKU</td>
                         <td className="p-6 text-center text-[#7B2FD9] font-extrabold text-xl bg-purple-100/50">
-                          ₹699<span className="text-xs font-normal text-slate-500">/SKU</span>
+                          ₹799<span className="text-xs font-normal text-slate-500">/SKU</span>
                         </td>
                       </tr>
                     </tbody>
