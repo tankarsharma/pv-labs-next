@@ -58,7 +58,7 @@ export default function Page() {
             Send us your listing. We'll review it against Amazon's compliance rules and conversion
             best practices, and tell you exactly what's holding your CTR and conversion rate back.
           </p>
-          <Link href="/contact" className="gradient-btn px-8 py-4 font-bold inline-flex mt-8">
+          <Link href="/contact" data-cta="audit-top" className="gradient-btn px-8 py-4 font-bold inline-flex mt-8">
             Request your free audit
           </Link>
         </div>
@@ -87,7 +87,7 @@ export default function Page() {
         </div>
 
         <div className="max-w-4xl mx-auto mt-10 text-center">
-          <Link href="/contact" className="gradient-btn px-8 py-4 font-bold inline-flex">
+          <Link href="/contact" data-cta="audit-bottom" className="gradient-btn px-8 py-4 font-bold inline-flex">
             Get my free audit
           </Link>
         </div>
