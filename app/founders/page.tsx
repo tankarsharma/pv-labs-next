@@ -16,7 +16,7 @@ export default function Page() {
     name: "Tankaar Sharma",
     jobTitle: "Founder & Creative Director",
     description:
-      "Tankaar Sharma is the founder of PV Labs, an e-commerce creative company.He founded PV Labs to help marketplace sellers and D2C brands convert weak product visuals into high-converting listings and storefronts through designer-led product visuals and A+ Content design.",
+      "Tankaar Sharma is the founder of PV Labs, an e-commerce creative company. He founded PV Labs to help marketplace sellers and D2C brands convert weak product visuals into high-converting listings and storefronts through designer-led product visuals and A+ Content design.",
     url: "https://pvlabs.ai/founders",
   });
 
