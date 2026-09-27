@@ -31,9 +31,7 @@ twitter: {
   },
 };
 
-// AI-GENERATED-START | user:tankarsharmaa | date:2026-09-24 | model:GPT-5
 const GA_MEASUREMENT_ID = "G-MS7CHRD6CZ";
-// AI-GENERATED-END | user:tankarsharmaa | date:2026-09-24
 
 export default function RootLayout({
   children,
@@ -44,7 +42,6 @@ export default function RootLayout({
     <html lang="en">
       <body>
         {children}
-        {/* AI-GENERATED-START | user:tankarsharmaa | date:2026-09-24 | model:GPT-5 */}
         <Script
           src={`https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`}
           strategy="afterInteractive"
@@ -68,10 +65,16 @@ export default function RootLayout({
               } else if (href.startsWith('mailto:')) {
                 gtag('event', 'lead_email_click', { link_url: href });
               }
+
+              // Fire a distinct GA4 event for tagged commercial CTAs (pricing, case studies, audit, service pages)
+              const ctaEl = e.target.closest('a[data-cta]');
+              if (ctaEl) {
+                const ctaName = ctaEl.getAttribute('data-cta') || 'unknown';
+                gtag('event', 'lead_cta_click', { cta_name: ctaName, link_url: ctaEl.getAttribute('href') || '' });
+              }
             });
           `}
         </Script>
-        {/* AI-GENERATED-END | user:tankarsharmaa | date:2026-09-24 */}
       </body>
     </html>
   );
