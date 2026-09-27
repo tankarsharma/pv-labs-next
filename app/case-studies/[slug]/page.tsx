@@ -130,18 +130,21 @@ export default async function CaseStudyDetailPage({ params }: { params: Params }
           <div className="flex flex-col sm:flex-row gap-4">
             <Link
               href={study.serviceHref}
+              data-cta="case-study-service"
               className="bg-primary text-primary-foreground px-8 py-4 rounded-full font-bold inline-flex items-center justify-center"
             >
               View related service
             </Link>
             <Link
               href="/pricing"
+              data-cta="case-study-pricing"
               className="bg-background text-foreground px-8 py-4 rounded-full font-bold inline-flex items-center justify-center border border-border"
             >
               View pricing
             </Link>
             <Link
               href="/contact"
+              data-cta="case-study-audit"
               className="gradient-btn px-8 py-4 font-bold inline-flex items-center justify-center"
             >
               Request Creative Audit
