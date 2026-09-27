@@ -31,3 +31,60 @@ export function breadcrumbSchema(items: Array<{ name: string; item: string }>) {
     })),
   };
 }
+
+export function faqSchema(faqs: Array<{ question: string; answer: string }>) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: faqs.map((f) => ({
+      "@type": "Question",
+      name: f.question,
+      acceptedAnswer: { "@type": "Answer", text: f.answer },
+    })),
+  };
+}
+
+export function caseStudySchema(input: {
+  client: string;
+  title: string;
+  problem: string;
+  url: string;
+  category: string;
+}) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "CreativeWork",
+    name: `${input.client} Case Study`,
+    headline: input.title,
+    description: input.problem,
+    mainEntityOfPage: input.url,
+    about: input.category,
+  };
+}
+
+export function collectionPageSchema(input: {
+  name: string;
+  description: string;
+  url: string;
+}) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    name: input.name,
+    description: input.description,
+    url: input.url,
+  };
+}
+
+export function contactPageSchema(input: { url: string }) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "ContactPage",
+    url: input.url,
+    about: {
+      "@type": "Organization",
+      name: "PV Labs",
+      url: "https://pvlabs.ai",
+    },
+  };
+}

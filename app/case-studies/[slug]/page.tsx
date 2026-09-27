@@ -5,6 +5,7 @@ import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import JsonLd from "@/components/seo/JsonLd";
 import { caseStudySlugs, getCaseStudyBySlug } from "@/content/case-studies/items";
+import { breadcrumbSchema, caseStudySchema } from "@/lib/seo/schema";
 
 type Params = Promise<{ slug: string }>;
 
@@ -35,32 +36,26 @@ export default async function CaseStudyDetailPage({ params }: { params: Params }
 
   const pageUrl = `https://pvlabs.ai/case-studies/${study.slug}`;
 
-  const breadcrumbSchema = {
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    itemListElement: [
-      { "@type": "ListItem", position: 1, name: "Home", item: "https://pvlabs.ai" },
-      { "@type": "ListItem", position: 2, name: "Case Studies", item: "https://pvlabs.ai/case-studies" },
-      { "@type": "ListItem", position: 3, name: study.client, item: pageUrl },
-    ],
-  };
+    const breadcrumbJsonLd = breadcrumbSchema([
+    { name: "Home", item: "https://pvlabs.ai" },
+    { name: "Case Studies", item: "https://pvlabs.ai/case-studies" },
+    { name: study.client, item: pageUrl },
+  ]);
 
-  const caseStudySchema = {
-    "@context": "https://schema.org",
-    "@type": "CreativeWork",
-    name: `${study.client} Case Study`,
-    headline: study.title,
-    description: study.problem,
-    mainEntityOfPage: pageUrl,
-    about: study.category,
-  };
+  const caseStudyJsonLd = caseStudySchema({
+    client: study.client,
+    title: study.title,
+    problem: study.problem,
+    url: pageUrl,
+    category: study.category,
+  });
 
   return (
     <div className="min-h-screen gradient-bg-soft">
       <Navbar />
 
-      <JsonLd id="ld-json-case-study-breadcrumb" data={breadcrumbSchema} />
-      <JsonLd id="ld-json-case-study" data={caseStudySchema} />
+      <JsonLd id="ld-json-case-study-breadcrumb" data={breadcrumbJsonLd} />
+      <JsonLd id="ld-json-case-study" data={caseStudyJsonLd} />
 
       <section className="pt-24 pb-16 px-6 md:px-12">
         <div className="max-w-5xl mx-auto">
@@ -97,12 +92,11 @@ export default async function CaseStudyDetailPage({ params }: { params: Params }
           </div>
 
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-10">
-            {study.results.map((r, i) => (
+            {study.results.map((result, i) => (
               <div key={i} className="glass-card p-6 text-center">
-                <div className="font-heading text-2xl md:text-3xl font-bold gradient-text">
-                  {r.metric}
+                <div className="text-sm md:text-base text-foreground font-semibold leading-snug">
+                  {result}
                 </div>
-                <div className="text-sm text-muted-foreground mt-1">{r.label}</div>
               </div>
             ))}
           </div>

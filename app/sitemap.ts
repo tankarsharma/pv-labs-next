@@ -1,6 +1,7 @@
 ﻿import type { MetadataRoute } from "next";
 import { blogPosts } from "@/content/blog/posts";
 import { serviceSlugs } from "@/content/services/items";
+import { caseStudySlugs } from "@/content/case-studies/items";
 
 const BASE_URL = "https://pvlabs.ai";
 
@@ -21,6 +22,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/testimonials",
     "/privacy",
     "/terms",
+    "/a-plus-content-vs-storefront",
+    "/amazon-creative-agency-vs-freelancer",
+    "/amazon-conversion-audit",
+    "/industries/beauty-amazon-creative",
+    "/industries/supplements-amazon-creative",
   ].map((path) => ({
     url: `${BASE_URL}${path}`,
     lastModified: now,
@@ -35,6 +41,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.8,
   }));
 
+  const caseStudyRoutes = caseStudySlugs.map((slug) => ({
+    url: `${BASE_URL}/case-studies/${slug}`,
+    lastModified: now,
+    changeFrequency: "monthly" as const,
+    priority: 0.7,
+  }));
+
   const blogRoutes = blogPosts.map((post) => ({
     url: `${BASE_URL}/blog/${post.slug}`,
     lastModified: now,
@@ -42,5 +55,5 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.7,
   }));
 
-  return [...staticRoutes, ...serviceRoutes, ...blogRoutes];
+  return [...staticRoutes, ...serviceRoutes, ...caseStudyRoutes, ...blogRoutes];
 }

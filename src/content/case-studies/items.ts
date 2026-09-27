@@ -13,13 +13,16 @@ export type CaseStudyItem = {
   title: string;
   client: string;
   category: string;
+  marketplace: string;
   duration: string;
   heroImage: string | { src: string };
   problem: string;
   solution: string;
-  results: { metric: string; label: string }[];
+  results: string[];
   testimonial: { text: string; author: string; role: string };
   beforeAfter: { before: string; after: string };
+  relatedServiceSlug: string;
+  relatedPricingPath: string;
   serviceHref: string;
 };
 
@@ -30,6 +33,7 @@ export const caseStudies: CaseStudyItem[] = [
     title: "This jasmine oil brand had a great product. Their listing was invisible. Here's what we did.",
     client: "Pukhraj",
     category: "Flipkart",
+    marketplace: "Flipkart",
     duration: "4 Days",
     heroImage: pukhraj,
     problem:
@@ -37,10 +41,10 @@ export const caseStudies: CaseStudyItem[] = [
     solution:
       "We rebuilt the visual identity for Flipkart with stronger hero imagery, more useful selling visuals, and a clearer product story matched to how buyers compare options.",
     results: [
-      { metric: "2.3x", label: "More clicks, same traffic" },
-      { metric: "42%", label: "More buyers who converted" },
-      { metric: "4 Days", label: "Start to live" },
-      { metric: "Zero", label: "Back-and-forth revisions" },
+      "2.3x more clicks, same traffic",
+      "42% more buyers who converted",
+      "4 days from start to live",
+      "Zero back-and-forth revisions",
     ],
     testimonial: {
       text: "We always knew our product was good. PV Labs made our listing show that. Clicks doubled in the first week itself.",
@@ -51,6 +55,8 @@ export const caseStudies: CaseStudyItem[] = [
       before: "Weak first impression and low-trust visuals",
       after: "Cleaner listing communication and stronger commercial presentation",
     },
+    relatedServiceSlug: "listing-images",
+    relatedPricingPath: "/pricing",
     serviceHref: "/services/listing-images",
   },
   {
@@ -59,6 +65,7 @@ export const caseStudies: CaseStudyItem[] = [
     title: "Their earrings were premium. Their Myntra page looked anything but. Here's how we fixed it.",
     client: "Nipura Jewellery",
     category: "Myntra",
+    marketplace: "Myntra",
     duration: "5 Days",
     heroImage: nipura,
     problem:
@@ -66,10 +73,10 @@ export const caseStudies: CaseStudyItem[] = [
     solution:
       "We created a better structured visual system with stronger product cues, clearer supporting information, and a more premium buyer-facing presentation.",
     results: [
-      { metric: "38%", label: "Higher listing quality score" },
-      { metric: "45%", label: "Sales increase Month 1" },
-      { metric: "5 Days", label: "Start to live" },
-      { metric: "First", label: "Try approval" },
+      "38% higher listing quality score",
+      "45% sales increase in month 1",
+      "5 days from start to live",
+      "Approved on first try",
     ],
     testimonial: {
       text: "The difference was night and day. Our listing finally looked like the brand we actually are.",
@@ -80,6 +87,8 @@ export const caseStudies: CaseStudyItem[] = [
       before: "Weak premium cues and low product explanation",
       after: "Stronger buyer confidence and clearer product presentation",
     },
+    relatedServiceSlug: "listing-images",
+    relatedPricingPath: "/pricing",
     serviceHref: "/services/listing-images",
   },
   {
@@ -88,6 +97,7 @@ export const caseStudies: CaseStudyItem[] = [
     title: "This Ayurvedic brand was getting buried on Amazon. No A+ content. No brand story. Here's what changed.",
     client: "Attar Ayurveda",
     category: "Amazon",
+    marketplace: "Amazon",
     duration: "6 Days",
     heroImage: attar,
     problem:
@@ -95,10 +105,10 @@ export const caseStudies: CaseStudyItem[] = [
     solution:
       "We built a more complete A+ Content structure to support buyer trust, product explanation, and stronger branded decision support.",
     results: [
-      { metric: "41%", label: "Conversion rate up" },
-      { metric: "6 Days", label: "A+ live" },
-      { metric: "Ayush", label: "Certification highlighted" },
-      { metric: "Zero", label: "Back-and-forth revisions" },
+      "41% conversion rate increase",
+      "A+ content live in 6 days",
+      "AYUSH certification highlighted clearly",
+      "Zero back-and-forth revisions",
     ],
     testimonial: {
       text: "Our product already had credibility. PV Labs helped the listing communicate it better.",
@@ -109,6 +119,8 @@ export const caseStudies: CaseStudyItem[] = [
       before: "Thin listing story and weak trust support",
       after: "Stronger buyer education and brand trust",
     },
+    relatedServiceSlug: "a-plus-content",
+    relatedPricingPath: "/pricing",
     serviceHref: "/services/a-plus-content",
   },
   {
@@ -117,6 +129,7 @@ export const caseStudies: CaseStudyItem[] = [
     title: "Their Ayurvedic gut health product was live. But their D2C presence looked like an afterthought.",
     client: "Only Essentials",
     category: "D2C Website",
+    marketplace: "D2C Website",
     duration: "5 Days",
     heroImage: only,
     problem:
@@ -124,10 +137,10 @@ export const caseStudies: CaseStudyItem[] = [
     solution:
       "We created a more premium visual structure with stronger product explanation, trust support, and more useful buyer-facing cues.",
     results: [
-      { metric: "Premium", label: "D2C brand feel achieved" },
-      { metric: "5 Days", label: "Full visual set live" },
-      { metric: "Zero", label: "Studio shoot required" },
-      { metric: "Ayush", label: "Badge prominent" },
+      "More premium D2C brand feel achieved",
+      "Full visual set live in 5 days",
+      "Zero studio shoot required",
+      "AYUSH trust badge made more prominent",
     ],
     testimonial: {
       text: "PV Labs helped the product look more trustworthy and complete.",
@@ -138,6 +151,8 @@ export const caseStudies: CaseStudyItem[] = [
       before: "Generic visuals and weak product storytelling",
       after: "Clearer trust signals and stronger visual support",
     },
+    relatedServiceSlug: "listing-images",
+    relatedPricingPath: "/pricing",
     serviceHref: "/services/listing-images",
   },
   {
@@ -146,6 +161,7 @@ export const caseStudies: CaseStudyItem[] = [
     title: "40+ ethnic suit SKUs. Ajio kept rejecting them. Here's how we got every single one approved.",
     client: "Aakirti",
     category: "Ajio",
+    marketplace: "Ajio",
     duration: "7 Days",
     heroImage: Aakirti,
     problem:
@@ -153,10 +169,10 @@ export const caseStudies: CaseStudyItem[] = [
     solution:
       "We created a more structured catalog-ready visual system to support consistency, approval-readiness, and cleaner buyer presentation.",
     results: [
-      { metric: "40+", label: "SKUs live in 7 days" },
-      { metric: "Zero", label: "Listing rejections" },
-      { metric: "100%", label: "Consistent visual identity" },
-      { metric: "First-Try", label: "Approval" },
+      "40+ SKUs live in 7 days",
+      "Zero listing rejections",
+      "100% consistent visual identity",
+      "First-try approval",
     ],
     testimonial: {
       text: "They helped us standardize the presentation across the whole range.",
@@ -167,6 +183,8 @@ export const caseStudies: CaseStudyItem[] = [
       before: "Inconsistent SKU presentation",
       after: "Cleaner catalog-level consistency",
     },
+    relatedServiceSlug: "catalog-rpd",
+    relatedPricingPath: "/pricing",
     serviceHref: "/services/listing-images",
   },
   {
@@ -175,6 +193,7 @@ export const caseStudies: CaseStudyItem[] = [
     title: "This sandal brand was selling on marketplaces. But they had no brand of their own. Here's what we built.",
     client: "ALDO",
     category: "Brand Website",
+    marketplace: "Brand Website",
     duration: "5 Days",
     heroImage: aldo,
     problem:
@@ -182,10 +201,10 @@ export const caseStudies: CaseStudyItem[] = [
     solution:
       "We created a cleaner visual system to help the brand present itself more confidently outside marketplace dependence.",
     results: [
-      { metric: "Premium", label: "D2C brand feel achieved" },
-      { metric: "5 Days", label: "Full visual set live" },
-      { metric: "Zero", label: "Studio shoot required" },
-      { metric: "Consistent", label: "Visual language across SKUs" },
+      "More premium D2C brand feel achieved",
+      "Full visual set live in 5 days",
+      "Zero studio shoot required",
+      "More consistent visual language across SKUs",
     ],
     testimonial: {
       text: "The brand finally felt more complete and premium.",
@@ -196,6 +215,8 @@ export const caseStudies: CaseStudyItem[] = [
       before: "Weak direct brand identity",
       after: "More cohesive premium visual system",
     },
+    relatedServiceSlug: "listing-images",
+    relatedPricingPath: "/pricing",
     serviceHref: "/services/listing-images",
   },
   {
@@ -204,6 +225,7 @@ export const caseStudies: CaseStudyItem[] = [
     title: "Their dry fruits were premium quality. Their packaging was making them look like a commodity.",
     client: "Ashoka",
     category: "Packaging · Flipkart · Brand Website",
+    marketplace: "Flipkart + Brand Website",
     duration: "6 Days",
     heroImage: ashoka,
     problem:
@@ -211,10 +233,10 @@ export const caseStudies: CaseStudyItem[] = [
     solution:
       "We rebuilt the packaging and visual direction to improve perceived value and consistency across surfaces.",
     results: [
-      { metric: "2", label: "Platforms covered" },
-      { metric: "6 Days", label: "Packaging + listing live" },
-      { metric: "Premium", label: "Brand positioning achieved" },
-      { metric: "Consistent", label: "Visual identity aligned" },
+      "2 platforms covered",
+      "Packaging and listing live in 6 days",
+      "Stronger premium brand positioning",
+      "More consistent visual identity across surfaces",
     ],
     testimonial: {
       text: "The new presentation helped the product feel more premium.",
@@ -225,6 +247,8 @@ export const caseStudies: CaseStudyItem[] = [
       before: "Commodity-style presentation",
       after: "Stronger premium positioning",
     },
+    relatedServiceSlug: "packaging-design",
+    relatedPricingPath: "/pricing",
     serviceHref: "/services/listing-images",
   },
   {
@@ -233,6 +257,7 @@ export const caseStudies: CaseStudyItem[] = [
     title: "Great blazer. Zero brand identity. Ads were spending money with nothing to show.",
     client: "HighEk",
     category: "Branding · Ads Creative · Amazon",
+    marketplace: "Amazon",
     duration: "7 Days",
     heroImage: blazer,
     problem:
@@ -240,10 +265,10 @@ export const caseStudies: CaseStudyItem[] = [
     solution:
       "We aligned product storytelling, stronger branded listing support, and creative direction more closely with conversion goals.",
     results: [
-      { metric: "4.1x", label: "Meta ad ROAS" },
-      { metric: "38%", label: "Conversion rate up" },
-      { metric: "7 Days", label: "A+ + ads live" },
-      { metric: "Zero", label: "Revision needed" },
+      "4.1x Meta ad ROAS",
+      "38% conversion rate increase",
+      "A+ content and ads live in 7 days",
+      "Zero revision needed",
     ],
     testimonial: {
       text: "The listing and ad system finally started working together.",
@@ -254,6 +279,8 @@ export const caseStudies: CaseStudyItem[] = [
       before: "Disconnected listing and ad presentation",
       after: "More aligned commercial creative system",
     },
+    relatedServiceSlug: "a-plus-content",
+    relatedPricingPath: "/pricing",
     serviceHref: "/services/a-plus-content",
   },
 ];

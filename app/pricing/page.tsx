@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Pricing from "@/pages-old/Pricing";
 import JsonLd from "@/components/seo/JsonLd";
+import { faqSchema, breadcrumbSchema } from "@/lib/seo/schema";
 
 export const metadata: Metadata = {
   title: "Pricing",
@@ -29,28 +30,21 @@ const pricingFaqs = [
   {
     question: "Should I choose listing images, A+ Content, or a full listing upgrade?",
     answer:
-      "If your ads get clicks but conversions are weak, improve listing images first. If the listing lacks depth or brand trust, add A+ Content. If both first-click visuals and below-the-fold content are weak, choose a full listing upgrade.",
+      "If your ads get clicks but conversions are weak, improve listing images first. If the listing lacks depth or brand trust, add A+ Content. If both first-click visuals and below-the-fold content need work, a full listing upgrade is more efficient.",
   },
 ];
 
 export default function Page() {
-  const pricingFaqSchema = {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "@id": "https://pvlabs.ai/pricing#faq",
-    mainEntity: pricingFaqs.map((faq) => ({
-      "@type": "Question",
-      name: faq.question,
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: faq.answer,
-      },
-    })),
-  };
+  const pricingFaqSchema = faqSchema(pricingFaqs);
+  const breadcrumbJsonLd = breadcrumbSchema([
+    { name: "Home", item: "https://pvlabs.ai" },
+    { name: "Pricing", item: "https://pvlabs.ai/pricing" },
+  ]);
 
   return (
     <>
       <JsonLd id="ld-json-pricing-faq" data={pricingFaqSchema} />
+      <JsonLd id="ld-json-pricing-breadcrumb" data={breadcrumbJsonLd} />
       <Pricing />
     </>
   );

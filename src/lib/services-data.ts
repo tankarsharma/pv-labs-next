@@ -93,9 +93,50 @@ import PresentationPitchDeck6 from "../assets/PV Labs Images - C/Presentation & 
 import PresentationPitchDeck7 from "../assets/PV Labs Images - C/Presentation & Pitch Deck - C/26-03-30_00-57-31-184 (7).png";
 import PresentationPitchDeck8 from "../assets/PV Labs Images - C/Presentation & Pitch Deck - C/26-03-30_00-57-31-184 (8).png";
 
-export const ecommerceServices = [
+export type ServicePrimaryIntent =
+  | "improve-click-through-and-first-impression"
+  | "increase-desire-and-contextual-product-understanding"
+  | "improve-mid-funnel-conversion-and-buyer-education"
+  | "answer-buyer-questions-and-reduce-conversion-friction"
+  | "launch-products-cleanly-on-marketplaces"
+  | "build-brand-foundation"
+  | "improve-physical-brand-presentation"
+  | "support-campaign-and-content-ops"
+  | "improve-paid-creative-performance"
+  | "improve-sales-and-investor-communication";
+
+export type ServiceItem = {
+  id: string;
+  slug: string;
+  primaryIntent: ServicePrimaryIntent;
+  relatedCaseStudies: string[];
+  relatedFaqs: string[];
+  relatedIndustries: string[];
+  commercialPriority: number;
+  relatedPricingPath: string;
+  title: string;
+  desc: string;
+  checklist: string[];
+  cta: string;
+  image: string | { src: string };
+  images: Array<string | { src: string }>;
+  badge?: string;
+  badgeType?: string;
+};
+
+export const ecommerceServices: ServiceItem[] = [
   {
     id: "product-hero-images",
+    slug: "listing-images",
+    primaryIntent: "improve-click-through-and-first-impression",
+    relatedCaseStudies: ["pukhraj-flipkart", "nipura-myntra"],
+    relatedFaqs: [
+      "How much do listing images cost?",
+      "My ads get clicks but my listing does not convert. What should I fix first?",
+    ],
+    relatedIndustries: ["amazon", "flipkart", "myntra", "marketplaces"],
+    commercialPriority: 1,
+    relatedPricingPath: "/pricing",
     badge: "🔥 Most Ordered",
     badgeType: "hot",
     title: "Product Hero Images",
@@ -105,14 +146,32 @@ export const ecommerceServices = [
       "Gradient & colored backgrounds",
       "Multiple angle shots",
       "Amazon 2000×2000px ready",
-      "3–5 day delivery"
+      "3–5 day delivery",
     ],
     cta: "→ See Hero Image Examples",
     image: HeroImages1,
-    images: [HeroImages1, HeroImages2, HeroImages3, HeroImages4, HeroImages5, HeroImages6, HeroImages7, HeroImages8]
+    images: [
+      HeroImages1,
+      HeroImages2,
+      HeroImages3,
+      HeroImages4,
+      HeroImages5,
+      HeroImages6,
+      HeroImages7,
+      HeroImages8,
+    ],
   },
   {
     id: "lifestyle-scene-images",
+    slug: "listing-images",
+    primaryIntent: "increase-desire-and-contextual-product-understanding",
+    relatedCaseStudies: ["only-essentials-d2c", "aldo-sandal-d2c"],
+    relatedFaqs: [
+      "My ads get clicks but my listing does not convert. What should I fix first?",
+    ],
+    relatedIndustries: ["d2c", "consumer-products", "marketplaces"],
+    commercialPriority: 2,
+    relatedPricingPath: "/pricing",
     title: "Lifestyle & Scene Images",
     desc: "Show your product in real life. Build emotional desire. Increase 'Add to Cart.' We create AI-powered lifestyle scenes - home, kitchen, outdoor, festive.",
     checklist: [
@@ -120,14 +179,32 @@ export const ecommerceServices = [
       "Festive & seasonal themes",
       "Flat lay compositions",
       "AI model integration",
-      "Multiple scenes per product"
+      "Multiple scenes per product",
     ],
     cta: "→ See Lifestyle Examples",
     image: lifestyleimages1,
-    images: [lifestyleimages1, lifestyleimages2, lifestyleimages3, lifestyleimages4, lifestyleimages5, lifestyleimages6, lifestyleimages7]
+    images: [
+      lifestyleimages1,
+      lifestyleimages2,
+      lifestyleimages3,
+      lifestyleimages4,
+      lifestyleimages5,
+      lifestyleimages6,
+      lifestyleimages7,
+    ],
   },
   {
     id: "a-content-ebc-design",
+    slug: "a-plus-content",
+    primaryIntent: "improve-mid-funnel-conversion-and-buyer-education",
+    relatedCaseStudies: ["attar-ayurveda-amazon", "highek-blazer"],
+    relatedFaqs: [
+      "How much does A+ Content cost?",
+      "When should I choose A+ Content instead of only listing images?",
+    ],
+    relatedIndustries: ["amazon", "supplements", "beauty", "consumer-products"],
+    commercialPriority: 1,
+    relatedPricingPath: "/pricing",
     badge: "Amazon Exclusive",
     badgeType: "amazon",
     title: "A+ Content & EBC Design",
@@ -137,14 +214,24 @@ export const ecommerceServices = [
       "Feature highlight banners",
       "Product comparison charts",
       "Amazon guideline compliant",
-      "Delivered within 5 days"
+      "Delivered within 5 days",
     ],
     cta: "→ See A+ Content Examples",
     image: AEBC1,
-    images: [AEBC1, AEBC2, AEBC3, AEBC4, AEBC5, AEBC6, AEBC7]
+    images: [AEBC1, AEBC2, AEBC3, AEBC4, AEBC5, AEBC6, AEBC7],
   },
   {
     id: "infographics-listing-images",
+    slug: "listing-images",
+    primaryIntent: "answer-buyer-questions-and-reduce-conversion-friction",
+    relatedCaseStudies: ["pukhraj-flipkart", "nipura-myntra", "only-essentials-d2c"],
+    relatedFaqs: [
+      "How much do listing images cost?",
+      "My ads get clicks but my listing does not convert. What should I fix first?",
+    ],
+    relatedIndustries: ["amazon", "flipkart", "myntra", "d2c"],
+    commercialPriority: 1,
+    relatedPricingPath: "/pricing",
     title: "Infographics & Listing Images",
     desc: "Images 2–7 in your listing do the heavy lifting. We design visuals that answer every buyer question before they even think to ask it.",
     checklist: [
@@ -152,14 +239,32 @@ export const ecommerceServices = [
       "Size & dimension charts",
       "How-to-use visuals",
       "USP highlight images",
-      "Trust & certification badges"
+      "Trust & certification badges",
     ],
     cta: "→ See Infographic Examples",
     image: infographics1,
-    images: [infographics1, infographics2, infographics3, infographics4, infographics5, infographics6, infographics7]
+    images: [
+      infographics1,
+      infographics2,
+      infographics3,
+      infographics4,
+      infographics5,
+      infographics6,
+      infographics7,
+    ],
   },
   {
     id: "catalog-rpd-creation",
+    slug: "listing-images",
+    primaryIntent: "launch-products-cleanly-on-marketplaces",
+    relatedCaseStudies: ["aakirti-ajio"],
+    relatedFaqs: [
+      "Can you support multiple SKUs or catalog-level work?",
+      "Do you work only with Amazon sellers?",
+    ],
+    relatedIndustries: ["flipkart", "meesho", "ajio", "catalog"],
+    commercialPriority: 2,
+    relatedPricingPath: "/pricing",
     badge: "Flipkart Specialist",
     badgeType: "flipkart",
     title: "Catalog & RPD Creation",
@@ -169,17 +274,32 @@ export const ecommerceServices = [
       "RPD sheet preparation",
       "Meesho listing setup",
       "Category-specific optimization",
-      "Image spec compliance"
+      "Image spec compliance",
     ],
     cta: "→ Talk to Us About Catalog",
     image: CatalogingRPD1,
-    images: [CatalogingRPD1, CatalogingRPD2, CatalogingRPD3, CatalogingRPD4, CatalogingRPD5, CatalogingRPD6, CatalogingRPD7]
-  }
+    images: [
+      CatalogingRPD1,
+      CatalogingRPD2,
+      CatalogingRPD3,
+      CatalogingRPD4,
+      CatalogingRPD5,
+      CatalogingRPD6,
+      CatalogingRPD7,
+    ],
+  },
 ];
 
-export const brandServices = [
+export const brandServices: ServiceItem[] = [
   {
     id: "logo-brand-identity",
+    slug: "brand-identity",
+    primaryIntent: "build-brand-foundation",
+    relatedCaseStudies: ["aldo-sandal-d2c", "highek-blazer"],
+    relatedFaqs: [],
+    relatedIndustries: ["brands", "fashion", "consumer-products"],
+    commercialPriority: 4,
+    relatedPricingPath: "/pricing",
     title: "Logo & Brand Identity",
     desc: "Your logo is the face of your business. Your brand identity is everything behind it. We build complete brand systems for Indian businesses.",
     checklist: [
@@ -187,14 +307,30 @@ export const brandServices = [
       "Brand color palette",
       "Typography system",
       "Business card design",
-      "Complete brand guidelines PDF"
+      "Complete brand guidelines PDF",
     ],
     cta: "→ See Branding Examples",
     image: LogoDesigning1,
-    images: [LogoDesigning1, LogoDesigning2, LogoDesigning3, LogoDesigning4, LogoDesigning5, LogoDesigning6, LogoDesigning7, LogoDesigning8]
+    images: [
+      LogoDesigning1,
+      LogoDesigning2,
+      LogoDesigning3,
+      LogoDesigning4,
+      LogoDesigning5,
+      LogoDesigning6,
+      LogoDesigning7,
+      LogoDesigning8,
+    ],
   },
   {
     id: "packaging-design",
+    slug: "packaging-design",
+    primaryIntent: "improve-physical-brand-presentation",
+    relatedCaseStudies: ["ashoka-dry-fruits"],
+    relatedFaqs: [],
+    relatedIndustries: ["fmcg", "food", "consumer-products", "retail"],
+    commercialPriority: 4,
+    relatedPricingPath: "/pricing",
     title: "Packaging Design",
     desc: "Packaging is your first physical brand moment. We design shelf-worthy packaging - boxes, labels, pouches, inserts.",
     checklist: [
@@ -202,14 +338,30 @@ export const brandServices = [
       "Product label & sticker",
       "Pouch & sachet design",
       "Print-ready CMYK files",
-      "Multiple size variants"
+      "Multiple size variants",
     ],
     cta: "→ See Packaging Examples",
     image: PackagingDesign1,
-    images: [PackagingDesign1, PackagingDesign2, PackagingDesign3, PackagingDesign4, PackagingDesign5, PackagingDesign6, PackagingDesign7, PackagingDesign8]
+    images: [
+      PackagingDesign1,
+      PackagingDesign2,
+      PackagingDesign3,
+      PackagingDesign4,
+      PackagingDesign5,
+      PackagingDesign6,
+      PackagingDesign7,
+      PackagingDesign8,
+    ],
   },
   {
     id: "social-media-creatives",
+    slug: "social-media-creatives",
+    primaryIntent: "support-campaign-and-content-ops",
+    relatedCaseStudies: ["highek-blazer"],
+    relatedFaqs: [],
+    relatedIndustries: ["brands", "consumer-products", "performance-marketing"],
+    commercialPriority: 5,
+    relatedPricingPath: "/pricing",
     title: "Social Media Creatives",
     desc: "Your Instagram and Facebook feed is your brand's shop window. We design scroll-stopping social creatives - posts, reels covers, stories, carousels.",
     checklist: [
@@ -217,14 +369,30 @@ export const brandServices = [
       "Story & reel cover designs",
       "Facebook ad creatives",
       "LinkedIn company banners",
-      "Batch delivery (30 posts/month)"
+      "Batch delivery (30 posts/month)",
     ],
     cta: "→ See Social Examples",
     image: SocialMediaCreatives1,
-    images: [SocialMediaCreatives1, SocialMediaCreatives2, SocialMediaCreatives3, SocialMediaCreatives4, SocialMediaCreatives5, SocialMediaCreatives6, SocialMediaCreatives7, SocialMediaCreatives8]
+    images: [
+      SocialMediaCreatives1,
+      SocialMediaCreatives2,
+      SocialMediaCreatives3,
+      SocialMediaCreatives4,
+      SocialMediaCreatives5,
+      SocialMediaCreatives6,
+      SocialMediaCreatives7,
+      SocialMediaCreatives8,
+    ],
   },
   {
     id: "ad-creatives-meta-google",
+    slug: "ad-creatives",
+    primaryIntent: "improve-paid-creative-performance",
+    relatedCaseStudies: ["highek-blazer"],
+    relatedFaqs: [],
+    relatedIndustries: ["brands", "performance-marketing", "fashion"],
+    commercialPriority: 5,
+    relatedPricingPath: "/pricing",
     badge: "High Converting",
     title: "Ad Creatives (Meta & Google)",
     desc: "A great product with a bad ad creative wastes your budget. We design high-converting Meta and Google ad creatives.",
@@ -233,14 +401,29 @@ export const brandServices = [
       "Google display banners",
       "Multiple size variants",
       "Conversion-focused layouts",
-      "Brand consistent design"
+      "Brand consistent design",
     ],
     cta: "→ See Ad Creative Examples",
     image: AdCreativesMetaGoogle1,
-    images: [AdCreativesMetaGoogle1, AdCreativesMetaGoogle2, AdCreativesMetaGoogle3, AdCreativesMetaGoogle4, AdCreativesMetaGoogle5, AdCreativesMetaGoogle6, AdCreativesMetaGoogle7]
+    images: [
+      AdCreativesMetaGoogle1,
+      AdCreativesMetaGoogle2,
+      AdCreativesMetaGoogle3,
+      AdCreativesMetaGoogle4,
+      AdCreativesMetaGoogle5,
+      AdCreativesMetaGoogle6,
+      AdCreativesMetaGoogle7,
+    ],
   },
   {
     id: "presentation-pitch-deck",
+    slug: "presentation-pitch-deck",
+    primaryIntent: "improve-sales-and-investor-communication",
+    relatedCaseStudies: [],
+    relatedFaqs: [],
+    relatedIndustries: ["b2b", "startups", "brands"],
+    commercialPriority: 6,
+    relatedPricingPath: "/pricing",
     title: "Presentation & Pitch Deck",
     desc: "Your pitch deck is the difference between a deal and a no. We design investor decks and sales presentations that tell your story visually.",
     checklist: [
@@ -248,10 +431,19 @@ export const brandServices = [
       "Sales presentations",
       "Brand decks",
       "PowerPoint & Google Slides",
-      "Editable templates delivered"
+      "Editable templates delivered",
     ],
     cta: "→ See Deck Examples",
     image: PresentationPitchDeck1,
-    images: [PresentationPitchDeck1, PresentationPitchDeck2, PresentationPitchDeck3, PresentationPitchDeck4, PresentationPitchDeck5, PresentationPitchDeck6, PresentationPitchDeck7, PresentationPitchDeck8]
-  }
+    images: [
+      PresentationPitchDeck1,
+      PresentationPitchDeck2,
+      PresentationPitchDeck3,
+      PresentationPitchDeck4,
+      PresentationPitchDeck5,
+      PresentationPitchDeck6,
+      PresentationPitchDeck7,
+      PresentationPitchDeck8,
+    ],
+  },
 ];
