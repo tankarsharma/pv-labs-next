@@ -1,5 +1,7 @@
-﻿import type { Metadata } from "next";
+import type { Metadata } from "next";
 import Portfolio from "@/pages-old/Portfolio";
+import JsonLd from "@/components/seo/JsonLd";
+import { breadcrumbSchema } from "@/lib/seo/schema";
 
 export const metadata: Metadata = {
   title: "Portfolio — Our Work",
@@ -10,5 +12,15 @@ export const metadata: Metadata = {
 };
 
 export default function Page() {
-  return <Portfolio />;
+  const breadcrumbJsonLd = breadcrumbSchema([
+    { name: "Home", item: "https://pvlabs.ai" },
+    { name: "Portfolio", item: "https://pvlabs.ai/portfolio" },
+  ]);
+
+  return (
+    <>
+      <JsonLd id="ld-json-portfolio-breadcrumb" data={breadcrumbJsonLd} />
+      <Portfolio />
+    </>
+  );
 }

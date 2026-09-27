@@ -88,3 +88,26 @@ export function contactPageSchema(input: { url: string }) {
     },
   };
 }
+
+export function personSchema(input: {
+  name: string;
+  jobTitle: string;
+  description: string;
+  url: string;
+  sameAs?: string[];
+}) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    name: input.name,
+    jobTitle: input.jobTitle,
+    description: input.description,
+    url: input.url,
+    worksFor: {
+      "@type": "Organization",
+      name: "PV Labs",
+      url: "https://pvlabs.ai",
+    },
+    ...(input.sameAs ? { sameAs: input.sameAs } : {}),
+  };
+}

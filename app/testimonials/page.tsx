@@ -1,5 +1,7 @@
-﻿import type { Metadata } from "next";
+import type { Metadata } from "next";
 import Testimonials from "@/pages-old/TestimonialsPage";
+import JsonLd from "@/components/seo/JsonLd";
+import { breadcrumbSchema } from "@/lib/seo/schema";
 
 export const metadata: Metadata = {
   title: "Testimonials — What Our Clients Say",
@@ -10,5 +12,15 @@ export const metadata: Metadata = {
 };
 
 export default function Page() {
-  return <Testimonials />;
+  const breadcrumbJsonLd = breadcrumbSchema([
+    { name: "Home", item: "https://pvlabs.ai" },
+    { name: "Testimonials", item: "https://pvlabs.ai/testimonials" },
+  ]);
+
+  return (
+    <>
+      <JsonLd id="ld-json-testimonials-breadcrumb" data={breadcrumbJsonLd} />
+      <Testimonials />
+    </>
+  );
 }
