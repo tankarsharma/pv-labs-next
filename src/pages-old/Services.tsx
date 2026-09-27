@@ -12,6 +12,21 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import { brandServices, ecommerceServices } from "@/lib/services-data";
 import { FaWhatsapp } from "react-icons/fa6";
+import JsonLd from "@/components/seo/JsonLd";
+import { faqSchema } from "@/lib/seo/schema";
+
+const comparisonFaqs = [
+  {
+    question: "What is the difference between A+ Content and Storefront?",
+    answer:
+      "A+ Content helps a single listing explain and convert better. Storefront support helps buyers navigate your broader brand and product range more clearly.",
+  },
+  {
+    question: "Should I choose listing images or a full listing upgrade?",
+    answer:
+      "Choose listing images when first impression is the main issue. Choose a fuller upgrade when buyers also need stronger explanation, trust, and below-the-fold support.",
+  },
+];
 
 type ServiceLike = {
   id: string;
@@ -138,6 +153,7 @@ const Services = () => {
       `}</style>
 
       <Navbar />
+      <JsonLd id="ld-json-services-comparison-faq" data={faqSchema(comparisonFaqs)} />
 
       <section className="pt-24 pb-10 px-6 md:px-12 gradient-bg-soft">
         <div className="w-full text-center">

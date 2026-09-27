@@ -32,7 +32,7 @@ export default function HomePage() {
         url: "https://pvlabs.ai",
         logo: "https://pvlabs.ai/logo.png",
         description:
-        "PV Labs is an e-commerce creative company helping Amazon sellers and D2C brands build high-converting visuals. We create listing images, A+ content, infographics, packaging design, and marketplace creatives for Amazon, Flipkart, Myntra, Meesho, and Ajio.",
+        "PV Labs is an e-commerce creative company helping Amazon sellers and D2C brands build high-converting visuals. We create listing images, A+ content, infographics, packaging design, and marketplace-ready visuals.",
           foundingDate: "2023",
         areaServed: ["IN"],
         knowsAbout: [
@@ -86,7 +86,7 @@ export default function HomePage() {
         name: "PV Labs",
         url: "https://pvlabs.ai",
         description:
-          "E-commerce visual design agency for Amazon, Flipkart, Myntra and Meesho sellers in India. Product listing images, A+ content, catalog design, packaging and brand identity.",
+          "E-commerce creative company for Amazon, Flipkart, Myntra and Meesho sellers in India. Product listing images, A+ content, catalog design, packaging and brand identity.",
         areaServed: {
           "@type": "Country",
           name: "India",

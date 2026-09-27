@@ -2,6 +2,7 @@ import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
+import Link from "next/link";
 import { serviceSlugs, getServiceBySlug } from "@/content/services/items";
 import JsonLd from "@/components/seo/JsonLd";
 import { serviceSchema, breadcrumbSchema } from "@/lib/seo/schema";
@@ -106,8 +107,7 @@ export default async function ServicePage({ params }: { params: Params }) {
             className="text-gray-800 leading-8 space-y-4 [&_h2]:text-2xl [&_h2]:font-bold [&_h2]:mt-8 [&_h2]:mb-3 [&_p]:mb-4 [&_ul]:list-disc [&_ul]:pl-6 [&_li]:mb-2 [&_a]:text-primary [&_a]:underline [&_a]:underline-offset-2 hover:[&_a]:text-accent"
             dangerouslySetInnerHTML={{ __html: service.content }}
           />
-
-          {faqs.length > 0 && (
+               {faqs.length > 0 && (
             <div className="mt-12 pt-8 border-t border-gray-100">
               <h2 className="text-2xl font-bold text-gray-900 mb-6">Frequently Asked Questions</h2>
               <div className="space-y-6">
@@ -120,6 +120,20 @@ export default async function ServicePage({ params }: { params: Params }) {
               </div>
             </div>
           )}
+                    <div className="mt-12 pt-8 border-t border-gray-100 flex flex-col sm:flex-row gap-4">
+            <Link
+              href="/pricing"
+              className="bg-background text-foreground px-8 py-4 rounded-full font-bold inline-flex items-center justify-center border border-border"
+            >
+              View pricing
+            </Link>
+            <Link
+              href="/case-studies"
+              className="gradient-btn px-8 py-4 font-bold inline-flex items-center justify-center"
+            >
+              See related results
+            </Link>
+          </div>
         </article>
       </section>
 
