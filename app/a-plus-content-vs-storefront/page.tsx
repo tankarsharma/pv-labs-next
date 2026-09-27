@@ -3,7 +3,7 @@ import Link from "next/link";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import JsonLd from "@/components/seo/JsonLd";
-import { breadcrumbSchema } from "@/lib/seo/schema";
+import { breadcrumbSchema, faqSchema } from "@/lib/seo/schema";
 
 const URL = "https://pvlabs.ai/a-plus-content-vs-storefront";
 
@@ -39,15 +39,7 @@ export default function Page() {
     { name: "A+ Content vs Storefront", item: URL },
   ]);
 
-  const faqJsonLd = {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    mainEntity: faqs.map((f) => ({
-      "@type": "Question",
-      name: f.question,
-      acceptedAnswer: { "@type": "Answer", text: f.answer },
-    })),
-  };
+const faqJsonLd = faqSchema(faqs);
 
   return (
     <div className="min-h-screen gradient-bg-soft">
