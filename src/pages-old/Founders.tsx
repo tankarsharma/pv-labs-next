@@ -11,7 +11,7 @@ const founder = {
   name: "Tankaar Sharma",
   role: "Founder & Creative Director",
   image: tankaarImg,
-  bio: "Tankaar Sharma founded PV Labs to solve a problem he saw repeatedly working with e-commerce sellers: strong products losing sales to weak visuals. He leads creative direction and strategy at PV Labs, helping Amazon and Flipkart sellers turn overlooked listings into high-converting product pages through CGI-based imagery, A+ Content, and data-informed design decisions.",
+  bio: "Tankaar Sharma started PV Labs after noticing the same pattern across marketplaces and D2C brands: genuinely good products losing sales to weak, unconvincing visuals. He built PV Labs around a team of designers who craft product visuals and A+ Content to help sellers and brands present their products the way buyers actually make decisions. He now leads creative direction at PV Labs, treating every listing and storefront as a conversion problem to solve, not just a design brief.",
   linkedin: "https://linkedin.com/company/pvlabs",
   whatsapp: "https://wa.me/917417791003",
   phone: "tel:+917417791003",
