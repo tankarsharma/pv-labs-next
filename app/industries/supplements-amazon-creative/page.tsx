@@ -3,7 +3,7 @@ import Link from "next/link";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import JsonLd from "@/components/seo/JsonLd";
-import { breadcrumbSchema } from "@/lib/seo/schema";
+import { breadcrumbSchema, collectionPageSchema } from "@/lib/seo/schema";
 
 const URL = "https://pvlabs.ai/industries/supplements-amazon-creative";
 
@@ -21,10 +21,18 @@ export default function Page() {
     { name: "Supplements & Nutrition", item: URL },
   ]);
 
+  const collectionJsonLd = collectionPageSchema({
+    name: "Amazon Creative for Supplement & Nutrition Brands",
+    description:
+      "Listing images, A+ Content, and Brand Store design for Indian supplement and nutrition brands.",
+    url: URL,
+  });
+
   return (
     <div className="min-h-screen gradient-bg-soft">
       <Navbar />
       <JsonLd id="ld-json-breadcrumb" data={breadcrumbJsonLd} />
+      <JsonLd id="ld-json-collection" data={collectionJsonLd} />
 
       <section className="pt-24 pb-16 px-6 md:px-12">
         <div className="max-w-4xl mx-auto">
