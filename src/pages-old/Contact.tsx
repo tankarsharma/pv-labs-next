@@ -1,62 +1,47 @@
 ﻿"use client";
+import { useState } from "react";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import { motion } from "framer-motion";
 import { Mail, Phone, Clock, CheckCircle } from "lucide-react";
 import { socialLinks } from "@/lib/social-links";
 import { FaWhatsapp } from "react-icons/fa6";
-
-const contactOptions = {
-  projectTypes: [
-    "A+ Content",
-    "Listing Images",
-    "Storefront / Brand Store",
-    "Full Listing Upgrade",
-    "Launch Support",
-    "Not sure yet",
-  ],
-  marketplaces: [
-    "Amazon",
-    "Flipkart",
-    "Myntra",
-    "Meesho",
-    "Ajio",
-    "Brand Website",
-    "Multiple marketplaces",
-  ],
-  categories: [
-    "Beauty / Skincare",
-    "Fashion / Apparel",
-    "Jewellery / Accessories",
-    "Home / Kitchen",
-    "Food / Wellness",
-    "Other",
-  ],
-  skuCounts: [
-    "1 SKU",
-    "2–10 SKUs",
-    "11–25 SKUs",
-    "26–50 SKUs",
-    "50+ SKUs",
-  ],
-  budgetRanges: [
-    "Under ₹5,000",
-    "₹5,000–₹15,000",
-    "₹15,000–₹50,000",
-    "₹50,000+",
-    "Need recommendation",
-  ],
-  mainProblems: [
-    "Low conversion",
-    "Need A+ content",
-    "Need listing images",
-    "Need storefront",
-    "Launch support",
-    "Need better creative direction",
-  ],
-};
+import {
+  buildContactMessage,
+  contactGroups,
+  contactMessageLinks,
+  toggleContactChoice,
+  whatsappContactUrl,
+  type ContactGroup,
+  type ContactSelections,
+} from "@/lib/contact-enquiry";
 
 const Contact = () => {
+  const [selections, setSelections] = useState<ContactSelections>({});
+  const [details, setDetails] = useState("");
+  const [copyStatus, setCopyStatus] = useState("");
+  const [copying, setCopying] = useState(false);
+  const message = buildContactMessage(selections, details);
+  const links = contactMessageLinks(message);
+  const hasDetails = Object.values(selections).some((values) => values.length > 0) || details.trim().length > 0;
+
+  function choose(group: ContactGroup, item: string) {
+    setSelections((current) => toggleContactChoice(current, group, item));
+    setCopyStatus("");
+  }
+
+  async function copyMessage() {
+    setCopying(true);
+    try {
+      await navigator.clipboard.writeText(message);
+      setCopyStatus("Message copied. Paste it into WhatsApp or email.");
+    } catch {
+      setCopyStatus("Could not copy automatically. Select and copy the message below.");
+    } finally {
+      setCopying(false);
+    }
+  }
+
   return (
     <div className="min-h-screen bg-background">
       <Navbar />
@@ -95,67 +80,102 @@ const Contact = () => {
             <div className="glass-card p-8 md:p-10 shadow-xl h-full">
               <div className="mb-8">
                 <h2 className="font-heading text-3xl font-extrabold mb-3 text-foreground">
-                  Qualify your project before we talk
+                  Share your project details — optional
                 </h2>
                 <p className="text-base text-muted-foreground max-w-2xl">
-                  This helps us point you to the right service, pricing path, and next step before you message us.
+                  Choose what applies, or skip this and chat with us directly. Your choices will be included in your message.
                 </p>
               </div>
 
+              <div className="mb-8">
+                <a
+                  href={whatsappContactUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  data-cta="contact-direct-whatsapp"
+                  className="inline-flex items-center gap-2 text-green-700 font-semibold underline underline-offset-4 rounded focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2"
+                >
+                  <FaWhatsapp size={20} /> Skip the details — chat directly on WhatsApp
+                </a>
+              </div>
+
               <div className="space-y-8">
-                <ContactChoiceGroup
-                  title="Project type"
-                  items={contactOptions.projectTypes}
-                />
+                {contactGroups.map((group) => (
+                  <ContactChoiceGroup
+                    key={group.key}
+                    group={group}
+                    selected={selections[group.key] ?? []}
+                    onToggle={(item) => choose(group, item)}
+                  />
+                ))}
 
-                <ContactChoiceGroup
-                  title="Marketplace"
-                  items={contactOptions.marketplaces}
-                />
-
-                <ContactChoiceGroup
-                  title="Category"
-                  items={contactOptions.categories}
-                />
-
-                <ContactChoiceGroup
-                  title="Number of SKUs"
-                  items={contactOptions.skuCounts}
-                />
-
-                <ContactChoiceGroup
-                  title="Budget range"
-                  items={contactOptions.budgetRanges}
-                />
-
-                <ContactChoiceGroup
-                  title="Main problem"
-                  items={contactOptions.mainProblems}
-                />
+                <div>
+                  <label htmlFor="project-details" className="block font-heading text-lg font-bold text-foreground mb-3">
+                    Listing link or extra details <span className="text-sm font-normal text-muted-foreground">(optional)</span>
+                  </label>
+                  <textarea
+                    id="project-details"
+                    value={details}
+                    onChange={(event) => { setDetails(event.target.value); setCopyStatus(""); }}
+                    maxLength={1000}
+                    rows={3}
+                    placeholder="Share a product link or tell us what you need."
+                    className="w-full rounded-xl border border-border bg-background p-4 text-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary"
+                  />
+                  <p className="text-xs text-muted-foreground mt-2">{details.length}/1,000 characters</p>
+                </div>
 
                 <div className="rounded-2xl bg-slate-50 border border-slate-200 p-6">
                   <h3 className="font-heading text-xl font-bold text-foreground mb-2">
                     Ready to continue?
                   </h3>
                   <p className="text-sm text-muted-foreground mb-5">
-                    No backend needed yet. Use the buttons below to start the conversation with your requirements.
+                    Nothing is sent when you select an option. Open WhatsApp or email, review your message, then press Send there.
                   </p>
 
+                  <label htmlFor="enquiry-preview" className="block text-sm font-semibold text-foreground mb-2">
+                    Your message
+                  </label>
+                  <textarea
+                    id="enquiry-preview"
+                    readOnly
+                    value={message}
+                    rows={hasDetails ? 8 : 3}
+                    className="w-full rounded-xl border border-slate-200 bg-white p-4 text-sm mb-4 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary"
+                  />
+                  <div className="flex flex-wrap items-center gap-4 mb-5">
+                    <button type="button" onClick={copyMessage} disabled={copying} className="text-sm font-semibold text-primary underline underline-offset-4 rounded focus-visible:ring-2 focus-visible:ring-primary disabled:opacity-50">
+                      {copying ? "Copying…" : "Copy message"}
+                    </button>
+                    {hasDetails && (
+                      <button type="button" onClick={() => { setSelections({}); setDetails(""); setCopyStatus(""); }} className="text-sm font-semibold text-muted-foreground underline underline-offset-4 rounded focus-visible:ring-2 focus-visible:ring-primary">
+                        Clear all details
+                      </button>
+                    )}
+                  </div>
+                  <p role="status" className="text-sm text-muted-foreground mb-4">{copyStatus}</p>
                   <div className="flex flex-col sm:flex-row gap-4">
                     <a
-                      href="https://wa.me/917417791003"
+                      href={whatsappContactUrl}
+                      onClick={(event) => {
+                        event.preventDefault();
+                        // Keep the message out of the DOM link URL and outbound-link analytics.
+                        window.open(links.whatsapp, "_blank", "noopener,noreferrer");
+                      }}
+                      data-cta="contact-brief-whatsapp"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="px-8 py-4 bg-green-500 text-white rounded-2xl font-bold text-base hover:bg-green-600 transition-all transform hover:scale-105 flex items-center justify-center gap-3 shadow-lg shadow-green-200"
                     >
-                      <FaWhatsapp size={20} /> Talk on WhatsApp
+                      <FaWhatsapp size={20} /> Continue on WhatsApp
                     </a>
 
                     <a
-                      href="mailto:growth@pvlabs.ai?subject=Request%20Creative%20Audit"
+                      href={links.email}
+                      data-cta="contact-brief-email"
                       className="px-8 py-4 border border-slate-300 text-foreground rounded-2xl font-bold text-base hover:border-primary hover:text-primary transition-all flex items-center justify-center gap-3"
                     >
-                      <Mail size={18} /> Email Project Details
+                      <Mail size={18} /> Continue by email
                     </a>
                   </div>
                 </div>
@@ -261,28 +281,40 @@ const Contact = () => {
 };
 
 const ContactChoiceGroup = ({
-  title,
-  items,
+  group,
+  selected,
+  onToggle,
 }: {
-  title: string;
-  items: string[];
-}) => {
-  return (
-    <div>
-      <h3 className="font-heading text-lg font-bold text-foreground mb-3">{title}</h3>
-      <div className="flex flex-wrap gap-3">
-        {items.map((item) => (
+  group: ContactGroup;
+  selected: string[];
+  onToggle: (item: string) => void;
+}) => (
+  <fieldset>
+    <legend className="font-heading text-lg font-bold text-foreground mb-3">
+      {group.title} <span className="text-sm font-normal text-muted-foreground">(optional)</span>
+    </legend>
+    <p className="text-xs text-muted-foreground mb-3">
+      {group.multiple ? "Choose any that apply. Click again to remove." : "Choose one. Click again to remove."}
+    </p>
+    <div className="flex flex-wrap gap-3">
+      {group.items.map((item) => {
+        const active = selected.includes(item);
+        return (
           <button
             key={item}
             type="button"
-            className="px-4 py-2 rounded-full border border-border bg-background text-sm font-medium text-muted-foreground hover:border-primary hover:text-primary transition-all"
+            aria-pressed={active}
+            onClick={() => onToggle(item)}
+            className={`px-4 py-2 rounded-full border text-sm font-medium transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 ${
+              active ? "border-primary bg-primary text-white" : "border-border bg-background text-muted-foreground hover:border-primary hover:text-primary"
+            }`}
           >
             {item}
           </button>
-        ))}
-      </div>
+        );
+      })}
     </div>
-  );
-};
+  </fieldset>
+);
 
 export default Contact;
