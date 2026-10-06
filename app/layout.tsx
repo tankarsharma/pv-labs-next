@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Script from "next/script";
+import PaidAttribution from "@/components/marketing/PaidAttribution";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -42,6 +43,7 @@ export default function RootLayout({
     <html lang="en">
       <body>
         {children}
+        <PaidAttribution />
         <Script
           src={`https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`}
           strategy="afterInteractive"
@@ -55,7 +57,8 @@ export default function RootLayout({
 
             // Fire a GA4 event whenever a lead-intent link is clicked anywhere on the site
             document.addEventListener('click', function (e) {
-              const el = e.target.closest('a');
+              const target = e.target instanceof Element ? e.target : null;
+              const el = target && target.closest('a');
               if (!el) return;
               const href = el.getAttribute('href') || '';
               if (href.startsWith('https://wa.me/')) {
@@ -67,7 +70,7 @@ export default function RootLayout({
               }
 
               // Fire a distinct GA4 event for tagged commercial CTAs (pricing, case studies, audit, service pages)
-              const ctaEl = e.target.closest('a[data-cta]');
+              const ctaEl = target && target.closest('a[data-cta]');
               if (ctaEl) {
                 const ctaName = ctaEl.getAttribute('data-cta') || 'unknown';
                 gtag('event', 'lead_cta_click', { cta_name: ctaName, link_url: (ctaEl.getAttribute('href') || '').split('?')[0] });

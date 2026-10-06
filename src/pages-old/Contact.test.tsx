@@ -7,12 +7,22 @@ vi.mock("@/components/layout/Navbar", () => ({ default: () => null }));
 vi.mock("@/components/layout/Footer", () => ({ default: () => null }));
 vi.mock("framer-motion", () => ({ motion: { div: ({ children }: { children: React.ReactNode }) => <div>{children}</div> } }));
 
-afterEach(() => { cleanup(); vi.restoreAllMocks(); });
+afterEach(() => { cleanup(); vi.restoreAllMocks(); sessionStorage.clear(); window.history.replaceState({}, "", "/"); });
 
 const preview = () => screen.getByLabelText("Your message") as HTMLTextAreaElement;
 const choose = (group: string, choice: string) => fireEvent.click(within(screen.getByRole("group", { name: group })).getByRole("button", { name: choice }));
 
 describe("optional contact enquiry", () => {
+  it("preselects the paid service and carries source into the reviewed WhatsApp message", () => {
+    window.history.replaceState({}, "", "/contact?service=listing-images&utm_source=google&utm_medium=cpc&utm_campaign=pv_india_creative_test&utm_content=listing_images");
+    const open = vi.spyOn(window, "open").mockReturnValue(null);
+    render(<Contact />);
+    expect(screen.getByRole("button", { name: "Listing Images" })).toHaveAttribute("aria-pressed", "true");
+    expect(preview().value).toContain("Google Search — Listing Images");
+    fireEvent.click(screen.getByRole("link", { name: "Continue on WhatsApp" }));
+    expect(new URL(open.mock.calls[0][0] as string).searchParams.get("text")).toBe(preview().value);
+    expect(screen.getByRole("link", { name: "Continue by email" })).toHaveAttribute("href", "mailto:growth@pvlabs.ai");
+  });
   it("allows WhatsApp contact without any selections and leaves direct chat independent of the brief", () => {
     const open = vi.spyOn(window, "open").mockReturnValue(null);
     render(<Contact />);
@@ -51,7 +61,8 @@ describe("optional contact enquiry", () => {
     expect(sentUrl.searchParams.get("text")).toBe(preview().value);
     // The DOM link stays free of the enquiry body for outbound-link analytics.
     expect(screen.getByRole("link", { name: "Continue on WhatsApp" })).toHaveAttribute("href", whatsappContactUrl);
-    const email = new URL(screen.getByRole("link", { name: "Continue by email" }).getAttribute("href")!);
+    expect(screen.getByRole("link", { name: "Continue by email" })).toHaveAttribute("href", "mailto:growth@pvlabs.ai");
+    const email = new URL(contactMessageLinks(preview().value).email);
     expect(email.pathname).toBe("growth@pvlabs.ai");
     expect(email.searchParams.get("body")).toBe(preview().value);
   });

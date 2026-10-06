@@ -1,11 +1,12 @@
-﻿"use client";
-import { useState } from "react";
+"use client";
+import { useEffect, useState } from "react";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import { motion } from "framer-motion";
 import { Mail, Phone, Clock, CheckCircle } from "lucide-react";
 import { socialLinks } from "@/lib/social-links";
 import { FaWhatsapp } from "react-icons/fa6";
+import { appendPaidSource, rememberPaidSource, serviceSelections, type PaidSource } from "@/lib/paid-attribution";
 import {
   buildContactMessage,
   contactGroups,
@@ -21,7 +22,12 @@ const Contact = () => {
   const [details, setDetails] = useState("");
   const [copyStatus, setCopyStatus] = useState("");
   const [copying, setCopying] = useState(false);
-  const message = buildContactMessage(selections, details);
+  const [paidSource, setPaidSource] = useState<PaidSource | null>(null);
+  useEffect(() => {
+    setSelections(serviceSelections(window.location.search));
+    try { setPaidSource(rememberPaidSource(window.location.search, window.sessionStorage)); } catch { /* Keep contact available. */ }
+  }, []);
+  const message = appendPaidSource(buildContactMessage(selections, details), paidSource);
   const links = contactMessageLinks(message);
   const hasDetails = Object.values(selections).some((values) => values.length > 0) || details.trim().length > 0;
 
@@ -159,7 +165,11 @@ const Contact = () => {
                     </a>
 
                     <a
-                      href={links.email}
+                      href="mailto:growth@pvlabs.ai"
+                      onClick={(event) => {
+                        event.preventDefault();
+                        window.location.href = links.email;
+                      }}
                       data-cta="contact-brief-email"
                       className="px-8 py-4 border border-slate-300 text-foreground rounded-2xl font-bold text-base hover:border-primary hover:text-primary transition-all flex items-center justify-center gap-3"
                     >
@@ -173,6 +183,11 @@ const Contact = () => {
                     href={whatsappContactUrl}
                     target="_blank"
                     rel="noopener noreferrer"
+                    onClick={(event) => {
+                      if (!paidSource) return;
+                      event.preventDefault();
+                      window.open(contactMessageLinks(appendPaidSource(buildContactMessage({}), paidSource)).whatsapp, "_blank", "noopener,noreferrer");
+                    }}
                     data-cta="contact-direct-whatsapp"
                     className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-2xl border border-green-600 text-green-700 font-semibold hover:bg-green-50 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2"
                   >
