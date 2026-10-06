@@ -1,5 +1,5 @@
 ﻿"use client";
-import { redirect } from "next/navigation";
+import { notFound } from "next/navigation";
 import Link from "next/link";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
@@ -10,6 +10,7 @@ import serviceBranding from "../assets/Blog11.png";
 import serviceWebdesign from "../assets/Blog22.png";
 import serviceAppdesign from "../assets/Blog33.png";
 import serviceSocial from "@/assets/service-social.jpg";
+import { getBlogPostBySlug } from "@/content/blog/posts";
 
 const blogData: Record<string, any> = {
     "amazon-product-image-size-guide-2026": {
@@ -2234,7 +2235,14 @@ const blogData: Record<string, any> = {
 
 type BlogPostProps = { slug: string };
 const BlogPost = ({ slug }: BlogPostProps) => {
-  const post = slug ? blogData[slug] : null;
+  const legacyPost = slug ? blogData[slug] : null;
+  const publishedPost = !legacyPost && slug ? getBlogPostBySlug(slug) : null;
+  const post = legacyPost ?? (publishedPost ? {
+    ...publishedPost,
+    subtitle: publishedPost.category,
+    // HTML comes from the repository's authored content, not user input.
+    content: <div dangerouslySetInnerHTML={{ __html: publishedPost.content }} />,
+  } : null);
 
   const { scrollYProgress } = useScroll();
   const scaleX = useSpring(scrollYProgress, {
@@ -2244,7 +2252,7 @@ const BlogPost = ({ slug }: BlogPostProps) => {
   });
 
   if (!post) {
-    redirect("/blog");
+    notFound();
   }
 
   return (
@@ -2325,7 +2333,6 @@ const BlogPost = ({ slug }: BlogPostProps) => {
 };
 
 export default BlogPost;
-
 
 
 
