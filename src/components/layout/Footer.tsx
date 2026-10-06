@@ -35,7 +35,7 @@ const Footer = () => {
                   </a>
                 ))}
               </div>
-              <span className="text-background/40 text-xs ml-1">@pvlabs</span>
+              <span className="text-background/40 text-xs ml-1">Instagram: @pvlabs.ai</span>
             </div>
           </div>
 

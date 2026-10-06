@@ -280,7 +280,7 @@ useEffect(() => {
                 </div>
                 <div>
                   <div className={`text-sm font-semibold text-foreground transition-colors ${hoverColor}`}>{label}</div>
-                  <div className="text-xs text-muted-foreground">Follow @pvlabs</div>
+                  <div className="text-xs text-muted-foreground">{label === "Instagram" ? "Follow @pvlabs.ai" : "Follow @pvlabs"}</div>
                 </div>
               </motion.a>
             ))}

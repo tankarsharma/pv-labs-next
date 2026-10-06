@@ -6,7 +6,7 @@ export const socialLinks = [
   {
     icon: Instagram,
     label: "Instagram",
-    href: "https://www.instagram.com/pvlabs_?igsh=MWYwdGo4dmxwanZ2dA==",
+    href: "https://www.instagram.com/pvlabs.ai/",
     hoverColor: "group-hover:text-[#E4405F]",
   },
   {
