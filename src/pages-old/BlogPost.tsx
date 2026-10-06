@@ -11,6 +11,7 @@ import serviceWebdesign from "../assets/Blog22.png";
 import serviceAppdesign from "../assets/Blog33.png";
 import serviceSocial from "@/assets/service-social.jpg";
 import { getBlogPostBySlug } from "@/content/blog/posts";
+import { listingPricing, aPlusPricing, formatPrice, pricingTiers } from "@/lib/pricing";
 
 const blogData: Record<string, any> = {
     "amazon-product-image-size-guide-2026": {
@@ -263,17 +264,18 @@ const blogData: Record<string, any> = {
             </div>
             <div className="p-6 rounded-3xl bg-gray-900 text-white border border-gray-800">
               <h4 className="font-black mb-2">CGI (PV Labs)</h4>
-              <p className="text-2xl font-black mb-3">₹3K–₹8K<span className="text-sm font-medium text-gray-400">/SKU</span></p>
+              <p className="text-xs text-gray-300 mb-3">{listingPricing}</p>
+              <p className="text-2xl font-black mb-3">{formatPrice(pricingTiers[0].listingImages)}<span className="text-sm font-medium text-gray-400">/SKU for 10 SKUs</span></p>
               <ul className="space-y-2 text-xs text-gray-300 font-medium">
                 <li>• Photorealistic renders</li>
                 <li>• No shipping needed</li>
-                <li>• Unlimited angles & revisions</li>
+                <li>• 5 images per SKU; extra scope quoted separately</li>
                 <li>• 3-5 days, 100% compliant</li>
               </ul>
             </div>
           </div>
           <p className="text-sm text-gray-600 font-medium mt-6 leading-relaxed">
-            <span className="text-gray-900 font-bold">ROI math:</span> Upgrading from 2% CTR to 5% CTR on 1,000 daily impressions at ₹800 AOV = ₹24,000 more revenue per day — ₹7.2 lakh/month from a one-time ₹5,000-8,000 investment. Payback: 1 day.
+            <span className="text-gray-900 font-bold">ROI math:</span> Upgrading from 2% CTR to 5% CTR on 1,000 daily impressions at ₹800 AOV = ₹24,000 more revenue per day — ₹7.2 lakh/month. Compare measured gains against your agreed package cost; actual results and payback vary.
           </p>
         </section>
 
@@ -282,7 +284,7 @@ const blogData: Record<string, any> = {
           <div className="space-y-6">
             {[
               { q: "What size image for Amazon 2026?", a: "1600×1600 pixels minimum for zoom in 1:1 square ratio. Technical minimum is 500px but zoom requires 1600+. Best practice: upload at 2000×2000px in JPEG quality 85+ or PNG with pure white background." },
-              { q: "How to create Amazon product images?", a: "Three options: (1) DIY with phone + Canva at ₹0; (2) Professional photographer at ₹8,000-40,000/SKU; (3) CGI team like PV Labs at ₹3,000-8,000/SKU with compliance guarantee and 3-5 day delivery." },
+              { q: "How to create Amazon product images?", a: "You can create images yourself, hire a photographer, or use PV Labs. " + listingPricing },
               { q: "Which size for Amazon A+ listing images?", a: "Standard modules: 970×600px. Comparison charts: 150×300px per cell. Image-with-text: 300×300px or 600×180px. Brand Story banners: 1464×625px. Never stretch smaller images to fit." },
               { q: "What is Amazon product image size in pixels?", a: "1600×1600px minimum for zoom, up to 10,000×10,000px maximum. Most professionals upload at 2000×2000px for optimal quality-to-file-size balance. Always 1:1 square ratio." },
               { q: "What is the Amazon image size ratio?", a: "1:1 (square). Non-square images get cropped or padded with white space, making your product look smaller than competitors. Always design at square ratio." }
@@ -302,7 +304,7 @@ const blogData: Record<string, any> = {
                 Get Amazon-Compliant Images — Zero Rejections Guaranteed
               </h3>
               <p className="text-gray-400 text-[11px] sm:text-xs md:text-sm lg:text-base mb-4 sm:mb-5 md:mb-6 leading-relaxed px-2">
-                9 images per SKU. CGI-based. 3-5 day delivery. If Amazon rejects any image, we redo it free.
+                5 listing images per SKU. Marketplace-ready. 3-5 day delivery. If Amazon rejects any image, we redo it free.
               </p>
               <button className="w-full sm:w-auto px-4 sm:px-6 md:px-10 py-2 sm:py-2.5 md:py-4 bg-primary hover:bg-accent text-white font-black uppercase tracking-widest text-[9px] sm:text-[10px] md:text-xs rounded-xl transition-all">
                 Get Your Images Done →
@@ -493,7 +495,7 @@ const blogData: Record<string, any> = {
           <h2 className="text-2xl font-black text-gray-900 mb-6">Frequently Asked Questions</h2>
           <div className="space-y-6">
             {[
-              { q: "How much does it cost to start selling on Amazon India?", a: "Minimum ₹50,000-1,00,000 for a serious launch. Covers: inventory (₹20K-50K), professional images (₹5K-8K), advertising first 2 months (₹30K-50K), and GST registration (₹2K-5K)." },
+              { q: "How much does it cost to start selling on Amazon India?", a: "Minimum ₹50,000-1,00,000 for a serious launch. Covers: inventory (₹20K-50K), listing images (see current PV Labs catalog pricing), advertising first 2 months (₹30K-50K), and GST registration (₹2K-5K)." },
               { q: "Is selling on Amazon India profitable in 2026?", a: "Yes — average successful sellers make 20-35% net margin after all fees. Key is product selection, professional images + A+ content, and 3-6 months patience." },
               { q: "Do I need GST to sell on Amazon India?", a: "Yes, mandatory for all sellers regardless of turnover. Register at gst.gov.in or through a CA (₹2,000-5,000). No exemption exists." },
               { q: "Can I sell on Amazon without inventory?", a: "Yes via dropshipping, but margins are thin (5-10%) with no quality control. For sustainable income, hold your own inventory — even 50-100 units." },
@@ -809,7 +811,7 @@ const blogData: Record<string, any> = {
               Let's do simple math. Say your product gets 1,000 impressions per day on Amazon search. With average images, your CTR is 2% — that's 20 clicks/day. With professional, optimized images, CTR jumps to 5% — that's 50 clicks/day. Same impressions, 150% more traffic.
             </p>
             <p>
-              If your conversion rate is 10% and average order value is ₹800, that's the difference between ₹1,600/day and ₹4,000/day in revenue. Over a month: ₹48,000 vs ₹1,20,000. The ₹72,000 difference — every single month — came from one image upgrade that cost you ₹5,000–₹8,000 one time.
+              If your conversion rate is 10% and average order value is ₹800, that's the difference between ₹1,600/day and ₹4,000/day in revenue. Over a month: ₹48,000 vs ₹1,20,000. That ₹72,000 monthly difference is an illustrative example. Compare measured results against your agreed package cost.
             </p>
             <p>
               This is why the smartest Amazon India sellers treat listing images as their highest-ROI investment. Not PPC. Not keywords. Not reviews. Images come first because everything else depends on the click.
@@ -1095,13 +1097,13 @@ const blogData: Record<string, any> = {
             <ul className="space-y-2 ml-4">
               <li className="flex items-start gap-2"><span className="text-purple-600 font-bold">•</span> Freelance designers on Fiverr/Upwork: ₹3,000–₹8,000 per ASIN (inconsistent quality, 0 revisions)</li>
               <li className="flex items-start gap-2"><span className="text-purple-600 font-bold">•</span> Generic design agencies: ₹8,000–₹15,000 per ASIN (no Amazon expertise)</li>
-              <li className="flex items-start gap-2"><span className="text-purple-600 font-bold">•</span> Specialized e-commerce studios (like PV Labs): ₹5,000–₹12,000 per ASIN (Amazon-specific, revision included, compliance guaranteed)</li>
+              <li className="flex items-start gap-2"><span className="text-purple-600 font-bold">•</span> PV Labs: {aPlusPricing}</li>
             </ul>
             <p>
-              The ROI math is simple: if A+ Content increases your conversion rate by even 5% on a product doing ₹2,00,000/month in revenue — that's ₹10,000 extra revenue per month, forever. A one-time ₹8,000 investment pays for itself in 25 days and keeps compounding.
+              The ROI math is simple: if A+ Content increases your conversion rate by even 5% on a product doing ₹2,00,000/month in revenue — that's ₹10,000 extra revenue per month, forever. Compare any measured improvement against the cost of your agreed A+ package; actual payback varies.
             </p>
             <p>
-              For brands with 10+ ASINs, we offer bulk packages that bring per-ASIN cost below ₹4,000 — making it one of the cheapest, highest-impact investments any Amazon India seller can make.
+              {aPlusPricing}
             </p>
           </div>
         </section>
@@ -1435,13 +1437,13 @@ const blogData: Record<string, any> = {
               <li className="flex items-start gap-2"><span className="text-blue-600 font-bold">•</span> DIY (phone camera + Canva): ₹0 cost, but 40–60% rejection rate and poor conversion</li>
               <li className="flex items-start gap-2"><span className="text-blue-600 font-bold">•</span> Local photographer: ₹5,000–₹15,000 per SKU (not Flipkart-optimized, no infographics)</li>
               <li className="flex items-start gap-2"><span className="text-blue-600 font-bold">•</span> Freelancer (Fiverr/Upwork): ₹2,000–₹6,000 per SKU (hit or miss quality, no compliance guarantee)</li>
-              <li className="flex items-start gap-2"><span className="text-blue-600 font-bold">•</span> Specialized e-commerce studio (PV Labs): ₹4,000–₹10,000 per SKU (platform-specific, compliance guaranteed, revisions included)</li>
+              <li className="flex items-start gap-2"><span className="text-blue-600 font-bold">•</span> PV Labs: {listingPricing}</li>
             </ul>
             <p>
               The hidden cost most sellers miss is <span className="text-gray-900 font-bold">rejection rework</span>. Every rejection costs you 2–5 days of lost sales while you fix and resubmit. If your product does ₹2,000/day in revenue, one rejection cycle costs you ₹4,000–₹10,000 in lost revenue — more than the cost of getting it right the first time.
             </p>
             <p>
-              For sellers listing on both Amazon and Flipkart (which most Indian sellers do), PV Labs offers dual-platform packages. You get Amazon-optimized AND Flipkart-optimized images for each SKU at 30% less than ordering them separately. Same product, different specifications, zero rejections on both platforms.
+              The catalog package includes 5 images per SKU for the agreed marketplace. If you need separate Amazon and Flipkart versions, contact PV Labs to confirm the additional scope and quote.
             </p>
           </div>
         </section>
@@ -1727,12 +1729,12 @@ const blogData: Record<string, any> = {
             </div>
             <div className="p-6 rounded-3xl bg-purple-900 text-white border border-purple-800">
               <h4 className="font-black mb-2">PV Labs</h4>
-              <p className="text-2xl font-black mb-3">₹5K–₹12K<span className="text-sm font-medium text-purple-300">/ASIN</span></p>
+              <p className="text-2xl font-black mb-3">{formatPrice(pricingTiers[0].aPlus)}<span className="text-sm font-medium text-purple-300">/SKU for 10 SKUs</span></p>
               <ul className="space-y-2 text-xs text-purple-200 font-medium">
                 <li>• Amazon-specific design</li>
                 <li>• 99% approval rate</li>
                 <li>• 5-day delivery</li>
-                <li>• Bulk: under ₹4K/ASIN</li>
+                <li>{aPlusPricing}</li>
               </ul>
             </div>
           </div>
@@ -1742,7 +1744,7 @@ const blogData: Record<string, any> = {
           <h2 className="text-2xl font-black text-gray-900 mb-6">Frequently Asked Questions</h2>
           <div className="space-y-6">
             {[
-              { q: "Is Amazon A+ Content free?", a: "The feature is free for Brand Registered sellers. Design costs ₹5,000-12,000/ASIN if you hire a studio." },
+              { q: "Is Amazon A+ Content free?", a: "The Amazon feature is free for Brand Registered sellers. PV Labs design pricing: " + aPlusPricing },
               { q: "How long does approval take?", a: "3-7 business days. 30-40% first-time rejection rate. With PV Labs: 99% approval on first submission." },
               { q: "Does A+ Content help Amazon SEO?", a: "A+ text is NOT indexed by A9. But higher conversion rate IS a ranking signal. So indirectly, yes." },
               { q: "Can I do A+ without Brand Registry?", a: "No. But you can start with a pending trademark (₹4,500 govt fee). Full registration takes 12-18 months." },
@@ -2108,7 +2110,7 @@ const blogData: Record<string, any> = {
           </div>
           <div className="glass-card p-6 md:p-8 border-l-4 border-primary bg-white/50 relative overflow-hidden">
             <p className="text-lg md:text-xl text-gray-600 leading-relaxed font-medium relative z-10">
-              "Studio photography costs ₹8K-40K per SKU. CGI costs ₹3K-8K and looks identical. But is CGI actually better? Here's the honest, no-BS comparison for Indian sellers."
+              Compare photography and CGI by deliverables, product accuracy, turnaround, and current PV Labs catalog pricing.
             </p>
           </div>
         </section>
@@ -2118,7 +2120,7 @@ const blogData: Record<string, any> = {
           <h2 className="text-2xl font-black mb-8">Head-to-Head Comparison</h2>
           <div className="space-y-4">
             {[
-              { cat: "Cost", photo: "₹8K-40K/SKU", cgi: "₹3K-8K/SKU", winner: "CGI" },
+              { cat: "Cost", photo: "₹8K-40K/SKU", cgi: `${formatPrice(pricingTiers[0].listingImages)}/SKU for 10 SKUs (5 images)`, winner: "CGI" },
               { cat: "Turnaround", photo: "7-14 days", cgi: "3-5 days", winner: "CGI" },
               { cat: "Flexibility", photo: "Reshoot for changes", cgi: "Unlimited revisions", winner: "CGI" },
               { cat: "Scalability", photo: "Linear cost per SKU", cgi: "Variants in hours", winner: "CGI" },
@@ -2163,9 +2165,9 @@ const blogData: Record<string, any> = {
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
             {[
               { t: "Day 1", d: "Share reference photos (phone camera, 4-5 angles) + brief" },
-              { t: "Day 2-3", d: "3D model built, textured, scenes set up for all 9 slots" },
+              { t: "Day 2-3", d: "Visuals prepared for the agreed 5-image listing set" },
               { t: "Day 4", d: "First draft delivered. You request changes." },
-              { t: "Day 5", d: "Final delivery — 9 images at 2000×2000px, Amazon-ready" }
+              { t: "Day 5", d: "Final delivery — 5 listing images per SKU, marketplace-ready" }
             ].map((item, i) => (
               <div key={i} className="p-5 rounded-2xl border border-primary/10 bg-primary/5">
                 <span className="text-[10px] font-black text-primary uppercase tracking-widest block mb-2">{item.t}</span>
@@ -2174,9 +2176,9 @@ const blogData: Record<string, any> = {
             ))}
           </div>
           <div className="mt-6 p-6 bg-gray-50 rounded-2xl border border-gray-100">
-            <h4 className="font-bold text-gray-900 mb-3">What's Included (₹3K-8K/SKU):</h4>
+            <h4 className="font-bold text-gray-900 mb-3">PV Labs catalog package: 5 listing images per SKU</h4>
             <div className="grid sm:grid-cols-2 gap-2 text-xs text-gray-600 font-medium">
-              {["1 hero image (white BG, 85%+ fill)", "2-3 lifestyle renders (Indian settings)", "2-3 infographic images", "1 comparison chart", "1 brand story image", "Mobile-optimized, tested at 400px"].map((item, i) => (
+              {["5 images per SKU", "Hero, lifestyle, or infographic mix agreed in your brief", "Marketplace-ready exports", "Additional images or platform versions quoted separately"].map((item, i) => (
                 <span key={i} className="flex items-center gap-2"><div className="w-1.5 h-1.5 rounded-full bg-primary flex-shrink-0" />{item}</span>
               ))}
             </div>
@@ -2191,7 +2193,7 @@ const blogData: Record<string, any> = {
               <li className="flex items-start gap-3"><span className="text-gray-900 font-bold">Photography for:</span> Hero image + real model shots</li>
               <li className="flex items-start gap-3"><span className="text-gray-900 font-bold">CGI for:</span> Lifestyle renders, infographics, comparisons, dimensions, variants</li>
             </ul>
-            <p className="text-sm text-gray-600 font-medium mt-4">Total cost: ₹5,000-12,000/SKU — much less than full studio for all 9 images.</p>
+            <p className="text-sm text-gray-600 font-medium mt-4">Hybrid projects are custom quoted based on the photography and CGI deliverables; they are separate from the 5-image catalog package.</p>
           </div>
         </section>
 
@@ -2203,7 +2205,7 @@ const blogData: Record<string, any> = {
               { q: "Is CGI Amazon compliant?", a: "Yes. Amazon's rules are about pixel size and background — not how image was created. We've never had a CGI image rejected." },
               { q: "Do I need to ship my product for CGI?", a: "No. Share phone camera reference photos (4-5 angles). We build 3D model from references. No shipping, no delays." },
               { q: "What about fabric/textile products?", a: "Photography is slightly better for complex drape/knit. For most other textures (metal, glass, plastic, wood), CGI is perfect." },
-              { q: "How much does CGI cost in India?", a: "PV Labs: ₹3,000-8,000/SKU for complete 9-image set. Bulk (5+ SKUs) gets additional discount." }
+              { q: "How much does CGI cost in India?", a: listingPricing }
             ].map((item, i) => (
               <div key={i} className="p-6 rounded-2xl border border-gray-100 bg-gray-50/30">
                 <h3 className="font-bold text-gray-900 mb-2">{item.q}</h3>

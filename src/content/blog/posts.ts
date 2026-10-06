@@ -1,3 +1,4 @@
+import { listingPricing, aPlusPricing, brandStorePricing } from "@/lib/pricing";
 import serviceWebdesign from "@/assets/Blog11.png";
 import serviceBranding from "@/assets/Blog22.png";
 import serviceAppdesign from "@/assets/Blog33.png";
@@ -168,19 +169,19 @@ export const blogPosts: BlogPost[] = [
       </ul>
       <p><strong>Option 3 — CGI Product Visualization (PV Labs approach):</strong></p>
       <ul>
-        <li>Cost: ₹3,000–₹8,000 per SKU for a complete 9-image set</li>
+        <li>${listingPricing}</li>
         <li>Quality: Photorealistic 3D renders — indistinguishable from studio photography</li>
         <li>Advantages: No shipping required (we work from reference photos), unlimited angles, easy revisions, guaranteed Amazon compliance</li>
         <li>Turnaround: 3-5 business days</li>
         <li>Best for: Sellers with 5+ SKUs who want professional quality at scale</li>
       </ul>
-      <p>The ROI math is simple: upgrading from DIY images (2% CTR) to professional images (5% CTR) on a listing with 1,000 daily impressions and ₹800 average order value means ₹24,000 more revenue per day — ₹7.2 lakh per month — from a one-time ₹5,000-8,000 image investment. The payback period is literally 1 day.</p>
+      <p>Track changes in click-through rate, conversion rate, and revenue after updating your visuals. Compare measured gains against your agreed package cost; actual results and payback vary.</p>
 
       <h2>Frequently Asked Questions</h2>
       <h3>What size image for Amazon 2026?</h3>
       <p>Amazon's recommended image size for 2026 is 1600×1600 pixels or higher in a 1:1 square ratio. The technical minimum is 500×500px, but images below 1600px won't enable the zoom feature — which directly impacts conversion rates. For best results, upload at 2000×2000px in JPEG (quality 85+) or PNG format with a pure white background (RGB 255,255,255).</p>
       <h3>How to create Amazon product images?</h3>
-      <p>You have three options: (1) DIY with a smartphone and Canva — shoot on white background, remove background, resize to 1600×1600px; (2) Hire a product photographer — costs ₹8,000-40,000 per SKU in India; (3) Use a CGI studio like <a href="/services/listing-images">PV Labs</a> — send reference photos, get photorealistic renders in 3-5 days at ₹3,000-8,000 per SKU with compliance guarantee. Option 3 is the most cost-effective for sellers with multiple products.</p>
+      <p>You have three options: (1) DIY with a smartphone and Canva — shoot on white background, remove background, resize to 1600×1600px; (2) Hire a product photographer — costs ₹8,000-40,000 per SKU in India; (3) Use a CGI studio like <a href="/services/listing-images">PV Labs</a> — send reference photos and get marketplace-ready visuals. ${listingPricing}</p>
       <h3>Which size image to upload for best quality on Amazon A+ listing?</h3>
       <p>A+ Content modules use different sizes than standard listing images. Standard image modules are 970×600px. Comparison chart cells are 150×300px. Image-with-text modules are 300×300px or 600×180px. Brand Story banners are 1464×625px. Always upload at or above these exact sizes — never stretch smaller images to fit. Learn more in our <a href="/blog/amazon-a-plus-content-guide">complete A+ Content guide</a>.</p>
       <h3>What is the Amazon product image size in pixels?</h3>
@@ -220,13 +221,13 @@ export const blogPosts: BlogPost[] = [
       <h2>The 9-Image Strategy</h2>
       <p>Amazon allows 9 images per listing. Use all of them: Hero, Second Angle, Lifestyle, Feature Callout, Infographic, Dimensions, Material/Ingredients, Comparison Chart, and Social Proof context shot.</p>
       <h2>Why Indian Sellers Struggle</h2>
-      <p>Traditional product photography costs ₹8,000–₹40,000 per SKU in India. CGI-based visualization by studios like PV Labs delivers Amazon-compliant images at 80% less cost in 3–5 days.</p>
+      <p>Traditional product photography costs ₹8,000–₹40,000 per SKU in India. PV Labs offers 5-image listing packages at the rates on our <a href="/pricing">pricing page</a>, with delivery in 3–5 days.</p>
       <h2>How Amazon's A9 Algorithm Uses Images</h2>
       <p>Better images increase CTR, which tells Amazon to show your listing to more buyers, creating a compounding growth loop. Listings with all 9 slots filled are significantly more likely to earn the Amazon's Choice badge.</p>
       <h2>Mobile Optimization</h2>
       <p>70%+ of Amazon India traffic is mobile. All infographic text must be readable at 400px width. PV Labs mobile-first tests every image before delivery.</p>
       <h2>ROI of Professional Images</h2>
-      <p>Upgrading from 2% to 5% CTR on 1,000 daily impressions means ₹72,000 more revenue per month — from a one-time ₹5,000–₹8,000 image investment.</p>
+      <p>Track changes in click-through rate, conversion rate, and revenue after updating your visuals. Compare measured gains against your agreed package cost; actual results and payback vary.</p>
     `,
   },
     {
@@ -370,7 +371,7 @@ export const blogPosts: BlogPost[] = [
         <li><strong>Conversion Rate:</strong> Your secondary images (lifestyle, infographic, comparison chart) convince the buyer to add to cart. Listings with all 9 image slots filled convert 30-50% better.</li>
         <li><strong>Return Rate:</strong> Clear dimension images, material close-ups, and "what's in the box" shots set accurate expectations — reducing returns by 15-25%.</li>
       </ul>
-      <p>At PV Labs, we create complete 9-image listing sets using CGI product visualization. No product shipping needed, delivered in 3-5 days, 100% Amazon compliant. Our clients see an average 40% increase in conversion after upgrading their images. <a href="/contact">Get a free listing audit</a> to see where your images are losing you sales.</p>
+      <p>At PV Labs, we create 5-image listing sets for the catalog packages using CGI product visualization. No product shipping needed, delivered in 3-5 days, 100% Amazon compliant. Our clients see an average 40% increase in conversion after upgrading their images. <a href="/contact">Get a free listing audit</a> to see where your images are losing you sales.</p>
 
       <h2>Step 9: Scale with A+ Content & Brand Store</h2>
       <p>Once you're getting 10+ orders/day, it's time to build your brand presence on Amazon:</p>
@@ -391,7 +392,7 @@ export const blogPosts: BlogPost[] = [
 
       <h2>Frequently Asked Questions</h2>
       <h3>How much does it cost to start selling on Amazon India?</h3>
-      <p>Minimum investment: ₹50,000-1,00,000 for a serious launch. This covers: product inventory (₹20,000-50,000), professional listing images (₹5,000-8,000), advertising budget for first 2 months (₹30,000-50,000), and GST registration (₹2,000-5,000 via CA). You can start with less, but underfunded launches rarely succeed.</p>
+      <p>Minimum investment: ₹50,000-1,00,000 for a serious launch. This covers: product inventory (₹20,000-50,000), listing images (see the current PV Labs packages on <a href="/pricing">our pricing page</a>), advertising budget for first 2 months (₹30,000-50,000), and GST registration (₹2,000-5,000 via CA). You can start with less, but underfunded launches rarely succeed.</p>
       <h3>Is selling on Amazon India profitable in 2026?</h3>
       <p>Yes — if you pick the right product and execute well. Average successful sellers on Amazon India make 20-35% net margin after all fees. The key is product selection (avoid ultra-competitive categories), professional presentation (images + A+ content), and patience (3-6 months to profitability).</p>
       <h3>Do I need GST to sell on Amazon India?</h3>
@@ -438,7 +439,7 @@ export const blogPosts: BlogPost[] = [
       <h2>What Gets Rejected</h2>
       <p>Pricing claims, competitor mentions, contact info, health/medical claims, and low-resolution images (&lt;970px) trigger rejection. PV Labs maintains a 99% first-submission approval rate.</p>
       <h2>A+ Content Cost in India</h2>
-      <p>Specialized studios charge ₹5,000–₹12,000 per ASIN with compliance guaranteed. A 5% conversion boost on ₹2L/month revenue pays back the investment in 25 days.</p>
+      <p>At PV Labs, ${aPlusPricing}</p>
       <h2>Premium A+ vs Basic</h2>
       <p>Premium unlocks video modules, interactive hotspots, and carousels. Worth it for brands doing ₹10L+/month. Smaller sellers should nail Basic A+ first.</p>
     `,
@@ -474,7 +475,7 @@ export const blogPosts: BlogPost[] = [
       <h2>Flipkart's Catalog Quality Score</h2>
       <p>Listings with 6+ quality images get 40% more clicks. Image quality affects Flipkart Assured badge eligibility and preferred placement during Big Billion Days and sale events.</p>
       <h2>Pricing in India</h2>
-      <p>Professional Flipkart-compliant images cost ₹4,000–₹10,000 per SKU at specialized studios. The hidden cost of rejection rework (2–5 days lost sales) often exceeds the cost of getting images right the first time.</p>
+      <p>At PV Labs, ${listingPricing} The hidden cost of rejection rework (2–5 days lost sales) often exceeds the cost of getting images right the first time.</p>
       <h2>Flipkart vs Meesho vs Myntra vs JioMart</h2>
       <p>Each Indian marketplace has different specs. Myntra is strictest for fashion (mandatory model shots). PV Labs creates platform-specific image sets from one brief — optimized for all marketplaces simultaneously.</p>
     `,
@@ -597,7 +598,7 @@ export const blogPosts: BlogPost[] = [
 
       <h2>Frequently Asked Questions</h2>
       <h3>Amazon seller account banane mein kitna kharcha aata hai?</h3>
-      <p>Account banana free hai. Lekin selling start karne ke liye aapko chahiye: GST registration (₹2,000-5,000), product inventory (₹20,000+), professional images (₹5,000-8,000), aur advertising budget (₹15,000-25,000/month). Total minimum investment: ₹50,000-1,00,000.</p>
+      <p>Account banana free hai. Lekin selling start karne ke liye aapko chahiye: GST registration (₹2,000-5,000), product inventory (₹20,000+), professional images (PV Labs ke current packages <a href="/pricing">pricing page</a> par dekhein), aur advertising budget (₹15,000-25,000/month). Total minimum investment: ₹50,000-1,00,000.</p>
       <h3>Bina GST ke Amazon pe sell kar sakte hain?</h3>
       <p>Nahi. Amazon India pe GST mandatory hai — koi exemption nahi hai chahe turnover kitna bhi kam ho. Pehle GST registration karwayein, phir seller account banayein.</p>
       <h3>Amazon seller account approval mein kitna time lagta hai?</h3>
@@ -609,7 +610,7 @@ export const blogPosts: BlogPost[] = [
 
       <h2>Professional Listing Images — PV Labs Se Karwayein</h2>
       <p>Amazon pe success ka #1 factor hai listing images. Professional, high-quality, Amazon-compliant images aapki CTR 2-3x increase kar deti hain. PV Labs India ka specialized e-commerce image design studio hai.</p>
-      <p>Hum CGI-based product visualization use karte hain — aapko product ship karne ki zaroorat nahi. Reference photos bhejo, 3-5 din mein complete 9-image set ready. Zero rejection guarantee.</p>
+      <p>Hum CGI-based product visualization use karte hain — aapko product ship karne ki zaroorat nahi. Reference photos bhejo, 3-5 din mein 5-image catalog set ready. Zero rejection guarantee.</p>
       <p><strong>Apna Amazon journey start karein?</strong> <a href="/contact">PV Labs se free consultation lein</a> — hum aapko batayenge ki aapke category mein exactly kaisi images chahiye.</p>
     `,
   },
@@ -641,7 +642,7 @@ export const blogPosts: BlogPost[] = [
         <li><strong>Brand Perception:</strong> A+ Content makes you look like an established brand — not a random reseller. This builds trust, especially for first-time buyers.</li>
         <li><strong>Repeat Purchases:</strong> Brand Story module creates recognition. Buyers remember you and search for your brand name directly next time.</li>
       </ul>
-      <p>The ROI math: if your product does ₹2,00,000/month in revenue and A+ Content increases conversion by 5%, that's ₹10,000 extra revenue per month — from a one-time ₹5,000-10,000 design investment. Payback period: less than 30 days.</p>
+      <p>Track changes in click-through rate, conversion rate, and revenue after updating your visuals. Compare measured gains against your agreed package cost; actual results and payback vary.</p>
 
       <h2>How to Get A+ Content Access (Brand Registry)</h2>
       <p>A+ Content is only available to Brand Registered sellers. Here's how to get Brand Registry in India:</p>
@@ -699,9 +700,9 @@ export const blogPosts: BlogPost[] = [
       <ul>
         <li><strong>Freelancers (Fiverr/Upwork):</strong> ₹3,000-8,000 per ASIN. Quality varies wildly. No Amazon compliance expertise. High rejection rate.</li>
         <li><strong>Generic design agencies:</strong> ₹8,000-15,000 per ASIN. Good design but no e-commerce specialization. Don't understand Amazon's review policies.</li>
-        <li><strong>Specialized e-commerce studios (PV Labs):</strong> ₹5,000-12,000 per ASIN. Amazon-specific design, compliance guaranteed, 99% approval rate, delivered in 5 days.</li>
+        <li><strong>Specialized e-commerce studios (PV Labs):</strong> ${aPlusPricing}</li>
       </ul>
-      <p>For brands with 5+ ASINs, bulk packages bring per-ASIN cost below ₹4,000 — making it one of the cheapest, highest-ROI investments any Amazon India seller can make.</p>
+      <p>See our <a href="/pricing">pricing page</a> for the 10, 25, and 50+ SKU packages. Confirm your module count and scope before starting.</p>
 
       <h2>Basic A+ vs Premium A+ Content</h2>
       <p>Amazon offers two tiers:</p>
@@ -737,7 +738,7 @@ export const blogPosts: BlogPost[] = [
 
       <h2>Frequently Asked Questions</h2>
       <h3>Is Amazon A+ Content free?</h3>
-      <p>Yes, the feature is free for all Brand Registered sellers. However, creating professional A+ design requires either design skills or hiring a studio. Design costs range from ₹5,000-12,000 per ASIN in India.</p>
+      <p>Yes, the feature is free for all Brand Registered sellers. However, creating professional A+ design requires either design skills or hiring a studio. PV Labs pricing: ${aPlusPricing}</p>
       <h3>How long does A+ Content approval take?</h3>
       <p>Amazon takes 3-7 business days to review. First-time submissions have 30-40% rejection rate due to policy violations. With experienced studios like PV Labs, approval rate is 99% on first submission.</p>
       <h3>Does A+ Content help with Amazon SEO?</h3>
@@ -907,7 +908,7 @@ export const blogPosts: BlogPost[] = [
 
       <h2>Maximize FBA Success — Professional Listing Images</h2>
       <p>FBA gives you fast delivery and Prime badge — but buyers still need to click your listing first. Professional product images are what drive CTR (Click-Through Rate) and conversion. The combination of FBA + professional images is the proven formula for Amazon India success.</p>
-      <p>At PV Labs, we create complete 9-image listing sets optimized for mobile (where 70% of Amazon India traffic comes from). CGI-based, delivered in 3-5 days, zero rejection guarantee.</p>
+      <p>At PV Labs, we create 5-image listing sets for the catalog packages optimized for mobile (where 70% of Amazon India traffic comes from). CGI-based, delivered in 3-5 days, zero rejection guarantee.</p>
       <p><strong>Starting with FBA?</strong> <a href="/contact">Get a free listing audit from PV Labs</a> — we'll tell you exactly which images you need to maximize your FBA investment.</p>
     `,
   },
@@ -1071,7 +1072,7 @@ export const blogPosts: BlogPost[] = [
 
       <h2>Professional Listing Images — PV Labs</h2>
       <p>Listing ka sabse important part images hai. Professional images CTR 2-3x badhati hain aur conversion 30-50% improve hota hai. PV Labs India ka specialized Amazon image design studio hai.</p>
-      <p>Hum CGI product visualization use karte hain — aapko product bhejne ki zaroorat nahi. Reference photos share karein, 3-5 din mein 9-image complete set ready. Amazon compliant, zero rejection guarantee.</p>
+      <p>Hum CGI product visualization use karte hain — aapko product bhejne ki zaroorat nahi. Reference photos share karein, 3-5 din mein 5-image catalog set ready. Amazon compliant, zero rejection guarantee.</p>
       <p><strong>Apni listing professional banayein —</strong> <a href="/contact">PV Labs se free consultation lein</a>.</p>
     `,
   },
@@ -1081,7 +1082,7 @@ export const blogPosts: BlogPost[] = [
     description:
       "Amazon product photography vs CGI product visualization — complete comparison for Indian sellers. Cost, quality, turnaround, flexibility, and which is better for your category in 2026.",
     excerpt:
-      "Studio photography costs ₹8K-40K per SKU. CGI costs ₹3K-8K and looks identical. But is CGI actually better? Here's the honest comparison for Indian sellers.",
+      "Compare product photography and CGI by deliverables, product accuracy, turnaround, and current PV Labs catalog pricing.",
     category: "Education",
     readTime: "14 min",
     author: "Tankaar Sharma",
@@ -1117,13 +1118,13 @@ export const blogPosts: BlogPost[] = [
         <li>Final images are indistinguishable from studio photography</li>
       </ul>
       <p><strong>Typical timeline:</strong> 3-5 days (no shipping needed)</p>
-      <p><strong>Cost in India:</strong> ₹3,000-8,000 per SKU for a complete 9-image set at studios like PV Labs.</p>
+      <p><strong>Cost in India:</strong> PV Labs catalog package: ${listingPricing}</p>
 
       <h2>Head-to-Head Comparison</h2>
       <p><strong>Cost:</strong></p>
       <ul>
         <li>Photography: ₹8,000-40,000/SKU — studio rental, photographer fees, props, post-production all add up.</li>
-        <li>CGI: ₹3,000-8,000/SKU — no studio, no physical setup. Just digital creation. 60-80% cheaper.</li>
+        <li>PV Labs listing images: ${listingPricing} No product shipping is required.</li>
         <li><strong>Winner: CGI</strong></li>
       </ul>
       <p><strong>Quality:</strong></p>
@@ -1179,20 +1180,18 @@ export const blogPosts: BlogPost[] = [
       <p>At PV Labs, we specialize in CGI product visualization for Indian e-commerce sellers. Here's our process:</p>
       <ul>
         <li><strong>Day 1:</strong> You share reference photos (phone camera shots from 4-5 angles) + your brief (what features to highlight, what lifestyle settings you want).</li>
-        <li><strong>Day 2-3:</strong> We build the 3D model, apply textures, set up scenes for all 9 Amazon image slots.</li>
+        <li><strong>Day 2-3:</strong> We build the 3D model, apply textures, prepare the agreed 5-image listing set.</li>
         <li><strong>Day 4:</strong> First draft delivered for review. You request changes (angles, lighting, text placement).</li>
-        <li><strong>Day 5:</strong> Final delivery — 9 Amazon-compliant images at 2000×2000px, ready to upload directly to Seller Central.</li>
+        <li><strong>Day 5:</strong> Final delivery — 5 listing images per SKU in marketplace-ready specs, ready to upload directly to Seller Central.</li>
       </ul>
       <p><strong>What's included:</strong></p>
       <ul>
-        <li>1 hero image (pure white background, product filling 85%+)</li>
-        <li>2-3 lifestyle renders (product in Indian home/office setting)</li>
-        <li>2-3 infographic images (feature callouts, dimensions, specs)</li>
-        <li>1 comparison chart (your variants side by side)</li>
-        <li>1 brand story/social proof image</li>
-        <li>All images mobile-optimized and tested at 400px width</li>
+        <li>5 listing images per SKU</li>
+        <li>Hero, lifestyle, or infographic mix agreed in your brief</li>
+        <li>Marketplace-ready exports</li>
+        <li>Additional images or platform versions quoted separately</li>
       </ul>
-      <p><strong>Pricing:</strong> ₹3,000-8,000 per SKU (depending on complexity). Bulk discounts for 5+ SKUs.</p>
+      <p><strong>Pricing:</strong> ${listingPricing}</p>
 
       <h2>The Hybrid Approach</h2>
       <p>Many successful Amazon India sellers use a hybrid approach:</p>
@@ -1200,7 +1199,7 @@ export const blogPosts: BlogPost[] = [
         <li><strong>Photography for:</strong> Hero image (main product shot), and any shots requiring real human models</li>
         <li><strong>CGI for:</strong> Lifestyle renders, infographics, comparison charts, dimension images, feature callouts, variant images</li>
       </ul>
-      <p>This gives you the authenticity of real photography for the most important image (hero) while leveraging CGI's cost and flexibility for the remaining 8 images. Total cost: ₹5,000-12,000 per SKU — much less than full studio photography for all 9 images.</p>
+      <p>This gives you the authenticity of real photography for the most important image (hero) while leveraging CGI's cost and flexibility for the supporting images. Hybrid projects are custom quoted based on the photography and CGI deliverables; they are separate from the 5-image catalog package.</p>
 
       <h2>Frequently Asked Questions</h2>
       <h3>Can buyers tell the difference between CGI and real photography?</h3>
@@ -1212,7 +1211,7 @@ export const blogPosts: BlogPost[] = [
       <h3>What about products with complex textures like fabric?</h3>
       <p>CGI can handle most textures (metal, glass, plastic, wood, leather). For very complex fabrics (silk drape, knit patterns), photography may give slightly more authentic results. We'll honestly recommend the best approach for your specific product.</p>
       <h3>How much does CGI product visualization cost in India?</h3>
-      <p>At PV Labs: ₹3,000-8,000 per SKU for a complete 9-image set. This includes 3D modeling, texturing, rendering, infographic design, and Amazon compliance. Bulk packages (5+ SKUs) get additional discounts.</p>
+      <p>At PV Labs: ${listingPricing} Additional images or platform versions are quoted separately.</p>
 
       <h2>Ready to Try CGI for Your Amazon Listings?</h2>
       <p>Whether you choose photography, CGI, or a hybrid approach — the important thing is getting professional images on your listing. Phone camera shots are leaving money on the table every single day.</p>
@@ -1278,6 +1277,7 @@ export const blogPosts: BlogPost[] = [
       <h2>How PV Labs Positions This Service</h2>
       <p>At PV Labs, listing image design is treated as a performance asset — not only as creative output. Our process combines marketplace compliance, buyer psychology, and visual hierarchy tuned for Amazon India behavior.</p>
       <p>Explore service details here: <a href="/services/listing-images">Amazon Listing Images Service</a>.</p>
+      <p>${listingPricing} See our <a href="/pricing">current pricing</a> before booking.</p>
 
       <h2>Supporting Guides You Should Read Next</h2>
       <ul>
@@ -1341,6 +1341,7 @@ export const blogPosts: BlogPost[] = [
       <h2>PV Labs Approach to A+ Design</h2>
       <p>PV Labs designs A+ systems for conversion outcomes: structured narrative, visual hierarchy, category-aware messaging, and submission-safe delivery.</p>
       <p>Service details: <a href="/services/a-plus-content">Amazon A+ Content Design Service</a>.</p>
+      <p>${aPlusPricing} See our <a href="/pricing">current pricing</a> before booking.</p>
 
       <h2>Suggested Next Reads</h2>
       <ul>
@@ -1410,6 +1411,7 @@ export const blogPosts: BlogPost[] = [
       <h2>PV Labs Brand Store Service Positioning</h2>
       <p>PV Labs builds Amazon Brand Stores as conversion pathways, not static design assets. The emphasis is on structure, navigation intent, and cohesive visual storytelling across the brand journey.</p>
       <p>View service details: <a href="/services/brand-store">Amazon Brand Store Design Service</a>.</p>
+      <p>${brandStorePricing} See our <a href="/pricing">current pricing</a> before booking.</p>
 
       <h2>Recommended Follow-Up Reading</h2>
       <ul>

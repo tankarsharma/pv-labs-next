@@ -1,3 +1,5 @@
+import { listingPricing, aPlusPricing, brandStorePricing, trialPricing } from "@/lib/pricing";
+
 export type FAQLink = {
   label: string;
   href: string;
@@ -25,6 +27,14 @@ export type FAQItem = {
 };
 
 export const faqs: FAQItem[] = [
+  {
+    cat: "Pricing",
+    q: "Can I try PV Labs before booking a larger package?",
+    a: trialPricing,
+    links: [{ label: "Ask about the two-SKU trial", href: "/contact" }],
+    intent: "pricing",
+    pricingPath: "/pricing#starter-trial",
+  },
   {
     cat: "Choosing an agency",
     q: "How do I know if PV Labs is the right company for my listing work?",
@@ -60,7 +70,7 @@ export const faqs: FAQItem[] = [
   {
     cat: "Pricing",
     q: "How much do listing images cost?",
-    a: "Listing image pricing depends on SKU count, complexity, and whether you need only image support or a larger listing upgrade. Use the pricing page for current package direction, then contact PV Labs for a scope-specific recommendation.",
+    a: listingPricing,
     links: [
       { label: "View Pricing", href: "/pricing" },
       { label: "Listing Images Service", href: "/services/listing-images" },
@@ -76,7 +86,7 @@ export const faqs: FAQItem[] = [
   {
     cat: "Pricing",
     q: "How much does A+ Content cost?",
-    a: "A+ Content pricing depends on module count, storytelling depth, and whether it is bundled with listing images. It is usually best evaluated alongside your current conversion problem, not in isolation.",
+    a: aPlusPricing,
     links: [
       { label: "View Pricing", href: "/pricing" },
       { label: "A+ Content Service", href: "/services/a-plus-content" },
@@ -93,7 +103,7 @@ export const faqs: FAQItem[] = [
   {
     cat: "Pricing",
     q: "How much does storefront or brand store design cost?",
-    a: "Storefront pricing depends on structure, page count, content readiness, and how much buyer-navigation support is needed. If your product range is growing, storefront work is often scoped differently from single-listing work.",
+    a: brandStorePricing,
     links: [
       { label: "View Pricing", href: "/pricing" },
       { label: "Brand Store Service", href: "/services/brand-store" },

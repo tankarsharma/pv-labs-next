@@ -1,3 +1,4 @@
+import { aPlusPricing, brandStorePricing } from "@/lib/pricing";
 import type { Metadata } from "next";
 import Link from "next/link";
 import Navbar from "@/components/layout/Navbar";
@@ -68,7 +69,7 @@ const faqJsonLd = faqSchema(faqs);
               <li>Free for all Brand Registered sellers</li>
               <li>Increases conversion 3–10% on average (Amazon data)</li>
               <li>Delivered in 5 days, live in 8–12 days after Amazon review</li>
-              <li>Starts at ₹5,000 per ASIN</li>
+              <li>{aPlusPricing}</li>
             </ul>
             <Link
               href="/services/a-plus-content"
@@ -85,7 +86,7 @@ const faqJsonLd = faqSchema(faqs);
               <li>Free to publish, requires design investment</li>
               <li>Removes competitor ads for visitors who land there</li>
               <li>Best paired with Sponsored Brands ad traffic</li>
-              <li>Starts at ₹15,000 for a 3-page store</li>
+              <li>{brandStorePricing}</li>
             </ul>
             <Link
               href="/services/brand-store"

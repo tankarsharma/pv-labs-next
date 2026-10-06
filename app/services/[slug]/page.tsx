@@ -1,3 +1,4 @@
+import { listingPricing, aPlusPricing, brandStorePricing } from "@/lib/pricing";
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import Navbar from "@/components/layout/Navbar";
@@ -11,22 +12,22 @@ type Params = Promise<{ slug: string }>;
 
 const serviceFaqs: Record<string, { question: string; answer: string }[]> = {
   "listing-images": [
-    { question: "How much do Amazon listing images cost in India?", answer: "Professional listing image sets start at ₹499 per SKU. Bulk packages (10+ SKUs) bring per-SKU cost  ₹449. Dual-platform packages for Amazon + Flipkart are available at 30% less than ordering separately." },
-    { question: "How long does it take to get listing images?", answer: "We deliver complete image sets in 3–5 business days. This includes up to 7 images for Amazon & Flipkart, with 2 rounds of revisions included." },
+    { question: "How much do Amazon listing images cost in India?", answer: listingPricing },
+    { question: "How long does it take to get listing images?", answer: "We deliver complete image sets in 3–5 business days. The catalog package includes 5 listing images per SKU, with 2 rounds of revisions included. Extra images or platform versions are quoted separately." },
     { question: "Do you guarantee Amazon and Flipkart compliance?", answer: "Yes. 100% compliance guarantee - if your images get rejected due to spec issues, we redo them for free. Our Flipkart approval rate is 100% and Amazon approval rate is 99% on first submission." },
     { question: "Do I need to ship my product to you?", answer: "No. We use CGI-based product visualization. You send reference photos (even phone shots work), and we build photorealistic visuals No studio, no shipping, no delays." },
     { question: "What categories do you specialize in?", answer: "Skincare & Beauty, Home & Kitchen, Electronics & Gadgets, Food & Supplements, Fashion Accessories, Baby Products, and Health & Wellness. We've delivered 500+ listings across these categories." },
   ],
   "a-plus-content": [
     { question: "What is A+ Content on Amazon?", answer: "A+ Content is Amazon's premium listing feature that lets Brand Registered sellers replace plain text descriptions with rich visual modules - brand banners, comparison charts, lifestyle images, and ingredient breakdowns. It's free for all Brand Registered sellers." },
-    { question: "How much does A+ Content design cost?", answer: "A+ Content design starts at ₹1,299 per ASIN for the full 5-module/banners set. Includes 2 revision rounds, compliance guarantee, and submission support. Bulk packages (10+ ASINs) available at ₹749 per ASIN." },
+    { question: "How much does A+ Content design cost?", answer: aPlusPricing },
     { question: "What is the approval rate for A+ Content?", answer: "Our approval rate is 99% on first submission. The industry average rejection rate for first-time submissions is 30–40%. We know exactly what Amazon's review team looks for." },
     { question: "Do I need Brand Registry for A+ Content?", answer: "Yes. A+ Content requires Amazon Brand Registry. You need either a registered trademark (®) or a pending trademark application with a serial number. Even pending ™ applications are accepted by Amazon India." },
     { question: "How long does A+ Content take to get approved?", answer: "We deliver designs in 5 days. Amazon then takes 3–7 business days to review and approve. Total time from brief to live A+ Content is typically 8–12 days." },
   ],
   "brand-store": [
     { question: "What is an Amazon Brand Store?", answer: "An Amazon Brand Store is a free, multi-page shopping destination exclusively for your brand. It's the only place on Amazon where your products appear without competitor ads — like your own mini-website inside Amazon." },
-    { question: "How much does Brand Store design cost?", answer: "Brand Store design starts at ₹3,000 for a 3-page store (Home + 2 Category pages). Full stores with 5+ pages, campaign pages, and seasonal updates start at ₹10,000." },
+    { question: "How much does Brand Store design cost?", answer: brandStorePricing },
     { question: "Do I need Brand Registry for a Brand Store?", answer: "Yes. Amazon Brand Stores are only available to Brand Registered sellers. You need a registered or pending trademark to enroll in Brand Registry." },
     { question: "How does a Brand Store improve ad ROI?", answer: "Sponsored Brands ads can link directly to your Brand Store, where buyers see ONLY your products with zero competitor distractions. This typically improves ad ROAS by 25–40% compared to linking to regular product pages." },
     { question: "How long does it take to design a Brand Store?", answer: "Our process takes 8–10 business days from brief to final delivery. This includes brand audit, wireframing, full visual design, revisions, and publishing support." },
