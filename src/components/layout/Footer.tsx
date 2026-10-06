@@ -43,9 +43,9 @@ const Footer = () => {
             <h4 className="font-heading font-semibold mb-6 text-white uppercase tracking-wider text-xs">Services</h4>
             <div className="flex flex-col gap-3">
               {[
-                { label: "A+ Content", path: "/services#a-content-ebc-design" },
-                { label: "Listing Images", path: "/services#product-hero-images" },
-                { label: "Storefront", path: "/services#catalog-rpd-creation" },
+                { label: "A+ Content", path: "/services/a-plus-content" },
+                { label: "Listing Images", path: "/services/listing-images" },
+                { label: "Storefront", path: "/services/brand-store" },
                 { label: "Pricing", path: "/pricing" },
                 { label: "Case Studies", path: "/case-studies" },
                 { label: "FAQ", path: "/faq" },
