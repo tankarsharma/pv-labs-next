@@ -59,18 +59,18 @@ export default function RootLayout({
               if (!el) return;
               const href = el.getAttribute('href') || '';
               if (href.startsWith('https://wa.me/')) {
-                gtag('event', 'lead_whatsapp_click', { link_url: href });
+                gtag('event', 'lead_whatsapp_click', { link_url: href.split('?')[0] });
               } else if (href.startsWith('tel:')) {
-                gtag('event', 'lead_call_click', { link_url: href });
+                gtag('event', 'lead_call_click', { link_url: href.split('?')[0] });
               } else if (href.startsWith('mailto:')) {
-                gtag('event', 'lead_email_click', { link_url: href });
+                gtag('event', 'lead_email_click', { link_url: href.split('?')[0] });
               }
 
               // Fire a distinct GA4 event for tagged commercial CTAs (pricing, case studies, audit, service pages)
               const ctaEl = e.target.closest('a[data-cta]');
               if (ctaEl) {
                 const ctaName = ctaEl.getAttribute('data-cta') || 'unknown';
-                gtag('event', 'lead_cta_click', { cta_name: ctaName, link_url: ctaEl.getAttribute('href') || '' });
+                gtag('event', 'lead_cta_click', { cta_name: ctaName, link_url: (ctaEl.getAttribute('href') || '').split('?')[0] });
               }
             });
           `}

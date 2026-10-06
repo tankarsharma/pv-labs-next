@@ -58,7 +58,7 @@ export default function HomePage() {
           contactOption: "TollFree",
         },
         sameAs: [
-          "https://www.instagram.com/pvlabs",
+          "https://www.instagram.com/pvlabs.ai/",
           "https://www.linkedin.com/company/pvlabs",
           "https://twitter.com/pvlabsai",
         ],

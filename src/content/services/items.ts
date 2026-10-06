@@ -1,3 +1,5 @@
+import { listingPricing, aPlusPricing, brandStorePricing } from "@/lib/pricing";
+
 export type ServiceItem = {
   slug: string;
   title: string;
@@ -17,7 +19,7 @@ export const serviceItems: ServiceItem[] = [
     content: `
       <h2>What We Deliver</h2>
       <p>We create complete sets of listing images — main hero shot, infographics, lifestyle images, dimension references, comparison charts, and social proof context shots. Every image is designed to meet Amazon and Flipkart technical specifications while maximizing click-through rate and conversion.</p>
-      <p>Each listing image set includes up to 9 images for Amazon and 8 for Flipkart — all delivered in high-resolution PNG/JPEG format, ready to upload directly to Seller Central or Flipkart Seller Hub.</p>
+      <p>The catalog package includes 5 listing images per SKU, delivered in high-resolution PNG/JPEG format, ready to upload to your chosen marketplace. We agree the mix of hero, lifestyle, infographic, or comparison visuals before work starts; additional images or platform versions are quoted separately.</p>
 
       <h2>Why Listing Images Matter More Than Anything Else</h2>
       <p>On Amazon and Flipkart, your product image is the first thing buyers see in search results. In a marketplace with 12 lakh+ sellers competing for attention, your main image determines whether someone clicks or scrolls past. No click = no sale. It's that simple. Read our <a href="/blog/amazon-listing-guide-2026">complete Amazon listing image guide</a> for the full breakdown of specs, strategies, and mistakes to avoid.</p>
@@ -27,7 +29,7 @@ export const serviceItems: ServiceItem[] = [
       <h2>Our Process — From Brief to Upload-Ready</h2>
       <p><strong>Step 1 — Product Brief:</strong> You share product photos (even phone shots are fine), key features, target audience, and competitor references. We handle the rest.</p>
       <p><strong>Step 2 — CGI Modeling:</strong> We build photorealistic 3D renders of your product. No studio needed. No shipping required. This gives us complete control over lighting, angles, and backgrounds.</p>
-      <p><strong>Step 3 — Image Set Design:</strong> We design the full 9-image strategy — hero, angles, lifestyle, infographics, dimensions, ingredients/materials, comparison, and social proof.</p>
+      <p><strong>Step 3 — Image Set Design:</strong> We plan the 5-image set around your product: hero, lifestyle, infographics, dimensions, or comparison visuals, selected for your brief.</p>
       <p><strong>Step 4 — Platform Optimization:</strong> Each image is exported at platform-specific specs (1500×1500px, white background for hero, mobile-readable text on infographics) for both Amazon and Flipkart.</p>
       <p><strong>Step 5 — Delivery & Revisions:</strong> Delivered in 3–5 business days. 2 rounds of revisions included. 100% compliance guarantee — zero rejections or we redo it free.</p>
 
@@ -48,8 +50,8 @@ export const serviceItems: ServiceItem[] = [
       <p>Categories we specialize in: Skincare & Beauty, Home & Kitchen, Electronics & Gadgets, Food & Supplements, Fashion Accessories, Baby Products, and Health & Wellness.</p>
 
       <h2>Pricing</h2>
-      <p>Per-SKU pricing starts at ₹4,000 for a complete image set. Bulk packages (10+ SKUs) bring per-SKU cost below ₹3,000. Dual-platform packages (Amazon + Flipkart optimized) available at 30% less than ordering separately.</p>
-      <p>Every package includes: full image set, 2 revision rounds, platform compliance guarantee, and delivery in 3–5 business days. Check our <a href="/pricing">pricing page</a> for detailed package breakdowns.</p>
+      <p>${listingPricing}</p>
+      <p>The listing image package includes: 5 images per SKU, 2 revision rounds, platform compliance guarantee, and delivery in 3–5 business days. Check our <a href="/pricing">pricing page</a> for detailed package breakdowns.</p>
     `,
   },
   {
@@ -95,8 +97,8 @@ export const serviceItems: ServiceItem[] = [
       <p>A+ Content works best when paired with <a href="/services/listing-images">professional listing images</a> (which get the initial click) and an <a href="/services/brand-store">Amazon Brand Store</a> (which drives repeat purchases and maximizes Sponsored Brands ad ROI). Together, these three form a complete brand presence on Amazon.</p>
 
       <h2>Pricing</h2>
-      <p>A+ Content design starts at ₹5,000 per ASIN for the full 5-module set. Includes 2 revision rounds, compliance guarantee, and submission support. Bulk packages (10+ ASINs) available below ₹4,000 per ASIN.</p>
-      <p>ROI math: 5% conversion boost on a product doing ₹2,00,000/month = ₹10,000 extra revenue per month, forever. One-time ₹5,000–₹8,000 investment pays back in under 25 days. See our <a href="/pricing">pricing page</a> for all packages.</p>
+      <p>${aPlusPricing}</p>
+      <p>Module count and deliverables depend on the agreed scope. See our <a href="/pricing">pricing page</a> for the catalog packages and confirm your brief before starting.</p>
 
       <h2>Who This Is For</h2>
       <p>Any Amazon India seller with Brand Registry who wants to look like an established brand, increase conversions, and reduce returns. Whether you sell skincare, electronics, kitchen appliances, supplements, or fashion — A+ Content works across every category.</p>
@@ -144,7 +146,7 @@ export const serviceItems: ServiceItem[] = [
       <p>A Brand Store works best as part of a complete Amazon presence: <a href="/services/listing-images">professional listing images</a> drive clicks from search, <a href="/services/a-plus-content">A+ Content</a> converts browsers into buyers, and the Brand Store ties everything together — building loyalty and repeat purchases. Learn more about <a href="/blog/amazon-listing-guide-2026">optimizing your listing images</a> and <a href="/blog/amazon-a-plus-content-guide">creating high-converting A+ Content</a>.</p>
 
       <h2>Pricing</h2>
-      <p>Brand Store design starts at ₹15,000 for a 3-page store (Home + 2 Category pages). Full stores with 5+ pages, campaign pages, and seasonal updates start at ₹25,000. Includes 2 revision rounds, mobile optimization, and publishing support. See our <a href="/pricing">pricing page</a> for complete details.</p>
+      <p>${brandStorePricing} See our <a href="/pricing">pricing page</a> for the other catalog packages.</p>
       <p>For brands running Sponsored Brands ads, a well-designed Brand Store typically improves ad ROAS by 25–40% — paying for itself within the first month of ad spend.</p>
 
       <h2>Who This Is For</h2>

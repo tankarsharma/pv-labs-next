@@ -16,28 +16,10 @@ import {
   Layout,
 } from "lucide-react";
 import { useState } from "react";
+import { pricingTiers, formatPrice, pricingFaqs, trialPricing } from "@/lib/pricing";
 
 const Pricing = () => {
   const [activeTab, setActiveTab] = useState<"ecommerce" | "brand">("ecommerce");
-
-  const pricingFaqs = [
-    {
-      q: "How much does A+ Content cost?",
-      a: "A+ Content pricing depends on the number of modules, complexity of the product story, and whether it is bundled with listing images.",
-    },
-    {
-      q: "How much do listing images cost?",
-      a: "Listing image pricing depends on SKU count, category complexity, and whether you need only image support or a broader listing upgrade.",
-    },
-    {
-      q: "How much does storefront design cost?",
-      a: "Storefront pricing depends on how many pages or sections you need, how much content is already prepared, and whether it is bundled with other marketplace creative work.",
-    },
-    {
-      q: "Should I buy listing images, A+ Content, or a full listing upgrade?",
-      a: "Choose listing images if traffic is coming but clicks or first impressions are weak. Choose A+ Content if the listing lacks trust, depth, and buyer education. Choose a full listing upgrade when both top-of-page visuals and product storytelling need work.",
-    },
-  ];
 
   return (
     <div className="min-h-screen bg-gradient-to-r from-purple-50 via-white to-white text-slate-900">
@@ -146,8 +128,8 @@ const Pricing = () => {
                     <h3 className="text-2xl font-bold text-slate-900 mb-2">A+ Content</h3>
                     <p className="text-slate-500 text-sm mb-8 font-medium">Best when the listing lacks depth, trust, and buyer education</p>
                     <div className="mb-8 p-4 bg-purple-50 rounded-2xl border border-purple-100">
-                      <span className="text-5xl font-extrabold text-[#7B2FD9]">₹999</span>
-                      <span className="text-sm text-slate-500 font-bold ml-2">/ starting</span>
+                      <span className="text-5xl font-extrabold text-[#7B2FD9]">{formatPrice(pricingTiers[0].aPlus)}</span>
+                      <span className="text-sm text-slate-500 font-bold ml-2">/ SKU for 10 SKUs</span>
                       <p className="text-slate-400 text-xs mt-1 font-semibold uppercase">Depends on module count and scope</p>
                     </div>
                     <ul className="space-y-4 mb-8 flex-1">
@@ -189,9 +171,9 @@ const Pricing = () => {
                     <h3 className="text-2xl font-bold text-slate-900 mb-2">Listing Images</h3>
                     <p className="text-slate-500 text-sm mb-8 font-medium">Best when traffic is coming but first impression and click-through are weak</p>
                     <div className="mb-8 p-4 bg-gradient-to-br from-purple-50 to-blue-50 rounded-2xl border border-purple-100">
-                      <span className="text-5xl font-extrabold bg-gradient-to-r from-[#7B2FD9] to-[#60B8F0] bg-clip-text text-transparent">₹499</span>
-                      <span className="text-sm text-slate-500 font-bold ml-2">/ starting</span>
-                      <p className="text-slate-400 text-xs mt-1 font-semibold uppercase">Depends on SKU count and category complexity</p>
+                      <span className="text-5xl font-extrabold bg-gradient-to-r from-[#7B2FD9] to-[#60B8F0] bg-clip-text text-transparent">{formatPrice(pricingTiers[0].listingImages)}</span>
+                      <span className="text-sm text-slate-500 font-bold ml-2">/ SKU for 10 SKUs</span>
+                      <p className="text-slate-400 text-xs mt-1 font-semibold uppercase">5 listing images per SKU</p>
                     </div>
                     <ul className="space-y-4 mb-8 flex-1">
                       {[
@@ -300,10 +282,10 @@ const Pricing = () => {
                           <br />
                           <span className="text-slate-400 font-medium text-xs">(5 images per SKU)</span>
                         </td>
-                        <td className="p-6 text-center text-slate-600 font-medium text-sm">₹499/SKU</td>
-                        <td className="p-6 text-center text-slate-600 font-medium text-sm">₹449/SKU</td>
+                        <td className="p-6 text-center text-slate-600 font-medium text-sm">{formatPrice(pricingTiers[0].listingImages)}/SKU</td>
+                        <td className="p-6 text-center text-slate-600 font-medium text-sm">{formatPrice(pricingTiers[1].listingImages)}/SKU</td>
                         <td className="p-6 text-center text-slate-900 font-bold text-lg bg-purple-50/30">
-                          ₹399<span className="text-xs font-normal text-slate-500">/SKU</span>
+                          {formatPrice(pricingTiers[2].listingImages)}<span className="text-xs font-normal text-slate-500">/SKU</span>
                         </td>
                       </tr>
                       <tr className="border-b border-slate-100 hover:bg-slate-50 transition-colors">
@@ -312,10 +294,10 @@ const Pricing = () => {
                           <br />
                           <span className="text-slate-400 font-medium text-xs">(scope-based support)</span>
                         </td>
-                        <td className="p-6 text-center text-slate-600 font-medium text-sm">₹999/SKU</td>
-                        <td className="p-6 text-center text-slate-600 font-medium text-sm">₹899/SKU</td>
+                        <td className="p-6 text-center text-slate-600 font-medium text-sm">{formatPrice(pricingTiers[0].aPlus)}/SKU</td>
+                        <td className="p-6 text-center text-slate-600 font-medium text-sm">{formatPrice(pricingTiers[1].aPlus)}/SKU</td>
                         <td className="p-6 text-center text-slate-900 font-bold text-lg bg-purple-50/30">
-                          ₹799<span className="text-xs font-normal text-slate-500">/SKU</span>
+                          {formatPrice(pricingTiers[2].aPlus)}<span className="text-xs font-normal text-slate-500">/SKU</span>
                         </td>
                       </tr>
                       <tr className="bg-gradient-to-r from-white to-purple-50 border-l-[6px] border-[#7B2FD9]">
@@ -325,15 +307,24 @@ const Pricing = () => {
                             RECOMMENDED
                           </span>
                         </td>
-                        <td className="p-6 text-center text-[#7B2FD9] font-bold text-sm">₹1299/SKU</td>
-                        <td className="p-7 text-center text-[#7B2FD9] font-bold text-sm">₹999/SKU</td>
+                        <td className="p-6 text-center text-[#7B2FD9] font-bold text-sm">{formatPrice(pricingTiers[0].fullUpgrade)}/SKU</td>
+                        <td className="p-7 text-center text-[#7B2FD9] font-bold text-sm">{formatPrice(pricingTiers[1].fullUpgrade)}/SKU</td>
                         <td className="p-6 text-center text-[#7B2FD9] font-extrabold text-xl bg-purple-100/50">
-                          ₹799<span className="text-xs font-normal text-slate-500">/SKU</span>
+                          {formatPrice(pricingTiers[2].fullUpgrade)}<span className="text-xs font-normal text-slate-500">/SKU</span>
                         </td>
                       </tr>
                     </tbody>
                   </table>
                 </div>
+              </section>
+
+              <section id="starter-trial" className="bg-white p-8 md:p-10 rounded-[24px] border border-purple-200 shadow-lg">
+                <p className="text-[#7B2FD9] text-xs font-bold uppercase tracking-widest mb-3">Try PV Labs first</p>
+                <h2 className="text-2xl md:text-3xl font-bold text-slate-900 mb-4">Start with two SKUs before committing to your catalog.</h2>
+                <p className="text-slate-600 leading-relaxed max-w-3xl">{trialPricing}</p>
+                <Link href="/contact" data-cta="starter-trial" className="mt-6 inline-flex items-center gap-2 bg-[#7B2FD9] text-white px-6 py-3 rounded-full font-bold">
+                  Ask about the two-SKU trial <ArrowRight size={18} />
+                </Link>
               </section>
 
               <section className="grid md:grid-cols-3 gap-6">
@@ -407,10 +398,10 @@ const Pricing = () => {
                     {pricingFaqs.map((faq, i) => (
                       <details key={i} className="bg-white p-6 rounded-[24px] border border-slate-100 shadow-sm">
                         <summary className="cursor-pointer font-bold text-slate-900 list-none flex items-center justify-between gap-4">
-                          {faq.q}
+                          {faq.question}
                           <span className="text-[#7B2FD9] text-xl">+</span>
                         </summary>
-                        <p className="text-slate-600 mt-4 leading-relaxed">{faq.a}</p>
+                        <p className="text-slate-600 mt-4 leading-relaxed">{faq.answer}</p>
                       </details>
                     ))}
                   </div>
