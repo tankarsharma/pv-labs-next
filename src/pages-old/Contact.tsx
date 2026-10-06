@@ -80,23 +80,11 @@ const Contact = () => {
             <div className="glass-card p-8 md:p-10 shadow-xl h-full">
               <div className="mb-8">
                 <h2 className="font-heading text-3xl font-extrabold mb-3 text-foreground">
-                  Share your project details — optional
+                  Share your project details
                 </h2>
                 <p className="text-base text-muted-foreground max-w-2xl">
-                  Choose what applies, or skip this and chat with us directly. Your choices will be included in your message.
+                  Choose what applies. Your choices will be included in your message.
                 </p>
-              </div>
-
-              <div className="mb-8">
-                <a
-                  href={whatsappContactUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  data-cta="contact-direct-whatsapp"
-                  className="inline-flex items-center gap-2 text-green-700 font-semibold underline underline-offset-4 rounded focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2"
-                >
-                  <FaWhatsapp size={20} /> Skip the details — chat directly on WhatsApp
-                </a>
               </div>
 
               <div className="space-y-8">
@@ -111,7 +99,7 @@ const Contact = () => {
 
                 <div>
                   <label htmlFor="project-details" className="block font-heading text-lg font-bold text-foreground mb-3">
-                    Listing link or extra details <span className="text-sm font-normal text-muted-foreground">(optional)</span>
+                    Listing link or extra details
                   </label>
                   <textarea
                     id="project-details"
@@ -178,6 +166,18 @@ const Contact = () => {
                       <Mail size={18} /> Continue by email
                     </a>
                   </div>
+                </div>
+
+                <div className="pt-6 border-t border-slate-200">
+                  <a
+                    href={whatsappContactUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    data-cta="contact-direct-whatsapp"
+                    className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-2xl border border-green-600 text-green-700 font-semibold hover:bg-green-50 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2"
+                  >
+                    <FaWhatsapp size={20} /> Skip the details — chat directly on WhatsApp
+                  </a>
                 </div>
               </div>
             </div>
@@ -291,7 +291,7 @@ const ContactChoiceGroup = ({
 }) => (
   <fieldset>
     <legend className="font-heading text-lg font-bold text-foreground mb-3">
-      {group.title} <span className="text-sm font-normal text-muted-foreground">(optional)</span>
+      {group.title}
     </legend>
     <p className="text-xs text-muted-foreground mb-3">
       {group.multiple ? "Choose any that apply. Click again to remove." : "Choose one. Click again to remove."}

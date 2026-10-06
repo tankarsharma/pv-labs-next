@@ -16,7 +16,7 @@ export const contactGroups = [
   },
   {
     key: "skuCounts", title: "Number of SKUs", multiple: false,
-    items: ["1 SKU", "2–10 SKUs", "11–25 SKUs", "26–50 SKUs", "50+ SKUs"],
+    items: ["2 SKUs", "3–10 SKUs", "11–25 SKUs", "26–50 SKUs", "50+ SKUs"],
   },
   {
     key: "budgetRanges", title: "Budget range", multiple: false,

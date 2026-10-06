@@ -10,7 +10,7 @@ vi.mock("framer-motion", () => ({ motion: { div: ({ children }: { children: Reac
 afterEach(() => { cleanup(); vi.restoreAllMocks(); });
 
 const preview = () => screen.getByLabelText("Your message") as HTMLTextAreaElement;
-const choose = (group: string, choice: string) => fireEvent.click(within(screen.getByRole("group", { name: `${group} (optional)` })).getByRole("button", { name: choice }));
+const choose = (group: string, choice: string) => fireEvent.click(within(screen.getByRole("group", { name: group })).getByRole("button", { name: choice }));
 
 describe("optional contact enquiry", () => {
   it("allows WhatsApp contact without any selections and leaves direct chat independent of the brief", () => {
@@ -18,6 +18,10 @@ describe("optional contact enquiry", () => {
     render(<Contact />);
     const direct = screen.getByRole("link", { name: /Skip the details/ });
     expect(direct).toHaveAttribute("href", whatsappContactUrl);
+    expect(document.body.textContent).not.toMatch(/optional/i);
+    const skuChoices = within(screen.getByRole("group", { name: "Number of SKUs" })).getAllByRole("button");
+    expect(skuChoices.map((button) => button.textContent)).toEqual(["2 SKUs", "3–10 SKUs", "11–25 SKUs", "26–50 SKUs", "50+ SKUs"]);
+    expect(screen.getByRole("link", { name: "Continue by email" }).compareDocumentPosition(direct) & Node.DOCUMENT_POSITION_FOLLOWING).toBeTruthy();
     expect(preview().value).toBe("Hi PV Labs, I'd like to discuss a project.");
     expect(screen.queryByRole("button", { name: "Clear all details" })).not.toBeInTheDocument();
     fireEvent.click(screen.getByRole("link", { name: "Continue on WhatsApp" }));
@@ -33,7 +37,7 @@ describe("optional contact enquiry", () => {
     choose("Project type", "A+ Content");
     choose("Marketplace", "Amazon");
     choose("Marketplace", "Flipkart");
-    choose("Number of SKUs", "2–10 SKUs");
+    choose("Number of SKUs", "3–10 SKUs");
     choose("Budget range", "Under ₹5,000");
     fireEvent.change(screen.getByLabelText(/Listing link or extra details/), { target: { value: "https://example.com/item?a=1&b=2 — Café + jewellery" } });
     expect(preview().value).toContain("Project type: A+ Content, Listing Images");
@@ -54,9 +58,9 @@ describe("optional contact enquiry", () => {
 
   it("replaces single choices and lets visitors deselect every choice", () => {
     render(<Contact />);
-    choose("Number of SKUs", "1 SKU");
+    choose("Number of SKUs", "2 SKUs");
     choose("Number of SKUs", "50+ SKUs");
-    expect(screen.getByRole("button", { name: "1 SKU" })).toHaveAttribute("aria-pressed", "false");
+    expect(screen.getByRole("button", { name: "2 SKUs" })).toHaveAttribute("aria-pressed", "false");
     expect(preview().value).toContain("Number of SKUs: 50+ SKUs");
     choose("Number of SKUs", "50+ SKUs");
     expect(preview().value).not.toContain("Number of SKUs:");
