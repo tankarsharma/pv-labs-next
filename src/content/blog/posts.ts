@@ -15,6 +15,12 @@ export type BlogPost = {
   featured: boolean;
   image: { src: string } | string;
   content: string;
+  contactCta?: {
+    heading: string;
+    description: string;
+    label: string;
+    href: string;
+  };
 };
 
 export const blogPosts: BlogPost[] = [
@@ -1222,6 +1228,12 @@ export const blogPosts: BlogPost[] = [
   
   {
     slug: "amazon-listing-images-design-service-guide",
+    contactCta: {
+      heading: "Need listing images for your products?",
+      description: "Share your product links and SKU count so we can confirm the right scope for your listing images.",
+      label: "Discuss Listing Images",
+      href: "/contact?service=listing-images",
+    },
     title: "Amazon Listing Images Design Service: What Indian Sellers Should Expect in 2026",
     description:
       "A complete deep-dive on Amazon listing image design services in India — deliverables, process, turnaround, compliance, pricing models, and how to evaluate ROI before hiring.",
@@ -1289,6 +1301,12 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: "amazon-a-plus-content-design-service-guide",
+    contactCta: {
+      heading: "Plan your A+ Content with PV Labs",
+      description: "Share your product links and SKU count so we can discuss the modules and visuals your brand needs.",
+      label: "Discuss A+ Content",
+      href: "/contact?service=a-plus-content",
+    },
     title: "Amazon A+ Content Design Service: Complete Hiring & Strategy Guide for Indian Brands",
     description:
       "A deep-dive guide on Amazon A+ Content design services in India — module planning, storytelling structure, approval-safe copy, visual systems, pricing expectations, and ROI model.",
@@ -1353,6 +1371,12 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: "amazon-brand-store-design-service-guide",
+    contactCta: {
+      heading: "Get a quote for your Amazon Brand Store",
+      description: "Tell us about your product range and store requirements. We will quote based on your agreed scope.",
+      label: "Request a Brand Store Quote",
+      href: "/contact?service=brand-store",
+    },
     title: "Amazon Brand Store Design Service: Full Guide for Indian Brands in 2026",
     description:
       "Complete guide to Amazon Brand Store design services in India — storefront architecture, page strategy, UX flow, creative structure, ad landing optimization, and performance benchmarks.",

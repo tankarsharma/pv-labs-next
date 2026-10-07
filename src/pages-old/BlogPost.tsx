@@ -1,11 +1,11 @@
-﻿"use client";
+"use client";
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import { motion, useScroll, useSpring } from "framer-motion";
-import { ArrowLeft, Clock, User, Calendar, Sparkles, ShieldCheck, ArrowRight, Twitter, Linkedin, Facebook, Link as LinkIcon } from "lucide-react";
-import { socialLinks } from "@/lib/social-links";
+import { ArrowLeft, Clock, User, Calendar, Sparkles, ShieldCheck, Twitter, Linkedin, Facebook } from "lucide-react";
+import { FaWhatsapp } from "react-icons/fa";
 import serviceBranding from "../assets/Blog11.png";
 import serviceWebdesign from "../assets/Blog22.png";
 import serviceAppdesign from "../assets/Blog33.png";
@@ -13,14 +13,13 @@ import serviceSocial from "@/assets/service-social.jpg";
 import { getBlogPostBySlug } from "@/content/blog/posts";
 import { listingPricing, aPlusPricing, formatPrice, pricingTiers } from "@/lib/pricing";
 
-const blogData: Record<string, any> = {
+const blogData = {
     "amazon-product-image-size-guide-2026": {
     title: "Amazon Product Image Size Guide 2026: Complete Requirements & Best Practices",
     category: "Guide",
     subtitle: "Image Size & Compliance",
     author: "Tankaar Sharma",
     date: "August 10, 2026",
-    readTime: "12 min",
     image: null,
     content: (
       <div className="space-y-8 sm:space-y-10 md:space-y-12 lg:space-y-16">
@@ -306,9 +305,9 @@ const blogData: Record<string, any> = {
               <p className="text-gray-400 text-[11px] sm:text-xs md:text-sm lg:text-base mb-4 sm:mb-5 md:mb-6 leading-relaxed px-2">
                 5 listing images per SKU. Marketplace-ready. 3-5 day delivery. If Amazon rejects any image, we redo it free.
               </p>
-              <button className="w-full sm:w-auto px-4 sm:px-6 md:px-10 py-2 sm:py-2.5 md:py-4 bg-primary hover:bg-accent text-white font-black uppercase tracking-widest text-[9px] sm:text-[10px] md:text-xs rounded-xl transition-all">
+              <Link href="/contact?service=listing-images" data-cta="blog-contact" className="inline-block text-center focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 w-full sm:w-auto px-4 sm:px-6 md:px-10 py-2 sm:py-2.5 md:py-4 bg-primary hover:bg-accent text-white font-black uppercase tracking-widest text-[9px] sm:text-[10px] md:text-xs rounded-xl transition-all">
                 Get Your Images Done →
-              </button>
+              </Link>
             </div>
           </div>
         </section>
@@ -321,7 +320,6 @@ const blogData: Record<string, any> = {
     subtitle: "Amazon India Seller Guide",
     author: "Tankaar Sharma",
     date: "August 12, 2026",
-    readTime: "18 min",
     image: null,
     content: (
       <div className="space-y-8 sm:space-y-10 md:space-y-12 lg:space-y-16">
@@ -518,9 +516,9 @@ const blogData: Record<string, any> = {
               <p className="text-gray-400 text-[11px] sm:text-xs md:text-sm lg:text-base mb-4 sm:mb-5 md:mb-6 leading-relaxed px-2">
                 Professional listing images are the #1 factor that separates successful sellers from failures. Get yours done in 3-5 days.
               </p>
-              <button className="w-full sm:w-auto px-4 sm:px-6 md:px-10 py-2 sm:py-2.5 md:py-4 bg-primary hover:bg-accent text-white font-black uppercase tracking-widest text-[9px] sm:text-[10px] md:text-xs rounded-xl transition-all">
+              <Link href="/contact" data-cta="blog-contact" className="inline-block text-center focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 w-full sm:w-auto px-4 sm:px-6 md:px-10 py-2 sm:py-2.5 md:py-4 bg-primary hover:bg-accent text-white font-black uppercase tracking-widest text-[9px] sm:text-[10px] md:text-xs rounded-xl transition-all">
                 Get Free Listing Strategy Call →
-              </button>
+              </Link>
             </div>
           </div>
         </section>
@@ -533,7 +531,6 @@ const blogData: Record<string, any> = {
     subtitle: "CTR & Conversion Optimization",
     author: "Rudra",
     date: "March 20, 2026",
-    readTime: "8 min",
     image: serviceBranding,
     content: (
       <div className="space-y-8 sm:space-y-10 md:space-y-12 lg:space-y-16">
@@ -673,7 +670,7 @@ const blogData: Record<string, any> = {
           <div className="max-w-2xl">
             <h2 className="text-2xl font-black text-gray-900 mb-4">Do You Need a Studio Shoot?</h2>
             <p className="text-gray-600 font-medium leading-relaxed mb-6">
-              In-house studio shoots in India cost <span className="text-gray-900 font-bold">â‚¹8,000â€“â‚¹40,000 per SKU</span>.
+              In-house studio shoots in India cost <span className="text-gray-900 font-bold">₹8,000–₹40,000 per SKU</span>.
               The alternative? <span className="text-primary font-bold">Catalog-quality CGI</span>.
               Same output, fraction of the cost, and you never need to ship your product anywhere.
               This is how modern Amazon brands scale.
@@ -723,9 +720,9 @@ const blogData: Record<string, any> = {
               <p className="text-gray-400 text-[11px] sm:text-xs md:text-sm lg:text-base mb-4 sm:mb-5 md:mb-6 leading-relaxed px-2">
                 Want us to audit your current Amazon listing images for free?
               </p>
-              <button className="w-full sm:w-auto px-4 sm:px-6 md:px-10 py-2 sm:py-2.5 md:py-4 bg-primary hover:bg-accent text-white font-black uppercase tracking-widest text-[9px] sm:text-[10px] md:text-xs lg:text-sm rounded-lg sm:rounded-xl md:rounded-2xl transition-all duration-300 hover:shadow-lg hover:shadow-primary/30 active:scale-95 shadow-md">
+              <Link href="/contact?service=listing-images" data-cta="blog-contact" className="inline-block text-center focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 w-full sm:w-auto px-4 sm:px-6 md:px-10 py-2 sm:py-2.5 md:py-4 bg-primary hover:bg-accent text-white font-black uppercase tracking-widest text-[9px] sm:text-[10px] md:text-xs lg:text-sm rounded-lg sm:rounded-xl md:rounded-2xl transition-all duration-300 hover:shadow-lg hover:shadow-primary/30 active:scale-95 shadow-md">
                 Get Free Listing Audit →
-              </button>
+              </Link>
             </div>
           </div>
         </section>
@@ -827,7 +824,6 @@ const blogData: Record<string, any> = {
     subtitle: "Brand Growth Strategy",
     author: "Tankaar Sharma",
     date: "March 25, 2026",
-    readTime: "7 min",
     image: serviceWebdesign,
     content: (
       <div className="space-y-8 sm:space-y-10 md:space-y-12 lg:space-y-16">
@@ -892,7 +888,7 @@ const blogData: Record<string, any> = {
           <div className="grid md:grid-cols-2 gap-12">
             <div>
               <p className="text-gray-300 text-sm leading-relaxed mb-6">
-                Amazon's data shows A+ Content increases conversion rates by <span className="text-white font-bold">3â€“10%</span> on average. For high-competition Indian categories, it's even higher.
+                Amazon's data shows A+ Content increases conversion rates by <span className="text-white font-bold">3–10%</span> on average. For high-competition Indian categories, it's even higher.
               </p>
               <div className="p-6 bg-purple-500/10 rounded-2xl border border-purple-500/20">
                 <span className="text-4xl font-black text-purple-400 mb-2 block">38%</span>
@@ -994,9 +990,9 @@ const blogData: Record<string, any> = {
               <p className="text-purple-200/90 text-[11px] sm:text-xs md:text-sm lg:text-base mb-4 sm:mb-5 md:mb-6 leading-relaxed px-2">
                 Need high-converting A+ modules designed in 5 days?
               </p>
-              <button className="w-full sm:w-auto px-4 sm:px-6 md:px-10 py-2 sm:py-2.5 md:py-4 bg-white hover:bg-purple-50 text-purple-900 font-black uppercase tracking-widest text-[9px] sm:text-[10px] md:text-xs lg:text-sm rounded-lg sm:rounded-xl md:rounded-2xl transition-all duration-300 hover:shadow-lg hover:shadow-purple-600/30 active:scale-95 shadow-md">
+              <Link href="/contact?service=a-plus-content" data-cta="blog-contact" className="inline-block text-center focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 w-full sm:w-auto px-4 sm:px-6 md:px-10 py-2 sm:py-2.5 md:py-4 bg-white hover:bg-purple-50 text-purple-900 font-black uppercase tracking-widest text-[9px] sm:text-[10px] md:text-xs lg:text-sm rounded-lg sm:rounded-xl md:rounded-2xl transition-all duration-300 hover:shadow-lg hover:shadow-purple-600/30 active:scale-95 shadow-md">
                 Get Your A+ Content Done →
-              </button>
+              </Link>
             </div>
           </div>
         </section>
@@ -1134,7 +1130,6 @@ const blogData: Record<string, any> = {
     subtitle: "Seller Compliance Guide",
     author: "Rudra",
     date: "March 28, 2026",
-    readTime: "6 min",
     image: serviceAppdesign,
     content: (
       <div className="space-y-8 sm:space-y-10 md:space-y-12 lg:space-y-16">
@@ -1340,9 +1335,9 @@ const blogData: Record<string, any> = {
               <p className="text-blue-200/90 text-[11px] sm:text-xs md:text-sm lg:text-base mb-4 sm:mb-5 md:mb-6 lg:mb-8 leading-relaxed px-2">
                 We create 100% Flipkart-compliant listing image sets with zero rejections guaranteed.
               </p>
-              <button className="w-full sm:w-auto px-4 sm:px-6 md:px-8 lg:px-10 py-2 sm:py-2.5 md:py-3 lg:py-4 bg-blue-600 hover:bg-blue-500 text-white font-black uppercase tracking-widest text-[9px] sm:text-[10px] md:text-xs lg:text-sm rounded-lg sm:rounded-xl lg:rounded-2xl transition-all duration-300 hover:shadow-lg hover:shadow-blue-600/30 active:scale-95 shadow-md">
+              <Link href="/contact?service=listing-images" data-cta="blog-contact" className="inline-block text-center focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 w-full sm:w-auto px-4 sm:px-6 md:px-8 lg:px-10 py-2 sm:py-2.5 md:py-3 lg:py-4 bg-blue-600 hover:bg-blue-500 text-white font-black uppercase tracking-widest text-[9px] sm:text-[10px] md:text-xs lg:text-sm rounded-lg sm:rounded-xl lg:rounded-2xl transition-all duration-300 hover:shadow-lg hover:shadow-blue-600/30 active:scale-95 shadow-md">
                 Get Flipkart-Ready Images →
-              </button>
+              </Link>
             </div>
           </div>
         </section>
@@ -1480,7 +1475,6 @@ const blogData: Record<string, any> = {
     subtitle: "Amazon Seller Registration (Hindi)",
     author: "Tankaar Sharma",
     date: "August 14, 2026",
-    readTime: "15 min",
     image: null,
     content: (
       <div className="space-y-8 sm:space-y-10 md:space-y-12 lg:space-y-16">
@@ -1599,9 +1593,9 @@ const blogData: Record<string, any> = {
               <p className="text-gray-400 text-[11px] sm:text-xs md:text-sm lg:text-base mb-4 sm:mb-5 md:mb-6 leading-relaxed px-2">
                 PV Labs mein hum CGI-based product images banate hain. Product ship karne ki zaroorat nahi. 3-5 din delivery.
               </p>
-              <button className="w-full sm:w-auto px-4 sm:px-6 md:px-10 py-2 sm:py-2.5 md:py-4 bg-primary hover:bg-accent text-white font-black uppercase tracking-widest text-[9px] sm:text-[10px] md:text-xs rounded-xl transition-all">
+              <Link href="/contact" data-cta="blog-contact" className="inline-block text-center focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 w-full sm:w-auto px-4 sm:px-6 md:px-10 py-2 sm:py-2.5 md:py-4 bg-primary hover:bg-accent text-white font-black uppercase tracking-widest text-[9px] sm:text-[10px] md:text-xs rounded-xl transition-all">
                 Free Consultation Lein →
-              </button>
+              </Link>
             </div>
           </div>
         </section>
@@ -1614,7 +1608,6 @@ const blogData: Record<string, any> = {
     subtitle: "A+ Content Strategy",
     author: "Tankaar Sharma",
     date: "August 15, 2026",
-    readTime: "16 min",
     image: null,
     content: (
       <div className="space-y-8 sm:space-y-10 md:space-y-12 lg:space-y-16">
@@ -1767,9 +1760,9 @@ const blogData: Record<string, any> = {
               <p className="text-purple-200/90 text-[11px] sm:text-xs md:text-sm lg:text-base mb-4 sm:mb-5 md:mb-6 leading-relaxed px-2">
                 5 custom modules + brand story + comparison chart. Delivered in 5 business days.
               </p>
-              <button className="w-full sm:w-auto px-4 sm:px-6 md:px-10 py-2 sm:py-2.5 md:py-4 bg-white hover:bg-purple-50 text-purple-900 font-black uppercase tracking-widest text-[9px] sm:text-[10px] md:text-xs rounded-xl transition-all">
+              <Link href="/contact?service=a-plus-content" data-cta="blog-contact" className="inline-block text-center focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 w-full sm:w-auto px-4 sm:px-6 md:px-10 py-2 sm:py-2.5 md:py-4 bg-white hover:bg-purple-50 text-purple-900 font-black uppercase tracking-widest text-[9px] sm:text-[10px] md:text-xs rounded-xl transition-all">
                 Get A+ Content Done →
-              </button>
+              </Link>
             </div>
           </div>
         </section>
@@ -1782,7 +1775,6 @@ const blogData: Record<string, any> = {
     subtitle: "FBA Fulfillment Guide",
     author: "Tankaar Sharma",
     date: "August 16, 2026",
-    readTime: "16 min",
     image: null,
     content: (
       <div className="space-y-8 sm:space-y-10 md:space-y-12 lg:space-y-16">
@@ -1944,9 +1936,9 @@ const blogData: Record<string, any> = {
               <p className="text-gray-400 text-[11px] sm:text-xs md:text-sm lg:text-base mb-4 sm:mb-5 md:mb-6 leading-relaxed px-2">
                 FBA gives you fast delivery. Professional images give you clicks. Together = Amazon success formula.
               </p>
-              <button className="w-full sm:w-auto px-4 sm:px-6 md:px-10 py-2 sm:py-2.5 md:py-4 bg-primary hover:bg-accent text-white font-black uppercase tracking-widest text-[9px] sm:text-[10px] md:text-xs rounded-xl transition-all">
+              <Link href="/contact?service=listing-images" data-cta="blog-contact" className="inline-block text-center focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 w-full sm:w-auto px-4 sm:px-6 md:px-10 py-2 sm:py-2.5 md:py-4 bg-primary hover:bg-accent text-white font-black uppercase tracking-widest text-[9px] sm:text-[10px] md:text-xs rounded-xl transition-all">
                 Get Free Listing Audit →
-              </button>
+              </Link>
             </div>
           </div>
         </section>
@@ -1959,7 +1951,6 @@ const blogData: Record<string, any> = {
     subtitle: "Amazon Listing Guide (Hindi)",
     author: "Tankaar Sharma",
     date: "August 16, 2026",
-    readTime: "14 min",
     image: null,
     content: (
       <div className="space-y-8 sm:space-y-10 md:space-y-12 lg:space-y-16">
@@ -2082,9 +2073,9 @@ const blogData: Record<string, any> = {
               <p className="text-gray-400 text-[11px] sm:text-xs md:text-sm lg:text-base mb-4 sm:mb-5 md:mb-6 leading-relaxed px-2">
                 PV Labs: CGI-based Amazon images. Product bhejne ki zaroorat nahi. 3-5 din delivery. Zero rejection.
               </p>
-              <button className="w-full sm:w-auto px-4 sm:px-6 md:px-10 py-2 sm:py-2.5 md:py-4 bg-primary hover:bg-accent text-white font-black uppercase tracking-widest text-[9px] sm:text-[10px] md:text-xs rounded-xl transition-all">
+              <Link href="/contact" data-cta="blog-contact" className="inline-block text-center focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 w-full sm:w-auto px-4 sm:px-6 md:px-10 py-2 sm:py-2.5 md:py-4 bg-primary hover:bg-accent text-white font-black uppercase tracking-widest text-[9px] sm:text-[10px] md:text-xs rounded-xl transition-all">
                 Free Consultation →
-              </button>
+              </Link>
             </div>
           </div>
         </section>
@@ -2097,7 +2088,6 @@ const blogData: Record<string, any> = {
     subtitle: "Photography vs CGI",
     author: "Tankaar Sharma",
     date: "August 16, 2026",
-    readTime: "14 min",
     image: null,
     content: (
       <div className="space-y-8 sm:space-y-10 md:space-y-12 lg:space-y-16">
@@ -2224,9 +2214,9 @@ const blogData: Record<string, any> = {
               <p className="text-gray-400 text-[11px] sm:text-xs md:text-sm lg:text-base mb-4 sm:mb-5 md:mb-6 leading-relaxed px-2">
                 Send us your current listing. We'll show you what professional CGI images would look like — free, no commitment.
               </p>
-              <button className="w-full sm:w-auto px-4 sm:px-6 md:px-10 py-2 sm:py-2.5 md:py-4 bg-primary hover:bg-accent text-white font-black uppercase tracking-widest text-[9px] sm:text-[10px] md:text-xs rounded-xl transition-all">
+              <Link href="/contact?service=listing-images" data-cta="blog-contact" className="inline-block text-center focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 w-full sm:w-auto px-4 sm:px-6 md:px-10 py-2 sm:py-2.5 md:py-4 bg-primary hover:bg-accent text-white font-black uppercase tracking-widest text-[9px] sm:text-[10px] md:text-xs rounded-xl transition-all">
                 Get Free Listing Audit →
-              </button>
+              </Link>
             </div>
           </div>
         </section>
@@ -2238,13 +2228,16 @@ const blogData: Record<string, any> = {
 type BlogPostProps = { slug: string };
 const BlogPost = ({ slug }: BlogPostProps) => {
   const legacyPost = slug ? blogData[slug] : null;
-  const publishedPost = !legacyPost && slug ? getBlogPostBySlug(slug) : null;
-  const post = legacyPost ?? (publishedPost ? {
+  const publishedPost = slug ? getBlogPostBySlug(slug) : null;
+  const post = publishedPost ? {
     ...publishedPost,
-    subtitle: publishedPost.category,
+    ...legacyPost,
+    // Listing cards and article pages share the same reading-time metadata.
+    readTime: publishedPost.readTime,
+    subtitle: legacyPost?.subtitle ?? publishedPost.category,
     // HTML comes from the repository's authored content, not user input.
-    content: <div dangerouslySetInnerHTML={{ __html: publishedPost.content }} />,
-  } : null);
+    content: legacyPost?.content ?? <div dangerouslySetInnerHTML={{ __html: publishedPost.content }} />,
+  } : null;
 
   const { scrollYProgress } = useScroll();
   const scaleX = useSpring(scrollYProgress, {
@@ -2256,6 +2249,15 @@ const BlogPost = ({ slug }: BlogPostProps) => {
   if (!post) {
     notFound();
   }
+
+  const articleUrl = `https://pvlabs.ai/blog/${publishedPost.slug}`;
+  const encodedUrl = encodeURIComponent(articleUrl);
+  const shareLinks = [
+    { name: "LinkedIn", icon: Linkedin, href: `https://www.linkedin.com/sharing/share-offsite/?url=${encodedUrl}` },
+    { name: "Facebook", icon: Facebook, href: `https://www.facebook.com/sharer/sharer.php?u=${encodedUrl}` },
+    { name: "WhatsApp", icon: FaWhatsapp, href: `https://api.whatsapp.com/send?text=${encodeURIComponent(`${post.title} ${articleUrl}`)}` },
+    { name: "X", icon: Twitter, href: `https://twitter.com/intent/tweet?url=${encodedUrl}&text=${encodeURIComponent(post.title)}` },
+  ];
 
   return (
     <div className="min-h-screen bg-white">
@@ -2312,10 +2314,10 @@ const BlogPost = ({ slug }: BlogPostProps) => {
         <section className="px-4 sm:px-6 md:px-12 pb-20 md:pb-24 ">
           <div className="max-w-7xl mx-auto">
             <div className="grid lg:grid-cols-[80px_1fr] gap-8 md:gap-12">
-              <div className="hidden lg:flex flex-col gap-4 sticky top-40 h-fit">
+              <div className="flex flex-wrap lg:flex-col gap-4 lg:sticky top-40 h-fit items-center">
                 <p className="text-[8px] font-black text-gray-400 uppercase tracking-widest text-center mb-2">Share</p>
-                {socialLinks.slice(0, 4).map((link, i) => (
-                  <a key={i} href={link.href} target="_blank" rel="noreferrer" className="w-10 h-10 rounded-xl bg-gray-50 flex items-center justify-center text-gray-400 hover:text-primary transition-all hover:scale-110 border border-gray-100/50">
+                {shareLinks.map((link) => (
+                  <a key={link.name} href={link.href} target="_blank" rel="noopener noreferrer" aria-label={`Share article on ${link.name}`} title={`Share on ${link.name}`} className="w-10 h-10 rounded-xl bg-gray-50 flex items-center justify-center text-gray-400 hover:text-primary transition-all hover:scale-110 border border-gray-100/50">
                     <link.icon size={18} />
                   </a>
                 ))}
@@ -2323,6 +2325,15 @@ const BlogPost = ({ slug }: BlogPostProps) => {
 
               <div className="prose prose-slate max-w-none">
                 {post.content}
+                {publishedPost.contactCta && (
+                  <section aria-label="Discuss your project with PV Labs" className="not-prose mt-12 rounded-2xl bg-slate-900 p-6 sm:p-10 text-center">
+                    <h2 className="text-xl sm:text-2xl font-bold text-white mb-3">{publishedPost.contactCta.heading}</h2>
+                    <p className="text-slate-300 mb-6">{publishedPost.contactCta.description}</p>
+                    <Link href={publishedPost.contactCta.href} data-cta="blog-contact" className="inline-block rounded-xl bg-primary px-6 py-3 font-bold text-white hover:bg-accent focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4">
+                      {publishedPost.contactCta.label} →
+                    </Link>
+                  </section>
+                )}
               </div>
             </div>
           </div>
