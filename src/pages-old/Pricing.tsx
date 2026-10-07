@@ -320,7 +320,7 @@ const Pricing = () => {
 
               <section id="starter-trial" className="bg-white p-8 md:p-10 rounded-[24px] border border-purple-200 shadow-lg">
                 <p className="text-[#7B2FD9] text-xs font-bold uppercase tracking-widest mb-3">Starter Trial Pack</p>
-                <h2 className="text-2xl md:text-3xl font-bold text-slate-900 mb-4">Start small. See the quality.</h2>
+                <h2 className="text-2xl md:text-3xl font-bold text-slate-900 mb-4">Before you trust us with your full catalog, test us with 2 SKUs.</h2>
                 <p className="text-slate-600 leading-relaxed max-w-3xl">{trialPricing}</p>
                 <Link href="/contact" data-cta="starter-trial" className="mt-6 inline-flex items-center gap-2 bg-[#7B2FD9] text-white px-6 py-3 rounded-full font-bold">
                   Start with 2 SKUs <ArrowRight size={18} />
