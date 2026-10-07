@@ -13,8 +13,8 @@ export const fullUpgradePricing = `Full Listing Upgrade costs ${pricingTiers.map
 export const brandStorePricing = "Brand Store design is custom quoted based on page count, store structure, and content requirements. Contact PV Labs for a quote.";
 
 // A separate introductory offer, not a fourth catalog tier or per-SKU rate.
-export const starterTrial = { price: 1299, skus: 2 } as const;
-export const trialPricing = `Starter trial from ${formatPrice(starterTrial.price)} total for ${starterTrial.skus} SKUs. Try PV Labs' work and quality before committing to a larger package. This is separate from the standard catalog packages; contact us to agree the deliverables before starting.`;
+export const starterTrial = { price: 2499, skus: 2 } as const;
+export const trialPricing = `Starter Trial Pack — ${starterTrial.skus} SKUs from ${formatPrice(starterTrial.price)} total. Start small and review our design quality before booking a larger package. Deliverables are confirmed before work begins.`;
 
 export const pricingFaqs = [
   { question: "How much does A+ Content design cost?", answer: aPlusPricing },

@@ -22,7 +22,7 @@ assert.deepEqual([...document.querySelectorAll("tbody tr")].map((row) =>
 ]);
 assert.equal(document.querySelectorAll("tbody tr").length, 3, "Trial must not become a catalog tier");
 const trial = document.querySelector("#starter-trial");
-assert.match(normalize(trial?.textContent ?? ""), /from ₹1,299 total for 2 SKUs/);
+assert.match(normalize(trial?.textContent ?? ""), /2 SKUs from ₹2,499 total/);
 assert.equal(trial?.querySelector("a")?.getAttribute("href"), "/contact");
 const pricingSchema = JSON.parse(document.querySelector("#ld-json-pricing-faq").textContent);
 const visibleFaqs = [...document.querySelectorAll("details")];
