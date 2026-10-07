@@ -1,8 +1,9 @@
-﻿"use client";
+"use client";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import { motion } from "framer-motion";
 import Link from "next/link";
+import Image from "next/image";
 import { ArrowRight, TrendingUp, Target, Users, BarChart3 } from "lucide-react";
 import { caseStudies } from "@/content/case-studies/items"; 
 
@@ -54,11 +55,13 @@ const CaseStudies = () => (
               transition={{ delay: i * 0.05 }}
               className="glass-card overflow-hidden"
             >
-              <div className="aspect-[16/10] overflow-hidden">
-                <img
-                  src={typeof cs.heroImage === "string" ? cs.heroImage : cs.heroImage.src}
+              <div className="overflow-hidden">
+                <Image
+                  src={cs.heroImage}
                   alt={cs.title}
-                  className="w-full h-full object-cover"
+                  loading="lazy"
+                  sizes="(max-width: 767px) calc(100vw - 48px), (max-width: 1279px) 50vw, 420px"
+                  className="w-full h-auto"
                 />
               </div>
 

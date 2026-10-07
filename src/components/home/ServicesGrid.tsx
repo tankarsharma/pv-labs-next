@@ -1,13 +1,9 @@
-﻿"use client";
+"use client";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import { ArrowRight, ShoppingCart, Palette, Check } from "lucide-react";
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { Autoplay, Navigation, Pagination } from 'swiper/modules';
-import 'swiper/css';
-import 'swiper/css/navigation';
-import 'swiper/css/pagination';
-import { ecommerceServices, brandServices } from "@/lib/services-data";
+import OptimizedGallery from "@/components/shared/OptimizedGallery";
+import { ecommerceServices, brandServices, type ServiceItem as ServiceData } from "@/lib/services-data";
 
 
 const ServicesGrid = () => (
@@ -127,7 +123,7 @@ const ServicesGrid = () => (
     </section></>
 );
 
-const ServiceItem = ({ service, color }: { service: any, color: string }) => (
+const ServiceItem = ({ service }: { service: ServiceData, color: string }) => (
   <motion.div
     id={service.id}
     initial={{ opacity: 0, y: 20 }}
@@ -136,27 +132,12 @@ const ServiceItem = ({ service, color }: { service: any, color: string }) => (
     className="flex flex-col gap-6 group scroll-mt-20"
   >
     <div className="relative aspect-video rounded-xl overflow-hidden bg-gray-100 border border-gray-100">
-      <Swiper
-        modules={[Autoplay, Navigation, Pagination]} // Commented out unused modules
-        spaceBetween={0}
-        slidesPerView={1}
-        autoplay={{ delay: 1000, disableOnInteraction: false }} // Disabled autoplay
-        navigation={false} // Disabled navigation
-        pagination={true} // Disabled pagination
-        loop={true} // Disabled loop
-        className="w-full h-full"
-      >        {service.images && service.images.length > 0 ? (
-          service.images.map((img: string | { src: string }, idx: number) => (
-          <SwiperSlide key={idx} className="w-full h-full">
-             <img src={typeof img === "string" ? img : img.src} alt={`${service.title} - ${idx + 1}`} className="w-full h-full object-cover" />
-          </SwiperSlide>
-        ))
-      ) : (
-        <SwiperSlide className="w-full h-full">
-          <img src={service.image.src} alt={service.title} className="w-full h-full object-cover transition-transform" />
-        </SwiperSlide>
-      )}
-      </Swiper>
+      <OptimizedGallery
+        images={service.images?.length ? service.images : [service.image]}
+        title={service.title}
+        sizes="(max-width: 767px) calc(100vw - 112px), (max-width: 1280px) 45vw, 560px"
+        delay={1000}
+      />
       {service.badge && (
         <div className={`absolute top-3 left-3 px-3 py-1 rounded-full text-[10px] font-bold text-white shadow-lg z-10 ${service.badgeType === 'hot' ? 'gradient-bg-vivid' :
           service.badgeType === 'amazon' ? 'bg-blue-600' : 'bg-cyan-600'

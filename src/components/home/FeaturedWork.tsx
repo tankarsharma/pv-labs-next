@@ -4,11 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { ExternalLink, Eye } from "lucide-react";
 
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay, Navigation, Pagination } from "swiper/modules";
-import "swiper/css";
-import "swiper/css/navigation";
-import "swiper/css/pagination";
+import OptimizedGallery from "@/components/shared/OptimizedGallery";
 
 // Realistic professional photography URLs from Unsplash
 const portfolioShowcase =
@@ -162,30 +158,12 @@ const FeaturedWork = () => (
               className="glass-card overflow-hidden group cursor-pointer hover:shadow-xl transition-shadow"
             >
               <div className="aspect-[4/3] overflow-hidden relative portfolio-swiper">
-                <Swiper
-                  modules={[Autoplay, Navigation, Pagination]}
-                  spaceBetween={0}
-                  slidesPerView={1}
-                  autoplay={{ delay: 2000, disableOnInteraction: false }}
-                  navigation={false}
-                  pagination={{ clickable: true }}
-                  loop={true}
-                  className="w-full h-full"
-                >
-                  {p.images.map((img, idx) => (
-                    <SwiperSlide key={idx}>
-                      <Image
-                        src={img}
-                        alt={`${p.title} - ${idx + 1}`}
-                        width={1200}
-                        height={900}
-                        loading="lazy"
-                        sizes="(max-width: 1024px) 100vw, 25vw"
-                        className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-                      />
-                    </SwiperSlide>
-                  ))}
-                </Swiper>
+                <OptimizedGallery
+                  images={p.images}
+                  title={p.title}
+                  sizes="(max-width: 767px) calc(100vw - 96px), (max-width: 1023px) 45vw, 25vw"
+                  imageClassName="object-cover transition-transform duration-500 group-hover:scale-105"
+                />
                 <div className="absolute inset-0 bg-foreground/0 group-hover:bg-foreground/20 transition-colors pointer-events-none z-10"></div>
               </div>
               <div className="p-6">

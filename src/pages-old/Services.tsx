@@ -1,15 +1,11 @@
-﻿"use client";
+"use client";
 import Link from "next/link";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import { motion } from "framer-motion";
 import { ArrowRight, Check, ShoppingCart, Palette } from "lucide-react";
 import { useState, useEffect } from "react";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay, Navigation, Pagination } from "swiper/modules";
-import "swiper/css";
-import "swiper/css/navigation";
-import "swiper/css/pagination";
+import OptimizedGallery from "@/components/shared/OptimizedGallery";
 import { brandServices, ecommerceServices } from "@/lib/services-data";
 import { FaWhatsapp } from "react-icons/fa6";
 import JsonLd from "@/components/seo/JsonLd";
@@ -78,11 +74,11 @@ const orderedEcommerceServices = (() => {
   ];
 
   const prioritized = priority
-    .map((id) => ecommerceServices.find((service: any) => service.id === id))
+    .map((id) => ecommerceServices.find((service) => service.id === id))
     .filter(Boolean);
 
   const remaining = ecommerceServices.filter(
-    (service: any) => !priority.includes(service.id)
+    (service) => !priority.includes(service.id)
   );
 
   return [...prioritized, ...remaining];
@@ -216,7 +212,7 @@ const Services = () => {
             </div>
 
             <div className="space-y-20 px-6">
-              {orderedEcommerceServices.map((s: any, i: number) => (
+              {orderedEcommerceServices.map((s, i) => (
                 <ServiceCard
                   key={i}
                   service={s}
@@ -247,7 +243,7 @@ const Services = () => {
             </div>
 
             <div className="space-y-20 px-6">
-              {brandServices.map((s: any, i: number) => (
+              {brandServices.map((s, i) => (
                 <ServiceCard
                   key={i}
                   service={s}
@@ -351,37 +347,12 @@ const ServiceCard = ({
       className="flex flex-col gap-8 scroll-mt-32"
     >
       <div className="relative rounded-2xl overflow-hidden bg-[#111] aspect-video group">
-        <Swiper
-          modules={[Autoplay, Navigation, Pagination]}
-          spaceBetween={0}
-          slidesPerView={1}
-          autoplay={{
-            delay: 2000,
-            disableOnInteraction: false,
-          }}
-          loop={true}
-          className="w-full h-full"
-        >
-          {service.images && service.images.length > 0 ? (
-            service.images.map((img, idx) => (
-              <SwiperSlide key={idx} className="w-full h-full">
-                <img
-                  src={typeof img === "string" ? img : img.src}
-                  alt={`${service.title} - ${idx + 1}`}
-                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
-                />
-              </SwiperSlide>
-            ))
-          ) : (
-            <SwiperSlide className="w-full h-full">
-              <img
-                src={typeof service.image === "string" ? service.image : service.image?.src || ""}
-                alt={service.imageAlt || service.title}
-                className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
-              />
-            </SwiperSlide>
-          )}
-        </Swiper>
+        <OptimizedGallery
+          images={service.images?.length ? service.images : service.image ? [service.image] : []}
+          title={service.title}
+          sizes="(max-width: 767px) calc(100vw - 48px), (max-width: 1280px) 45vw, 600px"
+          imageClassName="object-cover transition-transform duration-700 group-hover:scale-105"
+        />
 
         <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent pointer-events-none z-[5]" />
 

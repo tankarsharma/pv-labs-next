@@ -1,6 +1,7 @@
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import JsonLd from "@/components/seo/JsonLd";
@@ -72,10 +73,11 @@ export default async function CaseStudyDetailPage({ params }: { params: Params }
           </h1>
 
           <div className="rounded-[24px] overflow-hidden shadow-lg mb-10">
-            <img
-              src={typeof study.heroImage === "string" ? study.heroImage : study.heroImage.src}
+            <Image
+              src={study.heroImage}
               alt={study.title}
-              className="w-full aspect-[21/9] object-cover"
+              sizes="(max-width: 1023px) calc(100vw - 48px), 1024px"
+              className="w-full h-auto"
             />
           </div>
 
