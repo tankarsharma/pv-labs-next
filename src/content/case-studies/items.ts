@@ -1,3 +1,4 @@
+import type { StaticImageData } from "next/image";
 import pukhraj from "@/assets/Images for Website - Copy/Case Studies/CS 1.png";
 import nipura from "@/assets/Images for Website - Copy/Case Studies/CS 2.png";
 import attar from "@/assets/Images for Website - Copy/Case Studies/CS 3.png";
@@ -15,7 +16,7 @@ export type CaseStudyItem = {
   category: string;
   marketplace: string;
   duration: string;
-  heroImage: string | { src: string };
+  heroImage: StaticImageData;
   problem: string;
   solution: string;
   results: string[];

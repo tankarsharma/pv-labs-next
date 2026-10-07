@@ -2,6 +2,7 @@
 import { motion } from "framer-motion";
 import { ArrowRight, TrendingUp, Globe, Users } from "lucide-react";
 import Link from "next/link";
+import Image from "next/image";
 import aboutTeam from "../../assets/about-team2.png";
 
 const AboutPreview = () => (
@@ -90,9 +91,11 @@ const AboutPreview = () => (
             transition={{ duration: 0.6 }}
           >
             <div className="rounded-[24px] overflow-hidden shadow-xl">
-              <img
-                src={aboutTeam.src}
+              <Image
+                src={aboutTeam}
                 alt="PV Labs creative team"
+                loading="lazy"
+                sizes="(max-width: 1023px) calc(100vw - 48px), 50vw"
                 className="w-full h-auto md:h-[600px] object-cover"
               />
             </div>
