@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import { motion } from "framer-motion";
@@ -8,7 +8,7 @@ import { Clock, User, ArrowRight, Search } from "lucide-react";
 import { blogPosts } from "@/content/blog/posts";
 
 
-const categories = ["All", "Guide", "Education"];
+const categories = ["All", ...new Set(blogPosts.map((post) => post.category))];
 
 const Blog = () => {
   const [active, setActive] = useState("All");
